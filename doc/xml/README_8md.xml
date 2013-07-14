@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="README_8md" kind="file">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">Embedded<sp/>SW</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">==========</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">Here<sp/>goes<sp/>the<sp/>embedded<sp/>software<sp/>code.</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">This<sp/>GitHub<sp/>repo<sp/>posts<sp/>all<sp/>updates<sp/>to<sp/>Pivotal<sp/>Tracker:<sp/>https:</highlight><highlight class="comment">//www.pivotaltracker.com/s/projects/848197<sp/>.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">How<sp/>to<sp/>link<sp/>a<sp/>change<sp/>to<sp/>Pivotal<sp/>Tracker</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">=======================================</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">1.<sp/>Go<sp/>the<sp/>project<sp/>site<sp/>on<sp/>Pivotal<sp/>Tracker.</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">2.<sp/>Select<sp/>the<sp/>task<sp/>which<sp/>your<sp/>code<sp/>finishes.</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">3.<sp/>Copy<sp/>the<sp/>ID.</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">4.<sp/>In<sp/>the<sp/>commit<sp/>message,<sp/>enter<sp/>[Finishes<sp/>#$ID$].<sp/>Don</highlight><highlight class="stringliteral">&apos;t<sp/>forget<sp/>the<sp/>&apos;</highlight><highlight class="normal">#</highlight><highlight class="stringliteral">&apos;!</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral">5.<sp/>Push<sp/>your<sp/>changes<sp/>to<sp/>the<sp/>repo.</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral">Note<sp/>that<sp/>the<sp/>following<sp/>verbs<sp/>are<sp/>also<sp/>recognized<sp/>by<sp/>Pivotal<sp/>Tracker:</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral">Delivers</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral">Fixes</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral">Completes</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral">(Finishes)<sp/>.</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral">Happy<sp/>coding.</highlight></codeline>
+    </programlisting>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="md_README" kind="page">
+    <compoundname>md_README</compoundname>
+    <title>Embedded SW</title>
+    <detaileddescription>
+<para>Here goes the embedded software code.</para><para>This GitHub repo posts all updates to Pivotal Tracker: <ulink url="https://www.pivotaltracker.com/s/projects/848197">https://www.pivotaltracker.com/s/projects/848197</ulink> .</para><para><heading level="1">How to link a change to Pivotal Tracker</heading>
+</para><para><orderedlist>
+<listitem><para>Go the project site on Pivotal Tracker.</para></listitem><listitem><para>Select the task which your code finishes.</para></listitem><listitem><para>Copy the ID.</para></listitem><listitem><para>In the commit message, enter [Finishes #$ID$]. Don&apos;t forget the &apos;#&apos;!</para></listitem><listitem><para>Push your changes to the repo.</para></listitem></orderedlist>
+</para><para>Note that the following verbs are also recognized by Pivotal Tracker: Delivers Fixes Completes (Finishes) .</para><para>Happy coding. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>
