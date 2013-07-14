@@ -4,12 +4,21 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../AbstractCommunication.cpp \
+../Debug.cpp \
+../SerialCom.cpp \
 ../main.cpp 
 
 OBJS += \
+./AbstractCommunication.o \
+./Debug.o \
+./SerialCom.o \
 ./main.o 
 
 CPP_DEPS += \
+./AbstractCommunication.d \
+./Debug.d \
+./SerialCom.d \
 ./main.d 
 
 
