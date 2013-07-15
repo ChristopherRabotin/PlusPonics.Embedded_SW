@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classDebug" kind="class" prot="public">
+    <compoundname>Debug</compoundname>
+    <includes refid="Debug_8h" local="no">Debug.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" prot="private" static="no" mutable="no">
+        <type><ref refid="classAbstractCommunication" kindref="compound">AbstractCommunication</ref> *</type>
+        <definition>AbstractCommunication* Debug::com</definition>
+        <argsstring></argsstring>
+        <name>com</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.h" line="55" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classDebug_1a2f04792a5ae5d3d062c7d5656871d159" compoundref="Debug_8cpp" startline="12" endline="14">Debug</referencedby>
+        <referencedby refid="classDebug_1ab5aba2d2f4114901f4077646d5cee7a7" compoundref="Debug_8cpp" startline="47" endline="49">error</referencedby>
+        <referencedby refid="classDebug_1a68d8b3a9881a14c0abce336ff072d22f" compoundref="Debug_8cpp" startline="31" endline="33">info</referencedby>
+        <referencedby refid="classDebug_1a57019861dc83bc80565b7af8fac3b40a" compoundref="Debug_8cpp" startline="43" endline="45">setCom</referencedby>
+        <referencedby refid="classDebug_1ae8a2087bc58f1d88814240cfe1490613" compoundref="Debug_8cpp" startline="35" endline="37">warn</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" prot="private" static="yes" mutable="no">
+        <type>const String</type>
+        <definition>const String Debug::DEFAULT_LOCATION</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_LOCATION</name>
+        <initializer>= &quot;None&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.h" line="56" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classDebug_1ac287261af5c0322b8d970026965a65d0" compoundref="Debug_8cpp" startline="27" endline="29">error</referencedby>
+        <referencedby refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" compoundref="Debug_8cpp" startline="19" endline="21">info</referencedby>
+        <referencedby refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" compoundref="Debug_8cpp" startline="23" endline="25">warn</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDebug_1a2f04792a5ae5d3d062c7d5656871d159" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Debug::Debug</definition>
+        <argsstring>(AbstractCommunication *com)</argsstring>
+        <name>Debug</name>
+        <param>
+          <type><ref refid="classAbstractCommunication" kindref="compound">AbstractCommunication</ref> *</type>
+          <declname>com</declname>
+        </param>
+        <briefdescription>
+<para>Constructor of the <ref refid="classDebug" kindref="compound">Debug</ref> class. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>com</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classAbstractCommunication" kindref="compound">AbstractCommunication</ref> instance used for communication. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.h" line="19" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.cpp" bodystart="12" bodyend="14"/>
+        <references refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" compoundref="Debug_8h" startline="55">com</references>
+      </memberdef>
+      <memberdef kind="function" id="classDebug_1a5b453c195c4cfffed2702c3330f53a64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Debug::Debug</definition>
+        <argsstring>()</argsstring>
+        <name>Debug</name>
+        <briefdescription>
+<para>Empty constructor for initialization only. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.h" line="23" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.cpp" bodystart="39" bodyend="41"/>
+        <references refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" compoundref="Debug_8h" startline="55">com</references>
+      </memberdef>
+      <memberdef kind="function" id="classDebug_1a911a84a0f56b770724e09a049399dc30" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Debug::~Debug</definition>
+        <argsstring>()</argsstring>
+        <name>~Debug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.h" line="24" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.cpp" bodystart="16" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Debug::info</definition>
+        <argsstring>(String msg)</argsstring>
+        <name>info</name>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.h" line="25" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.cpp" bodystart="19" bodyend="21"/>
+        <references refid="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" compoundref="Debug_8h" startline="56">DEFAULT_LOCATION</references>
+        <referencedby refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="31" endline="37">loop</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="17" endline="26">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDebug_1a2af7b86d64df53b39635313044d22fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Debug::warn</definition>
+        <argsstring>(String msg)</argsstring>
+        <name>warn</name>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.h" line="26" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.cpp" bodystart="23" bodyend="25"/>
+        <references refid="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" compoundref="Debug_8h" startline="56">DEFAULT_LOCATION</references>
+      </memberdef>
+      <memberdef kind="function" id="classDebug_1ac287261af5c0322b8d970026965a65d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Debug::error</definition>
+        <argsstring>(String msg)</argsstring>
+        <name>error</name>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.h" line="27" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.cpp" bodystart="27" bodyend="29"/>
+        <references refid="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" compoundref="Debug_8h" startline="56">DEFAULT_LOCATION</references>
+      </memberdef>
+      <memberdef kind="function" id="classDebug_1a68d8b3a9881a14c0abce336ff072d22f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Debug::info</definition>
+        <argsstring>(String msg, String location)</argsstring>
+        <name>info</name>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>location</declname>
+        </param>
+        <briefdescription>
+<para>This function sends an informational debug message. The location parameter is optional. <ref refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" kindref="member">info(String msg)</ref>;. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message to be sent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>location</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>location where this message was emitted </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.h" line="34" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.cpp" bodystart="31" bodyend="33"/>
+        <references refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" compoundref="Debug_8h" startline="55">com</references>
+        <references refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d">AbstractCommunication::send</references>
+      </memberdef>
+      <memberdef kind="function" id="classDebug_1ae8a2087bc58f1d88814240cfe1490613" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Debug::warn</definition>
+        <argsstring>(String msg, String location)</argsstring>
+        <name>warn</name>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>location</declname>
+        </param>
+        <briefdescription>
+<para>This function sends a warning debug message. The location parameter is optional. <ref refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" kindref="member">warn(String msg)</ref>;. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message to be sent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>location</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>location where this message was emitted </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.h" line="41" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.cpp" bodystart="35" bodyend="37"/>
+        <references refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" compoundref="Debug_8h" startline="55">com</references>
+        <references refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d">AbstractCommunication::send</references>
+      </memberdef>
+      <memberdef kind="function" id="classDebug_1ab5aba2d2f4114901f4077646d5cee7a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Debug::error</definition>
+        <argsstring>(String msg, String location)</argsstring>
+        <name>error</name>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>location</declname>
+        </param>
+        <briefdescription>
+<para>This function sends an error debug message. The location parameter is optional. <ref refid="classDebug_1ac287261af5c0322b8d970026965a65d0" kindref="member">error(String msg)</ref>;. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message to be sent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>location</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>location where this message was emitted </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.h" line="48" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.cpp" bodystart="47" bodyend="49"/>
+        <references refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" compoundref="Debug_8h" startline="55">com</references>
+        <references refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d">AbstractCommunication::send</references>
+      </memberdef>
+      <memberdef kind="function" id="classDebug_1a57019861dc83bc80565b7af8fac3b40a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Debug::setCom</definition>
+        <argsstring>(AbstractCommunication *com)</argsstring>
+        <name>setCom</name>
+        <param>
+          <type><ref refid="classAbstractCommunication" kindref="compound">AbstractCommunication</ref> *</type>
+          <declname>com</declname>
+        </param>
+        <briefdescription>
+<para>This function sets the communication pointer. This is used when the empty constructor is used. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>com</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>communication instance </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.h" line="53" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.cpp" bodystart="43" bodyend="45"/>
+        <references refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" compoundref="Debug_8h" startline="55">com</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="17" endline="26">setup</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="15">
+        <label>AbstractCommunication</label>
+        <link refid="classAbstractCommunication"/>
+      </node>
+      <node id="14">
+        <label>Debug</label>
+        <link refid="classDebug"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>com</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.h" line="13" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.h" bodystart="13" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" prot="private" virt="non-virtual"><scope>Debug</scope><name>com</name></member>
+      <member refid="classDebug_1a2f04792a5ae5d3d062c7d5656871d159" prot="public" virt="non-virtual"><scope>Debug</scope><name>Debug</name></member>
+      <member refid="classDebug_1a5b453c195c4cfffed2702c3330f53a64" prot="public" virt="non-virtual"><scope>Debug</scope><name>Debug</name></member>
+      <member refid="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" prot="private" virt="non-virtual"><scope>Debug</scope><name>DEFAULT_LOCATION</name></member>
+      <member refid="classDebug_1ac287261af5c0322b8d970026965a65d0" prot="public" virt="non-virtual"><scope>Debug</scope><name>error</name></member>
+      <member refid="classDebug_1ab5aba2d2f4114901f4077646d5cee7a7" prot="public" virt="non-virtual"><scope>Debug</scope><name>error</name></member>
+      <member refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" prot="public" virt="non-virtual"><scope>Debug</scope><name>info</name></member>
+      <member refid="classDebug_1a68d8b3a9881a14c0abce336ff072d22f" prot="public" virt="non-virtual"><scope>Debug</scope><name>info</name></member>
+      <member refid="classDebug_1a57019861dc83bc80565b7af8fac3b40a" prot="public" virt="non-virtual"><scope>Debug</scope><name>setCom</name></member>
+      <member refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" prot="public" virt="non-virtual"><scope>Debug</scope><name>warn</name></member>
+      <member refid="classDebug_1ae8a2087bc58f1d88814240cfe1490613" prot="public" virt="non-virtual"><scope>Debug</scope><name>warn</name></member>
+      <member refid="classDebug_1a911a84a0f56b770724e09a049399dc30" prot="public" virt="virtual"><scope>Debug</scope><name>~Debug</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

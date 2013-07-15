@@ -17,6 +17,10 @@ public:
 	 * @param com AbstractCommunication instance used for communication.
 	 */
 	Debug(AbstractCommunication *com);
+	/**
+	 * @brief Empty constructor for initialization only.
+	 */
+	Debug();
 	virtual ~Debug();
 	void info(String msg);
 	void warn(String msg);
@@ -25,23 +29,28 @@ public:
 	 * @brief This function sends an informational debug message.
 	 * The location parameter is optional. @ref info(String msg);
 	 * @param msg message to be sent
-	 * @param location location where this message was emitted.
+	 * @param location location where this message was emitted
 	 */
 	void info(String msg, String location);
 	/**
 	 * @brief This function sends a warning debug message.
-	 * The location parameter is optional. @ref info(String msg);
+	 * The location parameter is optional. @ref warn(String msg);
 	 * @param msg message to be sent
-	 * @param location location where this message was emitted.
+	 * @param location location where this message was emitted
 	 */
 	void warn(String msg, String location);
 	/**
 	 * @brief This function sends an error debug message.
-	 * The location parameter is optional. @ref info(String msg);
+	 * The location parameter is optional. @ref error(String msg);
 	 * @param msg message to be sent
-	 * @param location location where this message was emitted.
+	 * @param location location where this message was emitted
 	 */
 	void error(String msg, String location);
+	/**
+	 * @brief This function sets the communication pointer. This is used when the empty constructor is used.
+	 * @param com communication instance
+	 */
+	void setCom(AbstractCommunication *com);
 private:
 	AbstractCommunication *com;
 	static const String DEFAULT_LOCATION;

@@ -36,6 +36,14 @@ void Debug::warn(String msg, String location) {
 	com->send("WARN: " + msg + " <" + location + ">");
 }
 
+Debug::Debug() {
+	this->com = NULL;
+}
+
+void Debug::setCom(AbstractCommunication* com) {
+	this->com = com;
+}
+
 void Debug::error(String msg, String location) {
 	com->send("ERROR: " + msg + " <" + location + ">");
 }

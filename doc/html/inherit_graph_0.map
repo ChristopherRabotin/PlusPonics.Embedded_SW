@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classAbstractCommunication.html" title="This class defines how all communication should be done." alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node3" href="$classSerialCom.html" title="This class defines serial communication with the control system." alt="" coords="217,5,303,32"/>
+</map>

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="SerialCom_8h" kind="file">
+    <compoundname>SerialCom.h</compoundname>
+    <includes refid="AbstractCommunication_8h" local="yes">AbstractCommunication.h</includes>
+    <includes local="no">Arduino.h</includes>
+    <includes local="no">HardwareSerial.h</includes>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <includedby refid="SerialCom_8cpp" local="yes">SerialCom.cpp</includedby>
+    <incdepgraph>
+      <node id="94">
+        <label>WString.h</label>
+      </node>
+      <node id="93">
+        <label>AbstractCommunication.h</label>
+        <link refid="AbstractCommunication_8h"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>HardwareSerial.h</label>
+      </node>
+      <node id="95">
+        <label>Arduino.h</label>
+      </node>
+      <node id="92">
+        <label>SerialCom.h</label>
+        <link refid="SerialCom.h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="99">
+        <label>SerialCom.cpp</label>
+        <link refid="SerialCom_8cpp"/>
+      </node>
+      <node id="97">
+        <label>SerialCom.h</label>
+        <link refid="SerialCom.h"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classSerialCom" prot="public">SerialCom</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>SerialCom.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Jul<sp/>15,<sp/>2013</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>chris</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SERIALCOM_H_</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SERIALCOM_H_</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="AbstractCommunication_8h" kindref="compound">AbstractCommunication.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;HardwareSerial.h&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>TODO<sp/>Eventually<sp/>use<sp/>SoftSerial.h<sp/>since<sp/>it<sp/>uses<sp/>interrupts<sp/>to<sp/>read<sp/>incoming<sp/>messages.</highlight></codeline>
+<codeline lineno="18" refid="classSerialCom" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSerialCom" kindref="compound" tooltip="This class defines serial communication with the control system.">SerialCom</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSerialCom_1a4e0fd8ce8d81fc4f3c422d2f9d1aff68" kindref="member">SerialCom</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classSerialCom_1a5582cf804e661a24cb32720b31a2f9fe" kindref="member">~SerialCom</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" kindref="member">send</ref>(String<sp/>payload);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" kindref="member" tooltip="This function reads the serial input and returns all the information it reads at the time of calling...">recv</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SERIALCOM_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h"/>
+  </compounddef>
+</doxygen>

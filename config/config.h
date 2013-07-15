@@ -8,7 +8,10 @@
 #ifndef CONFIG_H_
 #define CONFIG_H_
 
-#define SERIAL_COM
+#define SERIAL_COMMUNICATION
 
+void configure(){
+
+}
 
 #endif /* CONFIG_H_ */

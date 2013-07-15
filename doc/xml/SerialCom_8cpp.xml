@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="SerialCom_8cpp" kind="file">
+    <compoundname>SerialCom.cpp</compoundname>
+    <includes refid="SerialCom_8h" local="yes">SerialCom.h</includes>
+    <incdepgraph>
+      <node id="88">
+        <label>WString.h</label>
+      </node>
+      <node id="87">
+        <label>AbstractCommunication.h</label>
+        <link refid="AbstractCommunication_8h"/>
+        <childnode refid="88" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>HardwareSerial.h</label>
+      </node>
+      <node id="89">
+        <label>Arduino.h</label>
+      </node>
+      <node id="85">
+        <label>SerialCom.cpp</label>
+        <link refid="SerialCom.cpp"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>SerialCom.h</label>
+        <link refid="SerialCom_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>SerialCom.cpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Jul<sp/>15,<sp/>2013</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>chris</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="SerialCom_8h" kindref="compound">SerialCom.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classSerialCom_1a4e0fd8ce8d81fc4f3c422d2f9d1aff68" refkind="member"><highlight class="normal"><ref refid="classSerialCom_1a4e0fd8ce8d81fc4f3c422d2f9d1aff68" kindref="member">SerialCom::SerialCom</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.begin(9600);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classSerialCom_1a5582cf804e661a24cb32720b31a2f9fe" refkind="member"><highlight class="normal"><ref refid="classSerialCom_1a5582cf804e661a24cb32720b31a2f9fe" kindref="member">SerialCom::~SerialCom</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" kindref="member">SerialCom::send</ref>(String<sp/>payload)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(payload);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" refkind="member"><highlight class="normal">String<sp/><ref refid="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" kindref="member" tooltip="This function reads the serial input and returns all the information it reads at the time of calling...">SerialCom::recv</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>rtn<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Serial.available())<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rtn<sp/>=<sp/>Serial.readString();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(rtn);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp"/>
+  </compounddef>
+</doxygen>

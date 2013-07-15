@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classAbstractCommunication" kind="class" prot="public" abstract="yes">
+    <compoundname>AbstractCommunication</compoundname>
+    <derivedcompoundref refid="classSerialCom" prot="public" virt="non-virtual">SerialCom</derivedcompoundref>
+    <includes refid="AbstractCommunication_8h" local="no">AbstractCommunication.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAbstractCommunication_1a0e6ca44e41df8ca8e9e563cde1789f70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AbstractCommunication::AbstractCommunication</definition>
+        <argsstring>()</argsstring>
+        <name>AbstractCommunication</name>
+        <briefdescription>
+<para>The constructor should initialize the communication with the control system. This includes everything needed prior to starting to communicate with the control system. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="18" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractCommunication_1a55661ddfc00471e24468d1e5bb76fdac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>AbstractCommunication::~AbstractCommunication</definition>
+        <argsstring>()</argsstring>
+        <name>~AbstractCommunication</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="19" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void AbstractCommunication::send</definition>
+        <argsstring>(String payload)=0</argsstring>
+        <name>send</name>
+        <reimplementedby refid="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394">send</reimplementedby>
+        <param>
+          <type>String</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="20"/>
+        <referencedby refid="classDebug_1ab5aba2d2f4114901f4077646d5cee7a7" compoundref="Debug_8cpp" startline="47" endline="49">Debug::error</referencedby>
+        <referencedby refid="classDebug_1a68d8b3a9881a14c0abce336ff072d22f" compoundref="Debug_8cpp" startline="31" endline="33">Debug::info</referencedby>
+        <referencedby refid="classDebug_1ae8a2087bc58f1d88814240cfe1490613" compoundref="Debug_8cpp" startline="35" endline="37">Debug::warn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>String</type>
+        <definition>virtual String AbstractCommunication::recv</definition>
+        <argsstring>()=0</argsstring>
+        <name>recv</name>
+        <reimplementedby refid="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690">recv</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class defines how all communication should be done. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>SerialCom</label>
+        <link refid="classSerialCom"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>AbstractCommunication</label>
+        <link refid="classAbstractCommunication"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="16" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" bodystart="16" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classAbstractCommunication_1a0e6ca44e41df8ca8e9e563cde1789f70" prot="public" virt="non-virtual"><scope>AbstractCommunication</scope><name>AbstractCommunication</name></member>
+      <member refid="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0" prot="public" virt="pure-virtual"><scope>AbstractCommunication</scope><name>recv</name></member>
+      <member refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" prot="public" virt="pure-virtual"><scope>AbstractCommunication</scope><name>send</name></member>
+      <member refid="classAbstractCommunication_1a55661ddfc00471e24468d1e5bb76fdac" prot="public" virt="virtual"><scope>AbstractCommunication</scope><name>~AbstractCommunication</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

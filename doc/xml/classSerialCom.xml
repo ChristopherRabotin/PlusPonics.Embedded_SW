@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classSerialCom" kind="class" prot="public">
+    <compoundname>SerialCom</compoundname>
+    <basecompoundref refid="classAbstractCommunication" prot="public" virt="non-virtual">AbstractCommunication</basecompoundref>
+    <includes refid="SerialCom_8h" local="no">SerialCom.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSerialCom_1a4e0fd8ce8d81fc4f3c422d2f9d1aff68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SerialCom::SerialCom</definition>
+        <argsstring>()</argsstring>
+        <name>SerialCom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>In the constructor we define everything to be able to communicate through a serial communication. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="20" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classSerialCom_1a5582cf804e661a24cb32720b31a2f9fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>SerialCom::~SerialCom</definition>
+        <argsstring>()</argsstring>
+        <name>~SerialCom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="21" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="17" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SerialCom::send</definition>
+        <argsstring>(String payload)</argsstring>
+        <name>send</name>
+        <reimplements refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d">send</reimplements>
+        <param>
+          <type>String</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="22" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>String</type>
+        <definition>String SerialCom::recv</definition>
+        <argsstring>()</argsstring>
+        <name>recv</name>
+        <reimplements refid="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0">recv</reimplements>
+        <briefdescription>
+<para>This function reads the serial input and returns all the information it reads at the time of calling. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the string received through serial communication. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="23" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="28" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class defines serial communication with the control system. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="16">
+        <label>SerialCom</label>
+        <link refid="classSerialCom"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>AbstractCommunication</label>
+        <link refid="classAbstractCommunication"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="18">
+        <label>SerialCom</label>
+        <link refid="classSerialCom"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>AbstractCommunication</label>
+        <link refid="classAbstractCommunication"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="18" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" bodystart="18" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classAbstractCommunication_1a0e6ca44e41df8ca8e9e563cde1789f70" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>AbstractCommunication</name></member>
+      <member refid="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" prot="public" virt="virtual"><scope>SerialCom</scope><name>recv</name></member>
+      <member refid="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" prot="public" virt="virtual"><scope>SerialCom</scope><name>send</name></member>
+      <member refid="classSerialCom_1a4e0fd8ce8d81fc4f3c422d2f9d1aff68" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>SerialCom</name></member>
+      <member refid="classAbstractCommunication_1a55661ddfc00471e24468d1e5bb76fdac" prot="public" virt="virtual"><scope>SerialCom</scope><name>~AbstractCommunication</name></member>
+      <member refid="classSerialCom_1a5582cf804e661a24cb32720b31a2f9fe" prot="public" virt="virtual"><scope>SerialCom</scope><name>~SerialCom</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,4 +1,6 @@
 <map id="main" name="main">
-<area shape="rect" id="node3" href="$main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="108,5,156,32"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="105,56,159,83"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered." alt="" coords="108,5,156,32"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="This function is only ran when the sketch is initialized." alt="" coords="105,56,159,83"/>
+<area shape="rect" id="node5" href="$classDebug.html#aed5f2d64e6d7c71605a2df12cf69ef20" title="Debug::info" alt="" coords="221,5,312,32"/>
+<area shape="rect" id="node9" href="$classDebug.html#a57019861dc83bc80565b7af8fac3b40a" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="208,56,325,83"/>
 </map>
