@@ -7,51 +7,56 @@
     <includes refid="Debug_8h" local="yes">Debug.h</includes>
     <includes refid="SerialCom_8h" local="yes">SerialCom.h</includes>
     <incdepgraph>
-      <node id="76">
+      <node id="87">
         <label>config/config.h</label>
       </node>
-      <node id="79">
+      <node id="91">
         <label>WString.h</label>
       </node>
-      <node id="78">
+      <node id="89">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication_8h"/>
-        <childnode refid="79" relation="include">
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
         </childnode>
       </node>
-      <node id="77">
+      <node id="88">
         <label>Debug.h</label>
         <link refid="Debug_8h"/>
-        <childnode refid="78" relation="include">
+        <childnode refid="89" relation="include">
         </childnode>
       </node>
-      <node id="81">
+      <node id="93">
         <label>HardwareSerial.h</label>
       </node>
-      <node id="75">
+      <node id="86">
         <label>Arduino.h</label>
       </node>
-      <node id="80">
+      <node id="92">
         <label>SerialCom.h</label>
         <link refid="SerialCom_8h"/>
-        <childnode refid="78" relation="include">
+        <childnode refid="89" relation="include">
         </childnode>
-        <childnode refid="75" relation="include">
+        <childnode refid="86" relation="include">
         </childnode>
-        <childnode refid="81" relation="include">
+        <childnode refid="93" relation="include">
         </childnode>
       </node>
-      <node id="74">
+      <node id="85">
         <label>main.cpp</label>
         <link refid="main.cpp"/>
-        <childnode refid="75" relation="include">
+        <childnode refid="86" relation="include">
         </childnode>
-        <childnode refid="76" relation="include">
+        <childnode refid="87" relation="include">
         </childnode>
-        <childnode refid="77" relation="include">
+        <childnode refid="88" relation="include">
         </childnode>
-        <childnode refid="80" relation="include">
+        <childnode refid="92" relation="include">
         </childnode>
+      </node>
+      <node id="90">
+        <label>stdio.h</label>
       </node>
     </incdepgraph>
       <sectiondef kind="var">
@@ -68,8 +73,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="9" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="9" bodyend="-1"/>
-        <referencedby refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="31" endline="37">loop</referencedby>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="17" endline="26">setup</referencedby>
+        <referencedby refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="32" endline="40">loop</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="17" endline="27">setup</referencedby>
       </memberdef>
       <memberdef kind="variable" id="main_8cpp_1adaa7de8e021b5739a7f8ea5d4e580809" prot="public" static="no" mutable="no">
         <type><ref refid="classAbstractCommunication" kindref="compound">AbstractCommunication</ref> *</type>
@@ -111,11 +116,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="17" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="17" bodyend="26"/>
-        <references refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" compoundref="Debug_8cpp" startline="19" endline="21">Debug::info</references>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="17" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="17" bodyend="27"/>
+        <references refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" compoundref="Debug_8cpp" startline="20" endline="22">Debug::info</references>
         <references refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" compoundref="main_8cpp" startline="9">ledPin</references>
-        <references refid="classDebug_1a57019861dc83bc80565b7af8fac3b40a" compoundref="Debug_8cpp" startline="43" endline="45">Debug::setCom</references>
-        <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="43" endline="51">main</referencedby>
+        <references refid="classDebug_1a57019861dc83bc80565b7af8fac3b40a" compoundref="Debug_8cpp" startline="49" endline="51">Debug::setCom</references>
+        <references refid="classDebug_1aa51fece50f30c3bfa6f610929e40714a" compoundref="Debug_8cpp" startline="59" endline="61">Debug::setLevel</references>
+        <references refid="classDebug_1a67ff3b88152445827486bb5370040bcfa9d2cb9dc082c416b4e7653360caf0f51" compoundref="Debug_8h" startline="20">Debug::WARN</references>
+        <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="46" endline="54">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -128,10 +135,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="31" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="31" bodyend="37"/>
-        <references refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" compoundref="Debug_8cpp" startline="19" endline="21">Debug::info</references>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="32" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="32" bodyend="40"/>
+        <references refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" compoundref="Debug_8cpp" startline="20" endline="22">Debug::info</references>
         <references refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" compoundref="main_8cpp" startline="9">ledPin</references>
-        <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="43" endline="51">main</referencedby>
+        <references refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d">AbstractCommunication::send</references>
+        <references refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" compoundref="Debug_8cpp" startline="24" endline="26">Debug::warn</references>
+        <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="46" endline="54">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -148,9 +157,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="43" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="43" bodyend="51"/>
-        <references refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="31" endline="37">loop</references>
-        <references refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="17" endline="26">setup</references>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="46" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="46" bodyend="54"/>
+        <references refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="32" endline="40">loop</references>
+        <references refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="17" endline="27">setup</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -178,27 +187,30 @@
 <codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>com<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classSerialCom" kindref="compound" tooltip="This class defines serial communication with the control system.">SerialCom</ref>();</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
 <codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>debug-&gt;<ref refid="classDebug_1a57019861dc83bc80565b7af8fac3b40a" kindref="member" tooltip="This function sets the communication pointer. This is used when the empty constructor is used...">setCom</ref>(com);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>debug-&gt;<ref refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" kindref="member">info</ref>(</highlight><highlight class="stringliteral">&quot;Setting<sp/>up<sp/>led&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;setup&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31" refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kindref="member" tooltip="loop() loops while Arduino is powered.">loop</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kindref="member">ledPin</ref>,<sp/>HIGH);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>debug-&gt;<ref refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" kindref="member">info</ref>(</highlight><highlight class="stringliteral">&quot;Will<sp/>sleep<sp/>for<sp/>two<sp/>seconds<sp/>now.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;loop&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(2000);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kindref="member">ledPin</ref>,<sp/>LOW);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(1000);</highlight></codeline>
-<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43" refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member" tooltip="where all the subsystems are started.">main</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>init();</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kindref="member" tooltip="This function is only ran when the sketch is initialized.">setup</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>debug-&gt;<ref refid="classDebug_1aa51fece50f30c3bfa6f610929e40714a" kindref="member">setLevel</ref>(<ref refid="classDebug_1a67ff3b88152445827486bb5370040bcfa9d2cb9dc082c416b4e7653360caf0f51" kindref="member">Debug::WARN</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>debug-&gt;<ref refid="classDebug_1a57019861dc83bc80565b7af8fac3b40a" kindref="member" tooltip="This function sets the communication pointer. This is used when the empty constructor is used...">setCom</ref>(com);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>debug-&gt;<ref refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" kindref="member">info</ref>(</highlight><highlight class="stringliteral">&quot;Setting<sp/>up<sp/>led&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;setup&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kindref="member" tooltip="loop() loops while Arduino is powered.">loop</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kindref="member">ledPin</ref>,<sp/>HIGH);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>debug-&gt;<ref refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" kindref="member">info</ref>(</highlight><highlight class="stringliteral">&quot;Will<sp/>sleep<sp/>for<sp/>two<sp/>seconds<sp/>now.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;loop&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>debug-&gt;<ref refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" kindref="member">warn</ref>(</highlight><highlight class="stringliteral">&quot;This<sp/>is<sp/>a<sp/>warning.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;loop&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>com-&gt;<ref refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" kindref="member" tooltip="This function sends information through the communication pipe.">send</ref>(</highlight><highlight class="stringliteral">&quot;my<sp/>payload&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(2000);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kindref="member">ledPin</ref>,<sp/>LOW);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(1000);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member" tooltip="where all the subsystems are started.">main</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kindref="member" tooltip="loop() loops while Arduino is powered.">loop</ref>();</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>init();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kindref="member" tooltip="This function is only ran when the sketch is initialized.">setup</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kindref="member" tooltip="loop() loops while Arduino is powered.">loop</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp"/>
   </compounddef>

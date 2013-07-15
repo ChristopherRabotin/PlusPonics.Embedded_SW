@@ -64,6 +64,7 @@ $(document).ready(function(){initNavTree('classDebug.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
@@ -82,11 +83,19 @@ Collaboration diagram for Debug:</div>
 <area shape="rect" id="node2" href="classAbstractCommunication.html" title="This class defines how all communication should be done." alt="" coords="5,5,168,32"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a67ff3b88152445827486bb5370040bcf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#a67ff3b88152445827486bb5370040bcf">DEBUG_LEVEL</a> { <a class="el" href="classDebug.html#a67ff3b88152445827486bb5370040bcfa46da16d1e998155d97808643c4d6ed46">INFO</a> = 0, 
+<a class="el" href="classDebug.html#a67ff3b88152445827486bb5370040bcfa9d2cb9dc082c416b4e7653360caf0f51">WARN</a> = 5, 
+<a class="el" href="classDebug.html#a67ff3b88152445827486bb5370040bcfa926d718d1a358b0e8abfe865a4f78dbc">ERROR</a> = 10
+ }</td></tr>
+<tr class="separator:a67ff3b88152445827486bb5370040bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2f04792a5ae5d3d062c7d5656871d159"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#a2f04792a5ae5d3d062c7d5656871d159">Debug</a> (<a class="el" href="classAbstractCommunication.html">AbstractCommunication</a> *<a class="el" href="classDebug.html#a8a4ec669ce60de6d17b3354b11b031a2">com</a>)</td></tr>
-<tr class="memdesc:a2f04792a5ae5d3d062c7d5656871d159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the <a class="el" href="classDebug.html">Debug</a> class.  <a href="#a2f04792a5ae5d3d062c7d5656871d159"></a><br/></td></tr>
-<tr class="separator:a2f04792a5ae5d3d062c7d5656871d159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e048381948c32ab9523bd5893290797"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#a8e048381948c32ab9523bd5893290797">Debug</a> (<a class="el" href="classAbstractCommunication.html">AbstractCommunication</a> *<a class="el" href="classDebug.html#a8a4ec669ce60de6d17b3354b11b031a2">com</a>, <a class="el" href="classDebug.html#a67ff3b88152445827486bb5370040bcf">DEBUG_LEVEL</a> <a class="el" href="classDebug.html#a43861bc8c2da071f887d64833cc827ed">lvl</a>)</td></tr>
+<tr class="memdesc:a8e048381948c32ab9523bd5893290797"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the <a class="el" href="classDebug.html">Debug</a> class.  <a href="#a8e048381948c32ab9523bd5893290797"></a><br/></td></tr>
+<tr class="separator:a8e048381948c32ab9523bd5893290797"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b453c195c4cfffed2702c3330f53a64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#a5b453c195c4cfffed2702c3330f53a64">Debug</a> ()</td></tr>
 <tr class="memdesc:a5b453c195c4cfffed2702c3330f53a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty constructor for initialization only.  <a href="#a5b453c195c4cfffed2702c3330f53a64"></a><br/></td></tr>
 <tr class="separator:a5b453c195c4cfffed2702c3330f53a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,11 +119,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a57019861dc83bc80565b7af8fac3b40a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#a57019861dc83bc80565b7af8fac3b40a">setCom</a> (<a class="el" href="classAbstractCommunication.html">AbstractCommunication</a> *<a class="el" href="classDebug.html#a8a4ec669ce60de6d17b3354b11b031a2">com</a>)</td></tr>
 <tr class="memdesc:a57019861dc83bc80565b7af8fac3b40a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the communication pointer. This is used when the empty constructor is used.  <a href="#a57019861dc83bc80565b7af8fac3b40a"></a><br/></td></tr>
 <tr class="separator:a57019861dc83bc80565b7af8fac3b40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa51fece50f30c3bfa6f610929e40714a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#aa51fece50f30c3bfa6f610929e40714a">setLevel</a> (<a class="el" href="classDebug.html#a67ff3b88152445827486bb5370040bcf">DEBUG_LEVEL</a> <a class="el" href="classDebug.html#a43861bc8c2da071f887d64833cc827ed">lvl</a>)</td></tr>
+<tr class="separator:aa51fece50f30c3bfa6f610929e40714a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a8a4ec669ce60de6d17b3354b11b031a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAbstractCommunication.html">AbstractCommunication</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#a8a4ec669ce60de6d17b3354b11b031a2">com</a></td></tr>
 <tr class="separator:a8a4ec669ce60de6d17b3354b11b031a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43861bc8c2da071f887d64833cc827ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDebug.html#a67ff3b88152445827486bb5370040bcf">DEBUG_LEVEL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebug.html#a43861bc8c2da071f887d64833cc827ed">lvl</a></td></tr>
+<tr class="separator:a43861bc8c2da071f887d64833cc827ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -124,8 +137,36 @@ Static Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="Debug_8h_source.html#l00013">13</a> of file <a class="el" href="Debug_8h_source.html">Debug.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2f04792a5ae5d3d062c7d5656871d159"></a>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a67ff3b88152445827486bb5370040bcf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDebug.html#a67ff3b88152445827486bb5370040bcf">Debug::DEBUG_LEVEL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a67ff3b88152445827486bb5370040bcfa46da16d1e998155d97808643c4d6ed46"></a>INFO</em>&nbsp;</td><td>
+<p>this is the info level </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a67ff3b88152445827486bb5370040bcfa9d2cb9dc082c416b4e7653360caf0f51"></a>WARN</em>&nbsp;</td><td>
+<p>this is the warning level </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a67ff3b88152445827486bb5370040bcfa926d718d1a358b0e8abfe865a4f78dbc"></a>ERROR</em>&nbsp;</td><td>
+<p>this is the error level </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>Definition at line <a class="el" href="Debug_8h_source.html#l00018">18</a> of file <a class="el" href="Debug_8h_source.html">Debug.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a8e048381948c32ab9523bd5893290797"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -133,8 +174,18 @@ Static Private Attributes</h2></td></tr>
           <td class="memname">Debug::Debug </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classAbstractCommunication.html">AbstractCommunication</a> *&#160;</td>
-          <td class="paramname"><em>com</em></td><td>)</td>
+          <td class="paramname"><em>com</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classDebug.html#a67ff3b88152445827486bb5370040bcf">DEBUG_LEVEL</a>&#160;</td>
+          <td class="paramname"><em>lvl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -142,14 +193,15 @@ Static Private Attributes</h2></td></tr>
 <p>Constructor of the <a class="el" href="classDebug.html">Debug</a> class. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">com</td><td><a class="el" href="classAbstractCommunication.html" title="This class defines how all communication should be done.">AbstractCommunication</a> instance used for communication. </td></tr>
+    <tr><td class="paramname">com</td><td><a class="el" href="classAbstractCommunication.html" title="This class defines how all communication should be done.">AbstractCommunication</a> instance used for communication </td></tr>
+    <tr><td class="paramname">lvl</td><td>level of debugging needed </td></tr>
   </table>
   </dd>
 </dl>
 
 <p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00012">12</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
 
-<p>References <a class="el" href="Debug_8h_source.html#l00055">com</a>.</p>
+<p>References <a class="el" href="Debug_8h_source.html#l00066">com</a>, and <a class="el" href="Debug_8h_source.html#l00068">lvl</a>.</p>
 
 </div>
 </div>
@@ -168,9 +220,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Empty constructor for initialization only. </p>
 
-<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00039">39</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00044">44</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
 
-<p>References <a class="el" href="Debug_8h_source.html#l00055">com</a>.</p>
+<p>References <a class="el" href="Debug_8h_source.html#l00066">com</a>, <a class="el" href="Debug_8h_source.html#l00019">INFO</a>, and <a class="el" href="Debug_8h_source.html#l00068">lvl</a>.</p>
 
 </div>
 </div>
@@ -195,7 +247,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00016">16</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00017">17</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
 
 </div>
 </div>
@@ -214,9 +266,9 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00027">27</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00028">28</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
 
-<p>References <a class="el" href="Debug_8h_source.html#l00056">DEFAULT_LOCATION</a>.</p>
+<p>References <a class="el" href="Debug_8h_source.html#l00067">DEFAULT_LOCATION</a>.</p>
 
 </div>
 </div>
@@ -253,16 +305,16 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00047">47</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00053">53</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
 
-<p>References <a class="el" href="Debug_8h_source.html#l00055">com</a>, and <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">AbstractCommunication::send()</a>.</p>
+<p>References <a class="el" href="Debug_8h_source.html#l00066">com</a>, <a class="el" href="Debug_8h_source.html#l00021">ERROR</a>, <a class="el" href="Debug_8h_source.html#l00068">lvl</a>, and <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">AbstractCommunication::send()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDebug_ab5aba2d2f4114901f4077646d5cee7a7_cgraph.png" border="0" usemap="#classDebug_ab5aba2d2f4114901f4077646d5cee7a7_cgraph" alt=""/></div>
 <map name="classDebug_ab5aba2d2f4114901f4077646d5cee7a7_cgraph" id="classDebug_ab5aba2d2f4114901f4077646d5cee7a7_cgraph">
-<area shape="rect" id="node3" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="AbstractCommunication\l::send" alt="" coords="152,5,315,46"/></map>
+<area shape="rect" id="node3" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="152,5,315,46"/></map>
 </div>
 </p>
 
@@ -282,11 +334,11 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00019">19</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00020">20</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
 
-<p>References <a class="el" href="Debug_8h_source.html#l00056">DEFAULT_LOCATION</a>.</p>
+<p>References <a class="el" href="Debug_8h_source.html#l00067">DEFAULT_LOCATION</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00031">loop()</a>, and <a class="el" href="main_8cpp_source.html#l00017">setup()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00032">loop()</a>, and <a class="el" href="main_8cpp_source.html#l00017">setup()</a>.</p>
 
 </div>
 </div>
@@ -323,16 +375,16 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00031">31</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00032">32</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
 
-<p>References <a class="el" href="Debug_8h_source.html#l00055">com</a>, and <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">AbstractCommunication::send()</a>.</p>
+<p>References <a class="el" href="Debug_8h_source.html#l00066">com</a>, <a class="el" href="Debug_8h_source.html#l00019">INFO</a>, <a class="el" href="Debug_8h_source.html#l00068">lvl</a>, and <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">AbstractCommunication::send()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDebug_a68d8b3a9881a14c0abce336ff072d22f_cgraph.png" border="0" usemap="#classDebug_a68d8b3a9881a14c0abce336ff072d22f_cgraph" alt=""/></div>
 <map name="classDebug_a68d8b3a9881a14c0abce336ff072d22f_cgraph" id="classDebug_a68d8b3a9881a14c0abce336ff072d22f_cgraph">
-<area shape="rect" id="node3" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="AbstractCommunication\l::send" alt="" coords="144,5,307,46"/></map>
+<area shape="rect" id="node3" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="144,5,307,46"/></map>
 </div>
 </p>
 
@@ -360,9 +412,31 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00043">43</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00049">49</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
 
-<p>References <a class="el" href="Debug_8h_source.html#l00055">com</a>.</p>
+<p>References <a class="el" href="Debug_8h_source.html#l00066">com</a>.</p>
+
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00017">setup()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa51fece50f30c3bfa6f610929e40714a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Debug::setLevel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDebug.html#a67ff3b88152445827486bb5370040bcf">DEBUG_LEVEL</a>&#160;</td>
+          <td class="paramname"><em>lvl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00059">59</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
+
+<p>References <a class="el" href="Debug_8h_source.html#l00068">lvl</a>.</p>
 
 <p>Referenced by <a class="el" href="main_8cpp_source.html#l00017">setup()</a>.</p>
 
@@ -382,9 +456,11 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00023">23</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00024">24</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
 
-<p>References <a class="el" href="Debug_8h_source.html#l00056">DEFAULT_LOCATION</a>.</p>
+<p>References <a class="el" href="Debug_8h_source.html#l00067">DEFAULT_LOCATION</a>.</p>
+
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00032">loop()</a>.</p>
 
 </div>
 </div>
@@ -421,16 +497,16 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00035">35</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Debug_8cpp_source.html#l00038">38</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
 
-<p>References <a class="el" href="Debug_8h_source.html#l00055">com</a>, and <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">AbstractCommunication::send()</a>.</p>
+<p>References <a class="el" href="Debug_8h_source.html#l00066">com</a>, <a class="el" href="Debug_8h_source.html#l00068">lvl</a>, <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">AbstractCommunication::send()</a>, and <a class="el" href="Debug_8h_source.html#l00020">WARN</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDebug_ae8a2087bc58f1d88814240cfe1490613_cgraph.png" border="0" usemap="#classDebug_ae8a2087bc58f1d88814240cfe1490613_cgraph" alt=""/></div>
 <map name="classDebug_ae8a2087bc58f1d88814240cfe1490613_cgraph" id="classDebug_ae8a2087bc58f1d88814240cfe1490613_cgraph">
-<area shape="rect" id="node3" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="AbstractCommunication\l::send" alt="" coords="152,5,315,46"/></map>
+<area shape="rect" id="node3" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="152,5,315,46"/></map>
 </div>
 </p>
 
@@ -455,9 +531,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Debug_8h_source.html#l00055">55</a> of file <a class="el" href="Debug_8h_source.html">Debug.h</a>.</p>
+<p>Definition at line <a class="el" href="Debug_8h_source.html#l00066">66</a> of file <a class="el" href="Debug_8h_source.html">Debug.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Debug_8cpp_source.html#l00012">Debug()</a>, <a class="el" href="Debug_8cpp_source.html#l00047">error()</a>, <a class="el" href="Debug_8cpp_source.html#l00031">info()</a>, <a class="el" href="Debug_8cpp_source.html#l00043">setCom()</a>, and <a class="el" href="Debug_8cpp_source.html#l00035">warn()</a>.</p>
+<p>Referenced by <a class="el" href="Debug_8cpp_source.html#l00012">Debug()</a>, <a class="el" href="Debug_8cpp_source.html#l00053">error()</a>, <a class="el" href="Debug_8cpp_source.html#l00032">info()</a>, <a class="el" href="Debug_8cpp_source.html#l00049">setCom()</a>, and <a class="el" href="Debug_8cpp_source.html#l00038">warn()</a>.</p>
 
 </div>
 </div>
@@ -479,9 +555,33 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Debug_8h_source.html#l00056">56</a> of file <a class="el" href="Debug_8h_source.html">Debug.h</a>.</p>
+<p>Definition at line <a class="el" href="Debug_8h_source.html#l00067">67</a> of file <a class="el" href="Debug_8h_source.html">Debug.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Debug_8cpp_source.html#l00027">error()</a>, <a class="el" href="Debug_8cpp_source.html#l00019">info()</a>, and <a class="el" href="Debug_8cpp_source.html#l00023">warn()</a>.</p>
+<p>Referenced by <a class="el" href="Debug_8cpp_source.html#l00028">error()</a>, <a class="el" href="Debug_8cpp_source.html#l00020">info()</a>, and <a class="el" href="Debug_8cpp_source.html#l00024">warn()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a43861bc8c2da071f887d64833cc827ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDebug.html#a67ff3b88152445827486bb5370040bcf">DEBUG_LEVEL</a> Debug::lvl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Debug_8h_source.html#l00068">68</a> of file <a class="el" href="Debug_8h_source.html">Debug.h</a>.</p>
+
+<p>Referenced by <a class="el" href="Debug_8cpp_source.html#l00012">Debug()</a>, <a class="el" href="Debug_8cpp_source.html#l00053">error()</a>, <a class="el" href="Debug_8cpp_source.html#l00032">info()</a>, <a class="el" href="Debug_8cpp_source.html#l00059">setLevel()</a>, and <a class="el" href="Debug_8cpp_source.html#l00038">warn()</a>.</p>
 
 </div>
 </div>

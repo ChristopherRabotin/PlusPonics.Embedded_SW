@@ -6,36 +6,41 @@
     <includedby refid="Debug_8cpp" local="yes">Debug.cpp</includedby>
     <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
     <incdepgraph>
-      <node id="70">
+      <node id="81">
         <label>WString.h</label>
       </node>
-      <node id="69">
+      <node id="79">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication_8h"/>
-        <childnode refid="70" relation="include">
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
         </childnode>
       </node>
-      <node id="68">
+      <node id="78">
         <label>Debug.h</label>
         <link refid="Debug.h"/>
-        <childnode refid="69" relation="include">
+        <childnode refid="79" relation="include">
         </childnode>
+      </node>
+      <node id="80">
+        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="72">
+      <node id="83">
         <label>Debug.cpp</label>
         <link refid="Debug_8cpp"/>
       </node>
-      <node id="71">
+      <node id="82">
         <label>Debug.h</label>
         <link refid="Debug.h"/>
-        <childnode refid="72" relation="include">
+        <childnode refid="83" relation="include">
         </childnode>
-        <childnode refid="73" relation="include">
+        <childnode refid="84" relation="include">
         </childnode>
       </node>
-      <node id="73">
+      <node id="84">
         <label>main.cpp</label>
         <link refid="main_8cpp"/>
       </node>
@@ -60,22 +65,30 @@
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13" refid="classDebug" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classDebug" kindref="compound">Debug</ref><sp/>{</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDebug_1a5b453c195c4cfffed2702c3330f53a64" kindref="member" tooltip="Empty constructor for initialization only.">Debug</ref>(<ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>*<ref refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kindref="member">com</ref>);</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDebug_1a5b453c195c4cfffed2702c3330f53a64" kindref="member" tooltip="Empty constructor for initialization only.">Debug</ref>();</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classDebug_1a911a84a0f56b770724e09a049399dc30" kindref="member">~Debug</ref>();</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" kindref="member">info</ref>(String<sp/>msg);</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" kindref="member">warn</ref>(String<sp/>msg);</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1ac287261af5c0322b8d970026965a65d0" kindref="member">error</ref>(String<sp/>msg);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" kindref="member">info</ref>(String<sp/>msg,<sp/>String<sp/>location);</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" kindref="member">warn</ref>(String<sp/>msg,<sp/>String<sp/>location);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1ac287261af5c0322b8d970026965a65d0" kindref="member">error</ref>(String<sp/>msg,<sp/>String<sp/>location);</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1a57019861dc83bc80565b7af8fac3b40a" kindref="member" tooltip="This function sets the communication pointer. This is used when the empty constructor is used...">setCom</ref>(<ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>*com);</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="55" refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>*<ref refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kindref="member">com</ref>;</highlight></codeline>
-<codeline lineno="56" refid="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" kindref="member">DEFAULT_LOCATION</ref>;</highlight></codeline>
-<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DEBUG_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="18" refid="classDebug_1a67ff3b88152445827486bb5370040bcf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classDebug_1a67ff3b88152445827486bb5370040bcf" kindref="member">DEBUG_LEVEL</ref><sp/>{</highlight></codeline>
+<codeline lineno="19" refid="classDebug_1a67ff3b88152445827486bb5370040bcfa46da16d1e998155d97808643c4d6ed46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDebug_1a67ff3b88152445827486bb5370040bcfa46da16d1e998155d97808643c4d6ed46" kindref="member">INFO</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="20" refid="classDebug_1a67ff3b88152445827486bb5370040bcfa9d2cb9dc082c416b4e7653360caf0f51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDebug_1a67ff3b88152445827486bb5370040bcfa9d2cb9dc082c416b4e7653360caf0f51" kindref="member">WARN</ref><sp/>=<sp/>5,<sp/></highlight></codeline>
+<codeline lineno="21" refid="classDebug_1a67ff3b88152445827486bb5370040bcfa926d718d1a358b0e8abfe865a4f78dbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDebug_1a67ff3b88152445827486bb5370040bcfa926d718d1a358b0e8abfe865a4f78dbc" kindref="member">ERROR</ref><sp/>=<sp/>10<sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDebug_1a5b453c195c4cfffed2702c3330f53a64" kindref="member" tooltip="Empty constructor for initialization only.">Debug</ref>(<ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref>*<sp/><ref refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kindref="member">com</ref>,<sp/><ref refid="classDebug_1a67ff3b88152445827486bb5370040bcf" kindref="member">DEBUG_LEVEL</ref><sp/><ref refid="classDebug_1a43861bc8c2da071f887d64833cc827ed" kindref="member">lvl</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDebug_1a5b453c195c4cfffed2702c3330f53a64" kindref="member" tooltip="Empty constructor for initialization only.">Debug</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classDebug_1a911a84a0f56b770724e09a049399dc30" kindref="member">~Debug</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" kindref="member">info</ref>(String<sp/>msg);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" kindref="member">warn</ref>(String<sp/>msg);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1ac287261af5c0322b8d970026965a65d0" kindref="member">error</ref>(String<sp/>msg);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" kindref="member">info</ref>(String<sp/>msg,<sp/>String<sp/>location);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" kindref="member">warn</ref>(String<sp/>msg,<sp/>String<sp/>location);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1ac287261af5c0322b8d970026965a65d0" kindref="member">error</ref>(String<sp/>msg,<sp/>String<sp/>location);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1a57019861dc83bc80565b7af8fac3b40a" kindref="member" tooltip="This function sets the communication pointer. This is used when the empty constructor is used...">setCom</ref>(<ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>*<ref refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kindref="member">com</ref>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1aa51fece50f30c3bfa6f610929e40714a" kindref="member">setLevel</ref>(<ref refid="classDebug_1a67ff3b88152445827486bb5370040bcf" kindref="member">DEBUG_LEVEL</ref><sp/><ref refid="classDebug_1a43861bc8c2da071f887d64833cc827ed" kindref="member">lvl</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="66" refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>*<ref refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kindref="member">com</ref>;</highlight></codeline>
+<codeline lineno="67" refid="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" kindref="member">DEFAULT_LOCATION</ref>;</highlight></codeline>
+<codeline lineno="68" refid="classDebug_1a43861bc8c2da071f887d64833cc827ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDebug_1a67ff3b88152445827486bb5370040bcf" kindref="member">DEBUG_LEVEL</ref><sp/><ref refid="classDebug_1a43861bc8c2da071f887d64833cc827ed" kindref="member">lvl</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DEBUG_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.h"/>
   </compounddef>

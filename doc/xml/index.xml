@@ -7,9 +7,14 @@
     <member refid="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0" kind="function"><name>recv</name></member>
   </compound>
   <compound refid="classDebug" kind="class"><name>Debug</name>
+    <member refid="classDebug_1a67ff3b88152445827486bb5370040bcf" kind="enum"><name>DEBUG_LEVEL</name></member>
+    <member refid="classDebug_1a67ff3b88152445827486bb5370040bcfa46da16d1e998155d97808643c4d6ed46" kind="enumvalue"><name>INFO</name></member>
+    <member refid="classDebug_1a67ff3b88152445827486bb5370040bcfa9d2cb9dc082c416b4e7653360caf0f51" kind="enumvalue"><name>WARN</name></member>
+    <member refid="classDebug_1a67ff3b88152445827486bb5370040bcfa926d718d1a358b0e8abfe865a4f78dbc" kind="enumvalue"><name>ERROR</name></member>
     <member refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kind="variable"><name>com</name></member>
+    <member refid="classDebug_1a43861bc8c2da071f887d64833cc827ed" kind="variable"><name>lvl</name></member>
     <member refid="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" kind="variable"><name>DEFAULT_LOCATION</name></member>
-    <member refid="classDebug_1a2f04792a5ae5d3d062c7d5656871d159" kind="function"><name>Debug</name></member>
+    <member refid="classDebug_1a8e048381948c32ab9523bd5893290797" kind="function"><name>Debug</name></member>
     <member refid="classDebug_1a5b453c195c4cfffed2702c3330f53a64" kind="function"><name>Debug</name></member>
     <member refid="classDebug_1a911a84a0f56b770724e09a049399dc30" kind="function"><name>~Debug</name></member>
     <member refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" kind="function"><name>info</name></member>
@@ -19,6 +24,7 @@
     <member refid="classDebug_1ae8a2087bc58f1d88814240cfe1490613" kind="function"><name>warn</name></member>
     <member refid="classDebug_1ab5aba2d2f4114901f4077646d5cee7a7" kind="function"><name>error</name></member>
     <member refid="classDebug_1a57019861dc83bc80565b7af8fac3b40a" kind="function"><name>setCom</name></member>
+    <member refid="classDebug_1aa51fece50f30c3bfa6f610929e40714a" kind="function"><name>setLevel</name></member>
   </compound>
   <compound refid="classSerialCom" kind="class"><name>SerialCom</name>
     <member refid="classSerialCom_1a4e0fd8ce8d81fc4f3c422d2f9d1aff68" kind="function"><name>SerialCom</name></member>

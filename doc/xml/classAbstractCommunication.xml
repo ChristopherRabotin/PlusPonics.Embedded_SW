@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="18" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="14" bodyend="16"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="19" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="14" bodyend="16"/>
       </memberdef>
       <memberdef kind="function" id="classAbstractCommunication_1a55661ddfc00471e24468d1e5bb76fdac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="19" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="18" bodyend="20"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="20" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="18" bodyend="20"/>
       </memberdef>
       <memberdef kind="function" id="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -42,15 +42,24 @@
           <declname>payload</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>This function sends information through the communication pipe. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>this is string which represents the payload to be delivered. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="20"/>
-        <referencedby refid="classDebug_1ab5aba2d2f4114901f4077646d5cee7a7" compoundref="Debug_8cpp" startline="47" endline="49">Debug::error</referencedby>
-        <referencedby refid="classDebug_1a68d8b3a9881a14c0abce336ff072d22f" compoundref="Debug_8cpp" startline="31" endline="33">Debug::info</referencedby>
-        <referencedby refid="classDebug_1ae8a2087bc58f1d88814240cfe1490613" compoundref="Debug_8cpp" startline="35" endline="37">Debug::warn</referencedby>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="25"/>
+        <referencedby refid="classDebug_1ab5aba2d2f4114901f4077646d5cee7a7" compoundref="Debug_8cpp" startline="53" endline="57">Debug::error</referencedby>
+        <referencedby refid="classDebug_1a68d8b3a9881a14c0abce336ff072d22f" compoundref="Debug_8cpp" startline="32" endline="36">Debug::info</referencedby>
+        <referencedby refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="32" endline="40">loop</referencedby>
+        <referencedby refid="classDebug_1ae8a2087bc58f1d88814240cfe1490613" compoundref="Debug_8cpp" startline="38" endline="42">Debug::warn</referencedby>
       </memberdef>
       <memberdef kind="function" id="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>String</type>
@@ -59,12 +68,13 @@
         <name>recv</name>
         <reimplementedby refid="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690">recv</reimplementedby>
         <briefdescription>
-        </briefdescription>
+<para>This function reads data from the pipe and returns this as a string. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><simplesect kind="return"><para>a string representing the data received from the pipe. </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="21"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="30"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -83,7 +93,7 @@
         <link refid="classAbstractCommunication"/>
       </node>
     </inheritancegraph>
-    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="16" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" bodystart="16" bodyend="22"/>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="17" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" bodystart="17" bodyend="31"/>
     <listofallmembers>
       <member refid="classAbstractCommunication_1a0e6ca44e41df8ca8e9e563cde1789f70" prot="public" virt="non-virtual"><scope>AbstractCommunication</scope><name>AbstractCommunication</name></member>
       <member refid="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0" prot="public" virt="pure-virtual"><scope>AbstractCommunication</scope><name>recv</name></member>

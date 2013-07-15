@@ -21,6 +21,7 @@ void setup() {
 	com = new SerialCom();
 #endif
 
+	debug->setLevel(Debug::WARN);
 	debug->setCom(com);
 	debug->info("Setting up led", "setup");
 }
@@ -31,6 +32,8 @@ void setup() {
 void loop() {
 	digitalWrite(ledPin, HIGH);
 	debug->info("Will sleep for two seconds now.", "loop");
+	debug->warn("This is a warning.", "loop");
+	com->send("my payload");
 	delay(2000);
 	digitalWrite(ledPin, LOW);
 	delay(1000);

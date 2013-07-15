@@ -8,46 +8,51 @@
     <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
     <includedby refid="SerialCom_8cpp" local="yes">SerialCom.cpp</includedby>
     <incdepgraph>
-      <node id="94">
+      <node id="108">
         <label>WString.h</label>
       </node>
-      <node id="93">
+      <node id="106">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication_8h"/>
-        <childnode refid="94" relation="include">
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
         </childnode>
       </node>
-      <node id="96">
+      <node id="110">
         <label>HardwareSerial.h</label>
       </node>
-      <node id="95">
+      <node id="109">
         <label>Arduino.h</label>
       </node>
-      <node id="92">
+      <node id="105">
         <label>SerialCom.h</label>
         <link refid="SerialCom.h"/>
-        <childnode refid="93" relation="include">
+        <childnode refid="106" relation="include">
         </childnode>
-        <childnode refid="95" relation="include">
+        <childnode refid="109" relation="include">
         </childnode>
-        <childnode refid="96" relation="include">
+        <childnode refid="110" relation="include">
         </childnode>
+      </node>
+      <node id="107">
+        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="99">
+      <node id="113">
         <label>SerialCom.cpp</label>
         <link refid="SerialCom_8cpp"/>
       </node>
-      <node id="97">
+      <node id="111">
         <label>SerialCom.h</label>
         <link refid="SerialCom.h"/>
-        <childnode refid="98" relation="include">
+        <childnode refid="112" relation="include">
         </childnode>
-        <childnode refid="99" relation="include">
+        <childnode refid="113" relation="include">
         </childnode>
       </node>
-      <node id="98">
+      <node id="112">
         <label>main.cpp</label>
         <link refid="main_8cpp"/>
       </node>
@@ -75,7 +80,7 @@
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSerialCom_1a4e0fd8ce8d81fc4f3c422d2f9d1aff68" kindref="member">SerialCom</ref>();</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classSerialCom_1a5582cf804e661a24cb32720b31a2f9fe" kindref="member">~SerialCom</ref>();</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" kindref="member">send</ref>(String<sp/>payload);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" kindref="member" tooltip="This function sends information through the communication pipe.">send</ref>(String<sp/>payload);</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" kindref="member" tooltip="This function reads the serial input and returns all the information it reads at the time of calling...">recv</ref>();</highlight></codeline>
 <codeline lineno="24"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>

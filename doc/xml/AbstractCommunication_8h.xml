@@ -2,61 +2,67 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
   <compounddef id="AbstractCommunication_8h" kind="file">
     <compoundname>AbstractCommunication.h</compoundname>
+    <includes local="no">stdio.h</includes>
     <includes local="no">WString.h</includes>
     <includedby refid="AbstractCommunication_8cpp" local="yes">AbstractCommunication.cpp</includedby>
     <includedby refid="Debug_8h" local="yes">Debug.h</includedby>
     <includedby refid="SerialCom_8h" local="yes">SerialCom.h</includedby>
     <incdepgraph>
-      <node id="55">
+      <node id="64">
         <label>WString.h</label>
       </node>
-      <node id="54">
+      <node id="62">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication.h"/>
-        <childnode refid="55" relation="include">
+        <childnode refid="63" relation="include">
         </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="57">
+      <node id="66">
         <label>AbstractCommunication.cpp</label>
         <link refid="AbstractCommunication_8cpp"/>
       </node>
-      <node id="56">
+      <node id="65">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication.h"/>
-        <childnode refid="57" relation="include">
+        <childnode refid="66" relation="include">
         </childnode>
-        <childnode refid="58" relation="include">
+        <childnode refid="67" relation="include">
         </childnode>
-        <childnode refid="61" relation="include">
+        <childnode refid="70" relation="include">
         </childnode>
       </node>
-      <node id="59">
+      <node id="68">
         <label>Debug.cpp</label>
         <link refid="Debug_8cpp"/>
       </node>
-      <node id="58">
+      <node id="67">
         <label>Debug.h</label>
         <link refid="Debug_8h"/>
-        <childnode refid="59" relation="include">
+        <childnode refid="68" relation="include">
         </childnode>
-        <childnode refid="60" relation="include">
+        <childnode refid="69" relation="include">
         </childnode>
       </node>
-      <node id="62">
+      <node id="71">
         <label>SerialCom.cpp</label>
         <link refid="SerialCom_8cpp"/>
       </node>
-      <node id="61">
+      <node id="70">
         <label>SerialCom.h</label>
         <link refid="SerialCom_8h"/>
-        <childnode refid="60" relation="include">
+        <childnode refid="69" relation="include">
         </childnode>
-        <childnode refid="62" relation="include">
+        <childnode refid="71" relation="include">
         </childnode>
       </node>
-      <node id="60">
+      <node id="69">
         <label>main.cpp</label>
         <link refid="main_8cpp"/>
       </node>
@@ -77,16 +83,17 @@
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ABSTRACTCOMMUNICATION_H_</highlight></codeline>
 <codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ABSTRACTCOMMUNICATION_H_</highlight></codeline>
 <codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;WString.h&gt;</highlight></codeline>
-<codeline lineno="16" refid="classAbstractCommunication" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>{</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractCommunication_1a0e6ca44e41df8ca8e9e563cde1789f70" kindref="member" tooltip="The constructor should initialize the communication with the control system. This includes everything...">AbstractCommunication</ref>();</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1a55661ddfc00471e24468d1e5bb76fdac" kindref="member">~AbstractCommunication</ref>();</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" kindref="member">send</ref>(String<sp/>payload)<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>Should<sp/>make<sp/>AbstractCommunication<sp/>unable<sp/>to<sp/>be<sp/>instantiated.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0" kindref="member">recv</ref>()<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ABSTRACTCOMMUNICATION_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;WString.h&gt;</highlight></codeline>
+<codeline lineno="17" refid="classAbstractCommunication" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractCommunication_1a0e6ca44e41df8ca8e9e563cde1789f70" kindref="member" tooltip="The constructor should initialize the communication with the control system. This includes everything...">AbstractCommunication</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1a55661ddfc00471e24468d1e5bb76fdac" kindref="member">~AbstractCommunication</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" kindref="member" tooltip="This function sends information through the communication pipe.">send</ref>(String<sp/>payload)<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>Should<sp/>make<sp/>AbstractCommunication<sp/>unable<sp/>to<sp/>be<sp/>instantiated.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0" kindref="member" tooltip="This function reads data from the pipe and returns this as a string.">recv</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ABSTRACTCOMMUNICATION_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h"/>
   </compounddef>

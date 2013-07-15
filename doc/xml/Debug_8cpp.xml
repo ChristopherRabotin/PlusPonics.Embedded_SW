@@ -4,26 +4,31 @@
     <compoundname>Debug.cpp</compoundname>
     <includes refid="Debug_8h" local="yes">Debug.h</includes>
     <incdepgraph>
-      <node id="66">
+      <node id="76">
         <label>WString.h</label>
       </node>
-      <node id="65">
+      <node id="74">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication_8h"/>
-        <childnode refid="66" relation="include">
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
         </childnode>
       </node>
-      <node id="63">
+      <node id="72">
         <label>Debug.cpp</label>
         <link refid="Debug.cpp"/>
-        <childnode refid="64" relation="include">
+        <childnode refid="73" relation="include">
         </childnode>
       </node>
-      <node id="64">
+      <node id="73">
         <label>Debug.h</label>
         <link refid="Debug_8h"/>
-        <childnode refid="65" relation="include">
+        <childnode refid="74" relation="include">
         </childnode>
+      </node>
+      <node id="75">
+        <label>stdio.h</label>
       </node>
     </incdepgraph>
     <briefdescription>
@@ -42,44 +47,56 @@
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" kindref="member">Debug::DEFAULT_LOCATION</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;None&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12" refid="classDebug_1a2f04792a5ae5d3d062c7d5656871d159" refkind="member"><highlight class="normal"><ref refid="classDebug_1a5b453c195c4cfffed2702c3330f53a64" kindref="member" tooltip="Empty constructor for initialization only.">Debug::Debug</ref>(<ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref>*<sp/><ref refid="main_8cpp_1adaa7de8e021b5739a7f8ea5d4e580809" kindref="member">com</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="12" refid="classDebug_1a8e048381948c32ab9523bd5893290797" refkind="member"><highlight class="normal"><ref refid="classDebug_1a5b453c195c4cfffed2702c3330f53a64" kindref="member" tooltip="Empty constructor for initialization only.">Debug::Debug</ref>(<ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref>*<sp/><ref refid="main_8cpp_1adaa7de8e021b5739a7f8ea5d4e580809" kindref="member">com</ref>,<sp/><ref refid="classDebug_1a67ff3b88152445827486bb5370040bcf" kindref="member">DEBUG_LEVEL</ref><sp/>lvl)<sp/>{</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;com<sp/>=<sp/><ref refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kindref="member">com</ref>;</highlight></codeline>
-<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16" refid="classDebug_1a911a84a0f56b770724e09a049399dc30" refkind="member"><highlight class="normal"><ref refid="classDebug_1a911a84a0f56b770724e09a049399dc30" kindref="member">Debug::~Debug</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19" refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" kindref="member">Debug::info</ref>(String<sp/>msg)<sp/>{</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" kindref="member">info</ref>(msg,<sp/><ref refid="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" kindref="member">DEFAULT_LOCATION</ref>);</highlight></codeline>
-<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23" refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" kindref="member">Debug::warn</ref>(String<sp/>msg)<sp/>{</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" kindref="member">warn</ref>(msg,<sp/><ref refid="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" kindref="member">DEFAULT_LOCATION</ref>);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27" refid="classDebug_1ac287261af5c0322b8d970026965a65d0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1ac287261af5c0322b8d970026965a65d0" kindref="member">Debug::error</ref>(String<sp/>msg)<sp/>{</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDebug_1ac287261af5c0322b8d970026965a65d0" kindref="member">error</ref>(msg,<sp/><ref refid="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" kindref="member">DEFAULT_LOCATION</ref>);</highlight></codeline>
-<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31" refid="classDebug_1a68d8b3a9881a14c0abce336ff072d22f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" kindref="member">Debug::info</ref>(String<sp/>msg,<sp/>String<sp/>location)<sp/>{</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kindref="member">com</ref>-&gt;<ref refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" kindref="member">send</ref>(</highlight><highlight class="stringliteral">&quot;INFO:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>msg<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&lt;&quot;</highlight><highlight class="normal"><sp/>+<sp/>location<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35" refid="classDebug_1ae8a2087bc58f1d88814240cfe1490613" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" kindref="member">Debug::warn</ref>(String<sp/>msg,<sp/>String<sp/>location)<sp/>{</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kindref="member">com</ref>-&gt;<ref refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" kindref="member">send</ref>(</highlight><highlight class="stringliteral">&quot;WARN:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>msg<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&lt;&quot;</highlight><highlight class="normal"><sp/>+<sp/>location<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39" refid="classDebug_1a5b453c195c4cfffed2702c3330f53a64" refkind="member"><highlight class="normal"><ref refid="classDebug_1a5b453c195c4cfffed2702c3330f53a64" kindref="member" tooltip="Empty constructor for initialization only.">Debug::Debug</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kindref="member">com</ref><sp/>=<sp/>NULL;</highlight></codeline>
-<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43" refid="classDebug_1a57019861dc83bc80565b7af8fac3b40a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1a57019861dc83bc80565b7af8fac3b40a" kindref="member" tooltip="This function sets the communication pointer. This is used when the empty constructor is used...">Debug::setCom</ref>(<ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref>*<sp/><ref refid="main_8cpp_1adaa7de8e021b5739a7f8ea5d4e580809" kindref="member">com</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;com<sp/>=<sp/><ref refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kindref="member">com</ref>;</highlight></codeline>
-<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47" refid="classDebug_1ab5aba2d2f4114901f4077646d5cee7a7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1ac287261af5c0322b8d970026965a65d0" kindref="member">Debug::error</ref>(String<sp/>msg,<sp/>String<sp/>location)<sp/>{</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kindref="member">com</ref>-&gt;<ref refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" kindref="member">send</ref>(</highlight><highlight class="stringliteral">&quot;ERROR:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>msg<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&lt;&quot;</highlight><highlight class="normal"><sp/>+<sp/>location<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;lvl<sp/>=<sp/><ref refid="classDebug_1a43861bc8c2da071f887d64833cc827ed" kindref="member">lvl</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classDebug_1a911a84a0f56b770724e09a049399dc30" refkind="member"><highlight class="normal"><ref refid="classDebug_1a911a84a0f56b770724e09a049399dc30" kindref="member">Debug::~Debug</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" kindref="member">Debug::info</ref>(String<sp/>msg)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" kindref="member">info</ref>(msg,<sp/><ref refid="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" kindref="member">DEFAULT_LOCATION</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" kindref="member">Debug::warn</ref>(String<sp/>msg)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" kindref="member">warn</ref>(msg,<sp/><ref refid="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" kindref="member">DEFAULT_LOCATION</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classDebug_1ac287261af5c0322b8d970026965a65d0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1ac287261af5c0322b8d970026965a65d0" kindref="member">Debug::error</ref>(String<sp/>msg)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDebug_1ac287261af5c0322b8d970026965a65d0" kindref="member">error</ref>(msg,<sp/><ref refid="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" kindref="member">DEFAULT_LOCATION</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classDebug_1a68d8b3a9881a14c0abce336ff072d22f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" kindref="member">Debug::info</ref>(String<sp/>msg,<sp/>String<sp/>location)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="classDebug_1a43861bc8c2da071f887d64833cc827ed" kindref="member">lvl</ref><sp/>&lt;=<sp/><ref refid="classDebug_1a67ff3b88152445827486bb5370040bcfa46da16d1e998155d97808643c4d6ed46" kindref="member">INFO</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kindref="member">com</ref>-&gt;<ref refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" kindref="member" tooltip="This function sends information through the communication pipe.">send</ref>(</highlight><highlight class="stringliteral">&quot;INFO:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>msg<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&lt;&quot;</highlight><highlight class="normal"><sp/>+<sp/>location<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classDebug_1ae8a2087bc58f1d88814240cfe1490613" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" kindref="member">Debug::warn</ref>(String<sp/>msg,<sp/>String<sp/>location)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="classDebug_1a43861bc8c2da071f887d64833cc827ed" kindref="member">lvl</ref><sp/>&lt;=<sp/><ref refid="classDebug_1a67ff3b88152445827486bb5370040bcfa9d2cb9dc082c416b4e7653360caf0f51" kindref="member">WARN</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kindref="member">com</ref>-&gt;<ref refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" kindref="member" tooltip="This function sends information through the communication pipe.">send</ref>(</highlight><highlight class="stringliteral">&quot;WARN:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>msg<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&lt;&quot;</highlight><highlight class="normal"><sp/>+<sp/>location<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classDebug_1a5b453c195c4cfffed2702c3330f53a64" refkind="member"><highlight class="normal"><ref refid="classDebug_1a5b453c195c4cfffed2702c3330f53a64" kindref="member" tooltip="Empty constructor for initialization only.">Debug::Debug</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kindref="member">com</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classDebug_1a43861bc8c2da071f887d64833cc827ed" kindref="member">lvl</ref><sp/>=<sp/><ref refid="classDebug_1a67ff3b88152445827486bb5370040bcfa46da16d1e998155d97808643c4d6ed46" kindref="member">INFO</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classDebug_1a57019861dc83bc80565b7af8fac3b40a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1a57019861dc83bc80565b7af8fac3b40a" kindref="member" tooltip="This function sets the communication pointer. This is used when the empty constructor is used...">Debug::setCom</ref>(<ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref>*<sp/><ref refid="main_8cpp_1adaa7de8e021b5739a7f8ea5d4e580809" kindref="member">com</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;com<sp/>=<sp/><ref refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kindref="member">com</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classDebug_1ab5aba2d2f4114901f4077646d5cee7a7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1ac287261af5c0322b8d970026965a65d0" kindref="member">Debug::error</ref>(String<sp/>msg,<sp/>String<sp/>location)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="classDebug_1a43861bc8c2da071f887d64833cc827ed" kindref="member">lvl</ref><sp/>&lt;=<sp/><ref refid="classDebug_1a67ff3b88152445827486bb5370040bcfa926d718d1a358b0e8abfe865a4f78dbc" kindref="member">ERROR</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kindref="member">com</ref>-&gt;<ref refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" kindref="member" tooltip="This function sends information through the communication pipe.">send</ref>(</highlight><highlight class="stringliteral">&quot;ERROR:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>msg<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&lt;&quot;</highlight><highlight class="normal"><sp/>+<sp/>location<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classDebug_1aa51fece50f30c3bfa6f610929e40714a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDebug_1aa51fece50f30c3bfa6f610929e40714a" kindref="member">Debug::setLevel</ref>(<ref refid="classDebug_1a67ff3b88152445827486bb5370040bcf" kindref="member">DEBUG_LEVEL</ref><sp/>lvl)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;lvl<sp/>=<sp/><ref refid="classDebug_1a43861bc8c2da071f887d64833cc827ed" kindref="member">lvl</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Debug.cpp"/>
   </compounddef>

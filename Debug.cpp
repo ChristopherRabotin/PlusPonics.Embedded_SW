@@ -9,8 +9,9 @@
 
 const String Debug::DEFAULT_LOCATION = "None";
 
-Debug::Debug(AbstractCommunication* com) {
+Debug::Debug(AbstractCommunication* com, DEBUG_LEVEL lvl) {
 	this->com = com;
+	this->lvl = lvl;
 }
 
 Debug::~Debug() {
@@ -29,15 +30,20 @@ void Debug::error(String msg) {
 }
 
 void Debug::info(String msg, String location) {
-	com->send("INFO: " + msg + " <" + location + ">");
+	if (this->lvl <= INFO) {
+		com->send("INFO: " + msg + " <" + location + ">");
+	}
 }
 
 void Debug::warn(String msg, String location) {
-	com->send("WARN: " + msg + " <" + location + ">");
+	if (this->lvl <= WARN) {
+		com->send("WARN: " + msg + " <" + location + ">");
+	}
 }
 
 Debug::Debug() {
 	this->com = NULL;
+	this->lvl = INFO;
 }
 
 void Debug::setCom(AbstractCommunication* com) {
@@ -45,5 +51,11 @@ void Debug::setCom(AbstractCommunication* com) {
 }
 
 void Debug::error(String msg, String location) {
-	com->send("ERROR: " + msg + " <" + location + ">");
+	if (this->lvl <= ERROR) {
+		com->send("ERROR: " + msg + " <" + location + ">");
+	}
+}
+
+void Debug::setLevel(DEBUG_LEVEL lvl) {
+	this->lvl = lvl;
 }

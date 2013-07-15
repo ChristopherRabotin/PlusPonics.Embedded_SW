@@ -13,10 +13,19 @@
 class Debug {
 public:
 	/**
-	 * @brief Constructor of the Debug class.
-	 * @param com AbstractCommunication instance used for communication.
+	 * @enum Defines different levels of debugging.
 	 */
-	Debug(AbstractCommunication *com);
+	enum DEBUG_LEVEL {
+		INFO = 0, /**< this is the info level */
+		WARN = 5, /**< this is the warning level */
+		ERROR = 10 /**< this is the error level */
+	};
+	/**
+	 * @brief Constructor of the Debug class.
+	 * @param com AbstractCommunication instance used for communication
+	 * @param lvl level of debugging needed
+	 */
+	Debug(AbstractCommunication* com, DEBUG_LEVEL lvl);
 	/**
 	 * @brief Empty constructor for initialization only.
 	 */
@@ -51,9 +60,12 @@ public:
 	 * @param com communication instance
 	 */
 	void setCom(AbstractCommunication *com);
+
+	void setLevel(DEBUG_LEVEL lvl);
 private:
 	AbstractCommunication *com;
 	static const String DEFAULT_LOCATION;
+	DEBUG_LEVEL lvl;
 };
 
 #endif /* DEBUG_H_ */
