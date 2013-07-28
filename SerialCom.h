@@ -11,6 +11,7 @@
 #include "AbstractCommunication.h"
 #include <Arduino.h>
 #include <HardwareSerial.h> // TODO Eventually use SoftSerial.h since it uses interrupts to read incoming messages.
+// #include <SoftwareSerial.h>
 /**
  * \class SerialCom
  * \brief This class defines serial communication with the control system.

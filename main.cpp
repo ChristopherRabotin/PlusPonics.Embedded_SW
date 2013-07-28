@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include "config/config.h"
 #include "Debug.h"
+#include "GlobalReceiver.h"
 
 #ifdef SERIAL_COMMUNICATION
 #include "SerialCom.h"
@@ -8,7 +9,8 @@
 
 int ledPin = 13;    // LED connected to digital pin 13
 
-AbstractCommunication *com = new SerialCom();
+AbstractCommunication *com;
+GlobalReceiver *glrcv;
 Debug *debug;
 
 /**
@@ -24,6 +26,8 @@ void setup() {
 	debug->setLevel(Debug::WARN);
 	debug->setCom(com);
 	debug->info("Setting up led", "setup");
+
+	glrcv->setCom(com);
 }
 
 /**
@@ -32,11 +36,10 @@ void setup() {
 void loop() {
 	digitalWrite(ledPin, HIGH);
 	debug->info("Will sleep for two seconds now.", "loop");
-	debug->warn("This is a warning.", "loop");
-	com->send("my payload");
 	delay(2000);
 	digitalWrite(ledPin, LOW);
 	delay(1000);
+	glrcv->process();
 }
 
 /**

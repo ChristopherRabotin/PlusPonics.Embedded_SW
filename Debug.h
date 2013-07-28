@@ -13,7 +13,7 @@
 class Debug {
 public:
 	/**
-	 * @enum Defines different levels of debugging.
+	 * @enum DEBUG_LEVEL Defines different levels of debugging.
 	 */
 	enum DEBUG_LEVEL {
 		INFO = 0, /**< this is the info level */

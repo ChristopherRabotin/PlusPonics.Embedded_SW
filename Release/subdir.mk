@@ -6,18 +6,21 @@
 CPP_SRCS += \
 ../AbstractCommunication.cpp \
 ../Debug.cpp \
+../GlobalReceiver.cpp \
 ../SerialCom.cpp \
 ../main.cpp 
 
 OBJS += \
 ./AbstractCommunication.o \
 ./Debug.o \
+./GlobalReceiver.o \
 ./SerialCom.o \
 ./main.o 
 
 CPP_DEPS += \
 ./AbstractCommunication.d \
 ./Debug.d \
+./GlobalReceiver.d \
 ./SerialCom.d \
 ./main.d 
 

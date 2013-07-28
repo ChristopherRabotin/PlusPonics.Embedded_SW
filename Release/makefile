@@ -88,7 +88,7 @@ Embedded_SW.eep: Embedded_SW.elf
 
 sizedummy: Embedded_SW.elf
 	@echo 'Invoking: Print Size'
-	-avr-size --format=berkeley -t Embedded_SW.elf
+	-avr-size --format=avr --mcu=atmega2560 Embedded_SW.elf
 	@echo 'Finished building: $@'
 	@echo ' '
 
