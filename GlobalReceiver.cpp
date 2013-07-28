@@ -34,7 +34,7 @@ void GlobalReceiver::process() {
 		sprintf(reply, "Meta (%s)", input.c_str());
 		break;
 	default:
-		sprintf(reply, "??? (%s): %x", input.c_str(), action);
+		sprintf(reply, "??? (%s): %x", input.c_str(), (int)action);
 	}
 
 	com->send(String(reply));
