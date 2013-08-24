@@ -11,10 +11,14 @@
  * In the constructor we define everything to be able to communicate through a serial communication.
  */
 SerialCom::SerialCom() {
-	Serial.begin(9600);
+
 }
 
 SerialCom::~SerialCom() {
+}
+
+void SerialCom::init() {
+	Serial.begin(9600);
 }
 
 void SerialCom::send(String payload) {

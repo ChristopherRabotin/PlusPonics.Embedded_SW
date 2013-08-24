@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classGlobalReceiver" kind="class" prot="public">
+    <compoundname>GlobalReceiver</compoundname>
+    <includes refid="GlobalReceiver_8h" local="no">GlobalReceiver.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" prot="private" static="no" mutable="no">
+        <type><ref refid="classAbstractCommunication" kindref="compound">AbstractCommunication</ref> *</type>
+        <definition>AbstractCommunication* GlobalReceiver::com</definition>
+        <argsstring></argsstring>
+        <name>com</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="40" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classGlobalReceiver_1a9dfd412916cfb9f441b6d7a884b74ad3" compoundref="GlobalReceiver_8cpp" startline="10" endline="12">GlobalReceiver</referencedby>
+        <referencedby refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="26" endline="49">process</referencedby>
+        <referencedby refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" compoundref="GlobalReceiver_8cpp" startline="51" endline="53">setCom</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGlobalReceiver_1a9dfd412916cfb9f441b6d7a884b74ad3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GlobalReceiver::GlobalReceiver</definition>
+        <argsstring>()</argsstring>
+        <name>GlobalReceiver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="15" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp" bodystart="10" bodyend="12"/>
+        <references refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" compoundref="GlobalReceiver_8h" startline="40">com</references>
+      </memberdef>
+      <memberdef kind="function" id="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GlobalReceiver::process</definition>
+        <argsstring>()</argsstring>
+        <name>process</name>
+        <briefdescription>
+<para>This function fetches and processes the input. It calls com&apos;s recv() to read the latest information. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="1">Communicating to the pod</heading>
+</para><para>This character (of the String) is the type of action requested. There are currently only four actions defines, but we use a full character in order to leave space for more actions later, but especially because of ease of testing. Only the first character is read in this function. All the rest are sent to the appropriate AbstractReceiverProcessor. <heading level="2">Defined actions</heading>
+</para><para><heading level="3">Command: &quot;1&quot;</heading>
+</para><para>This is how ask the pod to execute a given command.</para><para><heading level="3">Procedure: &quot;3&quot;</heading>
+</para><para>This is how to start an embedded procedure on the pod.</para><para><heading level="3">Telemetery information: &quot;5&quot;</heading>
+</para><para>This allows to request telemetry information of any given telemetry in the next telemetry frame.</para><para><heading level="3">Meta: &quot;7&quot;</heading>
+</para><para>This includes commands related to meta around the pod, not its operational commands.</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="32" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp" bodystart="26" bodyend="49"/>
+        <references refid="GlobalReceiver_8cpp_1a98a09d6b95fb0fa32210f041f0af87d4" compoundref="GlobalReceiver_8cpp" startline="14" endline="24">byte_to_binary</references>
+        <references refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" compoundref="GlobalReceiver_8h" startline="40">com</references>
+        <references refid="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0">AbstractCommunication::recv</references>
+        <references refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d">AbstractCommunication::send</references>
+      </memberdef>
+      <memberdef kind="function" id="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GlobalReceiver::setCom</definition>
+        <argsstring>(AbstractCommunication &amp;com)</argsstring>
+        <name>setCom</name>
+        <param>
+          <type><ref refid="classAbstractCommunication" kindref="compound">AbstractCommunication</ref> &amp;</type>
+          <declname>com</declname>
+        </param>
+        <briefdescription>
+<para>This function sets the communication pointer. This is used when the empty constructor is used. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>com</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>communication instance </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="37" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp" bodystart="51" bodyend="53"/>
+        <references refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" compoundref="GlobalReceiver_8h" startline="40">com</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="17" endline="24">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classGlobalReceiver_1ace0d4a5976198ff64c4515459b1fa289" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>GlobalReceiver::~GlobalReceiver</definition>
+        <argsstring>()</argsstring>
+        <name>~GlobalReceiver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="38" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp" bodystart="55" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="15">
+        <label>AbstractCommunication</label>
+        <link refid="classAbstractCommunication"/>
+      </node>
+      <node id="14">
+        <label>GlobalReceiver</label>
+        <link refid="classGlobalReceiver"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>com</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="13" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" bodystart="13" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" prot="private" virt="non-virtual"><scope>GlobalReceiver</scope><name>com</name></member>
+      <member refid="classGlobalReceiver_1a9dfd412916cfb9f441b6d7a884b74ad3" prot="public" virt="non-virtual"><scope>GlobalReceiver</scope><name>GlobalReceiver</name></member>
+      <member refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" prot="public" virt="non-virtual"><scope>GlobalReceiver</scope><name>process</name></member>
+      <member refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" prot="public" virt="non-virtual"><scope>GlobalReceiver</scope><name>setCom</name></member>
+      <member refid="classGlobalReceiver_1ace0d4a5976198ff64c4515459b1fa289" prot="public" virt="virtual"><scope>GlobalReceiver</scope><name>~GlobalReceiver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

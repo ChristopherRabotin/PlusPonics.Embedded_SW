@@ -56,23 +56,27 @@
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="SerialCom_8h" kindref="compound">SerialCom.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13" refid="classSerialCom_1a4e0fd8ce8d81fc4f3c422d2f9d1aff68" refkind="member"><highlight class="normal"><ref refid="classSerialCom_1a4e0fd8ce8d81fc4f3c422d2f9d1aff68" kindref="member">SerialCom::SerialCom</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.begin(9600);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="17" refid="classSerialCom_1a5582cf804e661a24cb32720b31a2f9fe" refkind="member"><highlight class="normal"><ref refid="classSerialCom_1a5582cf804e661a24cb32720b31a2f9fe" kindref="member">SerialCom::~SerialCom</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="18"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20" refid="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" kindref="member" tooltip="This function sends information through the communication pipe.">SerialCom::send</ref>(String<sp/>payload)<sp/>{</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(payload);</highlight></codeline>
+<codeline lineno="20" refid="classSerialCom_1a53bb031287acb1973c1e1f76799c76b6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSerialCom_1a53bb031287acb1973c1e1f76799c76b6" kindref="member" tooltip="This function initializes the communication. It will be called from the setup function.">SerialCom::init</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.begin(9600);</highlight></codeline>
 <codeline lineno="22"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28" refid="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" refkind="member"><highlight class="normal">String<sp/><ref refid="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" kindref="member" tooltip="This function reads the serial input and returns all the information it reads at the time of calling...">SerialCom::recv</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>rtn<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Serial.available())<sp/>{</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rtn<sp/>=<sp/>Serial.readString();</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(rtn);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24" refid="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" kindref="member" tooltip="This function sends information through the communication pipe.">SerialCom::send</ref>(String<sp/>payload)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(payload);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" refkind="member"><highlight class="normal">String<sp/><ref refid="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" kindref="member" tooltip="This function reads the serial input and returns all the information it reads at the time of calling...">SerialCom::recv</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>rtn<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Serial.available())<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rtn<sp/>=<sp/>Serial.readString();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(rtn);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp"/>
   </compounddef>

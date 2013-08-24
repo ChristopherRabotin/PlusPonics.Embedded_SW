@@ -1,9 +1,9 @@
 <map id="main" name="main">
-<area shape="rect" id="node3" href="$main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered." alt="" coords="108,84,156,111"/>
-<area shape="rect" id="node11" href="$main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="This function is only ran when the sketch is initialized." alt="" coords="105,160,159,187"/>
-<area shape="rect" id="node5" href="$classDebug.html#aed5f2d64e6d7c71605a2df12cf69ef20" title="Debug::info" alt="" coords="244,121,335,148"/>
-<area shape="rect" id="node7" href="$classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="208,5,371,46"/>
-<area shape="rect" id="node9" href="$classDebug.html#a2af7b86d64df53b39635313044d22fc0" title="Debug::warn" alt="" coords="240,71,339,97"/>
-<area shape="rect" id="node13" href="$classDebug.html#aa51fece50f30c3bfa6f610929e40714a" title="Debug::setLevel" alt="" coords="229,172,350,199"/>
-<area shape="rect" id="node15" href="$classDebug.html#a57019861dc83bc80565b7af8fac3b40a" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="231,223,348,249"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered." alt="" coords="108,45,156,72"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="This function is only ran when the sketch is initialized." alt="" coords="105,129,159,156"/>
+<area shape="rect" id="node5" href="$classAbstractCommunication.html#af0eeb1540a126715d0e7983406a6ed9e" title="AbstractCommunication\l::warn" alt="" coords="212,5,375,46"/>
+<area shape="rect" id="node9" href="$classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function." alt="" coords="238,71,349,97"/>
+<area shape="rect" id="node11" href="$classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336" title="AbstractCommunication\l::setLevel" alt="" coords="212,122,375,163"/>
+<area shape="rect" id="node13" href="$classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c" title="AbstractCommunication\l::info" alt="" coords="212,187,375,229"/>
+<area shape="rect" id="node15" href="$classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="208,253,379,280"/>
 </map>

@@ -4,9 +4,9 @@ var files =
     [ "AbstractCommunication.h", "AbstractCommunication_8h.html", [
       [ "AbstractCommunication", "classAbstractCommunication.html", "classAbstractCommunication" ]
     ] ],
-    [ "Debug.cpp", "Debug_8cpp.html", null ],
-    [ "Debug.h", "Debug_8h.html", [
-      [ "Debug", "classDebug.html", "classDebug" ]
+    [ "GlobalReceiver.cpp", "GlobalReceiver_8cpp.html", "GlobalReceiver_8cpp" ],
+    [ "GlobalReceiver.h", "GlobalReceiver_8h.html", [
+      [ "GlobalReceiver", "classGlobalReceiver.html", "classGlobalReceiver" ]
     ] ],
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
     [ "SerialCom.cpp", "SerialCom_8cpp.html", null ],

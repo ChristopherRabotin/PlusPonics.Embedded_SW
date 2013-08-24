@@ -16,7 +16,7 @@
 <para>In the constructor we define everything to be able to communicate through a serial communication. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="20" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="13" bodyend="15"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="21" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="13" bodyend="15"/>
       </memberdef>
       <memberdef kind="function" id="classSerialCom_1a5582cf804e661a24cb32720b31a2f9fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -29,7 +29,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="21" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="17" bodyend="18"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="22" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="17" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classSerialCom_1a53bb031287acb1973c1e1f76799c76b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SerialCom::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <reimplements refid="classAbstractCommunication_1a34dc23ed80eff81b2527c5f89ac5f1ff">init</reimplements>
+        <briefdescription>
+<para>This function initializes the communication. It will be called from the setup function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="23" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="20" bodyend="22"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="17" endline="24">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -55,7 +70,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="22" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="20" bodyend="22"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="24" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="24" bodyend="26"/>
       </memberdef>
       <memberdef kind="function" id="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>String</type>
@@ -70,7 +85,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="23" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="28" bodyend="34"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="25" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="32" bodyend="38"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -101,12 +116,24 @@
         <link refid="classAbstractCommunication"/>
       </node>
     </collaborationgraph>
-    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="18" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" bodystart="18" bodyend="24"/>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="19" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" bodystart="19" bodyend="26"/>
     <listofallmembers>
       <member refid="classAbstractCommunication_1a0e6ca44e41df8ca8e9e563cde1789f70" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>AbstractCommunication</name></member>
+      <member refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4f" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>DEBUG_LEVEL</name></member>
+      <member refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa8911cc4876c5aedfcfd7050c1ce0f4a1" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>ERROR</name></member>
+      <member refid="classAbstractCommunication_1ac91407ea34e5b8496fd1195569720fc1" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>error</name></member>
+      <member refid="classAbstractCommunication_1a8cd7f5a6a402a9e7d463bdcacd61319f" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>error</name></member>
+      <member refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4faf948f99c94172d72dff0a540a84704fb" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>INFO</name></member>
+      <member refid="classAbstractCommunication_1aca99e8b6cfffce4207bb9ca09f90e15c" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>info</name></member>
+      <member refid="classAbstractCommunication_1aeea9cd083d0df591cd6021ac86fab742" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>info</name></member>
+      <member refid="classSerialCom_1a53bb031287acb1973c1e1f76799c76b6" prot="public" virt="virtual"><scope>SerialCom</scope><name>init</name></member>
       <member refid="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" prot="public" virt="virtual"><scope>SerialCom</scope><name>recv</name></member>
       <member refid="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" prot="public" virt="virtual"><scope>SerialCom</scope><name>send</name></member>
       <member refid="classSerialCom_1a4e0fd8ce8d81fc4f3c422d2f9d1aff68" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>SerialCom</name></member>
+      <member refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>setLevel</name></member>
+      <member refid="classAbstractCommunication_1af0eeb1540a126715d0e7983406a6ed9e" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>warn</name></member>
+      <member refid="classAbstractCommunication_1a0b0a7cc8ef0314ce8f05f3dcf55b8918" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>warn</name></member>
+      <member refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>WARN</name></member>
       <member refid="classAbstractCommunication_1a55661ddfc00471e24468d1e5bb76fdac" prot="public" virt="virtual"><scope>SerialCom</scope><name>~AbstractCommunication</name></member>
       <member refid="classSerialCom_1a5582cf804e661a24cb32720b31a2f9fe" prot="public" virt="virtual"><scope>SerialCom</scope><name>~SerialCom</name></member>
     </listofallmembers>

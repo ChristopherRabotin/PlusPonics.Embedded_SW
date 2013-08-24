@@ -96,6 +96,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4e0fd8ce8d81fc4f3c422d2f9d1aff68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5582cf804e661a24cb32720b31a2f9fe"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialCom.html#a5582cf804e661a24cb32720b31a2f9fe">~SerialCom</a> ()</td></tr>
 <tr class="separator:a5582cf804e661a24cb32720b31a2f9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53bb031287acb1973c1e1f76799c76b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6">init</a> ()</td></tr>
+<tr class="memdesc:a53bb031287acb1973c1e1f76799c76b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function initializes the communication. It will be called from the setup function.  <a href="#a53bb031287acb1973c1e1f76799c76b6"></a><br/></td></tr>
+<tr class="separator:a53bb031287acb1973c1e1f76799c76b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77c7bd4a1c21e91c00a9d52c4aaad394"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialCom.html#a77c7bd4a1c21e91c00a9d52c4aaad394">send</a> (String payload)</td></tr>
 <tr class="memdesc:a77c7bd4a1c21e91c00a9d52c4aaad394"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sends information through the communication pipe.  <a href="#a77c7bd4a1c21e91c00a9d52c4aaad394"></a><br/></td></tr>
 <tr class="separator:a77c7bd4a1c21e91c00a9d52c4aaad394"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,11 +111,37 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0e6ca44e41df8ca8e9e563cde1789f70 inherit pub_methods_classAbstractCommunication"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55661ddfc00471e24468d1e5bb76fdac inherit pub_methods_classAbstractCommunication"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#a55661ddfc00471e24468d1e5bb76fdac">~AbstractCommunication</a> ()</td></tr>
 <tr class="separator:a55661ddfc00471e24468d1e5bb76fdac inherit pub_methods_classAbstractCommunication"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca99e8b6cfffce4207bb9ca09f90e15c inherit pub_methods_classAbstractCommunication"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c">info</a> (String msg)</td></tr>
+<tr class="separator:aca99e8b6cfffce4207bb9ca09f90e15c inherit pub_methods_classAbstractCommunication"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0eeb1540a126715d0e7983406a6ed9e inherit pub_methods_classAbstractCommunication"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#af0eeb1540a126715d0e7983406a6ed9e">warn</a> (String msg)</td></tr>
+<tr class="separator:af0eeb1540a126715d0e7983406a6ed9e inherit pub_methods_classAbstractCommunication"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac91407ea34e5b8496fd1195569720fc1 inherit pub_methods_classAbstractCommunication"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#ac91407ea34e5b8496fd1195569720fc1">error</a> (String msg)</td></tr>
+<tr class="separator:ac91407ea34e5b8496fd1195569720fc1 inherit pub_methods_classAbstractCommunication"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea9cd083d0df591cd6021ac86fab742 inherit pub_methods_classAbstractCommunication"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#aeea9cd083d0df591cd6021ac86fab742">info</a> (String msg, String location)</td></tr>
+<tr class="memdesc:aeea9cd083d0df591cd6021ac86fab742 inherit pub_methods_classAbstractCommunication"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sends an informational debug message. The location parameter is optional. <a class="el" href="classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c">info(String msg)</a>;.  <a href="#aeea9cd083d0df591cd6021ac86fab742"></a><br/></td></tr>
+<tr class="separator:aeea9cd083d0df591cd6021ac86fab742 inherit pub_methods_classAbstractCommunication"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b0a7cc8ef0314ce8f05f3dcf55b8918 inherit pub_methods_classAbstractCommunication"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#a0b0a7cc8ef0314ce8f05f3dcf55b8918">warn</a> (String msg, String location)</td></tr>
+<tr class="memdesc:a0b0a7cc8ef0314ce8f05f3dcf55b8918 inherit pub_methods_classAbstractCommunication"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sends a warning debug message. The location parameter is optional. <a class="el" href="classAbstractCommunication.html#af0eeb1540a126715d0e7983406a6ed9e">warn(String msg)</a>;.  <a href="#a0b0a7cc8ef0314ce8f05f3dcf55b8918"></a><br/></td></tr>
+<tr class="separator:a0b0a7cc8ef0314ce8f05f3dcf55b8918 inherit pub_methods_classAbstractCommunication"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd7f5a6a402a9e7d463bdcacd61319f inherit pub_methods_classAbstractCommunication"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#a8cd7f5a6a402a9e7d463bdcacd61319f">error</a> (String msg, String location)</td></tr>
+<tr class="memdesc:a8cd7f5a6a402a9e7d463bdcacd61319f inherit pub_methods_classAbstractCommunication"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sends an error debug message. The location parameter is optional. <a class="el" href="classAbstractCommunication.html#ac91407ea34e5b8496fd1195569720fc1">error(String msg)</a>;.  <a href="#a8cd7f5a6a402a9e7d463bdcacd61319f"></a><br/></td></tr>
+<tr class="separator:a8cd7f5a6a402a9e7d463bdcacd61319f inherit pub_methods_classAbstractCommunication"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959a785338d76d315568c47dcc3a0336 inherit pub_methods_classAbstractCommunication"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336">setLevel</a> (<a class="el" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4f">DEBUG_LEVEL</a> <a class="el" href="classAbstractCommunication.html#a8471fbdcb6837697c9963c797c434c73">lvl</a>)</td></tr>
+<tr class="separator:a959a785338d76d315568c47dcc3a0336 inherit pub_methods_classAbstractCommunication"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classAbstractCommunication"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classAbstractCommunication')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classAbstractCommunication.html">AbstractCommunication</a></td></tr>
+<tr class="memitem:a4226603ef45c35ea969f888ff6cabe4f inherit pub_types_classAbstractCommunication"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4f">DEBUG_LEVEL</a> { <a class="el" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4faf948f99c94172d72dff0a540a84704fb">INFO</a> = 0, 
+<a class="el" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b">WARN</a> = 5, 
+<a class="el" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4fa8911cc4876c5aedfcfd7050c1ce0f4a1">ERROR</a> = 10
+ }</td></tr>
+<tr class="separator:a4226603ef45c35ea969f888ff6cabe4f inherit pub_types_classAbstractCommunication"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class defines serial communication with the control system. </p>
 
-<p>Definition at line <a class="el" href="SerialCom_8h_source.html#l00018">18</a> of file <a class="el" href="SerialCom_8h_source.html">SerialCom.h</a>.</p>
+<p>Definition at line <a class="el" href="SerialCom_8h_source.html#l00019">19</a> of file <a class="el" href="SerialCom_8h_source.html">SerialCom.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4e0fd8ce8d81fc4f3c422d2f9d1aff68"></a>
 <div class="memitem">
@@ -158,6 +187,37 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a53bb031287acb1973c1e1f76799c76b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialCom::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function initializes the communication. It will be called from the setup function. </p>
+
+<p>Implements <a class="el" href="classAbstractCommunication.html#a34dc23ed80eff81b2527c5f89ac5f1ff">AbstractCommunication</a>.</p>
+
+<p>Definition at line <a class="el" href="SerialCom_8cpp_source.html#l00020">20</a> of file <a class="el" href="SerialCom_8cpp_source.html">SerialCom.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00017">setup()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a74aa77aadfdc14a95cfbf261e5acc690"></a>
 <div class="memitem">
 <div class="memproto">
@@ -184,7 +244,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0">AbstractCommunication</a>.</p>
 
-<p>Definition at line <a class="el" href="SerialCom_8cpp_source.html#l00028">28</a> of file <a class="el" href="SerialCom_8cpp_source.html">SerialCom.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SerialCom_8cpp_source.html#l00032">32</a> of file <a class="el" href="SerialCom_8cpp_source.html">SerialCom.cpp</a>.</p>
 
 </div>
 </div>
@@ -220,7 +280,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">AbstractCommunication</a>.</p>
 
-<p>Definition at line <a class="el" href="SerialCom_8cpp_source.html#l00020">20</a> of file <a class="el" href="SerialCom_8cpp_source.html">SerialCom.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SerialCom_8cpp_source.html#l00024">24</a> of file <a class="el" href="SerialCom_8cpp_source.html">SerialCom.cpp</a>.</p>
 
 </div>
 </div>

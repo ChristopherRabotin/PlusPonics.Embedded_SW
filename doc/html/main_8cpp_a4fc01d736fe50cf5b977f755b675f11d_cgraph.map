@@ -1,5 +1,6 @@
 <map id="setup" name="setup">
-<area shape="rect" id="node3" href="$classDebug.html#aed5f2d64e6d7c71605a2df12cf69ef20" title="Debug::info" alt="" coords="125,5,216,32"/>
-<area shape="rect" id="node5" href="$classDebug.html#a57019861dc83bc80565b7af8fac3b40a" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="112,56,229,83"/>
-<area shape="rect" id="node7" href="$classDebug.html#aa51fece50f30c3bfa6f610929e40714a" title="Debug::setLevel" alt="" coords="110,107,231,133"/>
+<area shape="rect" id="node3" href="$classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c" title="AbstractCommunication\l::info" alt="" coords="113,5,276,46"/>
+<area shape="rect" id="node5" href="$classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function." alt="" coords="139,71,250,97"/>
+<area shape="rect" id="node7" href="$classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="109,121,280,148"/>
+<area shape="rect" id="node9" href="$classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336" title="AbstractCommunication\l::setLevel" alt="" coords="113,173,276,214"/>
 </map>

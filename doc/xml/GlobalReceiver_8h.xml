@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="GlobalReceiver_8h" kind="file">
+    <compoundname>GlobalReceiver.h</compoundname>
+    <includes refid="AbstractCommunication_8h" local="yes">AbstractCommunication.h</includes>
+    <includedby refid="GlobalReceiver_8cpp" local="yes">GlobalReceiver.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <incdepgraph>
+      <node id="81">
+        <label>WString.h</label>
+      </node>
+      <node id="79">
+        <label>AbstractCommunication.h</label>
+        <link refid="AbstractCommunication_8h"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>GlobalReceiver.h</label>
+        <link refid="GlobalReceiver.h"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="83">
+        <label>GlobalReceiver.cpp</label>
+        <link refid="GlobalReceiver_8cpp"/>
+      </node>
+      <node id="82">
+        <label>GlobalReceiver.h</label>
+        <link refid="GlobalReceiver.h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classGlobalReceiver" prot="public">GlobalReceiver</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>GlobalReceiver.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Jul<sp/>21,<sp/>2013</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>chris</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RECVPROCESSOR_H_</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RECVPROCESSOR_H_</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="AbstractCommunication_8h" kindref="compound">AbstractCommunication.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classGlobalReceiver" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGlobalReceiver" kindref="compound">GlobalReceiver</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGlobalReceiver_1a9dfd412916cfb9f441b6d7a884b74ad3" kindref="member">GlobalReceiver</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" kindref="member" tooltip="This function fetches and processes the input. It calls com&amp;#39;s recv() to read the latest information...">process</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" kindref="member" tooltip="This function sets the communication pointer. This is used when the empty constructor is used...">setCom</ref>(<ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>&amp;<ref refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" kindref="member">com</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classGlobalReceiver_1ace0d4a5976198ff64c4515459b1fa289" kindref="member">~GlobalReceiver</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40" refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>*<ref refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" kindref="member">com</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>RECVPROCESSOR_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h"/>
+  </compounddef>
+</doxygen>

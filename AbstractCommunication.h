@@ -19,6 +19,10 @@ public:
 	AbstractCommunication();
 	virtual ~AbstractCommunication();
 	/**
+	 * @brief This function initializes the communication. It will be called from the setup function.
+	 */
+	virtual void init() = 0;
+	/**
 	 * @brief This function sends information through the communication pipe.
 	 * @param payload this is string which represents the payload to be delivered.
 	 */

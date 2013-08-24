@@ -1,34 +1,36 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.2">
   <compound refid="classAbstractCommunication" kind="class"><name>AbstractCommunication</name>
+    <member refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4f" kind="enum"><name>DEBUG_LEVEL</name></member>
+    <member refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4faf948f99c94172d72dff0a540a84704fb" kind="enumvalue"><name>INFO</name></member>
+    <member refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b" kind="enumvalue"><name>WARN</name></member>
+    <member refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa8911cc4876c5aedfcfd7050c1ce0f4a1" kind="enumvalue"><name>ERROR</name></member>
+    <member refid="classAbstractCommunication_1a7a582596aa1fa873865d543d0df1d437" kind="variable"><name>DEFAULT_LOCATION</name></member>
+    <member refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" kind="variable"><name>lvl</name></member>
     <member refid="classAbstractCommunication_1a0e6ca44e41df8ca8e9e563cde1789f70" kind="function"><name>AbstractCommunication</name></member>
     <member refid="classAbstractCommunication_1a55661ddfc00471e24468d1e5bb76fdac" kind="function"><name>~AbstractCommunication</name></member>
+    <member refid="classAbstractCommunication_1a34dc23ed80eff81b2527c5f89ac5f1ff" kind="function"><name>init</name></member>
     <member refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" kind="function"><name>send</name></member>
     <member refid="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0" kind="function"><name>recv</name></member>
+    <member refid="classAbstractCommunication_1aca99e8b6cfffce4207bb9ca09f90e15c" kind="function"><name>info</name></member>
+    <member refid="classAbstractCommunication_1af0eeb1540a126715d0e7983406a6ed9e" kind="function"><name>warn</name></member>
+    <member refid="classAbstractCommunication_1ac91407ea34e5b8496fd1195569720fc1" kind="function"><name>error</name></member>
+    <member refid="classAbstractCommunication_1aeea9cd083d0df591cd6021ac86fab742" kind="function"><name>info</name></member>
+    <member refid="classAbstractCommunication_1a0b0a7cc8ef0314ce8f05f3dcf55b8918" kind="function"><name>warn</name></member>
+    <member refid="classAbstractCommunication_1a8cd7f5a6a402a9e7d463bdcacd61319f" kind="function"><name>error</name></member>
+    <member refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" kind="function"><name>setLevel</name></member>
   </compound>
-  <compound refid="classDebug" kind="class"><name>Debug</name>
-    <member refid="classDebug_1a67ff3b88152445827486bb5370040bcf" kind="enum"><name>DEBUG_LEVEL</name></member>
-    <member refid="classDebug_1a67ff3b88152445827486bb5370040bcfa46da16d1e998155d97808643c4d6ed46" kind="enumvalue"><name>INFO</name></member>
-    <member refid="classDebug_1a67ff3b88152445827486bb5370040bcfa9d2cb9dc082c416b4e7653360caf0f51" kind="enumvalue"><name>WARN</name></member>
-    <member refid="classDebug_1a67ff3b88152445827486bb5370040bcfa926d718d1a358b0e8abfe865a4f78dbc" kind="enumvalue"><name>ERROR</name></member>
-    <member refid="classDebug_1a8a4ec669ce60de6d17b3354b11b031a2" kind="variable"><name>com</name></member>
-    <member refid="classDebug_1a43861bc8c2da071f887d64833cc827ed" kind="variable"><name>lvl</name></member>
-    <member refid="classDebug_1a658771d7e0d2c0b8d2eabeac322a063c" kind="variable"><name>DEFAULT_LOCATION</name></member>
-    <member refid="classDebug_1a8e048381948c32ab9523bd5893290797" kind="function"><name>Debug</name></member>
-    <member refid="classDebug_1a5b453c195c4cfffed2702c3330f53a64" kind="function"><name>Debug</name></member>
-    <member refid="classDebug_1a911a84a0f56b770724e09a049399dc30" kind="function"><name>~Debug</name></member>
-    <member refid="classDebug_1aed5f2d64e6d7c71605a2df12cf69ef20" kind="function"><name>info</name></member>
-    <member refid="classDebug_1a2af7b86d64df53b39635313044d22fc0" kind="function"><name>warn</name></member>
-    <member refid="classDebug_1ac287261af5c0322b8d970026965a65d0" kind="function"><name>error</name></member>
-    <member refid="classDebug_1a68d8b3a9881a14c0abce336ff072d22f" kind="function"><name>info</name></member>
-    <member refid="classDebug_1ae8a2087bc58f1d88814240cfe1490613" kind="function"><name>warn</name></member>
-    <member refid="classDebug_1ab5aba2d2f4114901f4077646d5cee7a7" kind="function"><name>error</name></member>
-    <member refid="classDebug_1a57019861dc83bc80565b7af8fac3b40a" kind="function"><name>setCom</name></member>
-    <member refid="classDebug_1aa51fece50f30c3bfa6f610929e40714a" kind="function"><name>setLevel</name></member>
+  <compound refid="classGlobalReceiver" kind="class"><name>GlobalReceiver</name>
+    <member refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" kind="variable"><name>com</name></member>
+    <member refid="classGlobalReceiver_1a9dfd412916cfb9f441b6d7a884b74ad3" kind="function"><name>GlobalReceiver</name></member>
+    <member refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" kind="function"><name>process</name></member>
+    <member refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" kind="function"><name>setCom</name></member>
+    <member refid="classGlobalReceiver_1ace0d4a5976198ff64c4515459b1fa289" kind="function"><name>~GlobalReceiver</name></member>
   </compound>
   <compound refid="classSerialCom" kind="class"><name>SerialCom</name>
     <member refid="classSerialCom_1a4e0fd8ce8d81fc4f3c422d2f9d1aff68" kind="function"><name>SerialCom</name></member>
     <member refid="classSerialCom_1a5582cf804e661a24cb32720b31a2f9fe" kind="function"><name>~SerialCom</name></member>
+    <member refid="classSerialCom_1a53bb031287acb1973c1e1f76799c76b6" kind="function"><name>init</name></member>
     <member refid="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" kind="function"><name>send</name></member>
     <member refid="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" kind="function"><name>recv</name></member>
   </compound>
@@ -36,14 +38,15 @@
   </compound>
   <compound refid="AbstractCommunication_8h" kind="file"><name>AbstractCommunication.h</name>
   </compound>
-  <compound refid="Debug_8cpp" kind="file"><name>Debug.cpp</name>
+  <compound refid="GlobalReceiver_8cpp" kind="file"><name>GlobalReceiver.cpp</name>
+    <member refid="GlobalReceiver_8cpp_1a98a09d6b95fb0fa32210f041f0af87d4" kind="function"><name>byte_to_binary</name></member>
   </compound>
-  <compound refid="Debug_8h" kind="file"><name>Debug.h</name>
+  <compound refid="GlobalReceiver_8h" kind="file"><name>GlobalReceiver.h</name>
   </compound>
   <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
     <member refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kind="variable"><name>ledPin</name></member>
-    <member refid="main_8cpp_1adaa7de8e021b5739a7f8ea5d4e580809" kind="variable"><name>com</name></member>
-    <member refid="main_8cpp_1ab8ad7ebf86486ec65142ed8cb150247a" kind="variable"><name>debug</name></member>
+    <member refid="main_8cpp_1ac32bb15f611faf91f75daaab60c1068c" kind="variable"><name>com</name></member>
+    <member refid="main_8cpp_1a95de02de573cd863d1547c545dfeceae" kind="variable"><name>glrcv</name></member>
     <member refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kind="function"><name>setup</name></member>
     <member refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kind="function"><name>loop</name></member>
     <member refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" kind="function"><name>main</name></member>

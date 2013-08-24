@@ -5,7 +5,7 @@
     <includes local="no">stdio.h</includes>
     <includes local="no">WString.h</includes>
     <includedby refid="AbstractCommunication_8cpp" local="yes">AbstractCommunication.cpp</includedby>
-    <includedby refid="Debug_8h" local="yes">Debug.h</includedby>
+    <includedby refid="GlobalReceiver_8h" local="yes">GlobalReceiver.h</includedby>
     <includedby refid="SerialCom_8h" local="yes">SerialCom.h</includedby>
     <incdepgraph>
       <node id="64">
@@ -39,16 +39,8 @@
         </childnode>
       </node>
       <node id="68">
-        <label>Debug.cpp</label>
-        <link refid="Debug_8cpp"/>
-      </node>
-      <node id="67">
-        <label>Debug.h</label>
-        <link refid="Debug_8h"/>
-        <childnode refid="68" relation="include">
-        </childnode>
-        <childnode refid="69" relation="include">
-        </childnode>
+        <label>GlobalReceiver.cpp</label>
+        <link refid="GlobalReceiver_8cpp"/>
       </node>
       <node id="71">
         <label>SerialCom.cpp</label>
@@ -60,6 +52,14 @@
         <childnode refid="69" relation="include">
         </childnode>
         <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>GlobalReceiver.h</label>
+        <link refid="GlobalReceiver_8h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
         </childnode>
       </node>
       <node id="69">
@@ -89,11 +89,30 @@
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractCommunication_1a0e6ca44e41df8ca8e9e563cde1789f70" kindref="member" tooltip="The constructor should initialize the communication with the control system. This includes everything...">AbstractCommunication</ref>();</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1a55661ddfc00471e24468d1e5bb76fdac" kindref="member">~AbstractCommunication</ref>();</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" kindref="member" tooltip="This function sends information through the communication pipe.">send</ref>(String<sp/>payload)<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>Should<sp/>make<sp/>AbstractCommunication<sp/>unable<sp/>to<sp/>be<sp/>instantiated.</highlight></codeline>
-<codeline lineno="30"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0" kindref="member" tooltip="This function reads data from the pipe and returns this as a string.">recv</ref>()<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ABSTRACTCOMMUNICATION_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1a34dc23ed80eff81b2527c5f89ac5f1ff" kindref="member" tooltip="This function initializes the communication. It will be called from the setup function.">init</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" kindref="member" tooltip="This function sends information through the communication pipe.">send</ref>(String<sp/>payload)<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>Should<sp/>make<sp/>AbstractCommunication<sp/>unable<sp/>to<sp/>be<sp/>instantiated.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0" kindref="member" tooltip="This function reads data from the pipe and returns this as a string.">recv</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4f" kindref="member">DEBUG_LEVEL</ref><sp/>{</highlight></codeline>
+<codeline lineno="40" refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4faf948f99c94172d72dff0a540a84704fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4faf948f99c94172d72dff0a540a84704fb" kindref="member">INFO</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="41" refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b" kindref="member">WARN</ref><sp/>=<sp/>5,<sp/></highlight></codeline>
+<codeline lineno="42" refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa8911cc4876c5aedfcfd7050c1ce0f4a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa8911cc4876c5aedfcfd7050c1ce0f4a1" kindref="member">ERROR</ref><sp/>=<sp/>10<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1aca99e8b6cfffce4207bb9ca09f90e15c" kindref="member">info</ref>(String<sp/>msg);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1af0eeb1540a126715d0e7983406a6ed9e" kindref="member">warn</ref>(String<sp/>msg);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1ac91407ea34e5b8496fd1195569720fc1" kindref="member">error</ref>(String<sp/>msg);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1aca99e8b6cfffce4207bb9ca09f90e15c" kindref="member">info</ref>(String<sp/>msg,<sp/>String<sp/>location);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1af0eeb1540a126715d0e7983406a6ed9e" kindref="member">warn</ref>(String<sp/>msg,<sp/>String<sp/>location);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1ac91407ea34e5b8496fd1195569720fc1" kindref="member">error</ref>(String<sp/>msg,<sp/>String<sp/>location);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" kindref="member">setLevel</ref>(<ref refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4f" kindref="member">DEBUG_LEVEL</ref><sp/><ref refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" kindref="member">lvl</ref>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="72" refid="classAbstractCommunication_1a7a582596aa1fa873865d543d0df1d437" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classAbstractCommunication_1a7a582596aa1fa873865d543d0df1d437" kindref="member">DEFAULT_LOCATION</ref>;</highlight></codeline>
+<codeline lineno="73" refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4f" kindref="member">DEBUG_LEVEL</ref><sp/><ref refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" kindref="member">lvl</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ABSTRACTCOMMUNICATION_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h"/>
   </compounddef>

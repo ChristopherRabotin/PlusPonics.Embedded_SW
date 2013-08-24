@@ -64,7 +64,10 @@ $(document).ready(function(){initNavTree('classAbstractCommunication.html','');}
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classAbstractCommunication-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AbstractCommunication Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -83,6 +86,14 @@ Inheritance diagram for AbstractCommunication:</div>
 <area shape="rect" id="node3" href="classSerialCom.html" title="This class defines serial communication with the control system." alt="" coords="43,80,129,107"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a4226603ef45c35ea969f888ff6cabe4f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4f">DEBUG_LEVEL</a> { <a class="el" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4faf948f99c94172d72dff0a540a84704fb">INFO</a> = 0, 
+<a class="el" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b">WARN</a> = 5, 
+<a class="el" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4fa8911cc4876c5aedfcfd7050c1ce0f4a1">ERROR</a> = 10
+ }</td></tr>
+<tr class="separator:a4226603ef45c35ea969f888ff6cabe4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e6ca44e41df8ca8e9e563cde1789f70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#a0e6ca44e41df8ca8e9e563cde1789f70">AbstractCommunication</a> ()</td></tr>
@@ -90,18 +101,77 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0e6ca44e41df8ca8e9e563cde1789f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55661ddfc00471e24468d1e5bb76fdac"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#a55661ddfc00471e24468d1e5bb76fdac">~AbstractCommunication</a> ()</td></tr>
 <tr class="separator:a55661ddfc00471e24468d1e5bb76fdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34dc23ed80eff81b2527c5f89ac5f1ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#a34dc23ed80eff81b2527c5f89ac5f1ff">init</a> ()=0</td></tr>
+<tr class="memdesc:a34dc23ed80eff81b2527c5f89ac5f1ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function initializes the communication. It will be called from the setup function.  <a href="#a34dc23ed80eff81b2527c5f89ac5f1ff"></a><br/></td></tr>
+<tr class="separator:a34dc23ed80eff81b2527c5f89ac5f1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa60da75c79691dd2c93473bc6be6506d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">send</a> (String payload)=0</td></tr>
 <tr class="memdesc:aa60da75c79691dd2c93473bc6be6506d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sends information through the communication pipe.  <a href="#aa60da75c79691dd2c93473bc6be6506d"></a><br/></td></tr>
 <tr class="separator:aa60da75c79691dd2c93473bc6be6506d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc2db09ee34d303eb88d2641395953e0"><td class="memItemLeft" align="right" valign="top">virtual String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0">recv</a> ()=0</td></tr>
 <tr class="memdesc:acc2db09ee34d303eb88d2641395953e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function reads data from the pipe and returns this as a string.  <a href="#acc2db09ee34d303eb88d2641395953e0"></a><br/></td></tr>
 <tr class="separator:acc2db09ee34d303eb88d2641395953e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca99e8b6cfffce4207bb9ca09f90e15c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c">info</a> (String msg)</td></tr>
+<tr class="separator:aca99e8b6cfffce4207bb9ca09f90e15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0eeb1540a126715d0e7983406a6ed9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#af0eeb1540a126715d0e7983406a6ed9e">warn</a> (String msg)</td></tr>
+<tr class="separator:af0eeb1540a126715d0e7983406a6ed9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac91407ea34e5b8496fd1195569720fc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#ac91407ea34e5b8496fd1195569720fc1">error</a> (String msg)</td></tr>
+<tr class="separator:ac91407ea34e5b8496fd1195569720fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea9cd083d0df591cd6021ac86fab742"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#aeea9cd083d0df591cd6021ac86fab742">info</a> (String msg, String location)</td></tr>
+<tr class="memdesc:aeea9cd083d0df591cd6021ac86fab742"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sends an informational debug message. The location parameter is optional. <a class="el" href="classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c">info(String msg)</a>;.  <a href="#aeea9cd083d0df591cd6021ac86fab742"></a><br/></td></tr>
+<tr class="separator:aeea9cd083d0df591cd6021ac86fab742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b0a7cc8ef0314ce8f05f3dcf55b8918"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#a0b0a7cc8ef0314ce8f05f3dcf55b8918">warn</a> (String msg, String location)</td></tr>
+<tr class="memdesc:a0b0a7cc8ef0314ce8f05f3dcf55b8918"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sends a warning debug message. The location parameter is optional. <a class="el" href="classAbstractCommunication.html#af0eeb1540a126715d0e7983406a6ed9e">warn(String msg)</a>;.  <a href="#a0b0a7cc8ef0314ce8f05f3dcf55b8918"></a><br/></td></tr>
+<tr class="separator:a0b0a7cc8ef0314ce8f05f3dcf55b8918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd7f5a6a402a9e7d463bdcacd61319f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#a8cd7f5a6a402a9e7d463bdcacd61319f">error</a> (String msg, String location)</td></tr>
+<tr class="memdesc:a8cd7f5a6a402a9e7d463bdcacd61319f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sends an error debug message. The location parameter is optional. <a class="el" href="classAbstractCommunication.html#ac91407ea34e5b8496fd1195569720fc1">error(String msg)</a>;.  <a href="#a8cd7f5a6a402a9e7d463bdcacd61319f"></a><br/></td></tr>
+<tr class="separator:a8cd7f5a6a402a9e7d463bdcacd61319f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959a785338d76d315568c47dcc3a0336"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336">setLevel</a> (<a class="el" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4f">DEBUG_LEVEL</a> <a class="el" href="classAbstractCommunication.html#a8471fbdcb6837697c9963c797c434c73">lvl</a>)</td></tr>
+<tr class="separator:a959a785338d76d315568c47dcc3a0336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8471fbdcb6837697c9963c797c434c73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4f">DEBUG_LEVEL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#a8471fbdcb6837697c9963c797c434c73">lvl</a></td></tr>
+<tr class="separator:a8471fbdcb6837697c9963c797c434c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a7a582596aa1fa873865d543d0df1d437"><td class="memItemLeft" align="right" valign="top">static const String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#a7a582596aa1fa873865d543d0df1d437">DEFAULT_LOCATION</a> = &quot;None&quot;</td></tr>
+<tr class="separator:a7a582596aa1fa873865d543d0df1d437"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class defines how all communication should be done. </p>
 
 <p>Definition at line <a class="el" href="AbstractCommunication_8h_source.html#l00017">17</a> of file <a class="el" href="AbstractCommunication_8h_source.html">AbstractCommunication.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a4226603ef45c35ea969f888ff6cabe4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4f">AbstractCommunication::DEBUG_LEVEL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Defines different levels of debugging. </p>
+<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a4226603ef45c35ea969f888ff6cabe4faf948f99c94172d72dff0a540a84704fb"></a>INFO</em>&nbsp;</td><td>
+<p>this is the info level </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b"></a>WARN</em>&nbsp;</td><td>
+<p>this is the warning level </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a4226603ef45c35ea969f888ff6cabe4fa8911cc4876c5aedfcfd7050c1ce0f4a1"></a>ERROR</em>&nbsp;</td><td>
+<p>this is the error level </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>Definition at line <a class="el" href="AbstractCommunication_8h_source.html#l00039">39</a> of file <a class="el" href="AbstractCommunication_8h_source.html">AbstractCommunication.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0e6ca44e41df8ca8e9e563cde1789f70"></a>
 <div class="memitem">
 <div class="memproto">
@@ -118,6 +188,8 @@ Public Member Functions</h2></td></tr>
 <p>The constructor should initialize the communication with the control system. This includes everything needed prior to starting to communicate with the control system. </p>
 
 <p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00014">14</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
+
+<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00042">ERROR</a>, and <a class="el" href="AbstractCommunication_8h_source.html#l00073">lvl</a>.</p>
 
 </div>
 </div>
@@ -147,6 +219,171 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac91407ea34e5b8496fd1195569720fc1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractCommunication::error </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00031">31</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
+
+<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00072">DEFAULT_LOCATION</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8cd7f5a6a402a9e7d463bdcacd61319f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractCommunication::error </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>location</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function sends an error debug message. The location parameter is optional. <a class="el" href="classAbstractCommunication.html#ac91407ea34e5b8496fd1195569720fc1">error(String msg)</a>;. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>message to be sent </td></tr>
+    <tr><td class="paramname">location</td><td>location where this message was emitted </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00047">47</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
+
+<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00042">ERROR</a>, <a class="el" href="AbstractCommunication_8h_source.html#l00073">lvl</a>, and <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">send()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAbstractCommunication_a8cd7f5a6a402a9e7d463bdcacd61319f_cgraph.png" border="0" usemap="#classAbstractCommunication_a8cd7f5a6a402a9e7d463bdcacd61319f_cgraph" alt=""/></div>
+<map name="classAbstractCommunication_a8cd7f5a6a402a9e7d463bdcacd61319f_cgraph" id="classAbstractCommunication_a8cd7f5a6a402a9e7d463bdcacd61319f_cgraph">
+<area shape="rect" id="node3" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="216,5,379,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aca99e8b6cfffce4207bb9ca09f90e15c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractCommunication::info </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00023">23</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
+
+<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00072">DEFAULT_LOCATION</a>.</p>
+
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00017">setup()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeea9cd083d0df591cd6021ac86fab742"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractCommunication::info </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>location</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function sends an informational debug message. The location parameter is optional. <a class="el" href="classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c">info(String msg)</a>;. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>message to be sent </td></tr>
+    <tr><td class="paramname">location</td><td>location where this message was emitted </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00035">35</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
+
+<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00040">INFO</a>, <a class="el" href="AbstractCommunication_8h_source.html#l00073">lvl</a>, and <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">send()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAbstractCommunication_aeea9cd083d0df591cd6021ac86fab742_cgraph.png" border="0" usemap="#classAbstractCommunication_aeea9cd083d0df591cd6021ac86fab742_cgraph" alt=""/></div>
+<map name="classAbstractCommunication_aeea9cd083d0df591cd6021ac86fab742_cgraph" id="classAbstractCommunication_aeea9cd083d0df591cd6021ac86fab742_cgraph">
+<area shape="rect" id="node3" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="216,5,379,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a34dc23ed80eff81b2527c5f89ac5f1ff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AbstractCommunication::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function initializes the communication. It will be called from the setup function. </p>
+
+<p>Implemented in <a class="el" href="classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6">SerialCom</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="acc2db09ee34d303eb88d2641395953e0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -172,6 +409,8 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>a string representing the data received from the pipe. </dd></dl>
 
 <p>Implemented in <a class="el" href="classSerialCom.html#a74aa77aadfdc14a95cfbf261e5acc690">SerialCom</a>.</p>
+
+<p>Referenced by <a class="el" href="GlobalReceiver_8cpp_source.html#l00026">GlobalReceiver::process()</a>.</p>
 
 </div>
 </div>
@@ -207,7 +446,148 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classSerialCom.html#a77c7bd4a1c21e91c00a9d52c4aaad394">SerialCom</a>.</p>
 
-<p>Referenced by <a class="el" href="Debug_8cpp_source.html#l00053">Debug::error()</a>, <a class="el" href="Debug_8cpp_source.html#l00032">Debug::info()</a>, <a class="el" href="main_8cpp_source.html#l00032">loop()</a>, and <a class="el" href="Debug_8cpp_source.html#l00038">Debug::warn()</a>.</p>
+<p>Referenced by <a class="el" href="AbstractCommunication_8cpp_source.html#l00047">error()</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00035">info()</a>, <a class="el" href="GlobalReceiver_8cpp_source.html#l00026">GlobalReceiver::process()</a>, and <a class="el" href="AbstractCommunication_8cpp_source.html#l00041">warn()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a959a785338d76d315568c47dcc3a0336"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractCommunication::setLevel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4f">DEBUG_LEVEL</a>&#160;</td>
+          <td class="paramname"><em>lvl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00053">53</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
+
+<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00073">lvl</a>.</p>
+
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00017">setup()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af0eeb1540a126715d0e7983406a6ed9e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractCommunication::warn </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00027">27</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
+
+<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00072">DEFAULT_LOCATION</a>.</p>
+
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00029">loop()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b0a7cc8ef0314ce8f05f3dcf55b8918"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractCommunication::warn </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>location</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function sends a warning debug message. The location parameter is optional. <a class="el" href="classAbstractCommunication.html#af0eeb1540a126715d0e7983406a6ed9e">warn(String msg)</a>;. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>message to be sent </td></tr>
+    <tr><td class="paramname">location</td><td>location where this message was emitted </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00041">41</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
+
+<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00073">lvl</a>, <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">send()</a>, and <a class="el" href="AbstractCommunication_8h_source.html#l00041">WARN</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAbstractCommunication_a0b0a7cc8ef0314ce8f05f3dcf55b8918_cgraph.png" border="0" usemap="#classAbstractCommunication_a0b0a7cc8ef0314ce8f05f3dcf55b8918_cgraph" alt=""/></div>
+<map name="classAbstractCommunication_a0b0a7cc8ef0314ce8f05f3dcf55b8918_cgraph" id="classAbstractCommunication_a0b0a7cc8ef0314ce8f05f3dcf55b8918_cgraph">
+<area shape="rect" id="node3" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="216,5,379,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a7a582596aa1fa873865d543d0df1d437"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const String AbstractCommunication::DEFAULT_LOCATION = &quot;None&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="AbstractCommunication_8h_source.html#l00072">72</a> of file <a class="el" href="AbstractCommunication_8h_source.html">AbstractCommunication.h</a>.</p>
+
+<p>Referenced by <a class="el" href="AbstractCommunication_8cpp_source.html#l00031">error()</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00023">info()</a>, and <a class="el" href="AbstractCommunication_8cpp_source.html#l00027">warn()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8471fbdcb6837697c9963c797c434c73"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4f">DEBUG_LEVEL</a> AbstractCommunication::lvl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="AbstractCommunication_8h_source.html#l00073">73</a> of file <a class="el" href="AbstractCommunication_8h_source.html">AbstractCommunication.h</a>.</p>
+
+<p>Referenced by <a class="el" href="AbstractCommunication_8cpp_source.html#l00014">AbstractCommunication()</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00047">error()</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00035">info()</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00053">setLevel()</a>, and <a class="el" href="AbstractCommunication_8cpp_source.html#l00041">warn()</a>.</p>
 
 </div>
 </div>

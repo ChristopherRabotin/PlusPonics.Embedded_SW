@@ -1,6 +1,6 @@
 var annotated =
 [
     [ "AbstractCommunication", "classAbstractCommunication.html", "classAbstractCommunication" ],
-    [ "Debug", "classDebug.html", "classDebug" ],
+    [ "GlobalReceiver", "classGlobalReceiver.html", "classGlobalReceiver" ],
     [ "SerialCom", "classSerialCom.html", "classSerialCom" ]
 ];

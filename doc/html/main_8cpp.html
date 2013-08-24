@@ -70,14 +70,14 @@ $(document).ready(function(){initNavTree('main_8cpp.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br/>
 <code>#include &quot;config/config.h&quot;</code><br/>
-<code>#include &quot;<a class="el" href="Debug_8h_source.html">Debug.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="GlobalReceiver_8h_source.html">GlobalReceiver.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="SerialCom_8h_source.html">SerialCom.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#main_8cpp" alt=""/></div>
 <map name="main_8cpp" id="main_8cpp">
-<area shape="rect" id="node7" href="Debug_8h.html" title="Debug.h" alt="" coords="323,80,395,107"/><area shape="rect" id="node15" href="SerialCom_8h.html" title="SerialCom.h" alt="" coords="203,80,299,107"/><area shape="rect" id="node9" href="AbstractCommunication_8h.html" title="AbstractCommunication.h" alt="" coords="272,155,445,181"/></map>
+<area shape="rect" id="node7" href="GlobalReceiver_8h.html" title="GlobalReceiver.h" alt="" coords="309,80,435,107"/><area shape="rect" id="node15" href="SerialCom_8h.html" title="SerialCom.h" alt="" coords="188,80,284,107"/><area shape="rect" id="node9" href="AbstractCommunication_8h.html" title="AbstractCommunication.h" alt="" coords="285,155,459,181"/></map>
 </div>
 </div>
 <p><a href="main_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -98,10 +98,10 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:afdd77f1aa3023f9ba5f49bb1f6c68b51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#afdd77f1aa3023f9ba5f49bb1f6c68b51">ledPin</a> = 13</td></tr>
 <tr class="separator:afdd77f1aa3023f9ba5f49bb1f6c68b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaa7de8e021b5739a7f8ea5d4e580809"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAbstractCommunication.html">AbstractCommunication</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adaa7de8e021b5739a7f8ea5d4e580809">com</a> = new <a class="el" href="classSerialCom.html">SerialCom</a>()</td></tr>
-<tr class="separator:adaa7de8e021b5739a7f8ea5d4e580809"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8ad7ebf86486ec65142ed8cb150247a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDebug.html">Debug</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ab8ad7ebf86486ec65142ed8cb150247a">debug</a></td></tr>
-<tr class="separator:ab8ad7ebf86486ec65142ed8cb150247a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32bb15f611faf91f75daaab60c1068c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSerialCom.html">SerialCom</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac32bb15f611faf91f75daaab60c1068c">com</a></td></tr>
+<tr class="separator:ac32bb15f611faf91f75daaab60c1068c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95de02de573cd863d1547c545dfeceae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGlobalReceiver.html">GlobalReceiver</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a95de02de573cd863d1547c545dfeceae">glrcv</a></td></tr>
+<tr class="separator:a95de02de573cd863d1547c545dfeceae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="afe461d27b9c48d5921c00d521181f12f"></a>
@@ -119,18 +119,18 @@ Variables</h2></td></tr>
 
 <p><a class="el" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered.">loop()</a> loops while Arduino is powered. </p>
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00032">32</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00029">29</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
-<p>References <a class="el" href="Debug_8cpp_source.html#l00020">Debug::info()</a>, <a class="el" href="main_8cpp_source.html#l00009">ledPin</a>, <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">AbstractCommunication::send()</a>, and <a class="el" href="Debug_8cpp_source.html#l00024">Debug::warn()</a>.</p>
+<p>References <a class="el" href="main_8cpp_source.html#l00009">ledPin</a>, and <a class="el" href="AbstractCommunication_8cpp_source.html#l00027">AbstractCommunication::warn()</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00046">main()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00042">main()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_afe461d27b9c48d5921c00d521181f12f_cgraph.png" border="0" usemap="#main_8cpp_afe461d27b9c48d5921c00d521181f12f_cgraph" alt=""/></div>
 <map name="main_8cpp_afe461d27b9c48d5921c00d521181f12f_cgraph" id="main_8cpp_afe461d27b9c48d5921c00d521181f12f_cgraph">
-<area shape="rect" id="node3" href="classDebug.html#aed5f2d64e6d7c71605a2df12cf69ef20" title="Debug::info" alt="" coords="137,5,228,32"/><area shape="rect" id="node5" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="101,57,264,98"/><area shape="rect" id="node7" href="classDebug.html#a2af7b86d64df53b39635313044d22fc0" title="Debug::warn" alt="" coords="133,123,232,149"/></map>
+<area shape="rect" id="node3" href="classAbstractCommunication.html#af0eeb1540a126715d0e7983406a6ed9e" title="AbstractCommunication\l::warn" alt="" coords="101,5,264,46"/></map>
 </div>
 </p>
 
@@ -153,16 +153,16 @@ Here is the call graph for this function:</div>
 <p>where all the subsystems are started. </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00046">46</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00042">42</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
-<p>References <a class="el" href="main_8cpp_source.html#l00032">loop()</a>, and <a class="el" href="main_8cpp_source.html#l00017">setup()</a>.</p>
+<p>References <a class="el" href="main_8cpp_source.html#l00029">loop()</a>, and <a class="el" href="main_8cpp_source.html#l00017">setup()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_cgraph.png" border="0" usemap="#main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_cgraph" alt=""/></div>
 <map name="main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_cgraph" id="main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_cgraph">
-<area shape="rect" id="node3" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered." alt="" coords="108,84,156,111"/><area shape="rect" id="node11" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="This function is only ran when the sketch is initialized." alt="" coords="105,160,159,187"/><area shape="rect" id="node5" href="classDebug.html#aed5f2d64e6d7c71605a2df12cf69ef20" title="Debug::info" alt="" coords="244,121,335,148"/><area shape="rect" id="node7" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="208,5,371,46"/><area shape="rect" id="node9" href="classDebug.html#a2af7b86d64df53b39635313044d22fc0" title="Debug::warn" alt="" coords="240,71,339,97"/><area shape="rect" id="node13" href="classDebug.html#aa51fece50f30c3bfa6f610929e40714a" title="Debug::setLevel" alt="" coords="229,172,350,199"/><area shape="rect" id="node15" href="classDebug.html#a57019861dc83bc80565b7af8fac3b40a" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="231,223,348,249"/></map>
+<area shape="rect" id="node3" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered." alt="" coords="108,45,156,72"/><area shape="rect" id="node7" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="This function is only ran when the sketch is initialized." alt="" coords="105,129,159,156"/><area shape="rect" id="node5" href="classAbstractCommunication.html#af0eeb1540a126715d0e7983406a6ed9e" title="AbstractCommunication\l::warn" alt="" coords="212,5,375,46"/><area shape="rect" id="node9" href="classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function." alt="" coords="238,71,349,97"/><area shape="rect" id="node11" href="classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336" title="AbstractCommunication\l::setLevel" alt="" coords="212,122,375,163"/><area shape="rect" id="node13" href="classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c" title="AbstractCommunication\l::info" alt="" coords="212,187,375,229"/><area shape="rect" id="node15" href="classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="208,253,379,280"/></map>
 </div>
 </p>
 
@@ -185,28 +185,28 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="main_8cpp_source.html#l00017">17</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
-<p>References <a class="el" href="Debug_8cpp_source.html#l00020">Debug::info()</a>, <a class="el" href="main_8cpp_source.html#l00009">ledPin</a>, <a class="el" href="Debug_8cpp_source.html#l00049">Debug::setCom()</a>, <a class="el" href="Debug_8cpp_source.html#l00059">Debug::setLevel()</a>, and <a class="el" href="Debug_8h_source.html#l00020">Debug::WARN</a>.</p>
+<p>References <a class="el" href="AbstractCommunication_8cpp_source.html#l00023">AbstractCommunication::info()</a>, <a class="el" href="SerialCom_8cpp_source.html#l00020">SerialCom::init()</a>, <a class="el" href="main_8cpp_source.html#l00009">ledPin</a>, <a class="el" href="GlobalReceiver_8cpp_source.html#l00051">GlobalReceiver::setCom()</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00053">AbstractCommunication::setLevel()</a>, and <a class="el" href="AbstractCommunication_8h_source.html#l00041">AbstractCommunication::WARN</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00046">main()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00042">main()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_a4fc01d736fe50cf5b977f755b675f11d_cgraph.png" border="0" usemap="#main_8cpp_a4fc01d736fe50cf5b977f755b675f11d_cgraph" alt=""/></div>
 <map name="main_8cpp_a4fc01d736fe50cf5b977f755b675f11d_cgraph" id="main_8cpp_a4fc01d736fe50cf5b977f755b675f11d_cgraph">
-<area shape="rect" id="node3" href="classDebug.html#aed5f2d64e6d7c71605a2df12cf69ef20" title="Debug::info" alt="" coords="125,5,216,32"/><area shape="rect" id="node5" href="classDebug.html#a57019861dc83bc80565b7af8fac3b40a" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="112,56,229,83"/><area shape="rect" id="node7" href="classDebug.html#aa51fece50f30c3bfa6f610929e40714a" title="Debug::setLevel" alt="" coords="110,107,231,133"/></map>
+<area shape="rect" id="node3" href="classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c" title="AbstractCommunication\l::info" alt="" coords="113,5,276,46"/><area shape="rect" id="node5" href="classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function." alt="" coords="139,71,250,97"/><area shape="rect" id="node7" href="classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="109,121,280,148"/><area shape="rect" id="node9" href="classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336" title="AbstractCommunication\l::setLevel" alt="" coords="113,173,276,214"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="adaa7de8e021b5739a7f8ea5d4e580809"></a>
+<a class="anchor" id="ac32bb15f611faf91f75daaab60c1068c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classAbstractCommunication.html">AbstractCommunication</a>* com = new <a class="el" href="classSerialCom.html">SerialCom</a>()</td>
+          <td class="memname"><a class="el" href="classSerialCom.html">SerialCom</a> com</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -215,12 +215,12 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ab8ad7ebf86486ec65142ed8cb150247a"></a>
+<a class="anchor" id="a95de02de573cd863d1547c545dfeceae"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDebug.html">Debug</a>* debug</td>
+          <td class="memname"><a class="el" href="classGlobalReceiver.html">GlobalReceiver</a> glrcv</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -241,7 +241,7 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="main_8cpp_source.html#l00009">9</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00032">loop()</a>, and <a class="el" href="main_8cpp_source.html#l00017">setup()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00029">loop()</a>, and <a class="el" href="main_8cpp_source.html#l00017">setup()</a>.</p>
 
 </div>
 </div>

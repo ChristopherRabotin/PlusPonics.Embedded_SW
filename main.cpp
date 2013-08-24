@@ -8,23 +8,19 @@
 
 int ledPin = 13;    // LED connected to digital pin 13
 
-AbstractCommunication *com;
-GlobalReceiver *glrcv;
+SerialCom com;
+GlobalReceiver glrcv;
 
 /**
  * @brief This function is only ran when the sketch is initialized.
  */
 void setup() {
 	pinMode(ledPin, OUTPUT);
+	com.init();
+	com.setLevel(AbstractCommunication::WARN);
+	com.info("Setting up led", "setup");
 
-#ifdef SERIAL_COMMUNICATION
-	com = new SerialCom();
-#endif
-
-	com->setLevel(AbstractCommunication::WARN);
-	com->info("Setting up led", "setup");
-
-	glrcv->setCom(com);
+	glrcv.setCom(com);
 }
 
 /**
@@ -32,11 +28,11 @@ void setup() {
  */
 void loop() {
 	digitalWrite(ledPin, HIGH);
-	com->warn("Will sleep for two seconds now.", "loop");
+	com.warn("Will sleep for two seconds now.", "loop");
 	delay(2000);
 	digitalWrite(ledPin, LOW);
 	delay(1000);
-	glrcv->process();
+	//glrcv.process();
 }
 
 /**

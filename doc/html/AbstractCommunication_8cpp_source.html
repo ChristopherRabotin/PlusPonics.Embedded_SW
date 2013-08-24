@@ -75,13 +75,47 @@ $(document).ready(function(){initNavTree('AbstractCommunication_8cpp_source.html
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="AbstractCommunication_8h.html">AbstractCommunication.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="classAbstractCommunication.html#a0e6ca44e41df8ca8e9e563cde1789f70">   14</a></span>&#160;<a class="code" href="classAbstractCommunication.html#a0e6ca44e41df8ca8e9e563cde1789f70" title="The constructor should initialize the communication with the control system. This includes everything...">AbstractCommunication::AbstractCommunication</a>() {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classAbstractCommunication.html#a8471fbdcb6837697c9963c797c434c73">lvl</a> = <a class="code" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4fa8911cc4876c5aedfcfd7050c1ce0f4a1">ERROR</a>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="classAbstractCommunication.html#a55661ddfc00471e24468d1e5bb76fdac">   18</a></span>&#160;<a class="code" href="classAbstractCommunication.html#a55661ddfc00471e24468d1e5bb76fdac">AbstractCommunication::~AbstractCommunication</a>() {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// TODO Auto-generated destructor stub</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">const</span> String <a class="code" href="classAbstractCommunication.html#a7a582596aa1fa873865d543d0df1d437">AbstractCommunication::DEFAULT_LOCATION</a> = <span class="stringliteral">&quot;None&quot;</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c">AbstractCommunication::info</a>(String msg) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c">info</a>(msg, <a class="code" href="classAbstractCommunication.html#a7a582596aa1fa873865d543d0df1d437">DEFAULT_LOCATION</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="classAbstractCommunication.html#af0eeb1540a126715d0e7983406a6ed9e">   27</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAbstractCommunication.html#af0eeb1540a126715d0e7983406a6ed9e">AbstractCommunication::warn</a>(String msg) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classAbstractCommunication.html#af0eeb1540a126715d0e7983406a6ed9e">warn</a>(msg, <a class="code" href="classAbstractCommunication.html#a7a582596aa1fa873865d543d0df1d437">DEFAULT_LOCATION</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="classAbstractCommunication.html#ac91407ea34e5b8496fd1195569720fc1">   31</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAbstractCommunication.html#ac91407ea34e5b8496fd1195569720fc1">AbstractCommunication::error</a>(String msg) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classAbstractCommunication.html#ac91407ea34e5b8496fd1195569720fc1">error</a>(msg, <a class="code" href="classAbstractCommunication.html#a7a582596aa1fa873865d543d0df1d437">DEFAULT_LOCATION</a>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="classAbstractCommunication.html#aeea9cd083d0df591cd6021ac86fab742">   35</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c">AbstractCommunication::info</a>(String msg, String location) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classAbstractCommunication.html#a8471fbdcb6837697c9963c797c434c73">lvl</a> &lt;= <a class="code" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4faf948f99c94172d72dff0a540a84704fb">INFO</a>) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe.">send</a>(<span class="stringliteral">&quot;INFO: &quot;</span> + msg + <span class="stringliteral">&quot; &lt;&quot;</span> + location + <span class="stringliteral">&quot;&gt;&quot;</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="classAbstractCommunication.html#a0b0a7cc8ef0314ce8f05f3dcf55b8918">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAbstractCommunication.html#af0eeb1540a126715d0e7983406a6ed9e">AbstractCommunication::warn</a>(String msg, String location) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classAbstractCommunication.html#a8471fbdcb6837697c9963c797c434c73">lvl</a> &lt;= <a class="code" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b">WARN</a>) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe.">send</a>(<span class="stringliteral">&quot;WARN: &quot;</span> + msg + <span class="stringliteral">&quot; &lt;&quot;</span> + location + <span class="stringliteral">&quot;&gt;&quot;</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="classAbstractCommunication.html#a8cd7f5a6a402a9e7d463bdcacd61319f">   47</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAbstractCommunication.html#ac91407ea34e5b8496fd1195569720fc1">AbstractCommunication::error</a>(String msg, String location) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classAbstractCommunication.html#a8471fbdcb6837697c9963c797c434c73">lvl</a> &lt;= <a class="code" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4fa8911cc4876c5aedfcfd7050c1ce0f4a1">ERROR</a>) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe.">send</a>(<span class="stringliteral">&quot;ERROR: &quot;</span> + msg + <span class="stringliteral">&quot; &lt;&quot;</span> + location + <span class="stringliteral">&quot;&gt;&quot;</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336">   53</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336">AbstractCommunication::setLevel</a>(<a class="code" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4f">DEBUG_LEVEL</a> lvl) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    this-&gt;lvl = <a class="code" href="classAbstractCommunication.html#a8471fbdcb6837697c9963c797c434c73">lvl</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

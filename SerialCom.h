@@ -20,6 +20,7 @@ class SerialCom: public AbstractCommunication {
 public:
 	SerialCom();
 	virtual ~SerialCom();
+	void init();
 	void send(String payload);
 	String recv();
 };

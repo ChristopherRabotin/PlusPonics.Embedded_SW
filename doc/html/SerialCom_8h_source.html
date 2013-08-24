@@ -78,15 +78,17 @@ $(document).ready(function(){initNavTree('SerialCom_8h_source.html','');});
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="AbstractCommunication_8h.html">AbstractCommunication.h</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;HardwareSerial.h&gt;</span> <span class="comment">// TODO Eventually use SoftSerial.h since it uses interrupts to read incoming messages.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="classSerialCom.html">   18</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="classSerialCom.html" title="This class defines serial communication with the control system.">SerialCom</a>: <span class="keyword">public</span> <a class="code" href="classAbstractCommunication.html" title="This class defines how all communication should be done.">AbstractCommunication</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classSerialCom.html#a4e0fd8ce8d81fc4f3c422d2f9d1aff68">SerialCom</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classSerialCom.html#a5582cf804e661a24cb32720b31a2f9fe">~SerialCom</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSerialCom.html#a77c7bd4a1c21e91c00a9d52c4aaad394" title="This function sends information through the communication pipe.">send</a>(String payload);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    String <a class="code" href="classSerialCom.html#a74aa77aadfdc14a95cfbf261e5acc690" title="This function reads the serial input and returns all the information it reads at the time of calling...">recv</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SERIALCOM_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// #include &lt;SoftwareSerial.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="classSerialCom.html">   19</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="classSerialCom.html" title="This class defines serial communication with the control system.">SerialCom</a>: <span class="keyword">public</span> <a class="code" href="classAbstractCommunication.html" title="This class defines how all communication should be done.">AbstractCommunication</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classSerialCom.html#a4e0fd8ce8d81fc4f3c422d2f9d1aff68">SerialCom</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classSerialCom.html#a5582cf804e661a24cb32720b31a2f9fe">~SerialCom</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function.">init</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSerialCom.html#a77c7bd4a1c21e91c00a9d52c4aaad394" title="This function sends information through the communication pipe.">send</a>(String payload);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    String <a class="code" href="classSerialCom.html#a74aa77aadfdc14a95cfbf261e5acc690" title="This function reads the serial input and returns all the information it reads at the time of calling...">recv</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SERIALCOM_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
