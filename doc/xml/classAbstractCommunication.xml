@@ -149,7 +149,7 @@
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="29"/>
         <referencedby refid="classAbstractCommunication_1a8cd7f5a6a402a9e7d463bdcacd61319f" compoundref="AbstractCommunication_8cpp" startline="47" endline="51">error</referencedby>
         <referencedby refid="classAbstractCommunication_1aeea9cd083d0df591cd6021ac86fab742" compoundref="AbstractCommunication_8cpp" startline="35" endline="39">info</referencedby>
-        <referencedby refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="26" endline="49">GlobalReceiver::process</referencedby>
+        <referencedby refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="26" endline="50">GlobalReceiver::process</referencedby>
         <referencedby refid="classAbstractCommunication_1a0b0a7cc8ef0314ce8f05f3dcf55b8918" compoundref="AbstractCommunication_8cpp" startline="41" endline="45">warn</referencedby>
       </memberdef>
       <memberdef kind="function" id="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
@@ -166,7 +166,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="34"/>
-        <referencedby refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="26" endline="49">GlobalReceiver::process</referencedby>
+        <referencedby refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="26" endline="50">GlobalReceiver::process</referencedby>
       </memberdef>
       <memberdef kind="function" id="classAbstractCommunication_1aca99e8b6cfffce4207bb9ca09f90e15c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>

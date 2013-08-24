@@ -1,3 +1,7 @@
 <map id="loop" name="loop">
-<area shape="rect" id="node3" href="$classAbstractCommunication.html#af0eeb1540a126715d0e7983406a6ed9e" title="AbstractCommunication\l::warn" alt="" coords="101,5,264,46"/>
+<area shape="rect" id="node3" href="$classGlobalReceiver.html#a86c5c89fd69a213379582e1a81085d12" title="This function fetches and processes the input. It calls com&#39;s recv() to read the latest information..." alt="" coords="102,77,274,104"/>
+<area shape="rect" id="node11" href="$classAbstractCommunication.html#af0eeb1540a126715d0e7983406a6ed9e" title="AbstractCommunication\l::warn" alt="" coords="107,129,269,170"/>
+<area shape="rect" id="node5" href="$classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="323,5,485,46"/>
+<area shape="rect" id="node7" href="$classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0" title="This function reads data from the pipe and returns this as a string." alt="" coords="323,70,485,111"/>
+<area shape="rect" id="node9" href="$GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4" title="byte_to_binary" alt="" coords="350,136,458,163"/>
 </map>

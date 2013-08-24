@@ -119,7 +119,7 @@
         <references refid="classAbstractCommunication_1aca99e8b6cfffce4207bb9ca09f90e15c" compoundref="AbstractCommunication_8cpp" startline="23" endline="25">AbstractCommunication::info</references>
         <references refid="classSerialCom_1a53bb031287acb1973c1e1f76799c76b6" compoundref="SerialCom_8cpp" startline="20" endline="22">SerialCom::init</references>
         <references refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" compoundref="main_8cpp" startline="9">ledPin</references>
-        <references refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" compoundref="GlobalReceiver_8cpp" startline="51" endline="53">GlobalReceiver::setCom</references>
+        <references refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" compoundref="GlobalReceiver_8cpp" startline="52" endline="54">GlobalReceiver::setCom</references>
         <references refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" compoundref="AbstractCommunication_8cpp" startline="53" endline="55">AbstractCommunication::setLevel</references>
         <references refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b" compoundref="AbstractCommunication_8h" startline="41">AbstractCommunication::WARN</references>
         <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="42" endline="50">main</referencedby>
@@ -137,6 +137,7 @@
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="29" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="29" bodyend="36"/>
         <references refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" compoundref="main_8cpp" startline="9">ledPin</references>
+        <references refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="26" endline="50">GlobalReceiver::process</references>
         <references refid="classAbstractCommunication_1af0eeb1540a126715d0e7983406a6ed9e" compoundref="AbstractCommunication_8cpp" startline="27" endline="29">AbstractCommunication::warn</references>
         <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="42" endline="50">main</referencedby>
       </memberdef>
@@ -193,7 +194,7 @@
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(2000);</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kindref="member">ledPin</ref>,<sp/>LOW);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(1000);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//glrcv.process();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>glrcv.<ref refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" kindref="member" tooltip="This function fetches and processes the input. It calls com&amp;#39;s recv() to read the latest information...">process</ref>();</highlight></codeline>
 <codeline lineno="36"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="42" refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member" tooltip="where all the subsystems are started.">main</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>

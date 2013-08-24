@@ -32,7 +32,7 @@ void loop() {
 	delay(2000);
 	digitalWrite(ledPin, LOW);
 	delay(1000);
-	//glrcv.process();
+	glrcv.process();
 }
 
 /**

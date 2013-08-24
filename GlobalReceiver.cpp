@@ -24,6 +24,7 @@ const char *byte_to_binary(int x) {
 }
 
 void GlobalReceiver::process() {
+	com->send("in");
 	String input = com->recv();
 	char action = input.c_str()[0];
 	char reply[100];
@@ -45,7 +46,7 @@ void GlobalReceiver::process() {
 				byte_to_binary(input.toInt()), byte_to_binary((int) action));
 	}
 
-	com->send(String(reply));
+	com->send("out");
 }
 
 void GlobalReceiver::setCom(AbstractCommunication &comInstance) {
