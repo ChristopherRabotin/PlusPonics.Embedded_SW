@@ -9,6 +9,7 @@
 #define ABSTRACTCOMMUNICATION_H_
 
 #include <stdio.h>
+#include <stdarg.h>
 #include <WString.h>
 /**
  * @class AbstractCommunication
@@ -33,6 +34,11 @@ public:
 	 */
 	virtual String recv() = 0;
 
+	/**
+	 * @brief This function sends a formatted string through the communication pipe.
+	 * @param payload this is the string to be formatted with the additional arguments. Works just like printf.
+	 */
+	void sendf(String payload, ...);
 	/**
 	 * @enum DEBUG_LEVEL Defines different levels of debugging.
 	 */

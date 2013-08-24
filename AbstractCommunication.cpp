@@ -50,6 +50,16 @@ void AbstractCommunication::error(String msg, String location) {
 	}
 }
 
+void AbstractCommunication::sendf(String payload, ...) {
+	/* From: http://playground.arduino.cc/Main/Printf (accessed on 2013-AUG-24). */
+	char tmp[256];
+	va_list args;
+	va_start(args, payload);
+	vsnprintf(tmp, 128, payload.c_str(), args);
+	va_end(args);
+	send(tmp);
+}
+
 void AbstractCommunication::setLevel(DEBUG_LEVEL lvl) {
 	this->lvl = lvl;
 }

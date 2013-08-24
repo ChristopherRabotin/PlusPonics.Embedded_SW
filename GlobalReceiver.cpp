@@ -24,29 +24,26 @@ const char *byte_to_binary(int x) {
 }
 
 void GlobalReceiver::process() {
-	com->send("in");
 	String input = com->recv();
+	if(input.length() == 0) return;
 	char action = input.c_str()[0];
-	char reply[100];
 	switch (action) {
 	case '1':
-		sprintf(reply, "CMD (%s)", input.c_str());
+		com->sendf("CMD (%s)", input.c_str());
 		break;
 	case '3':
-		sprintf(reply, "Proc (%s)", input.c_str());
+		com->sendf("Procedure (%s)", input.c_str());
 		break;
 	case '5':
-		sprintf(reply, "Dwell (%s)", input.c_str());
+		com->sendf("Dwell (%s)", input.c_str());
 		break;
 	case '7':
-		sprintf(reply, "Meta (%s)", input.c_str());
+		com->sendf("Meta (%s)", input.c_str());
 		break;
 	default:
-		sprintf(reply, "??? '%s' | %s b | a: %s b", input.c_str(),
+		com->sendf("??? '%s' | %s b | a: %s b", input.c_str(),
 				byte_to_binary(input.toInt()), byte_to_binary((int) action));
 	}
-
-	com->send("out");
 }
 
 void GlobalReceiver::setCom(AbstractCommunication &comInstance) {
