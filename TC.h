@@ -1,0 +1,87 @@
+/*
+ * TC.h
+ *
+ *  Created on: Aug 25, 2013
+ *      Author: chris
+ */
+
+#ifndef TC_H_
+#define TC_H_
+
+/**
+ * @brief This class defines a telecommand. It is high level and must be overwritten by low level classes.
+ * In this class, high level functions are defined as non virtual. Lower level actions must be redefined
+ * in subclasses. This allows consistency between each telecommand class.
+ * A telecommand can be enabled or disable with the appropriate functions. Note that there is no toggle
+ * function. This is to prevent double messages to be sent and enable then disable a command for example.
+ */
+class TC {
+public:
+	/**
+	 * @brief This creates the TC object. Make sure to pass the operation code (or opcode) in argument.
+	 * @param opcode operation code of this telecommand.
+	 */
+	TC(int opcode);
+	virtual ~TC();
+	/**
+	 * @enum ERROR_STATE defines all the error states a TC can have.
+	 */
+	enum ERROR_STATE {
+		NO_ERROR, /**< nominal state */
+		NOT_ENABLED, /**< if attempting to start or stop when not enabled */
+		WAS_ENABLED, /**< if attempting to enable and was already enabled */
+		WAS_DISABLED, /**< if attempting to disable and was already disabled */
+		WAS_STOPPED, /**< if attempting to stop and was already stopped */
+		WAS_RUNNING, /**< if attempting to start and was already running */
+		WAS_NOT_PERSISTENT, /**< if attempting to clear the error and was not in persistent error mode */
+		READ_ONLY /**< if attempting to change the enable or disable state while the command is running */
+	};
+	/**
+	 * @brief This function will enable this TC.
+	 */
+	void enable();
+	/**
+	 * @brief This function will disable this TC. A disabled TC cannot be executed.
+	 */
+	void disable();
+	/**
+	 * @brief This function will start the execution of this TC. This function calls __start after shared features.
+	 */
+	void start();
+	/**
+	 * @brief This function will stop the execution of this TC. This function calls __stop after shared features.
+	 * @note Some TCs are too quick to be stopped.
+	 */
+	void stop();
+
+	/**
+	 * @brief This function sets this TC to persist error (or not).
+	 * @param persist set to true to make errors persistent. A persistent error will not reset the error state of this TC until commanded to do so.
+	 */
+	void persist_errors(bool persist);
+
+	/**
+	 * @brief This function will clear the current error. If called when persistent error are set to false, this will change the error state.
+	 */
+	void clear_error();
+	/**
+	 * @brief This function will return the current error of this TC.
+	 * @note Once this function is called, the error state is returned to NO_ERROR unless if this TC is configured as having persistent error.
+	 * @return The current error state.
+	 */
+	ERROR_STATE errno();
+	/**
+	 * @brief The setup function sets up everything for this TC to be operational. It is called from the constructor.
+	 */
+	virtual void setup() = 0;
+	virtual void __start() = 0;
+	virtual void __stop() = 0;
+private:
+	bool enabled;
+	bool running;
+	bool persistent_error;
+	int executions;
+	ERROR_STATE error;
+};
+
+#endif /* TC_H_ */

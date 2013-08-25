@@ -110,6 +110,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acc2db09ee34d303eb88d2641395953e0"><td class="memItemLeft" align="right" valign="top">virtual String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0">recv</a> ()=0</td></tr>
 <tr class="memdesc:acc2db09ee34d303eb88d2641395953e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function reads data from the pipe and returns this as a string.  <a href="#acc2db09ee34d303eb88d2641395953e0"></a><br/></td></tr>
 <tr class="separator:acc2db09ee34d303eb88d2641395953e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77b74aa662946ae6c86cf2683703a04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04">sendf</a> (String payload,...)</td></tr>
+<tr class="memdesc:ad77b74aa662946ae6c86cf2683703a04"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sends a formatted string through the communication pipe.  <a href="#ad77b74aa662946ae6c86cf2683703a04"></a><br/></td></tr>
+<tr class="separator:ad77b74aa662946ae6c86cf2683703a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca99e8b6cfffce4207bb9ca09f90e15c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c">info</a> (String msg)</td></tr>
 <tr class="separator:aca99e8b6cfffce4207bb9ca09f90e15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0eeb1540a126715d0e7983406a6ed9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCommunication.html#af0eeb1540a126715d0e7983406a6ed9e">warn</a> (String msg)</td></tr>
@@ -141,7 +144,7 @@ Static Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class defines how all communication should be done. </p>
 
-<p>Definition at line <a class="el" href="AbstractCommunication_8h_source.html#l00017">17</a> of file <a class="el" href="AbstractCommunication_8h_source.html">AbstractCommunication.h</a>.</p>
+<p>Definition at line <a class="el" href="AbstractCommunication_8h_source.html#l00018">18</a> of file <a class="el" href="AbstractCommunication_8h_source.html">AbstractCommunication.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a4226603ef45c35ea969f888ff6cabe4f"></a>
 <div class="memitem">
@@ -167,7 +170,7 @@ Static Private Attributes</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="AbstractCommunication_8h_source.html#l00039">39</a> of file <a class="el" href="AbstractCommunication_8h_source.html">AbstractCommunication.h</a>.</p>
+<p>Definition at line <a class="el" href="AbstractCommunication_8h_source.html#l00045">45</a> of file <a class="el" href="AbstractCommunication_8h_source.html">AbstractCommunication.h</a>.</p>
 
 </div>
 </div>
@@ -189,7 +192,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00014">14</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
 
-<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00042">ERROR</a>, and <a class="el" href="AbstractCommunication_8h_source.html#l00073">lvl</a>.</p>
+<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00048">ERROR</a>, and <a class="el" href="AbstractCommunication_8h_source.html#l00079">lvl</a>.</p>
 
 </div>
 </div>
@@ -235,7 +238,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00031">31</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
 
-<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00072">DEFAULT_LOCATION</a>.</p>
+<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00078">DEFAULT_LOCATION</a>.</p>
 
 </div>
 </div>
@@ -274,7 +277,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00047">47</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
 
-<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00042">ERROR</a>, <a class="el" href="AbstractCommunication_8h_source.html#l00073">lvl</a>, and <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">send()</a>.</p>
+<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00048">ERROR</a>, <a class="el" href="AbstractCommunication_8h_source.html#l00079">lvl</a>, and <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">send()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -303,9 +306,9 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00023">23</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
 
-<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00072">DEFAULT_LOCATION</a>.</p>
+<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00078">DEFAULT_LOCATION</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00017">setup()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00031">setup()</a>.</p>
 
 </div>
 </div>
@@ -344,7 +347,7 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00035">35</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
 
-<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00040">INFO</a>, <a class="el" href="AbstractCommunication_8h_source.html#l00073">lvl</a>, and <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">send()</a>.</p>
+<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00046">INFO</a>, <a class="el" href="AbstractCommunication_8h_source.html#l00079">lvl</a>, and <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">send()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -446,7 +449,56 @@ Here is the call graph for this function:</div>
 
 <p>Implemented in <a class="el" href="classSerialCom.html#a77c7bd4a1c21e91c00a9d52c4aaad394">SerialCom</a>.</p>
 
-<p>Referenced by <a class="el" href="AbstractCommunication_8cpp_source.html#l00047">error()</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00035">info()</a>, <a class="el" href="GlobalReceiver_8cpp_source.html#l00026">GlobalReceiver::process()</a>, and <a class="el" href="AbstractCommunication_8cpp_source.html#l00041">warn()</a>.</p>
+<p>Referenced by <a class="el" href="AbstractCommunication_8cpp_source.html#l00047">error()</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00035">info()</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00053">sendf()</a>, and <a class="el" href="AbstractCommunication_8cpp_source.html#l00041">warn()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad77b74aa662946ae6c86cf2683703a04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractCommunication::sendf </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function sends a formatted string through the communication pipe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">payload</td><td>this is the string to be formatted with the additional arguments. Works just like printf. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00053">53</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
+
+<p>References <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">send()</a>.</p>
+
+<p>Referenced by <a class="el" href="GlobalReceiver_8cpp_source.html#l00026">GlobalReceiver::process()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAbstractCommunication_ad77b74aa662946ae6c86cf2683703a04_cgraph.png" border="0" usemap="#classAbstractCommunication_ad77b74aa662946ae6c86cf2683703a04_cgraph" alt=""/></div>
+<map name="classAbstractCommunication_ad77b74aa662946ae6c86cf2683703a04_cgraph" id="classAbstractCommunication_ad77b74aa662946ae6c86cf2683703a04_cgraph">
+<area shape="rect" id="node3" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="216,5,379,46"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -464,11 +516,11 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00053">53</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
+<p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00063">63</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
 
-<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00073">lvl</a>.</p>
+<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00079">lvl</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00017">setup()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00031">setup()</a>.</p>
 
 </div>
 </div>
@@ -488,9 +540,7 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00027">27</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
 
-<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00072">DEFAULT_LOCATION</a>.</p>
-
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00029">loop()</a>.</p>
+<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00078">DEFAULT_LOCATION</a>.</p>
 
 </div>
 </div>
@@ -529,7 +579,7 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="AbstractCommunication_8cpp_source.html#l00041">41</a> of file <a class="el" href="AbstractCommunication_8cpp_source.html">AbstractCommunication.cpp</a>.</p>
 
-<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00073">lvl</a>, <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">send()</a>, and <a class="el" href="AbstractCommunication_8h_source.html#l00041">WARN</a>.</p>
+<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00079">lvl</a>, <a class="el" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d">send()</a>, and <a class="el" href="AbstractCommunication_8h_source.html#l00047">WARN</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -561,7 +611,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="AbstractCommunication_8h_source.html#l00072">72</a> of file <a class="el" href="AbstractCommunication_8h_source.html">AbstractCommunication.h</a>.</p>
+<p>Definition at line <a class="el" href="AbstractCommunication_8h_source.html#l00078">78</a> of file <a class="el" href="AbstractCommunication_8h_source.html">AbstractCommunication.h</a>.</p>
 
 <p>Referenced by <a class="el" href="AbstractCommunication_8cpp_source.html#l00031">error()</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00023">info()</a>, and <a class="el" href="AbstractCommunication_8cpp_source.html#l00027">warn()</a>.</p>
 
@@ -585,9 +635,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="AbstractCommunication_8h_source.html#l00073">73</a> of file <a class="el" href="AbstractCommunication_8h_source.html">AbstractCommunication.h</a>.</p>
+<p>Definition at line <a class="el" href="AbstractCommunication_8h_source.html#l00079">79</a> of file <a class="el" href="AbstractCommunication_8h_source.html">AbstractCommunication.h</a>.</p>
 
-<p>Referenced by <a class="el" href="AbstractCommunication_8cpp_source.html#l00014">AbstractCommunication()</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00047">error()</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00035">info()</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00053">setLevel()</a>, and <a class="el" href="AbstractCommunication_8cpp_source.html#l00041">warn()</a>.</p>
+<p>Referenced by <a class="el" href="AbstractCommunication_8cpp_source.html#l00014">AbstractCommunication()</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00047">error()</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00035">info()</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00063">setLevel()</a>, and <a class="el" href="AbstractCommunication_8cpp_source.html#l00041">warn()</a>.</p>
 
 </div>
 </div>

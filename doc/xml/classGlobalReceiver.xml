@@ -17,8 +17,8 @@
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="40" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" bodystart="40" bodyend="-1"/>
         <referencedby refid="classGlobalReceiver_1a9dfd412916cfb9f441b6d7a884b74ad3" compoundref="GlobalReceiver_8cpp" startline="10" endline="12">GlobalReceiver</referencedby>
-        <referencedby refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="26" endline="50">process</referencedby>
-        <referencedby refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" compoundref="GlobalReceiver_8cpp" startline="52" endline="54">setCom</referencedby>
+        <referencedby refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="26" endline="47">process</referencedby>
+        <referencedby refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" compoundref="GlobalReceiver_8cpp" startline="49" endline="51">setCom</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -53,12 +53,12 @@
 </para><para>This includes commands related to meta around the pod, not its operational commands.</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="32" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp" bodystart="26" bodyend="50"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="32" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp" bodystart="26" bodyend="47"/>
         <references refid="GlobalReceiver_8cpp_1a98a09d6b95fb0fa32210f041f0af87d4" compoundref="GlobalReceiver_8cpp" startline="14" endline="24">byte_to_binary</references>
         <references refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" compoundref="GlobalReceiver_8h" startline="40">com</references>
         <references refid="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0">AbstractCommunication::recv</references>
-        <references refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d">AbstractCommunication::send</references>
-        <referencedby refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="29" endline="36">loop</referencedby>
+        <references refid="classAbstractCommunication_1ad77b74aa662946ae6c86cf2683703a04" compoundref="AbstractCommunication_8cpp" startline="53" endline="61">AbstractCommunication::sendf</references>
+        <referencedby refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="42" endline="48">loop</referencedby>
       </memberdef>
       <memberdef kind="function" id="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -83,9 +83,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="37" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp" bodystart="52" bodyend="54"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="37" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp" bodystart="49" bodyend="51"/>
         <references refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" compoundref="GlobalReceiver_8h" startline="40">com</references>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="17" endline="24">setup</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="31" endline="37">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="classGlobalReceiver_1ace0d4a5976198ff64c4515459b1fa289" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="38" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp" bodystart="56" bodyend="58"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="38" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp" bodystart="53" bodyend="55"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -106,14 +106,14 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="15">
+      <node id="17">
         <label>AbstractCommunication</label>
         <link refid="classAbstractCommunication"/>
       </node>
-      <node id="14">
+      <node id="16">
         <label>GlobalReceiver</label>
         <link refid="classGlobalReceiver"/>
-        <childnode refid="15" relation="usage">
+        <childnode refid="17" relation="usage">
           <edgelabel>com</edgelabel>
         </childnode>
       </node>

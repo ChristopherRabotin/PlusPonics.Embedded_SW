@@ -37,7 +37,7 @@
 <para>Defines different levels of debugging. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="39" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" bodystart="39" bodyend="43"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="45" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" bodystart="45" bodyend="49"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-attrib">
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="72" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" bodystart="72" bodyend="-1"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="78" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" bodystart="78" bodyend="-1"/>
         <referencedby refid="classAbstractCommunication_1ac91407ea34e5b8496fd1195569720fc1" compoundref="AbstractCommunication_8cpp" startline="31" endline="33">error</referencedby>
         <referencedby refid="classAbstractCommunication_1aca99e8b6cfffce4207bb9ca09f90e15c" compoundref="AbstractCommunication_8cpp" startline="23" endline="25">info</referencedby>
         <referencedby refid="classAbstractCommunication_1af0eeb1540a126715d0e7983406a6ed9e" compoundref="AbstractCommunication_8cpp" startline="27" endline="29">warn</referencedby>
@@ -71,11 +71,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="73" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" bodystart="73" bodyend="-1"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="79" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" bodystart="79" bodyend="-1"/>
         <referencedby refid="classAbstractCommunication_1a0e6ca44e41df8ca8e9e563cde1789f70" compoundref="AbstractCommunication_8cpp" startline="14" endline="16">AbstractCommunication</referencedby>
         <referencedby refid="classAbstractCommunication_1a8cd7f5a6a402a9e7d463bdcacd61319f" compoundref="AbstractCommunication_8cpp" startline="47" endline="51">error</referencedby>
         <referencedby refid="classAbstractCommunication_1aeea9cd083d0df591cd6021ac86fab742" compoundref="AbstractCommunication_8cpp" startline="35" endline="39">info</referencedby>
-        <referencedby refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" compoundref="AbstractCommunication_8cpp" startline="53" endline="55">setLevel</referencedby>
+        <referencedby refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" compoundref="AbstractCommunication_8cpp" startline="63" endline="65">setLevel</referencedby>
         <referencedby refid="classAbstractCommunication_1a0b0a7cc8ef0314ce8f05f3dcf55b8918" compoundref="AbstractCommunication_8cpp" startline="41" endline="45">warn</referencedby>
       </memberdef>
       </sectiondef>
@@ -91,9 +91,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="19" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="14" bodyend="16"/>
-        <references refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa8911cc4876c5aedfcfd7050c1ce0f4a1" compoundref="AbstractCommunication_8h" startline="42">ERROR</references>
-        <references refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" compoundref="AbstractCommunication_8h" startline="73">lvl</references>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="20" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="14" bodyend="16"/>
+        <references refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa8911cc4876c5aedfcfd7050c1ce0f4a1" compoundref="AbstractCommunication_8h" startline="48">ERROR</references>
+        <references refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" compoundref="AbstractCommunication_8h" startline="79">lvl</references>
       </memberdef>
       <memberdef kind="function" id="classAbstractCommunication_1a55661ddfc00471e24468d1e5bb76fdac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="20" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="18" bodyend="19"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="21" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="18" bodyend="19"/>
       </memberdef>
       <memberdef kind="function" id="classAbstractCommunication_1a34dc23ed80eff81b2527c5f89ac5f1ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="24"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="25"/>
       </memberdef>
       <memberdef kind="function" id="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -146,10 +146,10 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="29"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="30"/>
         <referencedby refid="classAbstractCommunication_1a8cd7f5a6a402a9e7d463bdcacd61319f" compoundref="AbstractCommunication_8cpp" startline="47" endline="51">error</referencedby>
         <referencedby refid="classAbstractCommunication_1aeea9cd083d0df591cd6021ac86fab742" compoundref="AbstractCommunication_8cpp" startline="35" endline="39">info</referencedby>
-        <referencedby refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="26" endline="50">GlobalReceiver::process</referencedby>
+        <referencedby refid="classAbstractCommunication_1ad77b74aa662946ae6c86cf2683703a04" compoundref="AbstractCommunication_8cpp" startline="53" endline="61">sendf</referencedby>
         <referencedby refid="classAbstractCommunication_1a0b0a7cc8ef0314ce8f05f3dcf55b8918" compoundref="AbstractCommunication_8cpp" startline="41" endline="45">warn</referencedby>
       </memberdef>
       <memberdef kind="function" id="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
@@ -165,8 +165,38 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="34"/>
-        <referencedby refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="26" endline="50">GlobalReceiver::process</referencedby>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="35"/>
+        <referencedby refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="26" endline="47">GlobalReceiver::process</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractCommunication_1ad77b74aa662946ae6c86cf2683703a04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractCommunication::sendf</definition>
+        <argsstring>(String payload,...)</argsstring>
+        <name>sendf</name>
+        <param>
+          <type>String</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>This function sends a formatted string through the communication pipe. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>this is the string to be formatted with the additional arguments. Works just like printf. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="41" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="53" bodyend="61"/>
+        <references refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d">send</references>
+        <referencedby refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="26" endline="47">GlobalReceiver::process</referencedby>
       </memberdef>
       <memberdef kind="function" id="classAbstractCommunication_1aca99e8b6cfffce4207bb9ca09f90e15c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -183,9 +213,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="45" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="23" bodyend="25"/>
-        <references refid="classAbstractCommunication_1a7a582596aa1fa873865d543d0df1d437" compoundref="AbstractCommunication_8h" startline="72">DEFAULT_LOCATION</references>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="17" endline="24">setup</referencedby>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="51" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="23" bodyend="25"/>
+        <references refid="classAbstractCommunication_1a7a582596aa1fa873865d543d0df1d437" compoundref="AbstractCommunication_8h" startline="78">DEFAULT_LOCATION</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="31" endline="37">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="classAbstractCommunication_1af0eeb1540a126715d0e7983406a6ed9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -202,9 +232,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="46" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="27" bodyend="29"/>
-        <references refid="classAbstractCommunication_1a7a582596aa1fa873865d543d0df1d437" compoundref="AbstractCommunication_8h" startline="72">DEFAULT_LOCATION</references>
-        <referencedby refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="29" endline="36">loop</referencedby>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="52" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="27" bodyend="29"/>
+        <references refid="classAbstractCommunication_1a7a582596aa1fa873865d543d0df1d437" compoundref="AbstractCommunication_8h" startline="78">DEFAULT_LOCATION</references>
       </memberdef>
       <memberdef kind="function" id="classAbstractCommunication_1ac91407ea34e5b8496fd1195569720fc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -221,8 +250,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="47" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="31" bodyend="33"/>
-        <references refid="classAbstractCommunication_1a7a582596aa1fa873865d543d0df1d437" compoundref="AbstractCommunication_8h" startline="72">DEFAULT_LOCATION</references>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="53" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="31" bodyend="33"/>
+        <references refid="classAbstractCommunication_1a7a582596aa1fa873865d543d0df1d437" compoundref="AbstractCommunication_8h" startline="78">DEFAULT_LOCATION</references>
       </memberdef>
       <memberdef kind="function" id="classAbstractCommunication_1aeea9cd083d0df591cd6021ac86fab742" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -258,9 +287,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="54" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="35" bodyend="39"/>
-        <references refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4faf948f99c94172d72dff0a540a84704fb" compoundref="AbstractCommunication_8h" startline="40">INFO</references>
-        <references refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" compoundref="AbstractCommunication_8h" startline="73">lvl</references>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="60" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="35" bodyend="39"/>
+        <references refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4faf948f99c94172d72dff0a540a84704fb" compoundref="AbstractCommunication_8h" startline="46">INFO</references>
+        <references refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" compoundref="AbstractCommunication_8h" startline="79">lvl</references>
         <references refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d">send</references>
       </memberdef>
       <memberdef kind="function" id="classAbstractCommunication_1a0b0a7cc8ef0314ce8f05f3dcf55b8918" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -297,10 +326,10 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="61" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="41" bodyend="45"/>
-        <references refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" compoundref="AbstractCommunication_8h" startline="73">lvl</references>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="67" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="41" bodyend="45"/>
+        <references refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" compoundref="AbstractCommunication_8h" startline="79">lvl</references>
         <references refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d">send</references>
-        <references refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b" compoundref="AbstractCommunication_8h" startline="41">WARN</references>
+        <references refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b" compoundref="AbstractCommunication_8h" startline="47">WARN</references>
       </memberdef>
       <memberdef kind="function" id="classAbstractCommunication_1a8cd7f5a6a402a9e7d463bdcacd61319f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -336,9 +365,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="68" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="47" bodyend="51"/>
-        <references refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa8911cc4876c5aedfcfd7050c1ce0f4a1" compoundref="AbstractCommunication_8h" startline="42">ERROR</references>
-        <references refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" compoundref="AbstractCommunication_8h" startline="73">lvl</references>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="74" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="47" bodyend="51"/>
+        <references refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa8911cc4876c5aedfcfd7050c1ce0f4a1" compoundref="AbstractCommunication_8h" startline="48">ERROR</references>
+        <references refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" compoundref="AbstractCommunication_8h" startline="79">lvl</references>
         <references refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d">send</references>
       </memberdef>
       <memberdef kind="function" id="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -356,9 +385,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="70" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="53" bodyend="55"/>
-        <references refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" compoundref="AbstractCommunication_8h" startline="73">lvl</references>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="17" endline="24">setup</referencedby>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="76" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="63" bodyend="65"/>
+        <references refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" compoundref="AbstractCommunication_8h" startline="79">lvl</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="31" endline="37">setup</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -366,18 +395,18 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="11">
+      <node id="13">
         <label>SerialCom</label>
         <link refid="classSerialCom"/>
-        <childnode refid="10" relation="public-inheritance">
+        <childnode refid="12" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10">
+      <node id="12">
         <label>AbstractCommunication</label>
         <link refid="classAbstractCommunication"/>
       </node>
     </inheritancegraph>
-    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="17" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" bodystart="17" bodyend="74"/>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="18" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" bodystart="18" bodyend="80"/>
     <listofallmembers>
       <member refid="classAbstractCommunication_1a0e6ca44e41df8ca8e9e563cde1789f70" prot="public" virt="non-virtual"><scope>AbstractCommunication</scope><name>AbstractCommunication</name></member>
       <member refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4f" prot="public" virt="non-virtual"><scope>AbstractCommunication</scope><name>DEBUG_LEVEL</name></member>
@@ -392,10 +421,11 @@
       <member refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" prot="private" virt="non-virtual"><scope>AbstractCommunication</scope><name>lvl</name></member>
       <member refid="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0" prot="public" virt="pure-virtual"><scope>AbstractCommunication</scope><name>recv</name></member>
       <member refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" prot="public" virt="pure-virtual"><scope>AbstractCommunication</scope><name>send</name></member>
+      <member refid="classAbstractCommunication_1ad77b74aa662946ae6c86cf2683703a04" prot="public" virt="non-virtual"><scope>AbstractCommunication</scope><name>sendf</name></member>
       <member refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" prot="public" virt="non-virtual"><scope>AbstractCommunication</scope><name>setLevel</name></member>
+      <member refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b" prot="public" virt="non-virtual"><scope>AbstractCommunication</scope><name>WARN</name></member>
       <member refid="classAbstractCommunication_1af0eeb1540a126715d0e7983406a6ed9e" prot="public" virt="non-virtual"><scope>AbstractCommunication</scope><name>warn</name></member>
       <member refid="classAbstractCommunication_1a0b0a7cc8ef0314ce8f05f3dcf55b8918" prot="public" virt="non-virtual"><scope>AbstractCommunication</scope><name>warn</name></member>
-      <member refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b" prot="public" virt="non-virtual"><scope>AbstractCommunication</scope><name>WARN</name></member>
       <member refid="classAbstractCommunication_1a55661ddfc00471e24468d1e5bb76fdac" prot="public" virt="virtual"><scope>AbstractCommunication</scope><name>~AbstractCommunication</name></member>
     </listofallmembers>
   </compounddef>

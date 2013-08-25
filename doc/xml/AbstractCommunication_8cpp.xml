@@ -4,24 +4,29 @@
     <compoundname>AbstractCommunication.cpp</compoundname>
     <includes refid="AbstractCommunication_8h" local="yes">AbstractCommunication.h</includes>
     <incdepgraph>
-      <node id="60">
+      <node id="76">
+        <label>stdarg.h</label>
+      </node>
+      <node id="77">
         <label>WString.h</label>
       </node>
-      <node id="57">
+      <node id="73">
         <label>AbstractCommunication.cpp</label>
         <link refid="AbstractCommunication.cpp"/>
-        <childnode refid="58" relation="include">
+        <childnode refid="74" relation="include">
         </childnode>
       </node>
-      <node id="58">
+      <node id="74">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication_8h"/>
-        <childnode refid="59" relation="include">
+        <childnode refid="75" relation="include">
         </childnode>
-        <childnode refid="60" relation="include">
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
         </childnode>
       </node>
-      <node id="59">
+      <node id="75">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
@@ -78,9 +83,19 @@
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="51"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53" refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" kindref="member">AbstractCommunication::setLevel</ref>(<ref refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4f" kindref="member">DEBUG_LEVEL</ref><sp/>lvl)<sp/>{</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;lvl<sp/>=<sp/><ref refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" kindref="member">lvl</ref>;</highlight></codeline>
-<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53" refid="classAbstractCommunication_1ad77b74aa662946ae6c86cf2683703a04" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1ad77b74aa662946ae6c86cf2683703a04" kindref="member" tooltip="This function sends a formatted string through the communication pipe.">AbstractCommunication::sendf</ref>(String<sp/>payload,<sp/>...)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>From:<sp/>http://playground.arduino.cc/Main/Printf<sp/>(accessed<sp/>on<sp/>2013-AUG-24).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>tmp[256];</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>va_list<sp/>args;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>va_start(args,<sp/>payload);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>vsnprintf(tmp,<sp/>128,<sp/>payload.c_str(),<sp/>args);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>va_end(args);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" kindref="member" tooltip="This function sends information through the communication pipe.">send</ref>(tmp);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" kindref="member">AbstractCommunication::setLevel</ref>(<ref refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4f" kindref="member">DEBUG_LEVEL</ref><sp/>lvl)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;lvl<sp/>=<sp/><ref refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" kindref="member">lvl</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp"/>
   </compounddef>

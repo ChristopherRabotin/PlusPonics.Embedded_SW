@@ -6,41 +6,46 @@
     <includedby refid="GlobalReceiver_8cpp" local="yes">GlobalReceiver.cpp</includedby>
     <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
     <incdepgraph>
-      <node id="81">
+      <node id="100">
+        <label>stdarg.h</label>
+      </node>
+      <node id="101">
         <label>WString.h</label>
       </node>
-      <node id="79">
+      <node id="98">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication_8h"/>
-        <childnode refid="80" relation="include">
+        <childnode refid="99" relation="include">
         </childnode>
-        <childnode refid="81" relation="include">
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
         </childnode>
       </node>
-      <node id="78">
+      <node id="97">
         <label>GlobalReceiver.h</label>
         <link refid="GlobalReceiver.h"/>
-        <childnode refid="79" relation="include">
+        <childnode refid="98" relation="include">
         </childnode>
       </node>
-      <node id="80">
+      <node id="99">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="83">
+      <node id="103">
         <label>GlobalReceiver.cpp</label>
         <link refid="GlobalReceiver_8cpp"/>
       </node>
-      <node id="82">
+      <node id="102">
         <label>GlobalReceiver.h</label>
         <link refid="GlobalReceiver.h"/>
-        <childnode refid="83" relation="include">
+        <childnode refid="103" relation="include">
         </childnode>
-        <childnode refid="84" relation="include">
+        <childnode refid="104" relation="include">
         </childnode>
       </node>
-      <node id="84">
+      <node id="104">
         <label>main.cpp</label>
         <link refid="main_8cpp"/>
       </node>

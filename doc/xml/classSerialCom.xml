@@ -44,7 +44,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="23" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="20" bodyend="22"/>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="17" endline="24">setup</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="31" endline="37">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -93,18 +93,6 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="16">
-        <label>SerialCom</label>
-        <link refid="classSerialCom"/>
-        <childnode refid="17" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="17">
-        <label>AbstractCommunication</label>
-        <link refid="classAbstractCommunication"/>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="18">
         <label>SerialCom</label>
         <link refid="classSerialCom"/>
@@ -112,6 +100,18 @@
         </childnode>
       </node>
       <node id="19">
+        <label>AbstractCommunication</label>
+        <link refid="classAbstractCommunication"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="20">
+        <label>SerialCom</label>
+        <link refid="classSerialCom"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
         <label>AbstractCommunication</label>
         <link refid="classAbstractCommunication"/>
       </node>
@@ -129,11 +129,12 @@
       <member refid="classSerialCom_1a53bb031287acb1973c1e1f76799c76b6" prot="public" virt="virtual"><scope>SerialCom</scope><name>init</name></member>
       <member refid="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" prot="public" virt="virtual"><scope>SerialCom</scope><name>recv</name></member>
       <member refid="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" prot="public" virt="virtual"><scope>SerialCom</scope><name>send</name></member>
+      <member refid="classAbstractCommunication_1ad77b74aa662946ae6c86cf2683703a04" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>sendf</name></member>
       <member refid="classSerialCom_1a4e0fd8ce8d81fc4f3c422d2f9d1aff68" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>SerialCom</name></member>
       <member refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>setLevel</name></member>
+      <member refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>WARN</name></member>
       <member refid="classAbstractCommunication_1af0eeb1540a126715d0e7983406a6ed9e" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>warn</name></member>
       <member refid="classAbstractCommunication_1a0b0a7cc8ef0314ce8f05f3dcf55b8918" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>warn</name></member>
-      <member refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b" prot="public" virt="non-virtual"><scope>SerialCom</scope><name>WARN</name></member>
       <member refid="classAbstractCommunication_1a55661ddfc00471e24468d1e5bb76fdac" prot="public" virt="virtual"><scope>SerialCom</scope><name>~AbstractCommunication</name></member>
       <member refid="classSerialCom_1a5582cf804e661a24cb32720b31a2f9fe" prot="public" virt="virtual"><scope>SerialCom</scope><name>~SerialCom</name></member>
     </listofallmembers>

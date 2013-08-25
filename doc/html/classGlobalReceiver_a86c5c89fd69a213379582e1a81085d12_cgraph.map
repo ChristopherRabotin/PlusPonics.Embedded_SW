@@ -1,5 +1,6 @@
 <map id="GlobalReceiver::process" name="GlobalReceiver::process">
 <area shape="rect" id="node3" href="$GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4" title="byte_to_binary" alt="" coords="254,5,362,32"/>
 <area shape="rect" id="node5" href="$classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0" title="This function reads data from the pipe and returns this as a string." alt="" coords="227,57,389,98"/>
-<area shape="rect" id="node7" href="$classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="227,122,389,163"/>
+<area shape="rect" id="node7" href="$classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe." alt="" coords="227,122,389,163"/>
+<area shape="rect" id="node9" href="$classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="437,122,600,163"/>
 </map>

@@ -5,58 +5,81 @@
     <includes local="no">Arduino.h</includes>
     <includes local="yes">config/config.h</includes>
     <includes refid="GlobalReceiver_8h" local="yes">GlobalReceiver.h</includes>
+    <includes local="no">iterator</includes>
+    <includes local="no">map</includes>
+    <includes local="no">pnew.cpp</includes>
     <includes refid="SerialCom_8h" local="yes">SerialCom.h</includes>
     <incdepgraph>
-      <node id="87">
+      <node id="107">
         <label>config/config.h</label>
       </node>
-      <node id="91">
+      <node id="111">
+        <label>stdarg.h</label>
+      </node>
+      <node id="112">
         <label>WString.h</label>
       </node>
-      <node id="89">
+      <node id="113">
+        <label>iterator</label>
+      </node>
+      <node id="109">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication_8h"/>
-        <childnode refid="90" relation="include">
+        <childnode refid="110" relation="include">
         </childnode>
-        <childnode refid="91" relation="include">
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
         </childnode>
       </node>
-      <node id="93">
+      <node id="114">
+        <label>map</label>
+      </node>
+      <node id="117">
         <label>HardwareSerial.h</label>
       </node>
-      <node id="86">
+      <node id="106">
         <label>Arduino.h</label>
       </node>
-      <node id="92">
+      <node id="116">
         <label>SerialCom.h</label>
         <link refid="SerialCom_8h"/>
-        <childnode refid="89" relation="include">
+        <childnode refid="109" relation="include">
         </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="106" relation="include">
         </childnode>
-        <childnode refid="93" relation="include">
+        <childnode refid="117" relation="include">
         </childnode>
       </node>
-      <node id="88">
+      <node id="108">
         <label>GlobalReceiver.h</label>
         <link refid="GlobalReceiver_8h"/>
-        <childnode refid="89" relation="include">
+        <childnode refid="109" relation="include">
         </childnode>
       </node>
-      <node id="85">
+      <node id="105">
         <label>main.cpp</label>
         <link refid="main.cpp"/>
-        <childnode refid="86" relation="include">
+        <childnode refid="106" relation="include">
         </childnode>
-        <childnode refid="87" relation="include">
+        <childnode refid="107" relation="include">
         </childnode>
-        <childnode refid="88" relation="include">
+        <childnode refid="108" relation="include">
         </childnode>
-        <childnode refid="92" relation="include">
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
         </childnode>
       </node>
-      <node id="90">
+      <node id="110">
         <label>stdio.h</label>
+      </node>
+      <node id="115">
+        <label>pnew.cpp</label>
       </node>
     </incdepgraph>
       <sectiondef kind="var">
@@ -69,12 +92,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>The following definition is only to avoid the warning when writing to Flash with PROGMEM. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="9" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="9" bodyend="-1"/>
-        <referencedby refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="29" endline="36">loop</referencedby>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="17" endline="24">setup</referencedby>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="21" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="21" bodyend="-1"/>
+        <referencedby refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="42" endline="48">loop</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="31" endline="37">setup</referencedby>
       </memberdef>
       <memberdef kind="variable" id="main_8cpp_1ac32bb15f611faf91f75daaab60c1068c" prot="public" static="no" mutable="no">
         <type><ref refid="classSerialCom" kindref="compound">SerialCom</ref></type>
@@ -87,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="11" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="11" bodyend="-1"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="23" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="main_8cpp_1a95de02de573cd863d1547c545dfeceae" prot="public" static="no" mutable="no">
         <type><ref refid="classGlobalReceiver" kindref="compound">GlobalReceiver</ref></type>
@@ -100,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="12" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="12" bodyend="-1"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="24" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="24" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -115,14 +138,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="17" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="17" bodyend="24"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="31" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="31" bodyend="37"/>
         <references refid="classAbstractCommunication_1aca99e8b6cfffce4207bb9ca09f90e15c" compoundref="AbstractCommunication_8cpp" startline="23" endline="25">AbstractCommunication::info</references>
         <references refid="classSerialCom_1a53bb031287acb1973c1e1f76799c76b6" compoundref="SerialCom_8cpp" startline="20" endline="22">SerialCom::init</references>
-        <references refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" compoundref="main_8cpp" startline="9">ledPin</references>
-        <references refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" compoundref="GlobalReceiver_8cpp" startline="52" endline="54">GlobalReceiver::setCom</references>
-        <references refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" compoundref="AbstractCommunication_8cpp" startline="53" endline="55">AbstractCommunication::setLevel</references>
-        <references refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b" compoundref="AbstractCommunication_8h" startline="41">AbstractCommunication::WARN</references>
-        <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="42" endline="50">main</referencedby>
+        <references refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" compoundref="main_8cpp" startline="21">ledPin</references>
+        <references refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" compoundref="GlobalReceiver_8cpp" startline="49" endline="51">GlobalReceiver::setCom</references>
+        <references refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" compoundref="AbstractCommunication_8cpp" startline="63" endline="65">AbstractCommunication::setLevel</references>
+        <references refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b" compoundref="AbstractCommunication_8h" startline="47">AbstractCommunication::WARN</references>
+        <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="54" endline="62">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -135,11 +158,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="29" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="29" bodyend="36"/>
-        <references refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" compoundref="main_8cpp" startline="9">ledPin</references>
-        <references refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="26" endline="50">GlobalReceiver::process</references>
-        <references refid="classAbstractCommunication_1af0eeb1540a126715d0e7983406a6ed9e" compoundref="AbstractCommunication_8cpp" startline="27" endline="29">AbstractCommunication::warn</references>
-        <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="42" endline="50">main</referencedby>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="42" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="42" bodyend="48"/>
+        <references refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" compoundref="main_8cpp" startline="21">ledPin</references>
+        <references refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="26" endline="47">GlobalReceiver::process</references>
+        <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="54" endline="62">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -156,9 +178,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="42" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="42" bodyend="50"/>
-        <references refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="29" endline="36">loop</references>
-        <references refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="17" endline="24">setup</references>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="54" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="54" bodyend="62"/>
+        <references refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="42" endline="48">loop</references>
+        <references refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="31" endline="37">setup</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -170,42 +192,51 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;config/config.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="GlobalReceiver_8h" kindref="compound">GlobalReceiver.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SERIAL_COMMUNICATION</highlight></codeline>
-<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="SerialCom_8h" kindref="compound">SerialCom.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
-<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9" refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kindref="member">ledPin</ref><sp/>=<sp/>13;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>LED<sp/>connected<sp/>to<sp/>digital<sp/>pin<sp/>13</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11" refid="main_8cpp_1ac32bb15f611faf91f75daaab60c1068c" refkind="member"><highlight class="normal"><ref refid="classSerialCom" kindref="compound" tooltip="This class defines serial communication with the control system.">SerialCom</ref><sp/><ref refid="main_8cpp_1ac32bb15f611faf91f75daaab60c1068c" kindref="member">com</ref>;</highlight></codeline>
-<codeline lineno="12" refid="main_8cpp_1a95de02de573cd863d1547c545dfeceae" refkind="member"><highlight class="normal"><ref refid="classGlobalReceiver" kindref="compound">GlobalReceiver</ref><sp/><ref refid="main_8cpp_1a95de02de573cd863d1547c545dfeceae" kindref="member">glrcv</ref>;</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17" refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kindref="member" tooltip="This function is only ran when the sketch is initialized.">setup</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(<ref refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kindref="member">ledPin</ref>,<sp/>OUTPUT);</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>com.<ref refid="classSerialCom_1a53bb031287acb1973c1e1f76799c76b6" kindref="member" tooltip="This function initializes the communication. It will be called from the setup function.">init</ref>();</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>com.<ref refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" kindref="member">setLevel</ref>(<ref refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b" kindref="member">AbstractCommunication::WARN</ref>);</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>com.<ref refid="classAbstractCommunication_1aca99e8b6cfffce4207bb9ca09f90e15c" kindref="member">info</ref>(</highlight><highlight class="stringliteral">&quot;Setting<sp/>up<sp/>led&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;setup&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>following<sp/>includes<sp/>enable<sp/>STL<sp/>for<sp/>Arduino.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iterator&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pnew.cpp&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>pnew<sp/>must<sp/>be<sp/>used<sp/>the<sp/>very<sp/>last<sp/>include.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight><highlight class="preprocessor">#ifdef<sp/>PROGMEM</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>PROGMEM</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PROGMEM<sp/>__attribute__((section(&quot;.progmem.data&quot;)))</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SERIAL_COMMUNICATION</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="SerialCom_8h" kindref="compound">SerialCom.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kindref="member">ledPin</ref><sp/>=<sp/>13;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>LED<sp/>connected<sp/>to<sp/>digital<sp/>pin<sp/>13</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>glrcv.<ref refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" kindref="member" tooltip="This function sets the communication pointer. This is used when the empty constructor is used...">setCom</ref>(com);</highlight></codeline>
-<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23" refid="main_8cpp_1ac32bb15f611faf91f75daaab60c1068c" refkind="member"><highlight class="normal"><ref refid="classSerialCom" kindref="compound" tooltip="This class defines serial communication with the control system.">SerialCom</ref><sp/><ref refid="main_8cpp_1ac32bb15f611faf91f75daaab60c1068c" kindref="member">com</ref>;</highlight></codeline>
+<codeline lineno="24" refid="main_8cpp_1a95de02de573cd863d1547c545dfeceae" refkind="member"><highlight class="normal"><ref refid="classGlobalReceiver" kindref="compound">GlobalReceiver</ref><sp/><ref refid="main_8cpp_1a95de02de573cd863d1547c545dfeceae" kindref="member">glrcv</ref>;</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29" refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kindref="member" tooltip="loop() loops while Arduino is powered.">loop</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kindref="member">ledPin</ref>,<sp/>HIGH);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>com.<ref refid="classAbstractCommunication_1af0eeb1540a126715d0e7983406a6ed9e" kindref="member">warn</ref>(</highlight><highlight class="stringliteral">&quot;Will<sp/>sleep<sp/>for<sp/>two<sp/>seconds<sp/>now.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;loop&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(2000);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kindref="member">ledPin</ref>,<sp/>LOW);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(1000);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>glrcv.<ref refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" kindref="member" tooltip="This function fetches and processes the input. It calls com&amp;#39;s recv() to read the latest information...">process</ref>();</highlight></codeline>
-<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42" refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member" tooltip="where all the subsystems are started.">main</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>init();</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kindref="member" tooltip="This function is only ran when the sketch is initialized.">setup</ref>();</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kindref="member" tooltip="loop() loops while Arduino is powered.">loop</ref>();</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//std::map&lt;int,<sp/>const<sp/>char<sp/>*&gt;<sp/>TM_LIST;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kindref="member" tooltip="This function is only ran when the sketch is initialized.">setup</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(<ref refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kindref="member">ledPin</ref>,<sp/>OUTPUT);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>com.<ref refid="classSerialCom_1a53bb031287acb1973c1e1f76799c76b6" kindref="member" tooltip="This function initializes the communication. It will be called from the setup function.">init</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>com.<ref refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" kindref="member">setLevel</ref>(<ref refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4fa20ee5b8ea53b106506980329ff832f7b" kindref="member">AbstractCommunication::WARN</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>com.<ref refid="classAbstractCommunication_1aca99e8b6cfffce4207bb9ca09f90e15c" kindref="member">info</ref>(</highlight><highlight class="stringliteral">&quot;Setting<sp/>up<sp/>led&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;setup&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>glrcv.<ref refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" kindref="member" tooltip="This function sets the communication pointer. This is used when the empty constructor is used...">setCom</ref>(com);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kindref="member" tooltip="loop() loops while Arduino is powered.">loop</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kindref="member">ledPin</ref>,<sp/>HIGH);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(2000);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kindref="member">ledPin</ref>,<sp/>LOW);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(1000);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>glrcv.<ref refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" kindref="member" tooltip="This function fetches and processes the input. It calls com&amp;#39;s recv() to read the latest information...">process</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member" tooltip="where all the subsystems are started.">main</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>init();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kindref="member" tooltip="This function is only ran when the sketch is initialized.">setup</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kindref="member" tooltip="loop() loops while Arduino is powered.">loop</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp"/>
   </compounddef>

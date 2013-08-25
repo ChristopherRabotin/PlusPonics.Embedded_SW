@@ -12,5 +12,9 @@ var files =
     [ "SerialCom.cpp", "SerialCom_8cpp.html", null ],
     [ "SerialCom.h", "SerialCom_8h.html", [
       [ "SerialCom", "classSerialCom.html", "classSerialCom" ]
+    ] ],
+    [ "TC.cpp", "TC_8cpp.html", null ],
+    [ "TC.h", "TC_8h.html", [
+      [ "TC", "classTC.html", "classTC" ]
     ] ]
 ];

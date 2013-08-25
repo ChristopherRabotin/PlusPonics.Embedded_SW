@@ -4,30 +4,35 @@
     <compoundname>GlobalReceiver.cpp</compoundname>
     <includes refid="GlobalReceiver_8h" local="yes">GlobalReceiver.h</includes>
     <incdepgraph>
-      <node id="76">
+      <node id="94">
+        <label>stdarg.h</label>
+      </node>
+      <node id="95">
         <label>WString.h</label>
       </node>
-      <node id="74">
+      <node id="92">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication_8h"/>
-        <childnode refid="75" relation="include">
+        <childnode refid="93" relation="include">
         </childnode>
-        <childnode refid="76" relation="include">
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
         </childnode>
       </node>
-      <node id="72">
+      <node id="90">
         <label>GlobalReceiver.cpp</label>
         <link refid="GlobalReceiver.cpp"/>
-        <childnode refid="73" relation="include">
+        <childnode refid="91" relation="include">
         </childnode>
       </node>
-      <node id="73">
+      <node id="91">
         <label>GlobalReceiver.h</label>
         <link refid="GlobalReceiver_8h"/>
-        <childnode refid="74" relation="include">
+        <childnode refid="92" relation="include">
         </childnode>
       </node>
-      <node id="75">
+      <node id="93">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
@@ -48,7 +53,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp" line="14" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp" bodystart="14" bodyend="24"/>
-        <referencedby refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="26" endline="50">GlobalReceiver::process</referencedby>
+        <referencedby refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="26" endline="47">GlobalReceiver::process</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -82,39 +87,36 @@
 <codeline lineno="24"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26" refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" kindref="member" tooltip="This function fetches and processes the input. It calls com&amp;#39;s recv() to read the latest information...">GlobalReceiver::process</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" kindref="member">com</ref>-&gt;<ref refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" kindref="member" tooltip="This function sends information through the communication pipe.">send</ref>(</highlight><highlight class="stringliteral">&quot;in&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>input<sp/>=<sp/><ref refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" kindref="member">com</ref>-&gt;<ref refid="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0" kindref="member" tooltip="This function reads data from the pipe and returns this as a string.">recv</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>input<sp/>=<sp/><ref refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" kindref="member">com</ref>-&gt;<ref refid="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0" kindref="member" tooltip="This function reads data from the pipe and returns this as a string.">recv</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(input.length()<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>action<sp/>=<sp/>input.c_str()[0];</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>reply[100];</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(action)<sp/>{</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;1&apos;</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(reply,<sp/></highlight><highlight class="stringliteral">&quot;CMD<sp/>(%s)&quot;</highlight><highlight class="normal">,<sp/>input.c_str());</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;3&apos;</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(reply,<sp/></highlight><highlight class="stringliteral">&quot;Proc<sp/>(%s)&quot;</highlight><highlight class="normal">,<sp/>input.c_str());</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;5&apos;</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(reply,<sp/></highlight><highlight class="stringliteral">&quot;Dwell<sp/>(%s)&quot;</highlight><highlight class="normal">,<sp/>input.c_str());</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;7&apos;</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(reply,<sp/></highlight><highlight class="stringliteral">&quot;Meta<sp/>(%s)&quot;</highlight><highlight class="normal">,<sp/>input.c_str());</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(reply,<sp/></highlight><highlight class="stringliteral">&quot;???<sp/>&apos;%s&apos;<sp/>|<sp/>%s<sp/>b<sp/>|<sp/>a:<sp/>%s<sp/>b&quot;</highlight><highlight class="normal">,<sp/>input.c_str(),</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="GlobalReceiver_8cpp_1a98a09d6b95fb0fa32210f041f0af87d4" kindref="member">byte_to_binary</ref>(input.toInt()),<sp/><ref refid="GlobalReceiver_8cpp_1a98a09d6b95fb0fa32210f041f0af87d4" kindref="member">byte_to_binary</ref>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>action));</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(action)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;1&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" kindref="member">com</ref>-&gt;<ref refid="classAbstractCommunication_1ad77b74aa662946ae6c86cf2683703a04" kindref="member" tooltip="This function sends a formatted string through the communication pipe.">sendf</ref>(</highlight><highlight class="stringliteral">&quot;CMD<sp/>(%s)&quot;</highlight><highlight class="normal">,<sp/>input.c_str());</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;3&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" kindref="member">com</ref>-&gt;<ref refid="classAbstractCommunication_1ad77b74aa662946ae6c86cf2683703a04" kindref="member" tooltip="This function sends a formatted string through the communication pipe.">sendf</ref>(</highlight><highlight class="stringliteral">&quot;Procedure<sp/>(%s)&quot;</highlight><highlight class="normal">,<sp/>input.c_str());</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;5&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" kindref="member">com</ref>-&gt;<ref refid="classAbstractCommunication_1ad77b74aa662946ae6c86cf2683703a04" kindref="member" tooltip="This function sends a formatted string through the communication pipe.">sendf</ref>(</highlight><highlight class="stringliteral">&quot;Dwell<sp/>(%s)&quot;</highlight><highlight class="normal">,<sp/>input.c_str());</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;7&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" kindref="member">com</ref>-&gt;<ref refid="classAbstractCommunication_1ad77b74aa662946ae6c86cf2683703a04" kindref="member" tooltip="This function sends a formatted string through the communication pipe.">sendf</ref>(</highlight><highlight class="stringliteral">&quot;Meta<sp/>(%s)&quot;</highlight><highlight class="normal">,<sp/>input.c_str());</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" kindref="member">com</ref>-&gt;<ref refid="classAbstractCommunication_1ad77b74aa662946ae6c86cf2683703a04" kindref="member" tooltip="This function sends a formatted string through the communication pipe.">sendf</ref>(</highlight><highlight class="stringliteral">&quot;???<sp/>&apos;%s&apos;<sp/>|<sp/>%s<sp/>b<sp/>|<sp/>a:<sp/>%s<sp/>b&quot;</highlight><highlight class="normal">,<sp/>input.c_str(),</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="GlobalReceiver_8cpp_1a98a09d6b95fb0fa32210f041f0af87d4" kindref="member">byte_to_binary</ref>(input.toInt()),<sp/><ref refid="GlobalReceiver_8cpp_1a98a09d6b95fb0fa32210f041f0af87d4" kindref="member">byte_to_binary</ref>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>action));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" kindref="member">com</ref>-&gt;<ref refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" kindref="member" tooltip="This function sends information through the communication pipe.">send</ref>(</highlight><highlight class="stringliteral">&quot;out&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52" refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" kindref="member" tooltip="This function sets the communication pointer. This is used when the empty constructor is used...">GlobalReceiver::setCom</ref>(<ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>&amp;comInstance)<sp/>{</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" kindref="member">com</ref><sp/>=<sp/>&amp;comInstance;</highlight></codeline>
-<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56" refid="classGlobalReceiver_1ace0d4a5976198ff64c4515459b1fa289" refkind="member"><highlight class="normal"><ref refid="classGlobalReceiver_1ace0d4a5976198ff64c4515459b1fa289" kindref="member">GlobalReceiver::~GlobalReceiver</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" kindref="member" tooltip="This function sets the communication pointer. This is used when the empty constructor is used...">GlobalReceiver::setCom</ref>(<ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>&amp;comInstance)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" kindref="member">com</ref><sp/>=<sp/>&amp;comInstance;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classGlobalReceiver_1ace0d4a5976198ff64c4515459b1fa289" refkind="member"><highlight class="normal"><ref refid="classGlobalReceiver_1ace0d4a5976198ff64c4515459b1fa289" kindref="member">GlobalReceiver::~GlobalReceiver</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp"/>
   </compounddef>

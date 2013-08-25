@@ -1,13 +1,13 @@
 <map id="main" name="main">
-<area shape="rect" id="node3" href="$main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered." alt="" coords="108,136,156,163"/>
-<area shape="rect" id="node15" href="$main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="This function is only ran when the sketch is initialized." alt="" coords="105,253,159,280"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered." alt="" coords="108,107,156,133"/>
+<area shape="rect" id="node15" href="$main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="This function is only ran when the sketch is initialized." alt="" coords="105,187,159,213"/>
 <area shape="rect" id="node5" href="$classGlobalReceiver.html#a86c5c89fd69a213379582e1a81085d12" title="This function fetches and processes the input. It calls com&#39;s recv() to read the latest information..." alt="" coords="209,77,381,104"/>
-<area shape="rect" id="node13" href="$classAbstractCommunication.html#af0eeb1540a126715d0e7983406a6ed9e" title="AbstractCommunication\l::warn" alt="" coords="213,129,376,170"/>
-<area shape="rect" id="node7" href="$classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="429,5,592,46"/>
-<area shape="rect" id="node9" href="$classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0" title="This function reads data from the pipe and returns this as a string." alt="" coords="429,70,592,111"/>
-<area shape="rect" id="node11" href="$GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4" title="byte_to_binary" alt="" coords="457,136,565,163"/>
-<area shape="rect" id="node17" href="$classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function." alt="" coords="239,195,350,221"/>
-<area shape="rect" id="node19" href="$classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336" title="AbstractCommunication\l::setLevel" alt="" coords="213,246,376,287"/>
-<area shape="rect" id="node21" href="$classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c" title="AbstractCommunication\l::info" alt="" coords="213,311,376,353"/>
-<area shape="rect" id="node23" href="$classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="209,377,380,404"/>
+<area shape="rect" id="node7" href="$classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0" title="This function reads data from the pipe and returns this as a string." alt="" coords="429,5,592,46"/>
+<area shape="rect" id="node9" href="$classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe." alt="" coords="429,70,592,111"/>
+<area shape="rect" id="node13" href="$GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4" title="byte_to_binary" alt="" coords="457,136,565,163"/>
+<area shape="rect" id="node11" href="$classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="640,70,803,111"/>
+<area shape="rect" id="node17" href="$classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function." alt="" coords="239,128,350,155"/>
+<area shape="rect" id="node19" href="$classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336" title="AbstractCommunication\l::setLevel" alt="" coords="213,179,376,221"/>
+<area shape="rect" id="node21" href="$classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c" title="AbstractCommunication\l::info" alt="" coords="213,245,376,286"/>
+<area shape="rect" id="node23" href="$classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="209,311,380,337"/>
 </map>

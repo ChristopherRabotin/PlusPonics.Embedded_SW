@@ -14,6 +14,7 @@ var classAbstractCommunication =
     [ "init", "classAbstractCommunication.html#a34dc23ed80eff81b2527c5f89ac5f1ff", null ],
     [ "recv", "classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0", null ],
     [ "send", "classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d", null ],
+    [ "sendf", "classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04", null ],
     [ "setLevel", "classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336", null ],
     [ "warn", "classAbstractCommunication.html#af0eeb1540a126715d0e7983406a6ed9e", null ],
     [ "warn", "classAbstractCommunication.html#a0b0a7cc8ef0314ce8f05f3dcf55b8918", null ],

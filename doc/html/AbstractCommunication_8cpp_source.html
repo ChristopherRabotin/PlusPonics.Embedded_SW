@@ -113,9 +113,19 @@ $(document).ready(function(){initNavTree('AbstractCommunication_8cpp_source.html
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336">   53</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336">AbstractCommunication::setLevel</a>(<a class="code" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4f">DEBUG_LEVEL</a> lvl) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    this-&gt;lvl = <a class="code" href="classAbstractCommunication.html#a8471fbdcb6837697c9963c797c434c73">lvl</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04">   53</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe.">AbstractCommunication::sendf</a>(String payload, ...) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">/* From: http://playground.arduino.cc/Main/Printf (accessed on 2013-AUG-24). */</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">char</span> tmp[256];</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    va_list args;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    va_start(args, payload);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    vsnprintf(tmp, 128, payload.c_str(), args);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    va_end(args);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe.">send</a>(tmp);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336">   63</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336">AbstractCommunication::setLevel</a>(<a class="code" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4f">DEBUG_LEVEL</a> lvl) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    this-&gt;lvl = <a class="code" href="classAbstractCommunication.html#a8471fbdcb6837697c9963c797c434c73">lvl</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
