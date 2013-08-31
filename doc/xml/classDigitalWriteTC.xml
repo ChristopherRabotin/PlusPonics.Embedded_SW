@@ -128,26 +128,26 @@
 <para><simplesect kind="warning"><para>This class does not check whether the pin is used in another mode. It is very important to check for any conflict beforehand! </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="23">
+      <node id="24">
         <label>TC</label>
         <link refid="classTC"/>
       </node>
-      <node id="22">
+      <node id="23">
         <label>DigitalWriteTC</label>
         <link refid="classDigitalWriteTC"/>
-        <childnode refid="23" relation="public-inheritance">
+        <childnode refid="24" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="25">
+      <node id="26">
         <label>TC</label>
         <link refid="classTC"/>
       </node>
-      <node id="24">
+      <node id="25">
         <label>DigitalWriteTC</label>
         <link refid="classDigitalWriteTC"/>
-        <childnode refid="25" relation="public-inheritance">
+        <childnode refid="26" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

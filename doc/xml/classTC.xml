@@ -302,14 +302,14 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="33">
+      <node id="35">
         <label>TC</label>
         <link refid="classTC"/>
       </node>
-      <node id="34">
+      <node id="36">
         <label>DigitalWriteTC</label>
         <link refid="classDigitalWriteTC"/>
-        <childnode refid="33" relation="public-inheritance">
+        <childnode refid="35" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

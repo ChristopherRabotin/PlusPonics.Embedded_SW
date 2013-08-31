@@ -34,13 +34,14 @@ void setup() {
 	com.setLevel(AbstractCommunication::INFO);
 	com.info("Setting up led", "setup");
 	glrcv.setCom(com);
+	glrcv.setTCProcessor(tcProcessor);
 }
 
 /**
  * @brief loop() loops while Arduino is powered.
  */
 void loop() {
-	delay(500);
+	delay(2000);
 	glrcv.process();
 }
 

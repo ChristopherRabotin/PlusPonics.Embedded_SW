@@ -6,47 +6,61 @@
     <includedby refid="TCProcessor_8h" local="yes">TCProcessor.h</includedby>
     <includedby refid="TC_8cpp" local="yes">TC.cpp</includedby>
     <invincdepgraph>
-      <node id="199">
+      <node id="231">
         <label>DigitalWriteTC.h</label>
         <link refid="DigitalWriteTC_8h"/>
-        <childnode refid="200" relation="include">
+        <childnode refid="232" relation="include">
         </childnode>
-        <childnode refid="201" relation="include">
+        <childnode refid="233" relation="include">
         </childnode>
-        <childnode refid="202" relation="include">
+        <childnode refid="236" relation="include">
         </childnode>
       </node>
-      <node id="204">
+      <node id="238">
         <label>TC.cpp</label>
         <link refid="TC_8cpp"/>
       </node>
-      <node id="203">
+      <node id="237">
         <label>TCProcessor.cpp</label>
         <link refid="TCProcessor_8cpp"/>
       </node>
-      <node id="198">
+      <node id="230">
         <label>TC.h</label>
         <link refid="TC.h"/>
-        <childnode refid="199" relation="include">
+        <childnode refid="231" relation="include">
         </childnode>
-        <childnode refid="202" relation="include">
+        <childnode refid="233" relation="include">
         </childnode>
-        <childnode refid="204" relation="include">
+        <childnode refid="238" relation="include">
         </childnode>
       </node>
-      <node id="202">
+      <node id="235">
+        <label>GlobalReceiver.cpp</label>
+        <link refid="GlobalReceiver_8cpp"/>
+      </node>
+      <node id="233">
         <label>TCProcessor.h</label>
         <link refid="TCProcessor_8h"/>
-        <childnode refid="201" relation="include">
+        <childnode refid="234" relation="include">
         </childnode>
-        <childnode refid="203" relation="include">
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
         </childnode>
       </node>
-      <node id="200">
+      <node id="232">
         <label>DigitalWriteTC.cpp</label>
         <link refid="DigitalWriteTC_8cpp"/>
       </node>
-      <node id="201">
+      <node id="234">
+        <label>GlobalReceiver.h</label>
+        <link refid="GlobalReceiver_8h"/>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+      </node>
+      <node id="236">
         <label>main.cpp</label>
         <link refid="main_8cpp"/>
       </node>

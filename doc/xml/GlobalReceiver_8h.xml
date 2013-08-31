@@ -3,49 +3,85 @@
   <compounddef id="GlobalReceiver_8h" kind="file">
     <compoundname>GlobalReceiver.h</compoundname>
     <includes refid="AbstractCommunication_8h" local="yes">AbstractCommunication.h</includes>
+    <includes refid="TCProcessor_8h" local="yes">TCProcessor.h</includes>
     <includedby refid="GlobalReceiver_8cpp" local="yes">GlobalReceiver.cpp</includedby>
     <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
     <incdepgraph>
-      <node id="151">
+      <node id="177">
         <label>stdarg.h</label>
       </node>
-      <node id="152">
+      <node id="178">
         <label>WString.h</label>
       </node>
-      <node id="149">
+      <node id="181">
+        <label>DigitalWriteTC.h</label>
+        <link refid="DigitalWriteTC_8h"/>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>iterator</label>
+      </node>
+      <node id="175">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication_8h"/>
-        <childnode refid="150" relation="include">
+        <childnode refid="176" relation="include">
         </childnode>
-        <childnode refid="151" relation="include">
+        <childnode refid="177" relation="include">
         </childnode>
-        <childnode refid="152" relation="include">
+        <childnode refid="178" relation="include">
         </childnode>
       </node>
-      <node id="148">
+      <node id="184">
+        <label>map</label>
+      </node>
+      <node id="180">
+        <label>TC.h</label>
+        <link refid="TC_8h"/>
+      </node>
+      <node id="179">
+        <label>TCProcessor.h</label>
+        <link refid="TCProcessor_8h"/>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>Arduino.h</label>
+      </node>
+      <node id="174">
         <label>GlobalReceiver.h</label>
         <link refid="GlobalReceiver.h"/>
-        <childnode refid="149" relation="include">
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
         </childnode>
       </node>
-      <node id="150">
+      <node id="176">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="154">
+      <node id="186">
         <label>GlobalReceiver.cpp</label>
         <link refid="GlobalReceiver_8cpp"/>
       </node>
-      <node id="153">
+      <node id="185">
         <label>GlobalReceiver.h</label>
         <link refid="GlobalReceiver.h"/>
-        <childnode refid="154" relation="include">
+        <childnode refid="186" relation="include">
         </childnode>
-        <childnode refid="155" relation="include">
+        <childnode refid="187" relation="include">
         </childnode>
       </node>
-      <node id="155">
+      <node id="187">
         <label>main.cpp</label>
         <link refid="main_8cpp"/>
       </node>
@@ -67,18 +103,23 @@
 <codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RECVPROCESSOR_H_</highlight></codeline>
 <codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="AbstractCommunication_8h" kindref="compound">AbstractCommunication.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13" refid="classGlobalReceiver" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGlobalReceiver" kindref="compound">GlobalReceiver</ref><sp/>{</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGlobalReceiver_1a9dfd412916cfb9f441b6d7a884b74ad3" kindref="member">GlobalReceiver</ref>();</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" kindref="member" tooltip="This function fetches and processes the input. It calls com&amp;#39;s recv() to read the latest information...">process</ref>();</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" kindref="member" tooltip="This function sets the communication pointer. This is used when the empty constructor is used...">setCom</ref>(<ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>&amp;<ref refid="main_8cpp_1ac32bb15f611faf91f75daaab60c1068c" kindref="member">com</ref>);</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classGlobalReceiver_1ace0d4a5976198ff64c4515459b1fa289" kindref="member">~GlobalReceiver</ref>();</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="40" refid="classGlobalReceiver_1acc45445a154d791f586c6cedee2df9a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>*<ref refid="classGlobalReceiver_1acc45445a154d791f586c6cedee2df9a2" kindref="member">_com</ref>;</highlight></codeline>
-<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>RECVPROCESSOR_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="TCProcessor_8h" kindref="compound">TCProcessor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classGlobalReceiver" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGlobalReceiver" kindref="compound">GlobalReceiver</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGlobalReceiver_1a9dfd412916cfb9f441b6d7a884b74ad3" kindref="member">GlobalReceiver</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" kindref="member" tooltip="This function fetches and processes the input. It calls com&amp;#39;s recv() to read the latest information...">process</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGlobalReceiver_1adea5c467d1cd853a6ba6ef88d5611dcd" kindref="member" tooltip="This function sets the communication pointer. This is used when the empty constructor is used...">setCom</ref>(<ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>&amp;comInstance);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGlobalReceiver_1a11733fe91fb1e7829efa9672f569cdb5" kindref="member" tooltip="This function sets the TC processor. This is used when the empty constructor is used.">setTCProcessor</ref>(<ref refid="classTCProcessor" kindref="compound" tooltip="This class manages all the telecommands in a std::map . It is also called by GlobalReceiver upon rece...">TCProcessor</ref><sp/>&amp;tcProcInstance);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classGlobalReceiver_1ace0d4a5976198ff64c4515459b1fa289" kindref="member">~GlobalReceiver</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48" refid="classGlobalReceiver_1acc45445a154d791f586c6cedee2df9a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>*<ref refid="classGlobalReceiver_1acc45445a154d791f586c6cedee2df9a2" kindref="member">_com</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classGlobalReceiver_1a84e60a27d7c6d0a968a2b3af506445db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTCProcessor" kindref="compound" tooltip="This class manages all the telecommands in a std::map . It is also called by GlobalReceiver upon rece...">TCProcessor</ref><sp/>*<ref refid="classGlobalReceiver_1a84e60a27d7c6d0a968a2b3af506445db" kindref="member">_tcProcessor</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>RECVPROCESSOR_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h"/>
   </compounddef>

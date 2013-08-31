@@ -9,6 +9,7 @@
 #define RECVPROCESSOR_H_
 
 #include "AbstractCommunication.h"
+#include "TCProcessor.h"
 
 class GlobalReceiver {
 public:
@@ -30,14 +31,22 @@ public:
 	 * <p>This includes commands related to meta around the pod, not its operational commands.</p>
 	 */
 	void process();
+
 	/**
 	 * @brief This function sets the communication pointer. This is used when the empty constructor is used.
 	 * @param com communication instance
 	 */
-	void setCom(AbstractCommunication &com);
+	void setCom(AbstractCommunication &comInstance);
+
+	/**
+	 * @brief This function sets the TC processor. This is used when the empty constructor is used.
+	 * @param com TCProcessor instance
+	 */
+	void setTCProcessor(TCProcessor &tcProcInstance);
 	virtual ~GlobalReceiver();
 private:
 	AbstractCommunication *_com;
+	TCProcessor *_tcProcessor;
 };
 
 #endif /* RECVPROCESSOR_H_ */

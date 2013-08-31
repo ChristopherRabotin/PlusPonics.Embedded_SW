@@ -76,51 +76,57 @@ $(document).ready(function(){initNavTree('GlobalReceiver_8cpp_source.html','');}
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="classGlobalReceiver.html#a9dfd412916cfb9f441b6d7a884b74ad3">   10</a></span>&#160;<a class="code" href="classGlobalReceiver.html#a9dfd412916cfb9f441b6d7a884b74ad3">GlobalReceiver::GlobalReceiver</a>() {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="classGlobalReceiver.html#acc45445a154d791f586c6cedee2df9a2">_com</a> = NULL;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4">   14</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4">byte_to_binary</a>(<span class="keywordtype">int</span> x) {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">char</span> b[9];</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    b[0] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> z;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">for</span> (z = 128; z &gt; 0; z &gt;&gt;= 1) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        strcat(b, ((x &amp; z) == z) ? <span class="stringliteral">&quot;1&quot;</span> : <span class="stringliteral">&quot;0&quot;</span>);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> (b);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="classGlobalReceiver.html#a86c5c89fd69a213379582e1a81085d12">   26</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGlobalReceiver.html#a86c5c89fd69a213379582e1a81085d12" title="This function fetches and processes the input. It calls com&#39;s recv() to read the latest information...">GlobalReceiver::process</a>() {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    String input = <a class="code" href="classGlobalReceiver.html#acc45445a154d791f586c6cedee2df9a2">_com</a>-&gt;<a class="code" href="classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0" title="This function reads data from the pipe and returns this as a string.">recv</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span>(input.length() == 0) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">char</span> action = input.c_str()[0];</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">switch</span> (action) {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;1&#39;</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classGlobalReceiver.html#acc45445a154d791f586c6cedee2df9a2">_com</a>-&gt;<a class="code" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe.">sendf</a>(<span class="stringliteral">&quot;CMD (%s)&quot;</span>, input.c_str());</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;3&#39;</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classGlobalReceiver.html#acc45445a154d791f586c6cedee2df9a2">_com</a>-&gt;<a class="code" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe.">sendf</a>(<span class="stringliteral">&quot;Procedure (%s)&quot;</span>, input.c_str());</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;5&#39;</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classGlobalReceiver.html#acc45445a154d791f586c6cedee2df9a2">_com</a>-&gt;<a class="code" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe.">sendf</a>(<span class="stringliteral">&quot;Dwell (%s)&quot;</span>, input.c_str());</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;7&#39;</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classGlobalReceiver.html#acc45445a154d791f586c6cedee2df9a2">_com</a>-&gt;<a class="code" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe.">sendf</a>(<span class="stringliteral">&quot;Meta (%s)&quot;</span>, input.c_str());</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classGlobalReceiver.html#acc45445a154d791f586c6cedee2df9a2">_com</a>-&gt;<a class="code" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe.">sendf</a>(<span class="stringliteral">&quot;??? &#39;%s&#39; | %s b | a: %s b&quot;</span>, input.c_str(),</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <a class="code" href="GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4">byte_to_binary</a>(input.toInt()), <a class="code" href="GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4">byte_to_binary</a>((<span class="keywordtype">int</span>) action));</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c" title="This function sets the communication pointer. This is used when the empty constructor is used...">GlobalReceiver::setCom</a>(<a class="code" href="classAbstractCommunication.html" title="This class defines how all communication should be done.">AbstractCommunication</a> &amp;comInstance) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classGlobalReceiver.html#acc45445a154d791f586c6cedee2df9a2">_com</a> = &amp;comInstance;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="classGlobalReceiver.html#ace0d4a5976198ff64c4515459b1fa289">   53</a></span>&#160;<a class="code" href="classGlobalReceiver.html#ace0d4a5976198ff64c4515459b1fa289">GlobalReceiver::~GlobalReceiver</a>() {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classGlobalReceiver.html#a84e60a27d7c6d0a968a2b3af506445db">_tcProcessor</a> = NULL;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4">   15</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4">byte_to_binary</a>(<span class="keywordtype">int</span> x) {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">char</span> b[9];</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    b[0] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> z;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">for</span> (z = 128; z &gt; 0; z &gt;&gt;= 1) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        strcat(b, ((x &amp; z) == z) ? <span class="stringliteral">&quot;1&quot;</span> : <span class="stringliteral">&quot;0&quot;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> (b);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="classGlobalReceiver.html#a86c5c89fd69a213379582e1a81085d12">   27</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGlobalReceiver.html#a86c5c89fd69a213379582e1a81085d12" title="This function fetches and processes the input. It calls com&#39;s recv() to read the latest information...">GlobalReceiver::process</a>() {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    String input = <a class="code" href="classGlobalReceiver.html#acc45445a154d791f586c6cedee2df9a2">_com</a>-&gt;<a class="code" href="classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0" title="This function reads data from the pipe and returns this as a string.">recv</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span>(input.length() == 0) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">char</span> action = input.c_str()[0];</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">switch</span> (action) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;1&#39;</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classGlobalReceiver.html#acc45445a154d791f586c6cedee2df9a2">_com</a>-&gt;<a class="code" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe.">sendf</a>(<span class="stringliteral">&quot;CMD (%s)&quot;</span>, input.c_str());</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classGlobalReceiver.html#a84e60a27d7c6d0a968a2b3af506445db">_tcProcessor</a>-&gt;<a class="code" href="classTCProcessor.html#a895b3f9a34b52534182785a00493fc63" title="This function processes the input string which contains the OPCODE to concerned along with the action...">processRecv</a>(input.substring(1));</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;3&#39;</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classGlobalReceiver.html#acc45445a154d791f586c6cedee2df9a2">_com</a>-&gt;<a class="code" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe.">sendf</a>(<span class="stringliteral">&quot;Procedure (%s)&quot;</span>, input.c_str());</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;5&#39;</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classGlobalReceiver.html#acc45445a154d791f586c6cedee2df9a2">_com</a>-&gt;<a class="code" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe.">sendf</a>(<span class="stringliteral">&quot;Dwell (%s)&quot;</span>, input.c_str());</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;7&#39;</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classGlobalReceiver.html#acc45445a154d791f586c6cedee2df9a2">_com</a>-&gt;<a class="code" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe.">sendf</a>(<span class="stringliteral">&quot;Meta (%s)&quot;</span>, input.c_str());</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classGlobalReceiver.html#acc45445a154d791f586c6cedee2df9a2">_com</a>-&gt;<a class="code" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe.">sendf</a>(<span class="stringliteral">&quot;??? &#39;%s&#39; | %s b | a: %s b&quot;</span>, input.c_str(),</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <a class="code" href="GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4">byte_to_binary</a>(input.toInt()), <a class="code" href="GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4">byte_to_binary</a>((<span class="keywordtype">int</span>) action));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="classGlobalReceiver.html#adea5c467d1cd853a6ba6ef88d5611dcd">   51</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGlobalReceiver.html#adea5c467d1cd853a6ba6ef88d5611dcd" title="This function sets the communication pointer. This is used when the empty constructor is used...">GlobalReceiver::setCom</a>(<a class="code" href="classAbstractCommunication.html" title="This class defines how all communication should be done.">AbstractCommunication</a> &amp;comInstance) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classGlobalReceiver.html#acc45445a154d791f586c6cedee2df9a2">_com</a> = &amp;comInstance;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="classGlobalReceiver.html#a11733fe91fb1e7829efa9672f569cdb5">   55</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGlobalReceiver.html#a11733fe91fb1e7829efa9672f569cdb5" title="This function sets the TC processor. This is used when the empty constructor is used.">GlobalReceiver::setTCProcessor</a>(<a class="code" href="classTCProcessor.html" title="This class manages all the telecommands in a std::map . It is also called by GlobalReceiver upon rece...">TCProcessor</a>&amp; tcProcInstance) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classGlobalReceiver.html#a84e60a27d7c6d0a968a2b3af506445db">_tcProcessor</a> = &amp;tcProcInstance;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="classGlobalReceiver.html#ace0d4a5976198ff64c4515459b1fa289">   59</a></span>&#160;<a class="code" href="classGlobalReceiver.html#ace0d4a5976198ff64c4515459b1fa289">GlobalReceiver::~GlobalReceiver</a>() {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

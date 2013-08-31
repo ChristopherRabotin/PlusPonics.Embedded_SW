@@ -6,57 +6,72 @@
     <includes refid="DigitalWriteTC_8h" local="yes">DigitalWriteTC.h</includes>
     <includes local="no">iterator</includes>
     <includes local="no">map</includes>
+    <includedby refid="GlobalReceiver_8h" local="yes">GlobalReceiver.h</includedby>
     <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
     <includedby refid="TCProcessor_8cpp" local="yes">TCProcessor.cpp</includedby>
     <incdepgraph>
-      <node id="215">
+      <node id="249">
         <label>DigitalWriteTC.h</label>
         <link refid="DigitalWriteTC_8h"/>
-        <childnode refid="214" relation="include">
+        <childnode refid="248" relation="include">
         </childnode>
-        <childnode refid="216" relation="include">
+        <childnode refid="250" relation="include">
         </childnode>
       </node>
-      <node id="217">
+      <node id="251">
         <label>iterator</label>
       </node>
-      <node id="218">
+      <node id="252">
         <label>map</label>
       </node>
-      <node id="214">
+      <node id="248">
         <label>TC.h</label>
         <link refid="TC_8h"/>
       </node>
-      <node id="213">
+      <node id="247">
         <label>TCProcessor.h</label>
         <link refid="TCProcessor.h"/>
-        <childnode refid="214" relation="include">
+        <childnode refid="248" relation="include">
         </childnode>
-        <childnode refid="215" relation="include">
+        <childnode refid="249" relation="include">
         </childnode>
-        <childnode refid="217" relation="include">
+        <childnode refid="251" relation="include">
         </childnode>
-        <childnode refid="218" relation="include">
+        <childnode refid="252" relation="include">
         </childnode>
       </node>
-      <node id="216">
+      <node id="250">
         <label>Arduino.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="221">
+      <node id="257">
         <label>TCProcessor.cpp</label>
         <link refid="TCProcessor_8cpp"/>
       </node>
-      <node id="219">
+      <node id="255">
+        <label>GlobalReceiver.cpp</label>
+        <link refid="GlobalReceiver_8cpp"/>
+      </node>
+      <node id="253">
         <label>TCProcessor.h</label>
         <link refid="TCProcessor.h"/>
-        <childnode refid="220" relation="include">
+        <childnode refid="254" relation="include">
         </childnode>
-        <childnode refid="221" relation="include">
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
         </childnode>
       </node>
-      <node id="220">
+      <node id="254">
+        <label>GlobalReceiver.h</label>
+        <link refid="GlobalReceiver_8h"/>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+      </node>
+      <node id="256">
         <label>main.cpp</label>
         <link refid="main_8cpp"/>
       </node>

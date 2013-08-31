@@ -130,7 +130,7 @@
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" line="30" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.cpp" bodystart="14" bodyend="16"/>
         <references refid="classTCProcessor_1aea90af74c7ff4e3f904a9954bd8e5a7a" compoundref="TCProcessor_8cpp" startline="68" endline="71">definitions_</references>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="29" endline="37">setup</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="29" endline="38">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="classTCProcessor_1a895b3f9a34b52534182785a00493fc63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -171,6 +171,7 @@ For example, to EXECUTE OPCODE 15, this function must receive <computeroutput>01
         <references refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf852ce6e9877744a1c1a998faa8581cc" compoundref="TCProcessor_8h" startline="47">INVALID_ACTION</references>
         <references refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf0fd08066fd3d62ffabcf24621b1480b" compoundref="TCProcessor_8h" startline="46">INVALID_OPCODE</references>
         <references refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" compoundref="TCProcessor_8cpp" startline="46" endline="63">perform</references>
+        <referencedby refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="27" endline="49">GlobalReceiver::process</referencedby>
       </memberdef>
       <memberdef kind="function" id="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -216,7 +217,7 @@ For example, to EXECUTE OPCODE 15, this function must receive <computeroutput>01
         <references refid="classTC_1ad03c30fb218c9c3280056bfbb35d6ae0" compoundref="TC_8cpp" startline="36" endline="43">TC::exec</references>
         <references refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3caef939d362d7f07ad29ea6a0c47b81e85" compoundref="TCProcessor_8h" startline="36">EXECUTE</references>
         <references refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf0fd08066fd3d62ffabcf24621b1480b" compoundref="TCProcessor_8h" startline="46">INVALID_OPCODE</references>
-        <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="51" endline="62">main</referencedby>
+        <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="52" endline="63">main</referencedby>
         <referencedby refid="classTCProcessor_1a895b3f9a34b52534182785a00493fc63" compoundref="TCProcessor_8cpp" startline="18" endline="44">processRecv</referencedby>
       </memberdef>
       <memberdef kind="function" id="classTCProcessor_1a725d44ebf98a78dbf5ebc549d678b3c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">

@@ -78,7 +78,7 @@ Collaboration diagram for GlobalReceiver:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGlobalReceiver__coll__graph.png" border="0" usemap="#GlobalReceiver_coll__map" alt="Collaboration graph"/></div>
 <map name="GlobalReceiver_coll__map" id="GlobalReceiver_coll__map">
-<area shape="rect" id="node2" href="classAbstractCommunication.html" title="This class defines how all communication should be done." alt="" coords="5,5,168,32"/></map>
+<area shape="rect" id="node2" href="classAbstractCommunication.html" title="This class defines how all communication should be done." alt="" coords="5,5,168,32"/><area shape="rect" id="node4" href="classTCProcessor.html" title="This class manages all the telecommands in a std::map . It is also called by GlobalReceiver upon rece..." alt="" coords="192,5,296,32"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -88,9 +88,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a86c5c89fd69a213379582e1a81085d12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalReceiver.html#a86c5c89fd69a213379582e1a81085d12">process</a> ()</td></tr>
 <tr class="memdesc:a86c5c89fd69a213379582e1a81085d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function fetches and processes the input. It calls com's recv() to read the latest information.  <a href="#a86c5c89fd69a213379582e1a81085d12"></a><br/></td></tr>
 <tr class="separator:a86c5c89fd69a213379582e1a81085d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0749a78221f336165396d7b5154eaa2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c">setCom</a> (<a class="el" href="classAbstractCommunication.html">AbstractCommunication</a> &amp;<a class="el" href="main_8cpp.html#ac32bb15f611faf91f75daaab60c1068c">com</a>)</td></tr>
-<tr class="memdesc:a0749a78221f336165396d7b5154eaa2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the communication pointer. This is used when the empty constructor is used.  <a href="#a0749a78221f336165396d7b5154eaa2c"></a><br/></td></tr>
-<tr class="separator:a0749a78221f336165396d7b5154eaa2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adea5c467d1cd853a6ba6ef88d5611dcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalReceiver.html#adea5c467d1cd853a6ba6ef88d5611dcd">setCom</a> (<a class="el" href="classAbstractCommunication.html">AbstractCommunication</a> &amp;comInstance)</td></tr>
+<tr class="memdesc:adea5c467d1cd853a6ba6ef88d5611dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the communication pointer. This is used when the empty constructor is used.  <a href="#adea5c467d1cd853a6ba6ef88d5611dcd"></a><br/></td></tr>
+<tr class="separator:adea5c467d1cd853a6ba6ef88d5611dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11733fe91fb1e7829efa9672f569cdb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalReceiver.html#a11733fe91fb1e7829efa9672f569cdb5">setTCProcessor</a> (<a class="el" href="classTCProcessor.html">TCProcessor</a> &amp;tcProcInstance)</td></tr>
+<tr class="memdesc:a11733fe91fb1e7829efa9672f569cdb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the <a class="el" href="classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</a> processor. This is used when the empty constructor is used.  <a href="#a11733fe91fb1e7829efa9672f569cdb5"></a><br/></td></tr>
+<tr class="separator:a11733fe91fb1e7829efa9672f569cdb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace0d4a5976198ff64c4515459b1fa289"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalReceiver.html#ace0d4a5976198ff64c4515459b1fa289">~GlobalReceiver</a> ()</td></tr>
 <tr class="separator:ace0d4a5976198ff64c4515459b1fa289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -98,10 +101,12 @@ Public Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:acc45445a154d791f586c6cedee2df9a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAbstractCommunication.html">AbstractCommunication</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalReceiver.html#acc45445a154d791f586c6cedee2df9a2">_com</a></td></tr>
 <tr class="separator:acc45445a154d791f586c6cedee2df9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e60a27d7c6d0a968a2b3af506445db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTCProcessor.html">TCProcessor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalReceiver.html#a84e60a27d7c6d0a968a2b3af506445db">_tcProcessor</a></td></tr>
+<tr class="separator:a84e60a27d7c6d0a968a2b3af506445db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="GlobalReceiver_8h_source.html#l00013">13</a> of file <a class="el" href="GlobalReceiver_8h_source.html">GlobalReceiver.h</a>.</p>
+<p>Definition at line <a class="el" href="GlobalReceiver_8h_source.html#l00014">14</a> of file <a class="el" href="GlobalReceiver_8h_source.html">GlobalReceiver.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9dfd412916cfb9f441b6d7a884b74ad3"></a>
 <div class="memitem">
@@ -118,7 +123,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="GlobalReceiver_8cpp_source.html#l00010">10</a> of file <a class="el" href="GlobalReceiver_8cpp_source.html">GlobalReceiver.cpp</a>.</p>
 
-<p>References <a class="el" href="GlobalReceiver_8h_source.html#l00040">_com</a>.</p>
+<p>References <a class="el" href="GlobalReceiver_8h_source.html#l00048">_com</a>, and <a class="el" href="GlobalReceiver_8h_source.html#l00049">_tcProcessor</a>.</p>
 
 </div>
 </div>
@@ -143,7 +148,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="GlobalReceiver_8cpp_source.html#l00053">53</a> of file <a class="el" href="GlobalReceiver_8cpp_source.html">GlobalReceiver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="GlobalReceiver_8cpp_source.html#l00059">59</a> of file <a class="el" href="GlobalReceiver_8cpp_source.html">GlobalReceiver.cpp</a>.</p>
 
 </div>
 </div>
@@ -174,24 +179,24 @@ Private Attributes</h2></td></tr>
 <h3>Meta: "7"</h3>
 <p>This includes commands related to meta around the pod, not its operational commands.</p>
 
-<p>Definition at line <a class="el" href="GlobalReceiver_8cpp_source.html#l00026">26</a> of file <a class="el" href="GlobalReceiver_8cpp_source.html">GlobalReceiver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="GlobalReceiver_8cpp_source.html#l00027">27</a> of file <a class="el" href="GlobalReceiver_8cpp_source.html">GlobalReceiver.cpp</a>.</p>
 
-<p>References <a class="el" href="GlobalReceiver_8h_source.html#l00040">_com</a>, <a class="el" href="GlobalReceiver_8cpp_source.html#l00014">byte_to_binary()</a>, <a class="el" href="classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0">AbstractCommunication::recv()</a>, and <a class="el" href="AbstractCommunication_8cpp_source.html#l00053">AbstractCommunication::sendf()</a>.</p>
+<p>References <a class="el" href="GlobalReceiver_8h_source.html#l00048">_com</a>, <a class="el" href="GlobalReceiver_8h_source.html#l00049">_tcProcessor</a>, <a class="el" href="GlobalReceiver_8cpp_source.html#l00015">byte_to_binary()</a>, <a class="el" href="TCProcessor_8cpp_source.html#l00018">TCProcessor::processRecv()</a>, <a class="el" href="classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0">AbstractCommunication::recv()</a>, and <a class="el" href="AbstractCommunication_8cpp_source.html#l00053">AbstractCommunication::sendf()</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00042">loop()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00043">loop()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGlobalReceiver_a86c5c89fd69a213379582e1a81085d12_cgraph.png" border="0" usemap="#classGlobalReceiver_a86c5c89fd69a213379582e1a81085d12_cgraph" alt=""/></div>
 <map name="classGlobalReceiver_a86c5c89fd69a213379582e1a81085d12_cgraph" id="classGlobalReceiver_a86c5c89fd69a213379582e1a81085d12_cgraph">
-<area shape="rect" id="node3" href="GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4" title="byte_to_binary" alt="" coords="254,5,362,32"/><area shape="rect" id="node5" href="classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0" title="This function reads data from the pipe and returns this as a string." alt="" coords="227,57,389,98"/><area shape="rect" id="node7" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe." alt="" coords="227,122,389,163"/><area shape="rect" id="node9" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="437,122,600,163"/></map>
+<area shape="rect" id="node3" href="GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4" title="byte_to_binary" alt="" coords="269,5,377,32"/><area shape="rect" id="node5" href="classTCProcessor.html#a895b3f9a34b52534182785a00493fc63" title="This function processes the input string which contains the OPCODE to concerned along with the action..." alt="" coords="227,56,418,83"/><area shape="rect" id="node17" href="classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0" title="This function reads data from the pipe and returns this as a string." alt="" coords="241,107,404,149"/><area shape="rect" id="node19" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe." alt="" coords="241,173,404,214"/><area shape="rect" id="node7" href="classTCProcessor.html#a2592bd41ffd44e77c367f401f838b788" title="This function will perform the given action on the given opcode. The internal error variable will ref..." alt="" coords="469,56,627,83"/><area shape="rect" id="node9" href="classTC.html#a5431ac6442ffc4d740b1f146322a2a7c" title="This function will enable this TC." alt="" coords="680,5,771,32"/><area shape="rect" id="node11" href="classTC.html#ac5e09bff8556f6ac5ed5604b855d3338" title="This function will disable this TC. A disabled TC cannot be executed." alt="" coords="678,56,773,83"/><area shape="rect" id="node13" href="classTC.html#ad03c30fb218c9c3280056bfbb35d6ae0" title="This function will execute of this TC. A TC can only be executed (for start and stop actions..." alt="" coords="685,107,765,133"/><area shape="rect" id="node15" href="classTC.html#ad0a5dbe25b9dfd17bfadfef29e1e2822" title="This function will execute this TC." alt="" coords="822,107,941,133"/><area shape="rect" id="node21" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="467,173,629,214"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a0749a78221f336165396d7b5154eaa2c"></a>
+<a class="anchor" id="adea5c467d1cd853a6ba6ef88d5611dcd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -199,7 +204,7 @@ Here is the call graph for this function:</div>
           <td class="memname">void GlobalReceiver::setCom </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classAbstractCommunication.html">AbstractCommunication</a> &amp;&#160;</td>
-          <td class="paramname"><em>com</em></td><td>)</td>
+          <td class="paramname"><em>comInstance</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -213,9 +218,39 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="GlobalReceiver_8cpp_source.html#l00049">49</a> of file <a class="el" href="GlobalReceiver_8cpp_source.html">GlobalReceiver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="GlobalReceiver_8cpp_source.html#l00051">51</a> of file <a class="el" href="GlobalReceiver_8cpp_source.html">GlobalReceiver.cpp</a>.</p>
 
-<p>References <a class="el" href="GlobalReceiver_8h_source.html#l00040">_com</a>.</p>
+<p>References <a class="el" href="GlobalReceiver_8h_source.html#l00048">_com</a>.</p>
+
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00029">setup()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a11733fe91fb1e7829efa9672f569cdb5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GlobalReceiver::setTCProcessor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTCProcessor.html">TCProcessor</a> &amp;&#160;</td>
+          <td class="paramname"><em>tcProcInstance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function sets the <a class="el" href="classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</a> processor. This is used when the empty constructor is used. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">com</td><td><a class="el" href="classTCProcessor.html" title="This class manages all the telecommands in a std::map . It is also called by GlobalReceiver upon rece...">TCProcessor</a> instance </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="GlobalReceiver_8cpp_source.html#l00055">55</a> of file <a class="el" href="GlobalReceiver_8cpp_source.html">GlobalReceiver.cpp</a>.</p>
+
+<p>References <a class="el" href="GlobalReceiver_8h_source.html#l00049">_tcProcessor</a>.</p>
 
 <p>Referenced by <a class="el" href="main_8cpp_source.html#l00029">setup()</a>.</p>
 
@@ -240,9 +275,33 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="GlobalReceiver_8h_source.html#l00040">40</a> of file <a class="el" href="GlobalReceiver_8h_source.html">GlobalReceiver.h</a>.</p>
+<p>Definition at line <a class="el" href="GlobalReceiver_8h_source.html#l00048">48</a> of file <a class="el" href="GlobalReceiver_8h_source.html">GlobalReceiver.h</a>.</p>
 
-<p>Referenced by <a class="el" href="GlobalReceiver_8cpp_source.html#l00010">GlobalReceiver()</a>, <a class="el" href="GlobalReceiver_8cpp_source.html#l00026">process()</a>, and <a class="el" href="GlobalReceiver_8cpp_source.html#l00049">setCom()</a>.</p>
+<p>Referenced by <a class="el" href="GlobalReceiver_8cpp_source.html#l00010">GlobalReceiver()</a>, <a class="el" href="GlobalReceiver_8cpp_source.html#l00027">process()</a>, and <a class="el" href="GlobalReceiver_8cpp_source.html#l00051">setCom()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a84e60a27d7c6d0a968a2b3af506445db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTCProcessor.html">TCProcessor</a>* GlobalReceiver::_tcProcessor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="GlobalReceiver_8h_source.html#l00049">49</a> of file <a class="el" href="GlobalReceiver_8h_source.html">GlobalReceiver.h</a>.</p>
+
+<p>Referenced by <a class="el" href="GlobalReceiver_8cpp_source.html#l00010">GlobalReceiver()</a>, <a class="el" href="GlobalReceiver_8cpp_source.html#l00027">process()</a>, and <a class="el" href="GlobalReceiver_8cpp_source.html#l00055">setTCProcessor()</a>.</p>
 
 </div>
 </div>

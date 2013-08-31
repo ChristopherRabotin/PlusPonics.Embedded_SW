@@ -9,6 +9,7 @@
 
 GlobalReceiver::GlobalReceiver() {
 	_com = NULL;
+	_tcProcessor = NULL;
 }
 
 const char *byte_to_binary(int x) {
@@ -30,6 +31,7 @@ void GlobalReceiver::process() {
 	switch (action) {
 	case '1':
 		_com->sendf("CMD (%s)", input.c_str());
+		_tcProcessor->processRecv(input.substring(1));
 		break;
 	case '3':
 		_com->sendf("Procedure (%s)", input.c_str());
@@ -48,6 +50,10 @@ void GlobalReceiver::process() {
 
 void GlobalReceiver::setCom(AbstractCommunication &comInstance) {
 	_com = &comInstance;
+}
+
+void GlobalReceiver::setTCProcessor(TCProcessor& tcProcInstance) {
+	_tcProcessor = &tcProcInstance;
 }
 
 GlobalReceiver::~GlobalReceiver() {

@@ -31,9 +31,11 @@
   </compound>
   <compound refid="classGlobalReceiver" kind="class"><name>GlobalReceiver</name>
     <member refid="classGlobalReceiver_1acc45445a154d791f586c6cedee2df9a2" kind="variable"><name>_com</name></member>
+    <member refid="classGlobalReceiver_1a84e60a27d7c6d0a968a2b3af506445db" kind="variable"><name>_tcProcessor</name></member>
     <member refid="classGlobalReceiver_1a9dfd412916cfb9f441b6d7a884b74ad3" kind="function"><name>GlobalReceiver</name></member>
     <member refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" kind="function"><name>process</name></member>
-    <member refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" kind="function"><name>setCom</name></member>
+    <member refid="classGlobalReceiver_1adea5c467d1cd853a6ba6ef88d5611dcd" kind="function"><name>setCom</name></member>
+    <member refid="classGlobalReceiver_1a11733fe91fb1e7829efa9672f569cdb5" kind="function"><name>setTCProcessor</name></member>
     <member refid="classGlobalReceiver_1ace0d4a5976198ff64c4515459b1fa289" kind="function"><name>~GlobalReceiver</name></member>
   </compound>
   <compound refid="classSerialCom" kind="class"><name>SerialCom</name>
