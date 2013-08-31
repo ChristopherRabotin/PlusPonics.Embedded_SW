@@ -17,8 +17,8 @@ var classTC =
     [ "exec_impl_", "classTC.html#ad0a5dbe25b9dfd17bfadfef29e1e2822", null ],
     [ "init", "classTC.html#acd105ecf7e37a532f07cd5086520e912", null ],
     [ "persist_errors", "classTC.html#ad0701c92be6d3797420ce2e1990a9bf8", null ],
-    [ "enabled", "classTC.html#aa8041e1e2fe621af08896191516532b2", null ],
-    [ "error", "classTC.html#a455dc2d162a56952d2ad17035498dc16", null ],
-    [ "executions", "classTC.html#af95bb551861e5f1292ecc9e064a7e4bc", null ],
-    [ "persistent_error", "classTC.html#afabae8289c12a13afc39143f30186171", null ]
+    [ "_enabled", "classTC.html#a7515ceb3f9bbfa16049c1a4aac7dbe97", null ],
+    [ "_error", "classTC.html#a7c9e127ab52d41d3fa353ca946a92318", null ],
+    [ "_executions", "classTC.html#ac02e6d68296265146dcbe5a409262b06", null ],
+    [ "_persistent_error", "classTC.html#aacf48d34b2ec6f2165d8cecdddcbd33b", null ]
 ];

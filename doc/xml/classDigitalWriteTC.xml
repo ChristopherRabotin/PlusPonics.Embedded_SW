@@ -5,34 +5,34 @@
     <basecompoundref refid="classTC" prot="public" virt="non-virtual">TC</basecompoundref>
     <includes refid="DigitalWriteTC_8h" local="no">DigitalWriteTC.h</includes>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classDigitalWriteTC_1a39b26b124d83ef27c82cc348ba0c93fb" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classDigitalWriteTC_1a2a3a499b821733cf424995c45434b016" prot="private" static="no" mutable="no">
         <type>int</type>
-        <definition>int DigitalWriteTC::outputPin</definition>
+        <definition>int DigitalWriteTC::_outputPin</definition>
         <argsstring></argsstring>
-        <name>outputPin</name>
+        <name>_outputPin</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" line="26" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" bodystart="26" bodyend="-1"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" line="32" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" bodystart="32" bodyend="-1"/>
         <referencedby refid="classDigitalWriteTC_1ab072fa122e0c0177a47fb85392f55e71" compoundref="DigitalWriteTC_8cpp" startline="10" endline="14">DigitalWriteTC</referencedby>
         <referencedby refid="classDigitalWriteTC_1a8dbc7cfc11760e634fc4bbc1f0c91dc9" compoundref="DigitalWriteTC_8cpp" startline="23" endline="25">exec_impl_</referencedby>
         <referencedby refid="classDigitalWriteTC_1ae597ff8f497123a942d558a7d993f60f" compoundref="DigitalWriteTC_8cpp" startline="19" endline="21">init</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="classDigitalWriteTC_1a5140f48fba80575b7b06b53c5ef0ecc0" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classDigitalWriteTC_1a782251af3d2552f366def4a10d2742f9" prot="private" static="no" mutable="no">
         <type>int</type>
-        <definition>int DigitalWriteTC::outputValue</definition>
+        <definition>int DigitalWriteTC::_outputValue</definition>
         <argsstring></argsstring>
-        <name>outputValue</name>
+        <name>_outputValue</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" line="27" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" bodystart="27" bodyend="-1"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" line="33" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" bodystart="33" bodyend="-1"/>
         <referencedby refid="classDigitalWriteTC_1ab072fa122e0c0177a47fb85392f55e71" compoundref="DigitalWriteTC_8cpp" startline="10" endline="14">DigitalWriteTC</referencedby>
         <referencedby refid="classDigitalWriteTC_1a8dbc7cfc11760e634fc4bbc1f0c91dc9" compoundref="DigitalWriteTC_8cpp" startline="23" endline="25">exec_impl_</referencedby>
       </memberdef>
@@ -52,14 +52,30 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Specify in the constructor both the output pin and the output value. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><simplesect kind="note"><para>The output pin and the output value cannot be changed after initialization. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outputPin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pin to be used as the output of this <ref refid="classTC" kindref="compound">TC</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value which is to be sent on the given output pin. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" line="21" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.cpp" bodystart="10" bodyend="14"/>
-        <references refid="classDigitalWriteTC_1a39b26b124d83ef27c82cc348ba0c93fb" compoundref="DigitalWriteTC_8h" startline="26">outputPin</references>
-        <references refid="classDigitalWriteTC_1a5140f48fba80575b7b06b53c5ef0ecc0" compoundref="DigitalWriteTC_8h" startline="27">outputValue</references>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" line="27" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.cpp" bodystart="10" bodyend="14"/>
+        <references refid="classDigitalWriteTC_1a2a3a499b821733cf424995c45434b016" compoundref="DigitalWriteTC_8h" startline="32">_outputPin</references>
+        <references refid="classDigitalWriteTC_1a782251af3d2552f366def4a10d2742f9" compoundref="DigitalWriteTC_8h" startline="33">_outputValue</references>
       </memberdef>
       <memberdef kind="function" id="classDigitalWriteTC_1aebed23b0d444bb9c8906fa68e0424e15" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -72,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" line="22" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.cpp" bodystart="16" bodyend="17"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" line="28" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.cpp" bodystart="16" bodyend="17"/>
       </memberdef>
       <memberdef kind="function" id="classDigitalWriteTC_1ae597ff8f497123a942d558a7d993f60f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -86,9 +102,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" line="23" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.cpp" bodystart="19" bodyend="21"/>
-        <references refid="classDigitalWriteTC_1a39b26b124d83ef27c82cc348ba0c93fb" compoundref="DigitalWriteTC_8h" startline="26">outputPin</references>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="34" endline="43">setup</referencedby>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" line="29" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.cpp" bodystart="19" bodyend="21"/>
+        <references refid="classDigitalWriteTC_1a2a3a499b821733cf424995c45434b016" compoundref="DigitalWriteTC_8h" startline="32">_outputPin</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="31" endline="42">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="classDigitalWriteTC_1a8dbc7cfc11760e634fc4bbc1f0c91dc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -97,33 +113,22 @@
         <name>exec_impl_</name>
         <reimplements refid="classTC_1ad0a5dbe25b9dfd17bfadfef29e1e2822">exec_impl_</reimplements>
         <briefdescription>
-<para>This function will execute this <ref refid="classTC" kindref="compound">TC</ref>&lt;. </para>        </briefdescription>
+<para>This function will execute this <ref refid="classTC" kindref="compound">TC</ref>. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" line="24" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.cpp" bodystart="23" bodyend="25"/>
-        <references refid="classDigitalWriteTC_1a39b26b124d83ef27c82cc348ba0c93fb" compoundref="DigitalWriteTC_8h" startline="26">outputPin</references>
-        <references refid="classDigitalWriteTC_1a5140f48fba80575b7b06b53c5ef0ecc0" compoundref="DigitalWriteTC_8h" startline="27">outputValue</references>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" line="30" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.cpp" bodystart="23" bodyend="25"/>
+        <references refid="classDigitalWriteTC_1a2a3a499b821733cf424995c45434b016" compoundref="DigitalWriteTC_8h" startline="32">_outputPin</references>
+        <references refid="classDigitalWriteTC_1a782251af3d2552f366def4a10d2742f9" compoundref="DigitalWriteTC_8h" startline="33">_outputValue</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>This class enables digital writing to a given output pin. Note that this does not check whether the pin is used in another mode. It is very important to check for any conflict beforehand! </para>    </briefdescription>
+<para>This class enables digital writing to a given output pin with the given output value. </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para><simplesect kind="warning"><para>This class does not check whether the pin is used in another mode. It is very important to check for any conflict beforehand! </para></simplesect>
+</para>    </detaileddescription>
     <inheritancegraph>
-      <node id="21">
-        <label>TC</label>
-        <link refid="classTC"/>
-      </node>
-      <node id="20">
-        <label>DigitalWriteTC</label>
-        <link refid="classDigitalWriteTC"/>
-        <childnode refid="21" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="23">
         <label>TC</label>
         <link refid="classTC"/>
@@ -134,9 +139,23 @@
         <childnode refid="23" relation="public-inheritance">
         </childnode>
       </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="25">
+        <label>TC</label>
+        <link refid="classTC"/>
+      </node>
+      <node id="24">
+        <label>DigitalWriteTC</label>
+        <link refid="classDigitalWriteTC"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
     </collaborationgraph>
-    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" line="19" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" bodystart="19" bodyend="28"/>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" line="19" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" bodystart="19" bodyend="34"/>
     <listofallmembers>
+      <member refid="classDigitalWriteTC_1a2a3a499b821733cf424995c45434b016" prot="private" virt="non-virtual"><scope>DigitalWriteTC</scope><name>_outputPin</name></member>
+      <member refid="classDigitalWriteTC_1a782251af3d2552f366def4a10d2742f9" prot="private" virt="non-virtual"><scope>DigitalWriteTC</scope><name>_outputValue</name></member>
       <member refid="classTC_1af0f45dd4d8f5a240c48a48abf5618c44" prot="public" virt="non-virtual"><scope>DigitalWriteTC</scope><name>clear_error</name></member>
       <member refid="classDigitalWriteTC_1ab072fa122e0c0177a47fb85392f55e71" prot="public" virt="non-virtual"><scope>DigitalWriteTC</scope><name>DigitalWriteTC</name></member>
       <member refid="classTC_1ac5e09bff8556f6ac5ed5604b855d3338" prot="public" virt="non-virtual"><scope>DigitalWriteTC</scope><name>disable</name></member>
@@ -148,8 +167,6 @@
       <member refid="classDigitalWriteTC_1ae597ff8f497123a942d558a7d993f60f" prot="public" virt="virtual"><scope>DigitalWriteTC</scope><name>init</name></member>
       <member refid="classTC_1a76dd65525231537b15914ebbaff85f4ca6202ac5b4809e29c1899965dcd1738c8" prot="public" virt="non-virtual"><scope>DigitalWriteTC</scope><name>NO_ERROR</name></member>
       <member refid="classTC_1a76dd65525231537b15914ebbaff85f4caed07796a6a975c1968f32ef3dd983f17" prot="public" virt="non-virtual"><scope>DigitalWriteTC</scope><name>NOT_ENABLED</name></member>
-      <member refid="classDigitalWriteTC_1a39b26b124d83ef27c82cc348ba0c93fb" prot="private" virt="non-virtual"><scope>DigitalWriteTC</scope><name>outputPin</name></member>
-      <member refid="classDigitalWriteTC_1a5140f48fba80575b7b06b53c5ef0ecc0" prot="private" virt="non-virtual"><scope>DigitalWriteTC</scope><name>outputValue</name></member>
       <member refid="classTC_1ad0701c92be6d3797420ce2e1990a9bf8" prot="public" virt="non-virtual"><scope>DigitalWriteTC</scope><name>persist_errors</name></member>
       <member refid="classTC_1a0389d8330f8df757e32727091f32933b" prot="public" virt="non-virtual"><scope>DigitalWriteTC</scope><name>TC</name></member>
       <member refid="classTC_1a76dd65525231537b15914ebbaff85f4ca1772725d086c5cb4447ca0271a31f691" prot="public" virt="non-virtual"><scope>DigitalWriteTC</scope><name>WAS_DISABLED</name></member>

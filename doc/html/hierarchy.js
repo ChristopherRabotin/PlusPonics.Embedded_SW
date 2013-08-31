@@ -6,5 +6,6 @@ var hierarchy =
     [ "GlobalReceiver", "classGlobalReceiver.html", null ],
     [ "TC", "classTC.html", [
       [ "DigitalWriteTC", "classDigitalWriteTC.html", null ]
-    ] ]
+    ] ],
+    [ "TCProcessor", "classTCProcessor.html", null ]
 ];

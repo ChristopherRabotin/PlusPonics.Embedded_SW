@@ -41,5 +41,5 @@ TCProcessor::~TCProcessor() {
 }
 
 void TCProcessor::define_() {
-	//_opcode_TC_map[1] = DigitalWriteTC(13, 0x1);
+	_opcode_TC_map[1] = new DigitalWriteTC(13, 0x1);
 }

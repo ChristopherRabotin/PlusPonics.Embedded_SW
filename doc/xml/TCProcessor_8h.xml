@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="TCProcessor_8h" kind="file">
+    <compoundname>TCProcessor.h</compoundname>
+    <includes refid="TC_8h" local="yes">TC.h</includes>
+    <includes refid="DigitalWriteTC_8h" local="yes">DigitalWriteTC.h</includes>
+    <includes local="no">iterator</includes>
+    <includes local="no">map</includes>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <includedby refid="TCProcessor_8cpp" local="yes">TCProcessor.cpp</includedby>
+    <incdepgraph>
+      <node id="215">
+        <label>DigitalWriteTC.h</label>
+        <link refid="DigitalWriteTC_8h"/>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+      </node>
+      <node id="217">
+        <label>iterator</label>
+      </node>
+      <node id="218">
+        <label>map</label>
+      </node>
+      <node id="214">
+        <label>TC.h</label>
+        <link refid="TC_8h"/>
+      </node>
+      <node id="213">
+        <label>TCProcessor.h</label>
+        <link refid="TCProcessor.h"/>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+      </node>
+      <node id="216">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="221">
+        <label>TCProcessor.cpp</label>
+        <link refid="TCProcessor_8cpp"/>
+      </node>
+      <node id="219">
+        <label>TCProcessor.h</label>
+        <link refid="TCProcessor.h"/>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classTCProcessor" prot="public">TCProcessor</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>TCProcessor.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Aug<sp/>31,<sp/>2013</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>chris</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TCPROCESSOR_H_</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TCPROCESSOR_H_</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="TC_8h" kindref="compound">TC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DigitalWriteTC_8h" kindref="compound">DigitalWriteTC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>following<sp/>includes<sp/>enable<sp/>STL<sp/>for<sp/>Arduino.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iterator&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight></codeline>
+<codeline lineno="19" refid="classTCProcessor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTCProcessor" kindref="compound">TCProcessor</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a163b5e6267b5c05111b4ad8eeafadda9" kindref="member" tooltip="The constructor only initializes private attributes of this class.">TCProcessor</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTCProcessor_1a4a8c96ae1992c22a3f1b52802a356e72" kindref="member" tooltip="The init function will call &amp;#39;init&amp;#39; on all the telecommands of this class. This function must be calle...">init</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3c" kindref="member">TC_ACTION</ref><sp/>{</highlight></codeline>
+<codeline lineno="35" refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3caef939d362d7f07ad29ea6a0c47b81e85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3caef939d362d7f07ad29ea6a0c47b81e85" kindref="member">EXECUTE</ref>,<sp/></highlight></codeline>
+<codeline lineno="36" refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3cadeb07d61a4230e0e1e88aaad4f33e759" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3cadeb07d61a4230e0e1e88aaad4f33e759" kindref="member">ENABLE</ref>,<sp/></highlight></codeline>
+<codeline lineno="37" refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3ca892aa983d0d505703d4c1fcad4586683" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3ca892aa983d0d505703d4c1fcad4586683" kindref="member">DISABLE</ref></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cb" kindref="member">ERROR_STATE</ref><sp/>{</highlight></codeline>
+<codeline lineno="44" refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cba1dad294c03cf3ae5b03821e63b0585d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cba1dad294c03cf3ae5b03821e63b0585d9" kindref="member">NO_ERROR</ref>,<sp/></highlight></codeline>
+<codeline lineno="45" refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf0fd08066fd3d62ffabcf24621b1480b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf0fd08066fd3d62ffabcf24621b1480b" kindref="member">INVALID_OPCODE</ref>,<sp/></highlight></codeline>
+<codeline lineno="46" refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf852ce6e9877744a1c1a998faa8581cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf852ce6e9877744a1c1a998faa8581cc" kindref="member">INVALID_ACTION</ref><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTCProcessor_1a895b3f9a34b52534182785a00493fc63" kindref="member" tooltip="This function processes the input string which contains the OPCODE to concerned along with the action...">processRecv</ref>(String<sp/>payload);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" kindref="member" tooltip="This function will perform the given action on the given opcode. The internal error variable will ref...">perform</ref>(<ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3c" kindref="member">TC_ACTION</ref><sp/>action,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opcode);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classTCProcessor_1a725d44ebf98a78dbf5ebc549d678b3c8" kindref="member">~TCProcessor</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTCProcessor_1abb22877485aa2473ea3559b3395f51e3" kindref="member" tooltip="The define_ function will define all the TCs available. It is called from the constructor and it popu...">define_</ref>();</highlight></codeline>
+<codeline lineno="78" refid="classTCProcessor_1a195b8b31be7e467f5789f8117837f69c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;int,<sp/>TC*&gt;<sp/><ref refid="classTCProcessor_1a195b8b31be7e467f5789f8117837f69c" kindref="member" tooltip="This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the ...">_opcode_TC_map</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classTCProcessor_1a1b104ae051b1edc075cfde03a9d4672a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cb" kindref="member">ERROR_STATE</ref><sp/><ref refid="classTCProcessor_1a1b104ae051b1edc075cfde03a9d4672a" kindref="member">_error</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TCPROCESSOR_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h"/>
+  </compounddef>
+</doxygen>

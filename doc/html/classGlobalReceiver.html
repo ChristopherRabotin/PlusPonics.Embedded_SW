@@ -88,7 +88,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a86c5c89fd69a213379582e1a81085d12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalReceiver.html#a86c5c89fd69a213379582e1a81085d12">process</a> ()</td></tr>
 <tr class="memdesc:a86c5c89fd69a213379582e1a81085d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function fetches and processes the input. It calls com's recv() to read the latest information.  <a href="#a86c5c89fd69a213379582e1a81085d12"></a><br/></td></tr>
 <tr class="separator:a86c5c89fd69a213379582e1a81085d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0749a78221f336165396d7b5154eaa2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c">setCom</a> (<a class="el" href="classAbstractCommunication.html">AbstractCommunication</a> &amp;<a class="el" href="classGlobalReceiver.html#adcdcb16fcb66a240948704a492b3ecc6">com</a>)</td></tr>
+<tr class="memitem:a0749a78221f336165396d7b5154eaa2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c">setCom</a> (<a class="el" href="classAbstractCommunication.html">AbstractCommunication</a> &amp;<a class="el" href="main_8cpp.html#ac32bb15f611faf91f75daaab60c1068c">com</a>)</td></tr>
 <tr class="memdesc:a0749a78221f336165396d7b5154eaa2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the communication pointer. This is used when the empty constructor is used.  <a href="#a0749a78221f336165396d7b5154eaa2c"></a><br/></td></tr>
 <tr class="separator:a0749a78221f336165396d7b5154eaa2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace0d4a5976198ff64c4515459b1fa289"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalReceiver.html#ace0d4a5976198ff64c4515459b1fa289">~GlobalReceiver</a> ()</td></tr>
@@ -96,8 +96,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:adcdcb16fcb66a240948704a492b3ecc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAbstractCommunication.html">AbstractCommunication</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalReceiver.html#adcdcb16fcb66a240948704a492b3ecc6">com</a></td></tr>
-<tr class="separator:adcdcb16fcb66a240948704a492b3ecc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc45445a154d791f586c6cedee2df9a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAbstractCommunication.html">AbstractCommunication</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGlobalReceiver.html#acc45445a154d791f586c6cedee2df9a2">_com</a></td></tr>
+<tr class="separator:acc45445a154d791f586c6cedee2df9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -118,7 +118,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="GlobalReceiver_8cpp_source.html#l00010">10</a> of file <a class="el" href="GlobalReceiver_8cpp_source.html">GlobalReceiver.cpp</a>.</p>
 
-<p>References <a class="el" href="GlobalReceiver_8h_source.html#l00040">com</a>.</p>
+<p>References <a class="el" href="GlobalReceiver_8h_source.html#l00040">_com</a>.</p>
 
 </div>
 </div>
@@ -176,9 +176,9 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="GlobalReceiver_8cpp_source.html#l00026">26</a> of file <a class="el" href="GlobalReceiver_8cpp_source.html">GlobalReceiver.cpp</a>.</p>
 
-<p>References <a class="el" href="GlobalReceiver_8cpp_source.html#l00014">byte_to_binary()</a>, <a class="el" href="GlobalReceiver_8h_source.html#l00040">com</a>, <a class="el" href="classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0">AbstractCommunication::recv()</a>, and <a class="el" href="AbstractCommunication_8cpp_source.html#l00053">AbstractCommunication::sendf()</a>.</p>
+<p>References <a class="el" href="GlobalReceiver_8h_source.html#l00040">_com</a>, <a class="el" href="GlobalReceiver_8cpp_source.html#l00014">byte_to_binary()</a>, <a class="el" href="classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0">AbstractCommunication::recv()</a>, and <a class="el" href="AbstractCommunication_8cpp_source.html#l00053">AbstractCommunication::sendf()</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00048">loop()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00047">loop()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -215,14 +215,14 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="GlobalReceiver_8cpp_source.html#l00049">49</a> of file <a class="el" href="GlobalReceiver_8cpp_source.html">GlobalReceiver.cpp</a>.</p>
 
-<p>References <a class="el" href="GlobalReceiver_8h_source.html#l00040">com</a>.</p>
+<p>References <a class="el" href="GlobalReceiver_8h_source.html#l00040">_com</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00034">setup()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00031">setup()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="adcdcb16fcb66a240948704a492b3ecc6"></a>
+<a class="anchor" id="acc45445a154d791f586c6cedee2df9a2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -230,7 +230,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classAbstractCommunication.html">AbstractCommunication</a>* GlobalReceiver::com</td>
+          <td class="memname"><a class="el" href="classAbstractCommunication.html">AbstractCommunication</a>* GlobalReceiver::_com</td>
         </tr>
       </table>
   </td>

@@ -4,25 +4,25 @@
     <compoundname>DigitalWriteTC.cpp</compoundname>
     <includes refid="DigitalWriteTC_8h" local="yes">DigitalWriteTC.h</includes>
     <incdepgraph>
-      <node id="107">
+      <node id="129">
         <label>DigitalWriteTC.h</label>
         <link refid="DigitalWriteTC_8h"/>
-        <childnode refid="108" relation="include">
+        <childnode refid="130" relation="include">
         </childnode>
-        <childnode refid="109" relation="include">
+        <childnode refid="131" relation="include">
         </childnode>
       </node>
-      <node id="108">
+      <node id="130">
         <label>TC.h</label>
         <link refid="TC_8h"/>
       </node>
-      <node id="109">
+      <node id="131">
         <label>Arduino.h</label>
       </node>
-      <node id="106">
+      <node id="128">
         <label>DigitalWriteTC.cpp</label>
         <link refid="DigitalWriteTC.cpp"/>
-        <childnode refid="107" relation="include">
+        <childnode refid="129" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -40,21 +40,21 @@
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DigitalWriteTC_8h" kindref="compound">DigitalWriteTC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10" refid="classDigitalWriteTC_1ab072fa122e0c0177a47fb85392f55e71" refkind="member"><highlight class="normal"><ref refid="classDigitalWriteTC_1ab072fa122e0c0177a47fb85392f55e71" kindref="member">DigitalWriteTC::DigitalWriteTC</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>outputPin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value)<sp/>:</highlight></codeline>
+<codeline lineno="10" refid="classDigitalWriteTC_1ab072fa122e0c0177a47fb85392f55e71" refkind="member"><highlight class="normal"><ref refid="classDigitalWriteTC_1ab072fa122e0c0177a47fb85392f55e71" kindref="member" tooltip="Specify in the constructor both the output pin and the output value.">DigitalWriteTC::DigitalWriteTC</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>outputPin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value)<sp/>:</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC" kindref="compound" tooltip="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;outputPin<sp/>=<sp/><ref refid="classDigitalWriteTC_1a39b26b124d83ef27c82cc348ba0c93fb" kindref="member">outputPin</ref>;</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classDigitalWriteTC_1a5140f48fba80575b7b06b53c5ef0ecc0" kindref="member">outputValue</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDigitalWriteTC_1a2a3a499b821733cf424995c45434b016" kindref="member">_outputPin</ref><sp/>=<sp/>outputPin;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDigitalWriteTC_1a782251af3d2552f366def4a10d2742f9" kindref="member">_outputValue</ref><sp/>=<sp/>value;</highlight></codeline>
 <codeline lineno="14"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16" refid="classDigitalWriteTC_1aebed23b0d444bb9c8906fa68e0424e15" refkind="member"><highlight class="normal"><ref refid="classDigitalWriteTC_1aebed23b0d444bb9c8906fa68e0424e15" kindref="member">DigitalWriteTC::~DigitalWriteTC</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="17"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19" refid="classDigitalWriteTC_1ae597ff8f497123a942d558a7d993f60f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDigitalWriteTC_1ae597ff8f497123a942d558a7d993f60f" kindref="member" tooltip="The init function sets up everything for this TC to be operational. It must be called from the setup ...">DigitalWriteTC::init</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(this-&gt;<ref refid="classDigitalWriteTC_1a39b26b124d83ef27c82cc348ba0c93fb" kindref="member">outputPin</ref>,<sp/>OUTPUT);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(<ref refid="classDigitalWriteTC_1a2a3a499b821733cf424995c45434b016" kindref="member">_outputPin</ref>,<sp/>OUTPUT);</highlight></codeline>
 <codeline lineno="21"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23" refid="classDigitalWriteTC_1a8dbc7cfc11760e634fc4bbc1f0c91dc9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDigitalWriteTC_1a8dbc7cfc11760e634fc4bbc1f0c91dc9" kindref="member" tooltip="This function will execute this TC&amp;lt;.">DigitalWriteTC::exec_impl_</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(this-&gt;<ref refid="classDigitalWriteTC_1a39b26b124d83ef27c82cc348ba0c93fb" kindref="member">outputPin</ref>,<sp/>this-&gt;<ref refid="classDigitalWriteTC_1a5140f48fba80575b7b06b53c5ef0ecc0" kindref="member">outputValue</ref>);</highlight></codeline>
+<codeline lineno="23" refid="classDigitalWriteTC_1a8dbc7cfc11760e634fc4bbc1f0c91dc9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDigitalWriteTC_1a8dbc7cfc11760e634fc4bbc1f0c91dc9" kindref="member" tooltip="This function will execute this TC.">DigitalWriteTC::exec_impl_</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="classDigitalWriteTC_1a2a3a499b821733cf424995c45434b016" kindref="member">_outputPin</ref>,<sp/><ref refid="classDigitalWriteTC_1a782251af3d2552f366def4a10d2742f9" kindref="member">_outputValue</ref>);</highlight></codeline>
 <codeline lineno="25"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.cpp"/>

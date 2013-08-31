@@ -20,5 +20,9 @@ var files =
     [ "TC.cpp", "TC_8cpp.html", null ],
     [ "TC.h", "TC_8h.html", [
       [ "TC", "classTC.html", "classTC" ]
+    ] ],
+    [ "TCProcessor.cpp", "TCProcessor_8cpp.html", null ],
+    [ "TCProcessor.h", "TCProcessor_8h.html", [
+      [ "TCProcessor", "classTCProcessor.html", "classTCProcessor" ]
     ] ]
 ];

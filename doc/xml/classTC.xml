@@ -52,28 +52,11 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classTC_1aa8041e1e2fe621af08896191516532b2" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classTC_1a7515ceb3f9bbfa16049c1a4aac7dbe97" prot="private" static="no" mutable="no">
         <type>bool</type>
-        <definition>bool TC::enabled</definition>
+        <definition>bool TC::_enabled</definition>
         <argsstring></argsstring>
-        <name>enabled</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="75" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" bodystart="75" bodyend="-1"/>
-        <referencedby refid="classTC_1ac5e09bff8556f6ac5ed5604b855d3338" compoundref="TC_8cpp" startline="28" endline="34">disable</referencedby>
-        <referencedby refid="classTC_1a5431ac6442ffc4d740b1f146322a2a7c" compoundref="TC_8cpp" startline="20" endline="26">enable</referencedby>
-        <referencedby refid="classTC_1ad03c30fb218c9c3280056bfbb35d6ae0" compoundref="TC_8cpp" startline="36" endline="43">exec</referencedby>
-        <referencedby refid="classTC_1a0389d8330f8df757e32727091f32933b" compoundref="TC_8cpp" startline="10" endline="15">TC</referencedby>
-      </memberdef>
-      <memberdef kind="variable" id="classTC_1afabae8289c12a13afc39143f30186171" prot="private" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool TC::persistent_error</definition>
-        <argsstring></argsstring>
-        <name>persistent_error</name>
+        <name>_enabled</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -81,16 +64,16 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="76" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" bodystart="76" bodyend="-1"/>
-        <referencedby refid="classTC_1af0f45dd4d8f5a240c48a48abf5618c44" compoundref="TC_8cpp" startline="49" endline="55">clear_error</referencedby>
-        <referencedby refid="classTC_1a38df063a92f99790313751effbf090c9" compoundref="TC_8cpp" startline="57" endline="63">errno</referencedby>
-        <referencedby refid="classTC_1ad0701c92be6d3797420ce2e1990a9bf8" compoundref="TC_8cpp" startline="45" endline="47">persist_errors</referencedby>
+        <referencedby refid="classTC_1ac5e09bff8556f6ac5ed5604b855d3338" compoundref="TC_8cpp" startline="28" endline="34">disable</referencedby>
+        <referencedby refid="classTC_1a5431ac6442ffc4d740b1f146322a2a7c" compoundref="TC_8cpp" startline="20" endline="26">enable</referencedby>
+        <referencedby refid="classTC_1ad03c30fb218c9c3280056bfbb35d6ae0" compoundref="TC_8cpp" startline="36" endline="43">exec</referencedby>
         <referencedby refid="classTC_1a0389d8330f8df757e32727091f32933b" compoundref="TC_8cpp" startline="10" endline="15">TC</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="classTC_1af95bb551861e5f1292ecc9e064a7e4bc" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int TC::executions</definition>
+      <memberdef kind="variable" id="classTC_1aacf48d34b2ec6f2165d8cecdddcbd33b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TC::_persistent_error</definition>
         <argsstring></argsstring>
-        <name>executions</name>
+        <name>_persistent_error</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -98,14 +81,16 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="77" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" bodystart="77" bodyend="-1"/>
-        <referencedby refid="classTC_1ad03c30fb218c9c3280056bfbb35d6ae0" compoundref="TC_8cpp" startline="36" endline="43">exec</referencedby>
+        <referencedby refid="classTC_1af0f45dd4d8f5a240c48a48abf5618c44" compoundref="TC_8cpp" startline="49" endline="55">clear_error</referencedby>
+        <referencedby refid="classTC_1a38df063a92f99790313751effbf090c9" compoundref="TC_8cpp" startline="57" endline="63">errno</referencedby>
+        <referencedby refid="classTC_1ad0701c92be6d3797420ce2e1990a9bf8" compoundref="TC_8cpp" startline="45" endline="47">persist_errors</referencedby>
         <referencedby refid="classTC_1a0389d8330f8df757e32727091f32933b" compoundref="TC_8cpp" startline="10" endline="15">TC</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="classTC_1a455dc2d162a56952d2ad17035498dc16" prot="private" static="no" mutable="no">
-        <type><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4c" kindref="member">ERROR_STATE</ref></type>
-        <definition>ERROR_STATE TC::error</definition>
+      <memberdef kind="variable" id="classTC_1ac02e6d68296265146dcbe5a409262b06" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TC::_executions</definition>
         <argsstring></argsstring>
-        <name>error</name>
+        <name>_executions</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -113,6 +98,21 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="78" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" bodystart="78" bodyend="-1"/>
+        <referencedby refid="classTC_1ad03c30fb218c9c3280056bfbb35d6ae0" compoundref="TC_8cpp" startline="36" endline="43">exec</referencedby>
+        <referencedby refid="classTC_1a0389d8330f8df757e32727091f32933b" compoundref="TC_8cpp" startline="10" endline="15">TC</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classTC_1a7c9e127ab52d41d3fa353ca946a92318" prot="private" static="no" mutable="no">
+        <type><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4c" kindref="member">ERROR_STATE</ref></type>
+        <definition>ERROR_STATE TC::_error</definition>
+        <argsstring></argsstring>
+        <name>_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="79" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" bodystart="79" bodyend="-1"/>
         <referencedby refid="classTC_1af0f45dd4d8f5a240c48a48abf5618c44" compoundref="TC_8cpp" startline="49" endline="55">clear_error</referencedby>
         <referencedby refid="classTC_1ac5e09bff8556f6ac5ed5604b855d3338" compoundref="TC_8cpp" startline="28" endline="34">disable</referencedby>
         <referencedby refid="classTC_1a5431ac6442ffc4d740b1f146322a2a7c" compoundref="TC_8cpp" startline="20" endline="26">enable</referencedby>
@@ -134,11 +134,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="23" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.cpp" bodystart="10" bodyend="15"/>
-        <references refid="classTC_1aa8041e1e2fe621af08896191516532b2" compoundref="TC_8h" startline="75">enabled</references>
-        <references refid="classTC_1a455dc2d162a56952d2ad17035498dc16" compoundref="TC_8h" startline="78">error</references>
-        <references refid="classTC_1af95bb551861e5f1292ecc9e064a7e4bc" compoundref="TC_8h" startline="77">executions</references>
+        <references refid="classTC_1a7515ceb3f9bbfa16049c1a4aac7dbe97" compoundref="TC_8h" startline="76">_enabled</references>
+        <references refid="classTC_1a7c9e127ab52d41d3fa353ca946a92318" compoundref="TC_8h" startline="79">_error</references>
+        <references refid="classTC_1ac02e6d68296265146dcbe5a409262b06" compoundref="TC_8h" startline="78">_executions</references>
+        <references refid="classTC_1aacf48d34b2ec6f2165d8cecdddcbd33b" compoundref="TC_8h" startline="77">_persistent_error</references>
         <references refid="classTC_1a76dd65525231537b15914ebbaff85f4ca6202ac5b4809e29c1899965dcd1738c8" compoundref="TC_8h" startline="29">NO_ERROR</references>
-        <references refid="classTC_1afabae8289c12a13afc39143f30186171" compoundref="TC_8h" startline="76">persistent_error</references>
       </memberdef>
       <memberdef kind="function" id="classTC_1ac636fa90542dba00f6120f5e5ed31d2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -165,9 +165,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="38" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.cpp" bodystart="20" bodyend="26"/>
-        <references refid="classTC_1aa8041e1e2fe621af08896191516532b2" compoundref="TC_8h" startline="75">enabled</references>
-        <references refid="classTC_1a455dc2d162a56952d2ad17035498dc16" compoundref="TC_8h" startline="78">error</references>
+        <references refid="classTC_1a7515ceb3f9bbfa16049c1a4aac7dbe97" compoundref="TC_8h" startline="76">_enabled</references>
+        <references refid="classTC_1a7c9e127ab52d41d3fa353ca946a92318" compoundref="TC_8h" startline="79">_error</references>
         <references refid="classTC_1a76dd65525231537b15914ebbaff85f4cae62327a2d0d62512517e90203c0a8ea3" compoundref="TC_8h" startline="31">WAS_ENABLED</references>
+        <referencedby refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" compoundref="TCProcessor_8cpp" startline="21" endline="38">TCProcessor::perform</referencedby>
       </memberdef>
       <memberdef kind="function" id="classTC_1ac5e09bff8556f6ac5ed5604b855d3338" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -181,9 +182,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="42" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.cpp" bodystart="28" bodyend="34"/>
-        <references refid="classTC_1aa8041e1e2fe621af08896191516532b2" compoundref="TC_8h" startline="75">enabled</references>
-        <references refid="classTC_1a455dc2d162a56952d2ad17035498dc16" compoundref="TC_8h" startline="78">error</references>
+        <references refid="classTC_1a7515ceb3f9bbfa16049c1a4aac7dbe97" compoundref="TC_8h" startline="76">_enabled</references>
+        <references refid="classTC_1a7c9e127ab52d41d3fa353ca946a92318" compoundref="TC_8h" startline="79">_error</references>
         <references refid="classTC_1a76dd65525231537b15914ebbaff85f4ca1772725d086c5cb4447ca0271a31f691" compoundref="TC_8h" startline="32">WAS_DISABLED</references>
+        <referencedby refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" compoundref="TCProcessor_8cpp" startline="21" endline="38">TCProcessor::perform</referencedby>
       </memberdef>
       <memberdef kind="function" id="classTC_1ad03c30fb218c9c3280056bfbb35d6ae0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -197,12 +199,13 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="47" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.cpp" bodystart="36" bodyend="43"/>
-        <references refid="classTC_1aa8041e1e2fe621af08896191516532b2" compoundref="TC_8h" startline="75">enabled</references>
-        <references refid="classTC_1a455dc2d162a56952d2ad17035498dc16" compoundref="TC_8h" startline="78">error</references>
+        <references refid="classTC_1a7515ceb3f9bbfa16049c1a4aac7dbe97" compoundref="TC_8h" startline="76">_enabled</references>
+        <references refid="classTC_1a7c9e127ab52d41d3fa353ca946a92318" compoundref="TC_8h" startline="79">_error</references>
+        <references refid="classTC_1ac02e6d68296265146dcbe5a409262b06" compoundref="TC_8h" startline="78">_executions</references>
         <references refid="classTC_1ad0a5dbe25b9dfd17bfadfef29e1e2822">exec_impl_</references>
-        <references refid="classTC_1af95bb551861e5f1292ecc9e064a7e4bc" compoundref="TC_8h" startline="77">executions</references>
         <references refid="classTC_1a76dd65525231537b15914ebbaff85f4caed07796a6a975c1968f32ef3dd983f17" compoundref="TC_8h" startline="30">NOT_ENABLED</references>
-        <referencedby refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="48" endline="54">loop</referencedby>
+        <referencedby refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="47" endline="54">loop</referencedby>
+        <referencedby refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" compoundref="TCProcessor_8cpp" startline="21" endline="38">TCProcessor::perform</referencedby>
       </memberdef>
       <memberdef kind="function" id="classTC_1ad0701c92be6d3797420ce2e1990a9bf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -228,7 +231,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="53" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.cpp" bodystart="45" bodyend="47"/>
-        <references refid="classTC_1afabae8289c12a13afc39143f30186171" compoundref="TC_8h" startline="76">persistent_error</references>
+        <references refid="classTC_1aacf48d34b2ec6f2165d8cecdddcbd33b" compoundref="TC_8h" startline="77">_persistent_error</references>
       </memberdef>
       <memberdef kind="function" id="classTC_1af0f45dd4d8f5a240c48a48abf5618c44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -242,9 +245,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="58" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.cpp" bodystart="49" bodyend="55"/>
-        <references refid="classTC_1a455dc2d162a56952d2ad17035498dc16" compoundref="TC_8h" startline="78">error</references>
+        <references refid="classTC_1a7c9e127ab52d41d3fa353ca946a92318" compoundref="TC_8h" startline="79">_error</references>
+        <references refid="classTC_1aacf48d34b2ec6f2165d8cecdddcbd33b" compoundref="TC_8h" startline="77">_persistent_error</references>
         <references refid="classTC_1a76dd65525231537b15914ebbaff85f4ca6202ac5b4809e29c1899965dcd1738c8" compoundref="TC_8h" startline="29">NO_ERROR</references>
-        <references refid="classTC_1afabae8289c12a13afc39143f30186171" compoundref="TC_8h" startline="76">persistent_error</references>
         <references refid="classTC_1a76dd65525231537b15914ebbaff85f4cada3574e279e2614f25115c053a9241d1" compoundref="TC_8h" startline="33">WAS_NOT_PERSISTENT</references>
       </memberdef>
       <memberdef kind="function" id="classTC_1a38df063a92f99790313751effbf090c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -260,10 +263,10 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="64" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.cpp" bodystart="57" bodyend="63"/>
-        <references refid="classTC_1a455dc2d162a56952d2ad17035498dc16" compoundref="TC_8h" startline="78">error</references>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="65" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.cpp" bodystart="57" bodyend="63"/>
+        <references refid="classTC_1a7c9e127ab52d41d3fa353ca946a92318" compoundref="TC_8h" startline="79">_error</references>
+        <references refid="classTC_1aacf48d34b2ec6f2165d8cecdddcbd33b" compoundref="TC_8h" startline="77">_persistent_error</references>
         <references refid="classTC_1a76dd65525231537b15914ebbaff85f4ca6202ac5b4809e29c1899965dcd1738c8" compoundref="TC_8h" startline="29">NO_ERROR</references>
-        <references refid="classTC_1afabae8289c12a13afc39143f30186171" compoundref="TC_8h" startline="76">persistent_error</references>
       </memberdef>
       <memberdef kind="function" id="classTC_1acd105ecf7e37a532f07cd5086520e912" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -277,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="69"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="70"/>
       </memberdef>
       <memberdef kind="function" id="classTC_1ad0a5dbe25b9dfd17bfadfef29e1e2822" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -286,12 +289,12 @@
         <name>exec_impl_</name>
         <reimplementedby refid="classDigitalWriteTC_1a8dbc7cfc11760e634fc4bbc1f0c91dc9">exec_impl_</reimplementedby>
         <briefdescription>
-<para>This function will execute this <ref refid="classTC" kindref="compound">TC</ref>&lt;. </para>        </briefdescription>
+<para>This function will execute this <ref refid="classTC" kindref="compound">TC</ref>. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="73"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="74"/>
         <referencedby refid="classTC_1ad03c30fb218c9c3280056bfbb35d6ae0" compoundref="TC_8cpp" startline="36" endline="43">exec</referencedby>
       </memberdef>
       </sectiondef>
@@ -300,34 +303,34 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="31">
+      <node id="33">
         <label>TC</label>
         <link refid="classTC"/>
       </node>
-      <node id="32">
+      <node id="34">
         <label>DigitalWriteTC</label>
         <link refid="classDigitalWriteTC"/>
-        <childnode refid="31" relation="public-inheritance">
+        <childnode refid="33" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="18" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" bodystart="18" bodyend="79"/>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="18" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" bodystart="18" bodyend="80"/>
     <listofallmembers>
+      <member refid="classTC_1a7515ceb3f9bbfa16049c1a4aac7dbe97" prot="private" virt="non-virtual"><scope>TC</scope><name>_enabled</name></member>
+      <member refid="classTC_1a7c9e127ab52d41d3fa353ca946a92318" prot="private" virt="non-virtual"><scope>TC</scope><name>_error</name></member>
+      <member refid="classTC_1ac02e6d68296265146dcbe5a409262b06" prot="private" virt="non-virtual"><scope>TC</scope><name>_executions</name></member>
+      <member refid="classTC_1aacf48d34b2ec6f2165d8cecdddcbd33b" prot="private" virt="non-virtual"><scope>TC</scope><name>_persistent_error</name></member>
       <member refid="classTC_1af0f45dd4d8f5a240c48a48abf5618c44" prot="public" virt="non-virtual"><scope>TC</scope><name>clear_error</name></member>
       <member refid="classTC_1ac5e09bff8556f6ac5ed5604b855d3338" prot="public" virt="non-virtual"><scope>TC</scope><name>disable</name></member>
       <member refid="classTC_1a5431ac6442ffc4d740b1f146322a2a7c" prot="public" virt="non-virtual"><scope>TC</scope><name>enable</name></member>
-      <member refid="classTC_1aa8041e1e2fe621af08896191516532b2" prot="private" virt="non-virtual"><scope>TC</scope><name>enabled</name></member>
       <member refid="classTC_1a38df063a92f99790313751effbf090c9" prot="public" virt="non-virtual"><scope>TC</scope><name>errno</name></member>
-      <member refid="classTC_1a455dc2d162a56952d2ad17035498dc16" prot="private" virt="non-virtual"><scope>TC</scope><name>error</name></member>
       <member refid="classTC_1a76dd65525231537b15914ebbaff85f4c" prot="public" virt="non-virtual"><scope>TC</scope><name>ERROR_STATE</name></member>
       <member refid="classTC_1ad03c30fb218c9c3280056bfbb35d6ae0" prot="public" virt="non-virtual"><scope>TC</scope><name>exec</name></member>
       <member refid="classTC_1ad0a5dbe25b9dfd17bfadfef29e1e2822" prot="public" virt="pure-virtual"><scope>TC</scope><name>exec_impl_</name></member>
-      <member refid="classTC_1af95bb551861e5f1292ecc9e064a7e4bc" prot="private" virt="non-virtual"><scope>TC</scope><name>executions</name></member>
       <member refid="classTC_1acd105ecf7e37a532f07cd5086520e912" prot="public" virt="pure-virtual"><scope>TC</scope><name>init</name></member>
       <member refid="classTC_1a76dd65525231537b15914ebbaff85f4ca6202ac5b4809e29c1899965dcd1738c8" prot="public" virt="non-virtual"><scope>TC</scope><name>NO_ERROR</name></member>
       <member refid="classTC_1a76dd65525231537b15914ebbaff85f4caed07796a6a975c1968f32ef3dd983f17" prot="public" virt="non-virtual"><scope>TC</scope><name>NOT_ENABLED</name></member>
       <member refid="classTC_1ad0701c92be6d3797420ce2e1990a9bf8" prot="public" virt="non-virtual"><scope>TC</scope><name>persist_errors</name></member>
-      <member refid="classTC_1afabae8289c12a13afc39143f30186171" prot="private" virt="non-virtual"><scope>TC</scope><name>persistent_error</name></member>
       <member refid="classTC_1a0389d8330f8df757e32727091f32933b" prot="public" virt="non-virtual"><scope>TC</scope><name>TC</name></member>
       <member refid="classTC_1a76dd65525231537b15914ebbaff85f4ca1772725d086c5cb4447ca0271a31f691" prot="public" virt="non-virtual"><scope>TC</scope><name>WAS_DISABLED</name></member>
       <member refid="classTC_1a76dd65525231537b15914ebbaff85f4cae62327a2d0d62512517e90203c0a8ea3" prot="public" virt="non-virtual"><scope>TC</scope><name>WAS_ENABLED</name></member>

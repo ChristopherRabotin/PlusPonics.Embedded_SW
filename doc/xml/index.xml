@@ -22,15 +22,15 @@
     <member refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" kind="function"><name>setLevel</name></member>
   </compound>
   <compound refid="classDigitalWriteTC" kind="class"><name>DigitalWriteTC</name>
-    <member refid="classDigitalWriteTC_1a39b26b124d83ef27c82cc348ba0c93fb" kind="variable"><name>outputPin</name></member>
-    <member refid="classDigitalWriteTC_1a5140f48fba80575b7b06b53c5ef0ecc0" kind="variable"><name>outputValue</name></member>
+    <member refid="classDigitalWriteTC_1a2a3a499b821733cf424995c45434b016" kind="variable"><name>_outputPin</name></member>
+    <member refid="classDigitalWriteTC_1a782251af3d2552f366def4a10d2742f9" kind="variable"><name>_outputValue</name></member>
     <member refid="classDigitalWriteTC_1ab072fa122e0c0177a47fb85392f55e71" kind="function"><name>DigitalWriteTC</name></member>
     <member refid="classDigitalWriteTC_1aebed23b0d444bb9c8906fa68e0424e15" kind="function"><name>~DigitalWriteTC</name></member>
     <member refid="classDigitalWriteTC_1ae597ff8f497123a942d558a7d993f60f" kind="function"><name>init</name></member>
     <member refid="classDigitalWriteTC_1a8dbc7cfc11760e634fc4bbc1f0c91dc9" kind="function"><name>exec_impl_</name></member>
   </compound>
   <compound refid="classGlobalReceiver" kind="class"><name>GlobalReceiver</name>
-    <member refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" kind="variable"><name>com</name></member>
+    <member refid="classGlobalReceiver_1acc45445a154d791f586c6cedee2df9a2" kind="variable"><name>_com</name></member>
     <member refid="classGlobalReceiver_1a9dfd412916cfb9f441b6d7a884b74ad3" kind="function"><name>GlobalReceiver</name></member>
     <member refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" kind="function"><name>process</name></member>
     <member refid="classGlobalReceiver_1a0749a78221f336165396d7b5154eaa2c" kind="function"><name>setCom</name></member>
@@ -50,10 +50,10 @@
     <member refid="classTC_1a76dd65525231537b15914ebbaff85f4cae62327a2d0d62512517e90203c0a8ea3" kind="enumvalue"><name>WAS_ENABLED</name></member>
     <member refid="classTC_1a76dd65525231537b15914ebbaff85f4ca1772725d086c5cb4447ca0271a31f691" kind="enumvalue"><name>WAS_DISABLED</name></member>
     <member refid="classTC_1a76dd65525231537b15914ebbaff85f4cada3574e279e2614f25115c053a9241d1" kind="enumvalue"><name>WAS_NOT_PERSISTENT</name></member>
-    <member refid="classTC_1aa8041e1e2fe621af08896191516532b2" kind="variable"><name>enabled</name></member>
-    <member refid="classTC_1afabae8289c12a13afc39143f30186171" kind="variable"><name>persistent_error</name></member>
-    <member refid="classTC_1af95bb551861e5f1292ecc9e064a7e4bc" kind="variable"><name>executions</name></member>
-    <member refid="classTC_1a455dc2d162a56952d2ad17035498dc16" kind="variable"><name>error</name></member>
+    <member refid="classTC_1a7515ceb3f9bbfa16049c1a4aac7dbe97" kind="variable"><name>_enabled</name></member>
+    <member refid="classTC_1aacf48d34b2ec6f2165d8cecdddcbd33b" kind="variable"><name>_persistent_error</name></member>
+    <member refid="classTC_1ac02e6d68296265146dcbe5a409262b06" kind="variable"><name>_executions</name></member>
+    <member refid="classTC_1a7c9e127ab52d41d3fa353ca946a92318" kind="variable"><name>_error</name></member>
     <member refid="classTC_1a0389d8330f8df757e32727091f32933b" kind="function"><name>TC</name></member>
     <member refid="classTC_1ac636fa90542dba00f6120f5e5ed31d2f" kind="function"><name>~TC</name></member>
     <member refid="classTC_1a5431ac6442ffc4d740b1f146322a2a7c" kind="function"><name>enable</name></member>
@@ -64,6 +64,24 @@
     <member refid="classTC_1a38df063a92f99790313751effbf090c9" kind="function"><name>errno</name></member>
     <member refid="classTC_1acd105ecf7e37a532f07cd5086520e912" kind="function"><name>init</name></member>
     <member refid="classTC_1ad0a5dbe25b9dfd17bfadfef29e1e2822" kind="function"><name>exec_impl_</name></member>
+  </compound>
+  <compound refid="classTCProcessor" kind="class"><name>TCProcessor</name>
+    <member refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3c" kind="enum"><name>TC_ACTION</name></member>
+    <member refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3caef939d362d7f07ad29ea6a0c47b81e85" kind="enumvalue"><name>EXECUTE</name></member>
+    <member refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3cadeb07d61a4230e0e1e88aaad4f33e759" kind="enumvalue"><name>ENABLE</name></member>
+    <member refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3ca892aa983d0d505703d4c1fcad4586683" kind="enumvalue"><name>DISABLE</name></member>
+    <member refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cb" kind="enum"><name>ERROR_STATE</name></member>
+    <member refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cba1dad294c03cf3ae5b03821e63b0585d9" kind="enumvalue"><name>NO_ERROR</name></member>
+    <member refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf0fd08066fd3d62ffabcf24621b1480b" kind="enumvalue"><name>INVALID_OPCODE</name></member>
+    <member refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf852ce6e9877744a1c1a998faa8581cc" kind="enumvalue"><name>INVALID_ACTION</name></member>
+    <member refid="classTCProcessor_1a195b8b31be7e467f5789f8117837f69c" kind="variable"><name>_opcode_TC_map</name></member>
+    <member refid="classTCProcessor_1a1b104ae051b1edc075cfde03a9d4672a" kind="variable"><name>_error</name></member>
+    <member refid="classTCProcessor_1a163b5e6267b5c05111b4ad8eeafadda9" kind="function"><name>TCProcessor</name></member>
+    <member refid="classTCProcessor_1a4a8c96ae1992c22a3f1b52802a356e72" kind="function"><name>init</name></member>
+    <member refid="classTCProcessor_1a895b3f9a34b52534182785a00493fc63" kind="function"><name>processRecv</name></member>
+    <member refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" kind="function"><name>perform</name></member>
+    <member refid="classTCProcessor_1a725d44ebf98a78dbf5ebc549d678b3c8" kind="function"><name>~TCProcessor</name></member>
+    <member refid="classTCProcessor_1abb22877485aa2473ea3559b3395f51e3" kind="function"><name>define_</name></member>
   </compound>
   <compound refid="AbstractCommunication_8cpp" kind="file"><name>AbstractCommunication.cpp</name>
   </compound>
@@ -82,6 +100,7 @@
     <member refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kind="variable"><name>ledPin</name></member>
     <member refid="main_8cpp_1ac32bb15f611faf91f75daaab60c1068c" kind="variable"><name>com</name></member>
     <member refid="main_8cpp_1a95de02de573cd863d1547c545dfeceae" kind="variable"><name>glrcv</name></member>
+    <member refid="main_8cpp_1a60ab7ee2619879f6886f309095dca225" kind="variable"><name>tcProcessor</name></member>
     <member refid="main_8cpp_1a02d77cec0d93aac53c0f808d50db8967" kind="variable"><name>led13_ON</name></member>
     <member refid="main_8cpp_1a9787b75a46a38b83421158352f0365b6" kind="variable"><name>led13_OFF</name></member>
     <member refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kind="function"><name>setup</name></member>
@@ -97,6 +116,10 @@
   <compound refid="TC_8cpp" kind="file"><name>TC.cpp</name>
   </compound>
   <compound refid="TC_8h" kind="file"><name>TC.h</name>
+  </compound>
+  <compound refid="TCProcessor_8cpp" kind="file"><name>TCProcessor.cpp</name>
+  </compound>
+  <compound refid="TCProcessor_8h" kind="file"><name>TCProcessor.h</name>
   </compound>
   <compound refid="md_README" kind="page"><name>md_README</name>
   </compound>

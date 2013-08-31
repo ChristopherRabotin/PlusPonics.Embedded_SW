@@ -13,7 +13,6 @@
 /* The following includes enable STL for Arduino. */
 #include <iterator>
 #include <map>
-#include <pnew.cpp> // pnew must be used the very last include.
 /**
  * @class TCProcessor manages all the telecommands in a std::map . It is also called by GlobalReceiver upon receiving commanding instruction.
  */

@@ -1,16 +1,21 @@
 <map id="main" name="main">
-<area shape="rect" id="node3" href="$main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered." alt="" coords="108,111,156,137"/>
-<area shape="rect" id="node19" href="$main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="This function is only ran when the sketch is initialized." alt="" coords="105,241,159,268"/>
-<area shape="rect" id="node5" href="$classTC.html#ad03c30fb218c9c3280056bfbb35d6ae0" title="This function will execute of this TC. A TC can only be executed (for start and stop actions..." alt="" coords="255,24,335,51"/>
-<area shape="rect" id="node9" href="$classGlobalReceiver.html#a86c5c89fd69a213379582e1a81085d12" title="This function fetches and processes the input. It calls com&#39;s recv() to read the latest information..." alt="" coords="209,111,381,137"/>
-<area shape="rect" id="node7" href="$classTC.html#ad0a5dbe25b9dfd17bfadfef29e1e2822" title="This function will execute this TC&lt;." alt="" coords="451,5,570,32"/>
-<area shape="rect" id="node11" href="$classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0" title="This function reads data from the pipe and returns this as a string." alt="" coords="429,57,592,98"/>
-<area shape="rect" id="node13" href="$classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe." alt="" coords="429,122,592,163"/>
-<area shape="rect" id="node17" href="$GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4" title="byte_to_binary" alt="" coords="457,188,565,215"/>
-<area shape="rect" id="node15" href="$classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="640,122,803,163"/>
-<area shape="rect" id="node21" href="$classDigitalWriteTC.html#ae597ff8f497123a942d558a7d993f60f" title="The init function sets up everything for this TC to be operational. It must be called from the setup ..." alt="" coords="227,161,362,188"/>
-<area shape="rect" id="node23" href="$classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function." alt="" coords="239,212,350,239"/>
-<area shape="rect" id="node25" href="$classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336" title="AbstractCommunication\l::setLevel" alt="" coords="213,263,376,305"/>
-<area shape="rect" id="node27" href="$classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c" title="AbstractCommunication\l::info" alt="" coords="213,329,376,370"/>
-<area shape="rect" id="node29" href="$classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="209,395,380,421"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered." alt="" coords="108,155,156,181"/>
+<area shape="rect" id="node26" href="$main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="This function is only ran when the sketch is initialized." alt="" coords="105,409,159,436"/>
+<area shape="rect" id="node5" href="$classTC.html#ad03c30fb218c9c3280056bfbb35d6ae0" title="This function will execute of this TC. A TC can only be executed (for start and stop actions..." alt="" coords="471,5,551,32"/>
+<area shape="rect" id="node9" href="$classTCProcessor.html#a2592bd41ffd44e77c367f401f838b788" title="This function will perform the given action on the given opcode. The internal error variable will ref..." alt="" coords="216,81,373,108"/>
+<area shape="rect" id="node16" href="$classGlobalReceiver.html#a86c5c89fd69a213379582e1a81085d12" title="This function fetches and processes the input. It calls com&#39;s recv() to read the latest information..." alt="" coords="209,196,381,223"/>
+<area shape="rect" id="node7" href="$classTC.html#ad0a5dbe25b9dfd17bfadfef29e1e2822" title="This function will execute this TC." alt="" coords="662,5,781,32"/>
+<area shape="rect" id="node11" href="$classTC.html#a5431ac6442ffc4d740b1f146322a2a7c" title="This function will enable this TC." alt="" coords="465,56,556,83"/>
+<area shape="rect" id="node13" href="$classTC.html#ac5e09bff8556f6ac5ed5604b855d3338" title="This function will disable this TC. A disabled TC cannot be executed." alt="" coords="463,107,558,133"/>
+<area shape="rect" id="node18" href="$classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0" title="This function reads data from the pipe and returns this as a string." alt="" coords="429,158,592,199"/>
+<area shape="rect" id="node20" href="$classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe." alt="" coords="429,223,592,265"/>
+<area shape="rect" id="node24" href="$GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4" title="byte_to_binary" alt="" coords="457,289,565,316"/>
+<area shape="rect" id="node22" href="$classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="640,223,803,265"/>
+<area shape="rect" id="node28" href="$classTCProcessor.html#a4a8c96ae1992c22a3f1b52802a356e72" title="The init function will call &#39;init&#39; on all the telecommands of this class. This function must be calle..." alt="" coords="231,308,359,335"/>
+<area shape="rect" id="node32" href="$classDigitalWriteTC.html#ae597ff8f497123a942d558a7d993f60f" title="The init function sets up everything for this TC to be operational. It must be called from the setup ..." alt="" coords="227,359,362,385"/>
+<area shape="rect" id="node34" href="$classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function." alt="" coords="239,409,350,436"/>
+<area shape="rect" id="node36" href="$classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336" title="AbstractCommunication\l::setLevel" alt="" coords="213,461,376,502"/>
+<area shape="rect" id="node38" href="$classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c" title="AbstractCommunication\l::info" alt="" coords="213,526,376,567"/>
+<area shape="rect" id="node40" href="$classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="209,592,380,619"/>
+<area shape="rect" id="node30" href="$classTCProcessor.html#abb22877485aa2473ea3559b3395f51e3" title="The define_ function will define all the TCs available. It is called from the constructor and it popu..." alt="" coords="433,340,589,367"/>
 </map>

@@ -7,5 +7,6 @@ var main_8cpp =
     [ "glrcv", "main_8cpp.html#a95de02de573cd863d1547c545dfeceae", null ],
     [ "led13_OFF", "main_8cpp.html#a9787b75a46a38b83421158352f0365b6", null ],
     [ "led13_ON", "main_8cpp.html#a02d77cec0d93aac53c0f808d50db8967", null ],
-    [ "ledPin", "main_8cpp.html#afdd77f1aa3023f9ba5f49bb1f6c68b51", null ]
+    [ "ledPin", "main_8cpp.html#afdd77f1aa3023f9ba5f49bb1f6c68b51", null ],
+    [ "tcProcessor", "main_8cpp.html#a60ab7ee2619879f6886f309095dca225", null ]
 ];

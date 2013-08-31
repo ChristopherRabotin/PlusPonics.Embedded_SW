@@ -1,4 +1,6 @@
 <map id="DigitalWriteTC.h" name="DigitalWriteTC.h">
 <area shape="rect" id="node3" href="$DigitalWriteTC_8cpp.html" title="DigitalWriteTC.cpp" alt="" coords="5,80,139,107"/>
-<area shape="rect" id="node5" href="$main_8cpp.html" title="main.cpp" alt="" coords="164,80,237,107"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="main.cpp" alt="" coords="140,155,213,181"/>
+<area shape="rect" id="node7" href="$TCProcessor_8h.html" title="TCProcessor.h" alt="" coords="215,80,329,107"/>
+<area shape="rect" id="node10" href="$TCProcessor_8cpp.html" title="TCProcessor.cpp" alt="" coords="239,155,367,181"/>
 </map>

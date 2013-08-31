@@ -44,7 +44,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="23" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="17" bodyend="19"/>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="34" endline="43">setup</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="31" endline="42">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -93,18 +93,6 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="27">
-        <label>SerialCom</label>
-        <link refid="classSerialCom"/>
-        <childnode refid="28" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="28">
-        <label>AbstractCommunication</label>
-        <link refid="classAbstractCommunication"/>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="29">
         <label>SerialCom</label>
         <link refid="classSerialCom"/>
@@ -112,6 +100,18 @@
         </childnode>
       </node>
       <node id="30">
+        <label>AbstractCommunication</label>
+        <link refid="classAbstractCommunication"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="31">
+        <label>SerialCom</label>
+        <link refid="classSerialCom"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
         <label>AbstractCommunication</label>
         <link refid="classAbstractCommunication"/>
       </node>
