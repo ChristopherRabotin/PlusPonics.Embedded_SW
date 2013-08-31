@@ -74,28 +74,28 @@ $(document).ready(function(){initNavTree('SerialCom_8cpp_source.html','');});
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="SerialCom_8h.html">SerialCom.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="classSerialCom.html#a4e0fd8ce8d81fc4f3c422d2f9d1aff68">   13</a></span>&#160;<a class="code" href="classSerialCom.html#a4e0fd8ce8d81fc4f3c422d2f9d1aff68">SerialCom::SerialCom</a>() {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="classSerialCom.html#a4e0fd8ce8d81fc4f3c422d2f9d1aff68">   10</a></span>&#160;<a class="code" href="classSerialCom.html#a4e0fd8ce8d81fc4f3c422d2f9d1aff68">SerialCom::SerialCom</a>() {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="classSerialCom.html#a5582cf804e661a24cb32720b31a2f9fe">   14</a></span>&#160;<a class="code" href="classSerialCom.html#a5582cf804e661a24cb32720b31a2f9fe">SerialCom::~SerialCom</a>() {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="classSerialCom.html#a5582cf804e661a24cb32720b31a2f9fe">   17</a></span>&#160;<a class="code" href="classSerialCom.html#a5582cf804e661a24cb32720b31a2f9fe">SerialCom::~SerialCom</a>() {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6">   20</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function.">SerialCom::init</a>() {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Serial.begin(9600);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="classSerialCom.html#a77c7bd4a1c21e91c00a9d52c4aaad394">   24</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classSerialCom.html#a77c7bd4a1c21e91c00a9d52c4aaad394" title="This function sends information through the communication pipe.">SerialCom::send</a>(String payload) {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    Serial.println(payload);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="classSerialCom.html#a74aa77aadfdc14a95cfbf261e5acc690">   32</a></span>&#160;String <a class="code" href="classSerialCom.html#a74aa77aadfdc14a95cfbf261e5acc690" title="This function reads the serial input and returns all the information it reads at the time of calling...">SerialCom::recv</a>() {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    String rtn = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (Serial.available()) {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        rtn = Serial.readString();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> (rtn);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6">   17</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function.">SerialCom::init</a>() {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Serial.begin(9600);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="classSerialCom.html#a77c7bd4a1c21e91c00a9d52c4aaad394">   21</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classSerialCom.html#a77c7bd4a1c21e91c00a9d52c4aaad394" title="This function sends information through the communication pipe.">SerialCom::send</a>(String payload) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Serial.println(payload);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="classSerialCom.html#a74aa77aadfdc14a95cfbf261e5acc690">   29</a></span>&#160;String <a class="code" href="classSerialCom.html#a74aa77aadfdc14a95cfbf261e5acc690" title="This function reads the serial input and returns all the information it reads at the time of calling...">SerialCom::recv</a>() {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    String rtn = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">if</span> (Serial.available()) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        rtn = Serial.readString();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> (rtn);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

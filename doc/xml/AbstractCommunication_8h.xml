@@ -9,66 +9,66 @@
     <includedby refid="GlobalReceiver_8h" local="yes">GlobalReceiver.h</includedby>
     <includedby refid="SerialCom_8h" local="yes">SerialCom.h</includedby>
     <incdepgraph>
-      <node id="81">
+      <node id="97">
         <label>stdarg.h</label>
       </node>
-      <node id="82">
+      <node id="98">
         <label>WString.h</label>
       </node>
-      <node id="79">
+      <node id="95">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication.h"/>
-        <childnode refid="80" relation="include">
+        <childnode refid="96" relation="include">
         </childnode>
-        <childnode refid="81" relation="include">
+        <childnode refid="97" relation="include">
         </childnode>
-        <childnode refid="82" relation="include">
+        <childnode refid="98" relation="include">
         </childnode>
       </node>
-      <node id="80">
+      <node id="96">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="84">
+      <node id="100">
         <label>AbstractCommunication.cpp</label>
         <link refid="AbstractCommunication_8cpp"/>
       </node>
-      <node id="83">
+      <node id="99">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication.h"/>
-        <childnode refid="84" relation="include">
+        <childnode refid="100" relation="include">
         </childnode>
-        <childnode refid="85" relation="include">
+        <childnode refid="101" relation="include">
         </childnode>
-        <childnode refid="88" relation="include">
+        <childnode refid="104" relation="include">
         </childnode>
       </node>
-      <node id="86">
+      <node id="102">
         <label>GlobalReceiver.cpp</label>
         <link refid="GlobalReceiver_8cpp"/>
       </node>
-      <node id="89">
+      <node id="105">
         <label>SerialCom.cpp</label>
         <link refid="SerialCom_8cpp"/>
       </node>
-      <node id="88">
+      <node id="104">
         <label>SerialCom.h</label>
         <link refid="SerialCom_8h"/>
-        <childnode refid="87" relation="include">
+        <childnode refid="103" relation="include">
         </childnode>
-        <childnode refid="89" relation="include">
+        <childnode refid="105" relation="include">
         </childnode>
       </node>
-      <node id="85">
+      <node id="101">
         <label>GlobalReceiver.h</label>
         <link refid="GlobalReceiver_8h"/>
-        <childnode refid="86" relation="include">
+        <childnode refid="102" relation="include">
         </childnode>
-        <childnode refid="87" relation="include">
+        <childnode refid="103" relation="include">
         </childnode>
       </node>
-      <node id="87">
+      <node id="103">
         <label>main.cpp</label>
         <link refid="main_8cpp"/>
       </node>
@@ -97,8 +97,8 @@
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractCommunication_1a0e6ca44e41df8ca8e9e563cde1789f70" kindref="member" tooltip="The constructor should initialize the communication with the control system. This includes everything...">AbstractCommunication</ref>();</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1a55661ddfc00471e24468d1e5bb76fdac" kindref="member">~AbstractCommunication</ref>();</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1a34dc23ed80eff81b2527c5f89ac5f1ff" kindref="member" tooltip="This function initializes the communication. It will be called from the setup function.">init</ref>()<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" kindref="member" tooltip="This function sends information through the communication pipe.">send</ref>(String<sp/>payload)<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>Should<sp/>make<sp/>AbstractCommunication<sp/>unable<sp/>to<sp/>be<sp/>instantiated.</highlight></codeline>
-<codeline lineno="35"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0" kindref="member" tooltip="This function reads data from the pipe and returns this as a string.">recv</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1aa60da75c79691dd2c93473bc6be6506d" kindref="member" tooltip="This function sends information through the communication pipe.">send</ref>(String<sp/>payload)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classAbstractCommunication_1acc2db09ee34d303eb88d2641395953e0" kindref="member" tooltip="This function reads data from the pipe and returns this as a string.">recv</ref>()<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1ad77b74aa662946ae6c86cf2683703a04" kindref="member" tooltip="This function sends a formatted string through the communication pipe.">sendf</ref>(String<sp/>payload,<sp/>...);</highlight></codeline>
 <codeline lineno="45" refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4f" kindref="member">DEBUG_LEVEL</ref><sp/>{</highlight></codeline>

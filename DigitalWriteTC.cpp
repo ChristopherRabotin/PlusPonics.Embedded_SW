@@ -11,13 +11,12 @@ DigitalWriteTC::DigitalWriteTC(int outputPin, int value) :
 		TC() {
 	this->outputPin = outputPin;
 	this->outputValue = value;
-	setup();
 }
 
 DigitalWriteTC::~DigitalWriteTC() {
 }
 
-void DigitalWriteTC::setup() {
+void DigitalWriteTC::init() {
 	pinMode(this->outputPin, OUTPUT);
 }
 

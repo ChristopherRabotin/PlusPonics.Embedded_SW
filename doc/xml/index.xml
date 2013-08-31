@@ -21,6 +21,14 @@
     <member refid="classAbstractCommunication_1a8cd7f5a6a402a9e7d463bdcacd61319f" kind="function"><name>error</name></member>
     <member refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" kind="function"><name>setLevel</name></member>
   </compound>
+  <compound refid="classDigitalWriteTC" kind="class"><name>DigitalWriteTC</name>
+    <member refid="classDigitalWriteTC_1a39b26b124d83ef27c82cc348ba0c93fb" kind="variable"><name>outputPin</name></member>
+    <member refid="classDigitalWriteTC_1a5140f48fba80575b7b06b53c5ef0ecc0" kind="variable"><name>outputValue</name></member>
+    <member refid="classDigitalWriteTC_1ab072fa122e0c0177a47fb85392f55e71" kind="function"><name>DigitalWriteTC</name></member>
+    <member refid="classDigitalWriteTC_1aebed23b0d444bb9c8906fa68e0424e15" kind="function"><name>~DigitalWriteTC</name></member>
+    <member refid="classDigitalWriteTC_1ae597ff8f497123a942d558a7d993f60f" kind="function"><name>init</name></member>
+    <member refid="classDigitalWriteTC_1a8dbc7cfc11760e634fc4bbc1f0c91dc9" kind="function"><name>exec_impl_</name></member>
+  </compound>
   <compound refid="classGlobalReceiver" kind="class"><name>GlobalReceiver</name>
     <member refid="classGlobalReceiver_1adcdcb16fcb66a240948704a492b3ecc6" kind="variable"><name>com</name></member>
     <member refid="classGlobalReceiver_1a9dfd412916cfb9f441b6d7a884b74ad3" kind="function"><name>GlobalReceiver</name></member>
@@ -41,31 +49,29 @@
     <member refid="classTC_1a76dd65525231537b15914ebbaff85f4caed07796a6a975c1968f32ef3dd983f17" kind="enumvalue"><name>NOT_ENABLED</name></member>
     <member refid="classTC_1a76dd65525231537b15914ebbaff85f4cae62327a2d0d62512517e90203c0a8ea3" kind="enumvalue"><name>WAS_ENABLED</name></member>
     <member refid="classTC_1a76dd65525231537b15914ebbaff85f4ca1772725d086c5cb4447ca0271a31f691" kind="enumvalue"><name>WAS_DISABLED</name></member>
-    <member refid="classTC_1a76dd65525231537b15914ebbaff85f4cad46e9be3c517846b07be5d5725e2d960" kind="enumvalue"><name>WAS_STOPPED</name></member>
-    <member refid="classTC_1a76dd65525231537b15914ebbaff85f4ca2412ecc1d3f44924b3835edc22463cd2" kind="enumvalue"><name>WAS_RUNNING</name></member>
     <member refid="classTC_1a76dd65525231537b15914ebbaff85f4cada3574e279e2614f25115c053a9241d1" kind="enumvalue"><name>WAS_NOT_PERSISTENT</name></member>
-    <member refid="classTC_1a76dd65525231537b15914ebbaff85f4ca2bb82d550277b9394525a4e4e34e073c" kind="enumvalue"><name>READ_ONLY</name></member>
     <member refid="classTC_1aa8041e1e2fe621af08896191516532b2" kind="variable"><name>enabled</name></member>
-    <member refid="classTC_1a2e15f391d3ec4a5b6ce98110f28ae276" kind="variable"><name>running</name></member>
     <member refid="classTC_1afabae8289c12a13afc39143f30186171" kind="variable"><name>persistent_error</name></member>
     <member refid="classTC_1af95bb551861e5f1292ecc9e064a7e4bc" kind="variable"><name>executions</name></member>
     <member refid="classTC_1a455dc2d162a56952d2ad17035498dc16" kind="variable"><name>error</name></member>
-    <member refid="classTC_1ae1129604e8a8b8d36e036c5aecf92450" kind="function"><name>TC</name></member>
+    <member refid="classTC_1a0389d8330f8df757e32727091f32933b" kind="function"><name>TC</name></member>
     <member refid="classTC_1ac636fa90542dba00f6120f5e5ed31d2f" kind="function"><name>~TC</name></member>
     <member refid="classTC_1a5431ac6442ffc4d740b1f146322a2a7c" kind="function"><name>enable</name></member>
     <member refid="classTC_1ac5e09bff8556f6ac5ed5604b855d3338" kind="function"><name>disable</name></member>
-    <member refid="classTC_1a69f3267dd696b788077a02f6d426849f" kind="function"><name>start</name></member>
-    <member refid="classTC_1a48ef2d11ad9cc9fe010b24055d841a27" kind="function"><name>stop</name></member>
+    <member refid="classTC_1ad03c30fb218c9c3280056bfbb35d6ae0" kind="function"><name>exec</name></member>
     <member refid="classTC_1ad0701c92be6d3797420ce2e1990a9bf8" kind="function"><name>persist_errors</name></member>
     <member refid="classTC_1af0f45dd4d8f5a240c48a48abf5618c44" kind="function"><name>clear_error</name></member>
     <member refid="classTC_1a38df063a92f99790313751effbf090c9" kind="function"><name>errno</name></member>
-    <member refid="classTC_1a6902a46b22dba64ffc25f03dcff8f821" kind="function"><name>setup</name></member>
-    <member refid="classTC_1a80d2b16d264a832b59e71ea5f3094028" kind="function"><name>__start</name></member>
-    <member refid="classTC_1a7bceebf8d31b524f56fd46ddd569b0f3" kind="function"><name>__stop</name></member>
+    <member refid="classTC_1acd105ecf7e37a532f07cd5086520e912" kind="function"><name>init</name></member>
+    <member refid="classTC_1ad0a5dbe25b9dfd17bfadfef29e1e2822" kind="function"><name>exec_impl_</name></member>
   </compound>
   <compound refid="AbstractCommunication_8cpp" kind="file"><name>AbstractCommunication.cpp</name>
   </compound>
   <compound refid="AbstractCommunication_8h" kind="file"><name>AbstractCommunication.h</name>
+  </compound>
+  <compound refid="DigitalWriteTC_8cpp" kind="file"><name>DigitalWriteTC.cpp</name>
+  </compound>
+  <compound refid="DigitalWriteTC_8h" kind="file"><name>DigitalWriteTC.h</name>
   </compound>
   <compound refid="GlobalReceiver_8cpp" kind="file"><name>GlobalReceiver.cpp</name>
     <member refid="GlobalReceiver_8cpp_1a98a09d6b95fb0fa32210f041f0af87d4" kind="function"><name>byte_to_binary</name></member>
@@ -76,6 +82,8 @@
     <member refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kind="variable"><name>ledPin</name></member>
     <member refid="main_8cpp_1ac32bb15f611faf91f75daaab60c1068c" kind="variable"><name>com</name></member>
     <member refid="main_8cpp_1a95de02de573cd863d1547c545dfeceae" kind="variable"><name>glrcv</name></member>
+    <member refid="main_8cpp_1a02d77cec0d93aac53c0f808d50db8967" kind="variable"><name>led13_ON</name></member>
+    <member refid="main_8cpp_1a9787b75a46a38b83421158352f0365b6" kind="variable"><name>led13_OFF</name></member>
     <member refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kind="function"><name>setup</name></member>
     <member refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kind="function"><name>loop</name></member>
     <member refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" kind="function"><name>main</name></member>

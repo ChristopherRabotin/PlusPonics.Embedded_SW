@@ -215,7 +215,7 @@
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="51" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="23" bodyend="25"/>
         <references refid="classAbstractCommunication_1a7a582596aa1fa873865d543d0df1d437" compoundref="AbstractCommunication_8h" startline="78">DEFAULT_LOCATION</references>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="31" endline="37">setup</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="34" endline="43">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="classAbstractCommunication_1af0eeb1540a126715d0e7983406a6ed9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -387,7 +387,7 @@
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="76" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="63" bodyend="65"/>
         <references refid="classAbstractCommunication_1a8471fbdcb6837697c9963c797c434c73" compoundref="AbstractCommunication_8h" startline="79">lvl</references>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="31" endline="37">setup</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="34" endline="43">setup</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -395,13 +395,13 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="13">
+      <node id="18">
         <label>SerialCom</label>
         <link refid="classSerialCom"/>
-        <childnode refid="12" relation="public-inheritance">
+        <childnode refid="17" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12">
+      <node id="17">
         <label>AbstractCommunication</label>
         <link refid="classAbstractCommunication"/>
       </node>

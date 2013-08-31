@@ -4,5 +4,7 @@ var hierarchy =
       [ "SerialCom", "classSerialCom.html", null ]
     ] ],
     [ "GlobalReceiver", "classGlobalReceiver.html", null ],
-    [ "TC", "classTC.html", null ]
+    [ "TC", "classTC.html", [
+      [ "DigitalWriteTC", "classDigitalWriteTC.html", null ]
+    ] ]
 ];

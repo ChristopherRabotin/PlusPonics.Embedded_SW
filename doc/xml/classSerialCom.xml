@@ -13,10 +13,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>In the constructor we define everything to be able to communicate through a serial communication. </para>        </detaileddescription>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="21" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="13" bodyend="15"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="21" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="10" bodyend="12"/>
       </memberdef>
       <memberdef kind="function" id="classSerialCom_1a5582cf804e661a24cb32720b31a2f9fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="22" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="17" bodyend="18"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="22" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="14" bodyend="15"/>
       </memberdef>
       <memberdef kind="function" id="classSerialCom_1a53bb031287acb1973c1e1f76799c76b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -43,8 +43,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="23" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="20" bodyend="22"/>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="31" endline="37">setup</referencedby>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="23" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="17" bodyend="19"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="34" endline="43">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -70,7 +70,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="24" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="24" bodyend="26"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="24" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="21" bodyend="23"/>
       </memberdef>
       <memberdef kind="function" id="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>String</type>
@@ -85,7 +85,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="25" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="32" bodyend="38"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="25" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="29" bodyend="35"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -93,25 +93,25 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="18">
+      <node id="27">
         <label>SerialCom</label>
         <link refid="classSerialCom"/>
-        <childnode refid="19" relation="public-inheritance">
+        <childnode refid="28" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="19">
+      <node id="28">
         <label>AbstractCommunication</label>
         <link refid="classAbstractCommunication"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="20">
+      <node id="29">
         <label>SerialCom</label>
         <link refid="classSerialCom"/>
-        <childnode refid="21" relation="public-inheritance">
+        <childnode refid="30" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="21">
+      <node id="30">
         <label>AbstractCommunication</label>
         <link refid="classAbstractCommunication"/>
       </node>

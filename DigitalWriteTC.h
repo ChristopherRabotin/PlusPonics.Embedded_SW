@@ -20,7 +20,7 @@ class DigitalWriteTC: public TC {
 public:
 	DigitalWriteTC(int outputPin, int value);
 	virtual ~DigitalWriteTC();
-	virtual void setup();
+	virtual void init();
 	virtual void exec_impl_();
 private:
 	int outputPin;

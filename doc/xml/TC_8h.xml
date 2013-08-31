@@ -2,17 +2,36 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
   <compounddef id="TC_8h" kind="file">
     <compoundname>TC.h</compoundname>
+    <includedby refid="DigitalWriteTC_8h" local="yes">DigitalWriteTC.h</includedby>
     <includedby refid="TC_8cpp" local="yes">TC.cpp</includedby>
     <invincdepgraph>
-      <node id="145">
+      <node id="174">
+        <label>DigitalWriteTC.h</label>
+        <link refid="DigitalWriteTC_8h"/>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
         <label>TC.cpp</label>
         <link refid="TC_8cpp"/>
       </node>
-      <node id="144">
+      <node id="173">
         <label>TC.h</label>
         <link refid="TC.h"/>
-        <childnode refid="145" relation="include">
+        <childnode refid="174" relation="include">
         </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+      </node>
+      <node id="175">
+        <label>DigitalWriteTC.cpp</label>
+        <link refid="DigitalWriteTC_8cpp"/>
+      </node>
+      <node id="176">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classTC" prot="public">TC</innerclass>
@@ -33,39 +52,33 @@
 <codeline lineno="10"><highlight class="preprocessor"></highlight></codeline>
 <codeline lineno="18" refid="classTC" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTC" kindref="compound" tooltip="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</ref><sp/>{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1ae1129604e8a8b8d36e036c5aecf92450" kindref="member" tooltip="This creates the TC object. Make sure to pass the operation code (or opcode) in argument.">TC</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opcode);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classTC_1ac636fa90542dba00f6120f5e5ed31d2f" kindref="member">~TC</ref>();</highlight></codeline>
-<codeline lineno="29" refid="classTC_1a76dd65525231537b15914ebbaff85f4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4c" kindref="member">ERROR_STATE</ref><sp/>{</highlight></codeline>
-<codeline lineno="30" refid="classTC_1a76dd65525231537b15914ebbaff85f4ca6202ac5b4809e29c1899965dcd1738c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4ca6202ac5b4809e29c1899965dcd1738c8" kindref="member">NO_ERROR</ref>,<sp/></highlight></codeline>
-<codeline lineno="31" refid="classTC_1a76dd65525231537b15914ebbaff85f4caed07796a6a975c1968f32ef3dd983f17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4caed07796a6a975c1968f32ef3dd983f17" kindref="member">NOT_ENABLED</ref>,<sp/></highlight></codeline>
-<codeline lineno="32" refid="classTC_1a76dd65525231537b15914ebbaff85f4cae62327a2d0d62512517e90203c0a8ea3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4cae62327a2d0d62512517e90203c0a8ea3" kindref="member">WAS_ENABLED</ref>,<sp/></highlight></codeline>
-<codeline lineno="33" refid="classTC_1a76dd65525231537b15914ebbaff85f4ca1772725d086c5cb4447ca0271a31f691" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4ca1772725d086c5cb4447ca0271a31f691" kindref="member">WAS_DISABLED</ref>,<sp/></highlight></codeline>
-<codeline lineno="34" refid="classTC_1a76dd65525231537b15914ebbaff85f4cad46e9be3c517846b07be5d5725e2d960" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4cad46e9be3c517846b07be5d5725e2d960" kindref="member">WAS_STOPPED</ref>,<sp/></highlight></codeline>
-<codeline lineno="35" refid="classTC_1a76dd65525231537b15914ebbaff85f4ca2412ecc1d3f44924b3835edc22463cd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4ca2412ecc1d3f44924b3835edc22463cd2" kindref="member">WAS_RUNNING</ref>,<sp/></highlight></codeline>
-<codeline lineno="36" refid="classTC_1a76dd65525231537b15914ebbaff85f4cada3574e279e2614f25115c053a9241d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4cada3574e279e2614f25115c053a9241d1" kindref="member">WAS_NOT_PERSISTENT</ref>,<sp/></highlight></codeline>
-<codeline lineno="37" refid="classTC_1a76dd65525231537b15914ebbaff85f4ca2bb82d550277b9394525a4e4e34e073c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4ca2bb82d550277b9394525a4e4e34e073c" kindref="member">READ_ONLY</ref><sp/></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1a5431ac6442ffc4d740b1f146322a2a7c" kindref="member" tooltip="This function will enable this TC.">enable</ref>();</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1ac5e09bff8556f6ac5ed5604b855d3338" kindref="member" tooltip="This function will disable this TC. A disabled TC cannot be executed.">disable</ref>();</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1a69f3267dd696b788077a02f6d426849f" kindref="member" tooltip="This function will start the execution of this TC. This function calls __start after shared features...">start</ref>();</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1a48ef2d11ad9cc9fe010b24055d841a27" kindref="member" tooltip="This function will stop the execution of this TC. This function calls __stop after shared features...">stop</ref>();</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1ad0701c92be6d3797420ce2e1990a9bf8" kindref="member" tooltip="This function sets this TC to persist error (or not).">persist_errors</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>persist);</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1af0f45dd4d8f5a240c48a48abf5618c44" kindref="member" tooltip="This function will clear the current error. If called when persistent error are set to false...">clear_error</ref>();</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4c" kindref="member">ERROR_STATE</ref><sp/><ref refid="classTC_1a38df063a92f99790313751effbf090c9" kindref="member" tooltip="This function will return the current error of this TC.">errno</ref>();</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1a6902a46b22dba64ffc25f03dcff8f821" kindref="member" tooltip="The setup function sets up everything for this TC to be operational. It is called from the constructo...">setup</ref>()<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1a80d2b16d264a832b59e71ea5f3094028" kindref="member">__start</ref>()<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1a7bceebf8d31b524f56fd46ddd569b0f3" kindref="member">__stop</ref>()<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="80" refid="classTC_1aa8041e1e2fe621af08896191516532b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classTC_1aa8041e1e2fe621af08896191516532b2" kindref="member">enabled</ref>;</highlight></codeline>
-<codeline lineno="81" refid="classTC_1a2e15f391d3ec4a5b6ce98110f28ae276" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classTC_1a2e15f391d3ec4a5b6ce98110f28ae276" kindref="member">running</ref>;</highlight></codeline>
-<codeline lineno="82" refid="classTC_1afabae8289c12a13afc39143f30186171" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classTC_1afabae8289c12a13afc39143f30186171" kindref="member">persistent_error</ref>;</highlight></codeline>
-<codeline lineno="83" refid="classTC_1af95bb551861e5f1292ecc9e064a7e4bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classTC_1af95bb551861e5f1292ecc9e064a7e4bc" kindref="member">executions</ref>;</highlight></codeline>
-<codeline lineno="84" refid="classTC_1a455dc2d162a56952d2ad17035498dc16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4c" kindref="member">ERROR_STATE</ref><sp/><ref refid="classTC_1a455dc2d162a56952d2ad17035498dc16" kindref="member">error</ref>;</highlight></codeline>
-<codeline lineno="85"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TC_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1a0389d8330f8df757e32727091f32933b" kindref="member" tooltip="This creates the TC object. The OPCODE of this TC is only defined in the main when the TC is instanti...">TC</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classTC_1ac636fa90542dba00f6120f5e5ed31d2f" kindref="member">~TC</ref>();</highlight></codeline>
+<codeline lineno="28" refid="classTC_1a76dd65525231537b15914ebbaff85f4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4c" kindref="member">ERROR_STATE</ref><sp/>{</highlight></codeline>
+<codeline lineno="29" refid="classTC_1a76dd65525231537b15914ebbaff85f4ca6202ac5b4809e29c1899965dcd1738c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4ca6202ac5b4809e29c1899965dcd1738c8" kindref="member">NO_ERROR</ref>,<sp/></highlight></codeline>
+<codeline lineno="30" refid="classTC_1a76dd65525231537b15914ebbaff85f4caed07796a6a975c1968f32ef3dd983f17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4caed07796a6a975c1968f32ef3dd983f17" kindref="member">NOT_ENABLED</ref>,<sp/></highlight></codeline>
+<codeline lineno="31" refid="classTC_1a76dd65525231537b15914ebbaff85f4cae62327a2d0d62512517e90203c0a8ea3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4cae62327a2d0d62512517e90203c0a8ea3" kindref="member">WAS_ENABLED</ref>,<sp/></highlight></codeline>
+<codeline lineno="32" refid="classTC_1a76dd65525231537b15914ebbaff85f4ca1772725d086c5cb4447ca0271a31f691" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4ca1772725d086c5cb4447ca0271a31f691" kindref="member">WAS_DISABLED</ref>,<sp/></highlight></codeline>
+<codeline lineno="33" refid="classTC_1a76dd65525231537b15914ebbaff85f4cada3574e279e2614f25115c053a9241d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4cada3574e279e2614f25115c053a9241d1" kindref="member">WAS_NOT_PERSISTENT</ref>,<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1a5431ac6442ffc4d740b1f146322a2a7c" kindref="member" tooltip="This function will enable this TC.">enable</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1ac5e09bff8556f6ac5ed5604b855d3338" kindref="member" tooltip="This function will disable this TC. A disabled TC cannot be executed.">disable</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1ad03c30fb218c9c3280056bfbb35d6ae0" kindref="member" tooltip="This function will execute of this TC. A TC can only be executed (for start and stop actions...">exec</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1ad0701c92be6d3797420ce2e1990a9bf8" kindref="member" tooltip="This function sets this TC to persist error (or not).">persist_errors</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>persist);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1af0f45dd4d8f5a240c48a48abf5618c44" kindref="member" tooltip="This function will clear the current error. If called when persistent error are set to false...">clear_error</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4c" kindref="member">ERROR_STATE</ref><sp/><ref refid="classTC_1a38df063a92f99790313751effbf090c9" kindref="member" tooltip="This function will return the current error of this TC.">errno</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1acd105ecf7e37a532f07cd5086520e912" kindref="member" tooltip="The init function sets up everything for this TC to be operational. It must be called from the setup ...">init</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1ad0a5dbe25b9dfd17bfadfef29e1e2822" kindref="member" tooltip="This function will execute this TC&amp;lt;.">exec_impl_</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="75" refid="classTC_1aa8041e1e2fe621af08896191516532b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classTC_1aa8041e1e2fe621af08896191516532b2" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="76" refid="classTC_1afabae8289c12a13afc39143f30186171" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classTC_1afabae8289c12a13afc39143f30186171" kindref="member">persistent_error</ref>;</highlight></codeline>
+<codeline lineno="77" refid="classTC_1af95bb551861e5f1292ecc9e064a7e4bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classTC_1af95bb551861e5f1292ecc9e064a7e4bc" kindref="member">executions</ref>;</highlight></codeline>
+<codeline lineno="78" refid="classTC_1a455dc2d162a56952d2ad17035498dc16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4c" kindref="member">ERROR_STATE</ref><sp/><ref refid="classTC_1a455dc2d162a56952d2ad17035498dc16" kindref="member">error</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TC_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h"/>
   </compounddef>

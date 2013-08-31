@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="DigitalWriteTC_8h" kind="file">
+    <compoundname>DigitalWriteTC.h</compoundname>
+    <includes refid="TC_8h" local="yes">TC.h</includes>
+    <includes local="no">Arduino.h</includes>
+    <includedby refid="DigitalWriteTC_8cpp" local="yes">DigitalWriteTC.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <incdepgraph>
+      <node id="111">
+        <label>DigitalWriteTC.h</label>
+        <link refid="DigitalWriteTC.h"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>TC.h</label>
+        <link refid="TC_8h"/>
+      </node>
+      <node id="113">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="114">
+        <label>DigitalWriteTC.h</label>
+        <link refid="DigitalWriteTC.h"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>DigitalWriteTC.cpp</label>
+        <link refid="DigitalWriteTC_8cpp"/>
+      </node>
+      <node id="116">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classDigitalWriteTC" prot="public">DigitalWriteTC</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>DigitalWriteTC.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Aug<sp/>31,<sp/>2013</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>chris</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DIGITALWRITETC_H_</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DIGITALWRITETC_H_</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="TC_8h" kindref="compound">TC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classDigitalWriteTC" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classDigitalWriteTC" kindref="compound" tooltip="This class enables digital writing to a given output pin. Note that this does not check whether the p...">DigitalWriteTC</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classTC" kindref="compound" tooltip="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDigitalWriteTC_1ab072fa122e0c0177a47fb85392f55e71" kindref="member">DigitalWriteTC</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDigitalWriteTC_1a39b26b124d83ef27c82cc348ba0c93fb" kindref="member">outputPin</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classDigitalWriteTC_1aebed23b0d444bb9c8906fa68e0424e15" kindref="member">~DigitalWriteTC</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDigitalWriteTC_1ae597ff8f497123a942d558a7d993f60f" kindref="member" tooltip="The init function sets up everything for this TC to be operational. It must be called from the setup ...">init</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDigitalWriteTC_1a8dbc7cfc11760e634fc4bbc1f0c91dc9" kindref="member" tooltip="This function will execute this TC&amp;lt;.">exec_impl_</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="classDigitalWriteTC_1a39b26b124d83ef27c82cc348ba0c93fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDigitalWriteTC_1a39b26b124d83ef27c82cc348ba0c93fb" kindref="member">outputPin</ref>;</highlight></codeline>
+<codeline lineno="27" refid="classDigitalWriteTC_1a5140f48fba80575b7b06b53c5ef0ecc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDigitalWriteTC_1a5140f48fba80575b7b06b53c5ef0ecc0" kindref="member">outputValue</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DIGITALWRITETC_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h"/>
+  </compounddef>
+</doxygen>

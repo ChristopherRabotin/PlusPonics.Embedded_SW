@@ -63,10 +63,10 @@ public:
 	 */
 	ERROR_STATE errno();
 	/**
-	 * @brief The setup function sets up everything for this TC to be operational. It is called from the constructor.
+	 * @brief The init function sets up everything for this TC to be operational. It must be called from the setup function in the main.
 	 * It must be implemented by the subclass.
 	 */
-	virtual void setup() = 0;
+	virtual void init() = 0;
 	/**
 	 * @brief This function will execute this TC<
 	 */

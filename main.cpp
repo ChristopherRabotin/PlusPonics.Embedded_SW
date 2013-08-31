@@ -23,6 +23,8 @@ int ledPin = 13;    // LED connected to digital pin 13
 
 SerialCom com;
 GlobalReceiver glrcv;
+DigitalWriteTC led13_ON = DigitalWriteTC(ledPin, HIGH);
+DigitalWriteTC led13_OFF = DigitalWriteTC(ledPin, LOW);
 
 //std::map<int, const char *> TM_LIST;
 
@@ -31,7 +33,9 @@ GlobalReceiver glrcv;
  */
 void setup() {
 
-	pinMode(ledPin, OUTPUT);
+	led13_ON.init();
+	led13_OFF.init();
+
 	com.init();
 	com.setLevel(AbstractCommunication::WARN);
 	com.info("Setting up led", "setup");
@@ -42,12 +46,10 @@ void setup() {
  * @brief loop() loops while Arduino is powered.
  */
 void loop() {
-	//led13_ON.exec();
-	//digitalWrite(ledPin, HIGH);
+	led13_ON.exec();
 	delay(2000);
-	digitalWrite(ledPin, LOW);
+	led13_OFF.exec();
 	delay(2000);
-	//led13_OFF.exec();
 	glrcv.process();
 }
 
@@ -59,11 +61,8 @@ int main(void) {
 
 	init();
 	setup();
-	DigitalWriteTC led13_ON = DigitalWriteTC(ledPin, HIGH);
 
 	while (true) {
-		led13_ON.exec();
 		loop();
-		//led13_OFF.exec();
 	}
 }

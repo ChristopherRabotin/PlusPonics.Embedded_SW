@@ -8,56 +8,56 @@
     <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
     <includedby refid="SerialCom_8cpp" local="yes">SerialCom.cpp</includedby>
     <incdepgraph>
-      <node id="133">
+      <node id="162">
         <label>stdarg.h</label>
       </node>
-      <node id="134">
+      <node id="163">
         <label>WString.h</label>
       </node>
-      <node id="131">
+      <node id="160">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication_8h"/>
-        <childnode refid="132" relation="include">
+        <childnode refid="161" relation="include">
         </childnode>
-        <childnode refid="133" relation="include">
+        <childnode refid="162" relation="include">
         </childnode>
-        <childnode refid="134" relation="include">
+        <childnode refid="163" relation="include">
         </childnode>
       </node>
-      <node id="136">
+      <node id="165">
         <label>HardwareSerial.h</label>
       </node>
-      <node id="135">
+      <node id="164">
         <label>Arduino.h</label>
       </node>
-      <node id="130">
+      <node id="159">
         <label>SerialCom.h</label>
         <link refid="SerialCom.h"/>
-        <childnode refid="131" relation="include">
+        <childnode refid="160" relation="include">
         </childnode>
-        <childnode refid="135" relation="include">
+        <childnode refid="164" relation="include">
         </childnode>
-        <childnode refid="136" relation="include">
+        <childnode refid="165" relation="include">
         </childnode>
       </node>
-      <node id="132">
+      <node id="161">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="139">
+      <node id="168">
         <label>SerialCom.cpp</label>
         <link refid="SerialCom_8cpp"/>
       </node>
-      <node id="137">
+      <node id="166">
         <label>SerialCom.h</label>
         <link refid="SerialCom.h"/>
-        <childnode refid="138" relation="include">
+        <childnode refid="167" relation="include">
         </childnode>
-        <childnode refid="139" relation="include">
+        <childnode refid="168" relation="include">
         </childnode>
       </node>
-      <node id="138">
+      <node id="167">
         <label>main.cpp</label>
         <link refid="main_8cpp"/>
       </node>
