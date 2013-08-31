@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include "config/config.h"
 #include "GlobalReceiver.h"
+#include "DigitalWriteTC.h"
 
 /* The following includes enable STL for Arduino. */
 #include <iterator>
@@ -29,6 +30,7 @@ GlobalReceiver glrcv;
  * @brief This function is only ran when the sketch is initialized.
  */
 void setup() {
+
 	pinMode(ledPin, OUTPUT);
 	com.init();
 	com.setLevel(AbstractCommunication::WARN);
@@ -40,10 +42,12 @@ void setup() {
  * @brief loop() loops while Arduino is powered.
  */
 void loop() {
-	digitalWrite(ledPin, HIGH);
+	//led13_ON.exec();
+	//digitalWrite(ledPin, HIGH);
 	delay(2000);
 	digitalWrite(ledPin, LOW);
-	delay(1000);
+	delay(2000);
+	//led13_OFF.exec();
 	glrcv.process();
 }
 
@@ -55,8 +59,11 @@ int main(void) {
 
 	init();
 	setup();
+	DigitalWriteTC led13_ON = DigitalWriteTC(ledPin, HIGH);
 
 	while (true) {
+		led13_ON.exec();
 		loop();
+		//led13_OFF.exec();
 	}
 }

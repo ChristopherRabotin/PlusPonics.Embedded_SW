@@ -13,8 +13,8 @@
 #include <HardwareSerial.h> // TODO Eventually use SoftSerial.h since it uses interrupts to read incoming messages.
 // #include <SoftwareSerial.h>
 /**
- * \class SerialCom
- * \brief This class defines serial communication with the control system.
+ * @class SerialCom
+ * @brief This class defines serial communication with the control system.
  */
 class SerialCom: public AbstractCommunication {
 public:

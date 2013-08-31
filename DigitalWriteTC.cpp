@@ -7,16 +7,20 @@
 
 #include "DigitalWriteTC.h"
 
-DigitalWriteTC::DigitalWriteTC(int opcode, int outputPin, int value) :
-		TC(opcode) {
+DigitalWriteTC::DigitalWriteTC(int outputPin, int value) :
+		TC() {
 	this->outputPin = outputPin;
 	this->outputValue = value;
-
+	setup();
 }
 
 DigitalWriteTC::~DigitalWriteTC() {
 }
 
+void DigitalWriteTC::setup() {
+	pinMode(this->outputPin, OUTPUT);
+}
+
 void DigitalWriteTC::exec_impl_() {
-	digitalRead(this->outputValue);
+	digitalWrite(this->outputPin, this->outputValue);
 }

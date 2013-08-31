@@ -7,9 +7,6 @@
 
 #include "SerialCom.h"
 
-/**
- * In the constructor we define everything to be able to communicate through a serial communication.
- */
 SerialCom::SerialCom() {
 
 }

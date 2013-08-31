@@ -18,10 +18,9 @@
 class TC {
 public:
 	/**
-	 * @brief This creates the TC object. Make sure to pass the operation code (or opcode) in argument.
-	 * @param opcode operation code of this telecommand.
+	 * @brief This creates the TC object. The OPCODE of this TC is only defined in the main when the TC is instantiated.
 	 */
-	TC(int opcode);
+	TC();
 	virtual ~TC();
 	/**
 	 * @enum ERROR_STATE defines all the error states a TC can have.

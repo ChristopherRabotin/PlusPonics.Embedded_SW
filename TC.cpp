@@ -7,7 +7,7 @@
 
 #include "TC.h"
 
-TC::TC(int opcode) {
+TC::TC() {
 	enabled = true;
 	executions = 0;
 	persistent_error = false;

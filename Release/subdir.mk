@@ -5,6 +5,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../AbstractCommunication.cpp \
+../DigitalWriteTC.cpp \
 ../GlobalReceiver.cpp \
 ../SerialCom.cpp \
 ../TC.cpp \
@@ -12,6 +13,7 @@ CPP_SRCS += \
 
 OBJS += \
 ./AbstractCommunication.o \
+./DigitalWriteTC.o \
 ./GlobalReceiver.o \
 ./SerialCom.o \
 ./TC.o \
@@ -19,6 +21,7 @@ OBJS += \
 
 CPP_DEPS += \
 ./AbstractCommunication.d \
+./DigitalWriteTC.d \
 ./GlobalReceiver.d \
 ./SerialCom.d \
 ./TC.d \
