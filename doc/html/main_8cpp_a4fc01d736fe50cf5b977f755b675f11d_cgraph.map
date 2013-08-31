@@ -1,9 +1,8 @@
 <map id="setup" name="setup">
 <area shape="rect" id="node3" href="$classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c" title="AbstractCommunication\l::info" alt="" coords="113,5,276,46"/>
 <area shape="rect" id="node5" href="$classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function." alt="" coords="139,71,250,97"/>
-<area shape="rect" id="node7" href="$classDigitalWriteTC.html#ae597ff8f497123a942d558a7d993f60f" title="The init function sets up everything for this TC to be operational. It must be called from the setup ..." alt="" coords="127,121,262,148"/>
-<area shape="rect" id="node9" href="$classTCProcessor.html#a4a8c96ae1992c22a3f1b52802a356e72" title="The init function will call &#39;init&#39; on all the telecommands of this class. This function must be calle..." alt="" coords="131,172,259,199"/>
-<area shape="rect" id="node13" href="$classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="109,223,280,249"/>
-<area shape="rect" id="node15" href="$classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336" title="AbstractCommunication\l::setLevel" alt="" coords="113,274,276,315"/>
-<area shape="rect" id="node11" href="$classTCProcessor.html#abb22877485aa2473ea3559b3395f51e3" title="The define_ function will define all the TCs available. It is called from the constructor and it popu..." alt="" coords="329,172,485,199"/>
+<area shape="rect" id="node7" href="$classTCProcessor.html#a4a8c96ae1992c22a3f1b52802a356e72" title="The init function will call &#39;init&#39; on all the telecommands of this class. This function must be calle..." alt="" coords="131,121,259,148"/>
+<area shape="rect" id="node11" href="$classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="109,172,280,199"/>
+<area shape="rect" id="node13" href="$classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336" title="AbstractCommunication\l::setLevel" alt="" coords="113,223,276,265"/>
+<area shape="rect" id="node9" href="$classTCProcessor.html#aea90af74c7ff4e3f904a9954bd8e5a7a" title="The definitions_ function will define all the TCs available. It is called from the constructor and it..." alt="" coords="328,121,507,148"/>
 </map>

@@ -168,7 +168,7 @@
         <references refid="classTC_1a7515ceb3f9bbfa16049c1a4aac7dbe97" compoundref="TC_8h" startline="76">_enabled</references>
         <references refid="classTC_1a7c9e127ab52d41d3fa353ca946a92318" compoundref="TC_8h" startline="79">_error</references>
         <references refid="classTC_1a76dd65525231537b15914ebbaff85f4cae62327a2d0d62512517e90203c0a8ea3" compoundref="TC_8h" startline="31">WAS_ENABLED</references>
-        <referencedby refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" compoundref="TCProcessor_8cpp" startline="21" endline="38">TCProcessor::perform</referencedby>
+        <referencedby refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" compoundref="TCProcessor_8cpp" startline="46" endline="63">TCProcessor::perform</referencedby>
       </memberdef>
       <memberdef kind="function" id="classTC_1ac5e09bff8556f6ac5ed5604b855d3338" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -185,7 +185,7 @@
         <references refid="classTC_1a7515ceb3f9bbfa16049c1a4aac7dbe97" compoundref="TC_8h" startline="76">_enabled</references>
         <references refid="classTC_1a7c9e127ab52d41d3fa353ca946a92318" compoundref="TC_8h" startline="79">_error</references>
         <references refid="classTC_1a76dd65525231537b15914ebbaff85f4ca1772725d086c5cb4447ca0271a31f691" compoundref="TC_8h" startline="32">WAS_DISABLED</references>
-        <referencedby refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" compoundref="TCProcessor_8cpp" startline="21" endline="38">TCProcessor::perform</referencedby>
+        <referencedby refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" compoundref="TCProcessor_8cpp" startline="46" endline="63">TCProcessor::perform</referencedby>
       </memberdef>
       <memberdef kind="function" id="classTC_1ad03c30fb218c9c3280056bfbb35d6ae0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -204,8 +204,7 @@
         <references refid="classTC_1ac02e6d68296265146dcbe5a409262b06" compoundref="TC_8h" startline="78">_executions</references>
         <references refid="classTC_1ad0a5dbe25b9dfd17bfadfef29e1e2822">exec_impl_</references>
         <references refid="classTC_1a76dd65525231537b15914ebbaff85f4caed07796a6a975c1968f32ef3dd983f17" compoundref="TC_8h" startline="30">NOT_ENABLED</references>
-        <referencedby refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="47" endline="54">loop</referencedby>
-        <referencedby refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" compoundref="TCProcessor_8cpp" startline="21" endline="38">TCProcessor::perform</referencedby>
+        <referencedby refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" compoundref="TCProcessor_8cpp" startline="46" endline="63">TCProcessor::perform</referencedby>
       </memberdef>
       <memberdef kind="function" id="classTC_1ad0701c92be6d3797420ce2e1990a9bf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>

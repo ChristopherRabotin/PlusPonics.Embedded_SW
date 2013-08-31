@@ -44,7 +44,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h" line="23" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp" bodystart="17" bodyend="19"/>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="31" endline="42">setup</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="29" endline="37">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>

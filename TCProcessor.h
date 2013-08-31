@@ -14,7 +14,8 @@
 #include <iterator>
 #include <map>
 /**
- * @class TCProcessor manages all the telecommands in a std::map . It is also called by GlobalReceiver upon receiving commanding instruction.
+ * @class TCProcessor
+ * @brief This class manages all the telecommands in a std::map . It is also called by GlobalReceiver upon receiving commanding instruction.
  */
 class TCProcessor {
 public:
@@ -49,7 +50,13 @@ public:
 	/**
 	 * @brief This function processes the input string which contains the OPCODE to concerned along with the action to take.
 	 * This function will set the internal error variable accordingly, if there is an error of course.
-	 * This function calls the @ref process function which manages command execution, enabling, disabling, etc.
+	 * This function calls the process function which manages command execution, enabling, disabling, etc.
+	 * The payload must be formatted as follows (in chars):
+	 * <span style="text-align:center">xxxy</span>
+	 * where <b>x</b> is the OPCODE on 3 chars and <b>y</b> is the action on 1 char.
+	 * The action is one of the following:
+	 * <ul><li><b>1</b>: execute</li><li><b>3</b>: enable</li><li><b>5</b>: disable</li></ul>
+	 * For example, to EXECUTE OPCODE 15, this function must receive <code>0151</code>.
 	 * @param payload input passed on by the GlobalReceiver in order to process the desired command.
 	 */
 	void processRecv(String payload);
@@ -66,16 +73,17 @@ public:
 	virtual ~TCProcessor();
 private:
 	/**
-	 * @brief The define_ function will define all the TCs available.
+	 * @brief The definitions_ function will define all the TCs available.
 	 * It is called from the constructor and it populates the map.
 	 * This is where the correspondence between the OPCODE and the given TC is done. Note that this also where the Start of Service tool
 	 * output should be place (for TC generation).
 	 */
-	void define_();
+	void definitions_();
 	/**
 	 * @brief This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the TCs.
+	 * @note Due to the definition of this map, there is a maximum of 256 TCs available. Setting this maximum allows faster TC fetching.
 	 */
-	std::map<int, TC*> _opcode_TC_map;
+	std::map<uint8_t, TC*> _opcode_TC_map;
 
 	ERROR_STATE _error;
 

@@ -74,6 +74,9 @@ $(document).ready(function(){initNavTree('classTCProcessor.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>This class manages all the telecommands in a std::map . It is also called by <a class="el" href="classGlobalReceiver.html">GlobalReceiver</a> upon receiving commanding instruction.  
+ <a href="classTCProcessor.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="TCProcessor_8h_source.html">TCProcessor.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -98,7 +101,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4a8c96ae1992c22a3f1b52802a356e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">The init function will call 'init' on all the telecommands of this class. This function must be called from the setup function in the main.  <a href="#a4a8c96ae1992c22a3f1b52802a356e72"></a><br/></td></tr>
 <tr class="separator:a4a8c96ae1992c22a3f1b52802a356e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a895b3f9a34b52534182785a00493fc63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCProcessor.html#a895b3f9a34b52534182785a00493fc63">processRecv</a> (String payload)</td></tr>
-<tr class="memdesc:a895b3f9a34b52534182785a00493fc63"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function processes the input string which contains the OPCODE to concerned along with the action to take. This function will set the internal error variable accordingly, if there is an error of course. This function calls the process function which manages command execution, enabling, disabling, etc.  <a href="#a895b3f9a34b52534182785a00493fc63"></a><br/></td></tr>
+<tr class="memdesc:a895b3f9a34b52534182785a00493fc63"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function processes the input string which contains the OPCODE to concerned along with the action to take. This function will set the internal error variable accordingly, if there is an error of course. This function calls the process function which manages command execution, enabling, disabling, etc. The payload must be formatted as follows (in chars): <span style="text-align:center">xxxy</span> where <b>x</b> is the OPCODE on 3 chars and <b>y</b> is the action on 1 char. The action is one of the following:  <a href="#a895b3f9a34b52534182785a00493fc63"></a><br/></td></tr>
 <tr class="separator:a895b3f9a34b52534182785a00493fc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2592bd41ffd44e77c367f401f838b788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCProcessor.html#a2592bd41ffd44e77c367f401f838b788">perform</a> (<a class="el" href="classTCProcessor.html#a7129c3bda29003b5020b432bdba6cb3c">TC_ACTION</a> action, int opcode)</td></tr>
 <tr class="memdesc:a2592bd41ffd44e77c367f401f838b788"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will perform the given action on the given opcode. The internal error variable will reflect whether the OPCODE is valid. Due to the limiting actions exposed by TC_ACTION, there is no need to check for the validity of the action.  <a href="#a2592bd41ffd44e77c367f401f838b788"></a><br/></td></tr>
@@ -108,22 +111,22 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:abb22877485aa2473ea3559b3395f51e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCProcessor.html#abb22877485aa2473ea3559b3395f51e3">define_</a> ()</td></tr>
-<tr class="memdesc:abb22877485aa2473ea3559b3395f51e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The define_ function will define all the TCs available. It is called from the constructor and it populates the map. This is where the correspondence between the OPCODE and the given <a class="el" href="classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</a> is done. Note that this also where the Start of Service tool output should be place (for <a class="el" href="classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</a> generation).  <a href="#abb22877485aa2473ea3559b3395f51e3"></a><br/></td></tr>
-<tr class="separator:abb22877485aa2473ea3559b3395f51e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea90af74c7ff4e3f904a9954bd8e5a7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCProcessor.html#aea90af74c7ff4e3f904a9954bd8e5a7a">definitions_</a> ()</td></tr>
+<tr class="memdesc:aea90af74c7ff4e3f904a9954bd8e5a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The definitions_ function will define all the TCs available. It is called from the constructor and it populates the map. This is where the correspondence between the OPCODE and the given <a class="el" href="classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</a> is done. Note that this also where the Start of Service tool output should be place (for <a class="el" href="classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</a> generation).  <a href="#aea90af74c7ff4e3f904a9954bd8e5a7a"></a><br/></td></tr>
+<tr class="separator:aea90af74c7ff4e3f904a9954bd8e5a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a195b8b31be7e467f5789f8117837f69c"><td class="memItemLeft" align="right" valign="top">std::map&lt; int, <a class="el" href="classTC.html">TC</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCProcessor.html#a195b8b31be7e467f5789f8117837f69c">_opcode_TC_map</a></td></tr>
-<tr class="memdesc:a195b8b31be7e467f5789f8117837f69c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the correspondence list between OPCODE and <a class="el" href="classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</a> object. Here will be fetched and added all the TCs.  <a href="#a195b8b31be7e467f5789f8117837f69c"></a><br/></td></tr>
-<tr class="separator:a195b8b31be7e467f5789f8117837f69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51b3baa303bac37bdca2464b390f4a3f"><td class="memItemLeft" align="right" valign="top">std::map&lt; uint8_t, <a class="el" href="classTC.html">TC</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCProcessor.html#a51b3baa303bac37bdca2464b390f4a3f">_opcode_TC_map</a></td></tr>
+<tr class="memdesc:a51b3baa303bac37bdca2464b390f4a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the correspondence list between OPCODE and <a class="el" href="classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</a> object. Here will be fetched and added all the TCs.  <a href="#a51b3baa303bac37bdca2464b390f4a3f"></a><br/></td></tr>
+<tr class="separator:a51b3baa303bac37bdca2464b390f4a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b104ae051b1edc075cfde03a9d4672a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTCProcessor.html#ad52a3ca216493b975eec62c8441107cb">ERROR_STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCProcessor.html#a1b104ae051b1edc075cfde03a9d4672a">_error</a></td></tr>
 <tr class="separator:a1b104ae051b1edc075cfde03a9d4672a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>the telecommands in a std::map . It is also called by <a class="el" href="classGlobalReceiver.html">GlobalReceiver</a> upon receiving commanding instruction. </p>
+<div class="textblock"><p>This class manages all the telecommands in a std::map . It is also called by <a class="el" href="classGlobalReceiver.html">GlobalReceiver</a> upon receiving commanding instruction. </p>
 
-<p>Definition at line <a class="el" href="TCProcessor_8h_source.html#l00019">19</a> of file <a class="el" href="TCProcessor_8h_source.html">TCProcessor.h</a>.</p>
+<p>Definition at line <a class="el" href="TCProcessor_8h_source.html#l00020">20</a> of file <a class="el" href="TCProcessor_8h_source.html">TCProcessor.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="ad52a3ca216493b975eec62c8441107cb"></a>
 <div class="memitem">
@@ -149,7 +152,7 @@ Private Attributes</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="TCProcessor_8h_source.html#l00043">43</a> of file <a class="el" href="TCProcessor_8h_source.html">TCProcessor.h</a>.</p>
+<p>Definition at line <a class="el" href="TCProcessor_8h_source.html#l00044">44</a> of file <a class="el" href="TCProcessor_8h_source.html">TCProcessor.h</a>.</p>
 
 </div>
 </div>
@@ -177,7 +180,7 @@ Private Attributes</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="TCProcessor_8h_source.html#l00034">34</a> of file <a class="el" href="TCProcessor_8h_source.html">TCProcessor.h</a>.</p>
+<p>Definition at line <a class="el" href="TCProcessor_8h_source.html#l00035">35</a> of file <a class="el" href="TCProcessor_8h_source.html">TCProcessor.h</a>.</p>
 
 </div>
 </div>
@@ -199,7 +202,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="TCProcessor_8cpp_source.html#l00010">10</a> of file <a class="el" href="TCProcessor_8cpp_source.html">TCProcessor.cpp</a>.</p>
 
-<p>References <a class="el" href="TCProcessor_8h_source.html#l00080">_error</a>, and <a class="el" href="TCProcessor_8h_source.html#l00044">NO_ERROR</a>.</p>
+<p>References <a class="el" href="TCProcessor_8h_source.html#l00088">_error</a>, and <a class="el" href="TCProcessor_8h_source.html#l00045">NO_ERROR</a>.</p>
 
 </div>
 </div>
@@ -224,12 +227,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TCProcessor_8cpp_source.html#l00040">40</a> of file <a class="el" href="TCProcessor_8cpp_source.html">TCProcessor.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TCProcessor_8cpp_source.html#l00065">65</a> of file <a class="el" href="TCProcessor_8cpp_source.html">TCProcessor.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="abb22877485aa2473ea3559b3395f51e3"></a>
+<a class="anchor" id="aea90af74c7ff4e3f904a9954bd8e5a7a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -237,7 +240,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void TCProcessor::define_ </td>
+          <td class="memname">void TCProcessor::definitions_ </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -250,11 +253,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The define_ function will define all the TCs available. It is called from the constructor and it populates the map. This is where the correspondence between the OPCODE and the given <a class="el" href="classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</a> is done. Note that this also where the Start of Service tool output should be place (for <a class="el" href="classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</a> generation). </p>
+<p>The definitions_ function will define all the TCs available. It is called from the constructor and it populates the map. This is where the correspondence between the OPCODE and the given <a class="el" href="classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</a> is done. Note that this also where the Start of Service tool output should be place (for <a class="el" href="classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</a> generation). </p>
 
-<p>Definition at line <a class="el" href="TCProcessor_8cpp_source.html#l00043">43</a> of file <a class="el" href="TCProcessor_8cpp_source.html">TCProcessor.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TCProcessor_8cpp_source.html#l00068">68</a> of file <a class="el" href="TCProcessor_8cpp_source.html">TCProcessor.cpp</a>.</p>
 
-<p>References <a class="el" href="TCProcessor_8h_source.html#l00078">_opcode_TC_map</a>.</p>
+<p>References <a class="el" href="TCProcessor_8h_source.html#l00086">_opcode_TC_map</a>.</p>
 
 <p>Referenced by <a class="el" href="TCProcessor_8cpp_source.html#l00014">init()</a>.</p>
 
@@ -277,16 +280,16 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="TCProcessor_8cpp_source.html#l00014">14</a> of file <a class="el" href="TCProcessor_8cpp_source.html">TCProcessor.cpp</a>.</p>
 
-<p>References <a class="el" href="TCProcessor_8cpp_source.html#l00043">define_()</a>.</p>
+<p>References <a class="el" href="TCProcessor_8cpp_source.html#l00068">definitions_()</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00031">setup()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00029">setup()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classTCProcessor_a4a8c96ae1992c22a3f1b52802a356e72_cgraph.png" border="0" usemap="#classTCProcessor_a4a8c96ae1992c22a3f1b52802a356e72_cgraph" alt=""/></div>
 <map name="classTCProcessor_a4a8c96ae1992c22a3f1b52802a356e72_cgraph" id="classTCProcessor_a4a8c96ae1992c22a3f1b52802a356e72_cgraph">
-<area shape="rect" id="node3" href="classTCProcessor.html#abb22877485aa2473ea3559b3395f51e3" title="The define_ function will define all the TCs available. It is called from the constructor and it popu..." alt="" coords="182,5,338,32"/></map>
+<area shape="rect" id="node3" href="classTCProcessor.html#aea90af74c7ff4e3f904a9954bd8e5a7a" title="The definitions_ function will define all the TCs available. It is called from the constructor and it..." alt="" coords="181,5,360,32"/></map>
 </div>
 </p>
 
@@ -325,11 +328,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="TCProcessor_8cpp_source.html#l00021">21</a> of file <a class="el" href="TCProcessor_8cpp_source.html">TCProcessor.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TCProcessor_8cpp_source.html#l00046">46</a> of file <a class="el" href="TCProcessor_8cpp_source.html">TCProcessor.cpp</a>.</p>
 
-<p>References <a class="el" href="TCProcessor_8h_source.html#l00080">_error</a>, <a class="el" href="TCProcessor_8h_source.html#l00078">_opcode_TC_map</a>, <a class="el" href="TCProcessor_8h_source.html#l00037">DISABLE</a>, <a class="el" href="TC_8cpp_source.html#l00028">TC::disable()</a>, <a class="el" href="TCProcessor_8h_source.html#l00036">ENABLE</a>, <a class="el" href="TC_8cpp_source.html#l00020">TC::enable()</a>, <a class="el" href="TC_8cpp_source.html#l00036">TC::exec()</a>, <a class="el" href="TCProcessor_8h_source.html#l00035">EXECUTE</a>, and <a class="el" href="TCProcessor_8h_source.html#l00045">INVALID_OPCODE</a>.</p>
+<p>References <a class="el" href="TCProcessor_8h_source.html#l00088">_error</a>, <a class="el" href="TCProcessor_8h_source.html#l00086">_opcode_TC_map</a>, <a class="el" href="TCProcessor_8h_source.html#l00038">DISABLE</a>, <a class="el" href="TC_8cpp_source.html#l00028">TC::disable()</a>, <a class="el" href="TCProcessor_8h_source.html#l00037">ENABLE</a>, <a class="el" href="TC_8cpp_source.html#l00020">TC::enable()</a>, <a class="el" href="TC_8cpp_source.html#l00036">TC::exec()</a>, <a class="el" href="TCProcessor_8h_source.html#l00036">EXECUTE</a>, and <a class="el" href="TCProcessor_8h_source.html#l00046">INVALID_OPCODE</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00047">loop()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00051">main()</a>, and <a class="el" href="TCProcessor_8cpp_source.html#l00018">processRecv()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -356,7 +359,16 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>This function processes the input string which contains the OPCODE to concerned along with the action to take. This function will set the internal error variable accordingly, if there is an error of course. This function calls the process function which manages command execution, enabling, disabling, etc. </p>
+<p>This function processes the input string which contains the OPCODE to concerned along with the action to take. This function will set the internal error variable accordingly, if there is an error of course. This function calls the process function which manages command execution, enabling, disabling, etc. The payload must be formatted as follows (in chars): <span style="text-align:center">xxxy</span> where <b>x</b> is the OPCODE on 3 chars and <b>y</b> is the action on 1 char. The action is one of the following: </p>
+<ul>
+<li>
+<b>1</b>: execute</li>
+<li>
+<b>3</b>: enable</li>
+<li>
+<b>5</b>: disable</li>
+</ul>
+<p>For example, to EXECUTE OPCODE 15, this function must receive <code>0151</code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">payload</td><td>input passed on by the <a class="el" href="classGlobalReceiver.html">GlobalReceiver</a> in order to process the desired command. </td></tr>
@@ -365,6 +377,17 @@ Here is the call graph for this function:</div>
 </dl>
 
 <p>Definition at line <a class="el" href="TCProcessor_8cpp_source.html#l00018">18</a> of file <a class="el" href="TCProcessor_8cpp_source.html">TCProcessor.cpp</a>.</p>
+
+<p>References <a class="el" href="TCProcessor_8h_source.html#l00088">_error</a>, <a class="el" href="TCProcessor_8h_source.html#l00038">DISABLE</a>, <a class="el" href="TCProcessor_8h_source.html#l00037">ENABLE</a>, <a class="el" href="TCProcessor_8h_source.html#l00036">EXECUTE</a>, <a class="el" href="TCProcessor_8h_source.html#l00047">INVALID_ACTION</a>, <a class="el" href="TCProcessor_8h_source.html#l00046">INVALID_OPCODE</a>, and <a class="el" href="TCProcessor_8cpp_source.html#l00046">perform()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTCProcessor_a895b3f9a34b52534182785a00493fc63_cgraph.png" border="0" usemap="#classTCProcessor_a895b3f9a34b52534182785a00493fc63_cgraph" alt=""/></div>
+<map name="classTCProcessor_a895b3f9a34b52534182785a00493fc63_cgraph" id="classTCProcessor_a895b3f9a34b52534182785a00493fc63_cgraph">
+<area shape="rect" id="node3" href="classTCProcessor.html#a2592bd41ffd44e77c367f401f838b788" title="This function will perform the given action on the given opcode. The internal error variable will ref..." alt="" coords="245,56,403,83"/><area shape="rect" id="node5" href="classTC.html#ac5e09bff8556f6ac5ed5604b855d3338" title="This function will disable this TC. A disabled TC cannot be executed." alt="" coords="451,5,546,32"/><area shape="rect" id="node7" href="classTC.html#a5431ac6442ffc4d740b1f146322a2a7c" title="This function will enable this TC." alt="" coords="453,56,544,83"/><area shape="rect" id="node9" href="classTC.html#ad03c30fb218c9c3280056bfbb35d6ae0" title="This function will execute of this TC. A TC can only be executed (for start and stop actions..." alt="" coords="459,107,539,133"/><area shape="rect" id="node11" href="classTC.html#ad0a5dbe25b9dfd17bfadfef29e1e2822" title="This function will execute this TC." alt="" coords="595,107,714,133"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -387,13 +410,13 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TCProcessor_8h_source.html#l00080">80</a> of file <a class="el" href="TCProcessor_8h_source.html">TCProcessor.h</a>.</p>
+<p>Definition at line <a class="el" href="TCProcessor_8h_source.html#l00088">88</a> of file <a class="el" href="TCProcessor_8h_source.html">TCProcessor.h</a>.</p>
 
-<p>Referenced by <a class="el" href="TCProcessor_8cpp_source.html#l00021">perform()</a>, and <a class="el" href="TCProcessor_8cpp_source.html#l00010">TCProcessor()</a>.</p>
+<p>Referenced by <a class="el" href="TCProcessor_8cpp_source.html#l00046">perform()</a>, <a class="el" href="TCProcessor_8cpp_source.html#l00018">processRecv()</a>, and <a class="el" href="TCProcessor_8cpp_source.html#l00010">TCProcessor()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a195b8b31be7e467f5789f8117837f69c"></a>
+<a class="anchor" id="a51b3baa303bac37bdca2464b390f4a3f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -401,7 +424,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;int, <a class="el" href="classTC.html">TC</a>*&gt; TCProcessor::_opcode_TC_map</td>
+          <td class="memname">std::map&lt;uint8_t, <a class="el" href="classTC.html">TC</a>*&gt; TCProcessor::_opcode_TC_map</td>
         </tr>
       </table>
   </td>
@@ -412,10 +435,11 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>This is the correspondence list between OPCODE and <a class="el" href="classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</a> object. Here will be fetched and added all the TCs. </p>
+<dl class="section note"><dt>Note</dt><dd>Due to the definition of this map, there is a maximum of 256 TCs available. Setting this maximum allows faster <a class="el" href="classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</a> fetching. </dd></dl>
 
-<p>Definition at line <a class="el" href="TCProcessor_8h_source.html#l00078">78</a> of file <a class="el" href="TCProcessor_8h_source.html">TCProcessor.h</a>.</p>
+<p>Definition at line <a class="el" href="TCProcessor_8h_source.html#l00086">86</a> of file <a class="el" href="TCProcessor_8h_source.html">TCProcessor.h</a>.</p>
 
-<p>Referenced by <a class="el" href="TCProcessor_8cpp_source.html#l00043">define_()</a>, and <a class="el" href="TCProcessor_8cpp_source.html#l00021">perform()</a>.</p>
+<p>Referenced by <a class="el" href="TCProcessor_8cpp_source.html#l00068">definitions_()</a>, and <a class="el" href="TCProcessor_8cpp_source.html#l00046">perform()</a>.</p>
 
 </div>
 </div>

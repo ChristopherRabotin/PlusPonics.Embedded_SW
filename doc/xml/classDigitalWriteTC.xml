@@ -104,7 +104,6 @@
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.h" line="29" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/DigitalWriteTC.cpp" bodystart="19" bodyend="21"/>
         <references refid="classDigitalWriteTC_1a2a3a499b821733cf424995c45434b016" compoundref="DigitalWriteTC_8h" startline="32">_outputPin</references>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="31" endline="42">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="classDigitalWriteTC_1a8dbc7cfc11760e634fc4bbc1f0c91dc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>

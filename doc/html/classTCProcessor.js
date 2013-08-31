@@ -12,10 +12,10 @@ var classTCProcessor =
     ] ],
     [ "TCProcessor", "classTCProcessor.html#a163b5e6267b5c05111b4ad8eeafadda9", null ],
     [ "~TCProcessor", "classTCProcessor.html#a725d44ebf98a78dbf5ebc549d678b3c8", null ],
-    [ "define_", "classTCProcessor.html#abb22877485aa2473ea3559b3395f51e3", null ],
+    [ "definitions_", "classTCProcessor.html#aea90af74c7ff4e3f904a9954bd8e5a7a", null ],
     [ "init", "classTCProcessor.html#a4a8c96ae1992c22a3f1b52802a356e72", null ],
     [ "perform", "classTCProcessor.html#a2592bd41ffd44e77c367f401f838b788", null ],
     [ "processRecv", "classTCProcessor.html#a895b3f9a34b52534182785a00493fc63", null ],
     [ "_error", "classTCProcessor.html#a1b104ae051b1edc075cfde03a9d4672a", null ],
-    [ "_opcode_TC_map", "classTCProcessor.html#a195b8b31be7e467f5789f8117837f69c", null ]
+    [ "_opcode_TC_map", "classTCProcessor.html#a51b3baa303bac37bdca2464b390f4a3f", null ]
 ];

@@ -107,10 +107,6 @@ Variables</h2></td></tr>
 <tr class="separator:a95de02de573cd863d1547c545dfeceae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60ab7ee2619879f6886f309095dca225"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTCProcessor.html">TCProcessor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a60ab7ee2619879f6886f309095dca225">tcProcessor</a></td></tr>
 <tr class="separator:a60ab7ee2619879f6886f309095dca225"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02d77cec0d93aac53c0f808d50db8967"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDigitalWriteTC.html">DigitalWriteTC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a02d77cec0d93aac53c0f808d50db8967">led13_ON</a> = <a class="el" href="classDigitalWriteTC.html">DigitalWriteTC</a>(<a class="el" href="main_8cpp.html#afdd77f1aa3023f9ba5f49bb1f6c68b51">ledPin</a>, HIGH)</td></tr>
-<tr class="separator:a02d77cec0d93aac53c0f808d50db8967"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9787b75a46a38b83421158352f0365b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDigitalWriteTC.html">DigitalWriteTC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a9787b75a46a38b83421158352f0365b6">led13_OFF</a> = <a class="el" href="classDigitalWriteTC.html">DigitalWriteTC</a>(<a class="el" href="main_8cpp.html#afdd77f1aa3023f9ba5f49bb1f6c68b51">ledPin</a>, LOW)</td></tr>
-<tr class="separator:a9787b75a46a38b83421158352f0365b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="afe461d27b9c48d5921c00d521181f12f"></a>
@@ -128,18 +124,18 @@ Variables</h2></td></tr>
 
 <p><a class="el" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered.">loop()</a> loops while Arduino is powered. </p>
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00047">47</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00042">42</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
-<p>References <a class="el" href="TC_8cpp_source.html#l00036">TC::exec()</a>, <a class="el" href="TCProcessor_8h_source.html#l00035">TCProcessor::EXECUTE</a>, <a class="el" href="TCProcessor_8cpp_source.html#l00021">TCProcessor::perform()</a>, and <a class="el" href="GlobalReceiver_8cpp_source.html#l00026">GlobalReceiver::process()</a>.</p>
+<p>References <a class="el" href="GlobalReceiver_8cpp_source.html#l00026">GlobalReceiver::process()</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00060">main()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00051">main()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_afe461d27b9c48d5921c00d521181f12f_cgraph.png" border="0" usemap="#main_8cpp_afe461d27b9c48d5921c00d521181f12f_cgraph" alt=""/></div>
 <map name="main_8cpp_afe461d27b9c48d5921c00d521181f12f_cgraph" id="main_8cpp_afe461d27b9c48d5921c00d521181f12f_cgraph">
-<area shape="rect" id="node3" href="classTC.html#ad03c30fb218c9c3280056bfbb35d6ae0" title="This function will execute of this TC. A TC can only be executed (for start and stop actions..." alt="" coords="364,5,444,32"/><area shape="rect" id="node7" href="classTCProcessor.html#a2592bd41ffd44e77c367f401f838b788" title="This function will perform the given action on the given opcode. The internal error variable will ref..." alt="" coords="109,56,267,83"/><area shape="rect" id="node14" href="classGlobalReceiver.html#a86c5c89fd69a213379582e1a81085d12" title="This function fetches and processes the input. It calls com&#39;s recv() to read the latest information..." alt="" coords="102,197,274,224"/><area shape="rect" id="node5" href="classTC.html#ad0a5dbe25b9dfd17bfadfef29e1e2822" title="This function will execute this TC." alt="" coords="555,5,674,32"/><area shape="rect" id="node9" href="classTC.html#a5431ac6442ffc4d740b1f146322a2a7c" title="This function will enable this TC." alt="" coords="359,56,449,83"/><area shape="rect" id="node11" href="classTC.html#ac5e09bff8556f6ac5ed5604b855d3338" title="This function will disable this TC. A disabled TC cannot be executed." alt="" coords="357,107,451,133"/><area shape="rect" id="node16" href="classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0" title="This function reads data from the pipe and returns this as a string." alt="" coords="323,158,485,199"/><area shape="rect" id="node18" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe." alt="" coords="323,223,485,265"/><area shape="rect" id="node22" href="GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4" title="byte_to_binary" alt="" coords="350,289,458,316"/><area shape="rect" id="node20" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="533,223,696,265"/></map>
+<area shape="rect" id="node3" href="classGlobalReceiver.html#a86c5c89fd69a213379582e1a81085d12" title="This function fetches and processes the input. It calls com&#39;s recv() to read the latest information..." alt="" coords="102,77,274,104"/><area shape="rect" id="node5" href="classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0" title="This function reads data from the pipe and returns this as a string." alt="" coords="323,5,485,46"/><area shape="rect" id="node7" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe." alt="" coords="323,70,485,111"/><area shape="rect" id="node11" href="GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4" title="byte_to_binary" alt="" coords="350,136,458,163"/><area shape="rect" id="node9" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="533,70,696,111"/></map>
 </div>
 </p>
 
@@ -162,16 +158,16 @@ Here is the call graph for this function:</div>
 <p>where all the subsystems are started. </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00060">60</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00051">51</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
-<p>References <a class="el" href="main_8cpp_source.html#l00047">loop()</a>, and <a class="el" href="main_8cpp_source.html#l00031">setup()</a>.</p>
+<p>References <a class="el" href="TCProcessor_8h_source.html#l00036">TCProcessor::EXECUTE</a>, <a class="el" href="main_8cpp_source.html#l00042">loop()</a>, <a class="el" href="TCProcessor_8cpp_source.html#l00046">TCProcessor::perform()</a>, and <a class="el" href="main_8cpp_source.html#l00029">setup()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_cgraph.png" border="0" usemap="#main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_cgraph" alt=""/></div>
 <map name="main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_cgraph" id="main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_cgraph">
-<area shape="rect" id="node3" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered." alt="" coords="108,155,156,181"/><area shape="rect" id="node26" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="This function is only ran when the sketch is initialized." alt="" coords="105,409,159,436"/><area shape="rect" id="node5" href="classTC.html#ad03c30fb218c9c3280056bfbb35d6ae0" title="This function will execute of this TC. A TC can only be executed (for start and stop actions..." alt="" coords="471,5,551,32"/><area shape="rect" id="node9" href="classTCProcessor.html#a2592bd41ffd44e77c367f401f838b788" title="This function will perform the given action on the given opcode. The internal error variable will ref..." alt="" coords="216,81,373,108"/><area shape="rect" id="node16" href="classGlobalReceiver.html#a86c5c89fd69a213379582e1a81085d12" title="This function fetches and processes the input. It calls com&#39;s recv() to read the latest information..." alt="" coords="209,196,381,223"/><area shape="rect" id="node7" href="classTC.html#ad0a5dbe25b9dfd17bfadfef29e1e2822" title="This function will execute this TC." alt="" coords="662,5,781,32"/><area shape="rect" id="node11" href="classTC.html#a5431ac6442ffc4d740b1f146322a2a7c" title="This function will enable this TC." alt="" coords="465,56,556,83"/><area shape="rect" id="node13" href="classTC.html#ac5e09bff8556f6ac5ed5604b855d3338" title="This function will disable this TC. A disabled TC cannot be executed." alt="" coords="463,107,558,133"/><area shape="rect" id="node18" href="classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0" title="This function reads data from the pipe and returns this as a string." alt="" coords="429,158,592,199"/><area shape="rect" id="node20" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe." alt="" coords="429,223,592,265"/><area shape="rect" id="node24" href="GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4" title="byte_to_binary" alt="" coords="457,289,565,316"/><area shape="rect" id="node22" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="640,223,803,265"/><area shape="rect" id="node28" href="classTCProcessor.html#a4a8c96ae1992c22a3f1b52802a356e72" title="The init function will call &#39;init&#39; on all the telecommands of this class. This function must be calle..." alt="" coords="231,308,359,335"/><area shape="rect" id="node32" href="classDigitalWriteTC.html#ae597ff8f497123a942d558a7d993f60f" title="The init function sets up everything for this TC to be operational. It must be called from the setup ..." alt="" coords="227,359,362,385"/><area shape="rect" id="node34" href="classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function." alt="" coords="239,409,350,436"/><area shape="rect" id="node36" href="classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336" title="AbstractCommunication\l::setLevel" alt="" coords="213,461,376,502"/><area shape="rect" id="node38" href="classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c" title="AbstractCommunication\l::info" alt="" coords="213,526,376,567"/><area shape="rect" id="node40" href="classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="209,592,380,619"/><area shape="rect" id="node30" href="classTCProcessor.html#abb22877485aa2473ea3559b3395f51e3" title="The define_ function will define all the TCs available. It is called from the constructor and it popu..." alt="" coords="433,340,589,367"/></map>
+<area shape="rect" id="node3" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered." alt="" coords="159,103,207,129"/><area shape="rect" id="node15" href="classTCProcessor.html#a2592bd41ffd44e77c367f401f838b788" title="This function will perform the given action on the given opcode. The internal error variable will ref..." alt="" coords="104,179,261,205"/><area shape="rect" id="node25" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="This function is only ran when the sketch is initialized." alt="" coords="155,360,210,387"/><area shape="rect" id="node5" href="classGlobalReceiver.html#a86c5c89fd69a213379582e1a81085d12" title="This function fetches and processes the input. It calls com&#39;s recv() to read the latest information..." alt="" coords="310,77,482,104"/><area shape="rect" id="node7" href="classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0" title="This function reads data from the pipe and returns this as a string." alt="" coords="539,5,701,46"/><area shape="rect" id="node9" href="classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe." alt="" coords="539,70,701,111"/><area shape="rect" id="node13" href="GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4" title="byte_to_binary" alt="" coords="566,136,674,163"/><area shape="rect" id="node11" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="757,70,920,111"/><area shape="rect" id="node17" href="classTC.html#a5431ac6442ffc4d740b1f146322a2a7c" title="This function will enable this TC." alt="" coords="351,128,441,155"/><area shape="rect" id="node19" href="classTC.html#ac5e09bff8556f6ac5ed5604b855d3338" title="This function will disable this TC. A disabled TC cannot be executed." alt="" coords="349,179,443,205"/><area shape="rect" id="node21" href="classTC.html#ad03c30fb218c9c3280056bfbb35d6ae0" title="This function will execute of this TC. A TC can only be executed (for start and stop actions..." alt="" coords="356,229,436,256"/><area shape="rect" id="node23" href="classTC.html#ad0a5dbe25b9dfd17bfadfef29e1e2822" title="This function will execute this TC." alt="" coords="561,229,679,256"/><area shape="rect" id="node27" href="classTCProcessor.html#a4a8c96ae1992c22a3f1b52802a356e72" title="The init function will call &#39;init&#39; on all the telecommands of this class. This function must be calle..." alt="" coords="332,280,460,307"/><area shape="rect" id="node31" href="classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function." alt="" coords="341,331,451,357"/><area shape="rect" id="node33" href="classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336" title="AbstractCommunication\l::setLevel" alt="" coords="315,382,477,423"/><area shape="rect" id="node35" href="classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c" title="AbstractCommunication\l::info" alt="" coords="315,447,477,489"/><area shape="rect" id="node37" href="classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="311,513,481,540"/><area shape="rect" id="node29" href="classTCProcessor.html#aea90af74c7ff4e3f904a9954bd8e5a7a" title="The definitions_ function will define all the TCs available. It is called from the constructor and it..." alt="" coords="531,280,709,307"/></map>
 </div>
 </p>
 
@@ -192,18 +188,18 @@ Here is the call graph for this function:</div>
 
 <p>This function is only ran when the sketch is initialized. </p>
 
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00031">31</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p>Definition at line <a class="el" href="main_8cpp_source.html#l00029">29</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
-<p>References <a class="el" href="AbstractCommunication_8cpp_source.html#l00023">AbstractCommunication::info()</a>, <a class="el" href="SerialCom_8cpp_source.html#l00017">SerialCom::init()</a>, <a class="el" href="DigitalWriteTC_8cpp_source.html#l00019">DigitalWriteTC::init()</a>, <a class="el" href="TCProcessor_8cpp_source.html#l00014">TCProcessor::init()</a>, <a class="el" href="GlobalReceiver_8cpp_source.html#l00049">GlobalReceiver::setCom()</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00063">AbstractCommunication::setLevel()</a>, and <a class="el" href="AbstractCommunication_8h_source.html#l00047">AbstractCommunication::WARN</a>.</p>
+<p>References <a class="el" href="AbstractCommunication_8h_source.html#l00046">AbstractCommunication::INFO</a>, <a class="el" href="AbstractCommunication_8cpp_source.html#l00023">AbstractCommunication::info()</a>, <a class="el" href="SerialCom_8cpp_source.html#l00017">SerialCom::init()</a>, <a class="el" href="TCProcessor_8cpp_source.html#l00014">TCProcessor::init()</a>, <a class="el" href="GlobalReceiver_8cpp_source.html#l00049">GlobalReceiver::setCom()</a>, and <a class="el" href="AbstractCommunication_8cpp_source.html#l00063">AbstractCommunication::setLevel()</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8cpp_source.html#l00060">main()</a>.</p>
+<p>Referenced by <a class="el" href="main_8cpp_source.html#l00051">main()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_a4fc01d736fe50cf5b977f755b675f11d_cgraph.png" border="0" usemap="#main_8cpp_a4fc01d736fe50cf5b977f755b675f11d_cgraph" alt=""/></div>
 <map name="main_8cpp_a4fc01d736fe50cf5b977f755b675f11d_cgraph" id="main_8cpp_a4fc01d736fe50cf5b977f755b675f11d_cgraph">
-<area shape="rect" id="node3" href="classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c" title="AbstractCommunication\l::info" alt="" coords="113,5,276,46"/><area shape="rect" id="node5" href="classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function." alt="" coords="139,71,250,97"/><area shape="rect" id="node7" href="classDigitalWriteTC.html#ae597ff8f497123a942d558a7d993f60f" title="The init function sets up everything for this TC to be operational. It must be called from the setup ..." alt="" coords="127,121,262,148"/><area shape="rect" id="node9" href="classTCProcessor.html#a4a8c96ae1992c22a3f1b52802a356e72" title="The init function will call &#39;init&#39; on all the telecommands of this class. This function must be calle..." alt="" coords="131,172,259,199"/><area shape="rect" id="node13" href="classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="109,223,280,249"/><area shape="rect" id="node15" href="classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336" title="AbstractCommunication\l::setLevel" alt="" coords="113,274,276,315"/><area shape="rect" id="node11" href="classTCProcessor.html#abb22877485aa2473ea3559b3395f51e3" title="The define_ function will define all the TCs available. It is called from the constructor and it popu..." alt="" coords="329,172,485,199"/></map>
+<area shape="rect" id="node3" href="classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c" title="AbstractCommunication\l::info" alt="" coords="113,5,276,46"/><area shape="rect" id="node5" href="classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function." alt="" coords="139,71,250,97"/><area shape="rect" id="node7" href="classTCProcessor.html#a4a8c96ae1992c22a3f1b52802a356e72" title="The init function will call &#39;init&#39; on all the telecommands of this class. This function must be calle..." alt="" coords="131,121,259,148"/><area shape="rect" id="node11" href="classGlobalReceiver.html#a0749a78221f336165396d7b5154eaa2c" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="109,172,280,199"/><area shape="rect" id="node13" href="classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336" title="AbstractCommunication\l::setLevel" alt="" coords="113,223,276,265"/><area shape="rect" id="node9" href="classTCProcessor.html#aea90af74c7ff4e3f904a9954bd8e5a7a" title="The definitions_ function will define all the TCs available. It is called from the constructor and it..." alt="" coords="328,121,507,148"/></map>
 </div>
 </p>
 
@@ -235,34 +231,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="main_8cpp_source.html#l00023">23</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9787b75a46a38b83421158352f0365b6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classDigitalWriteTC.html">DigitalWriteTC</a> led13_OFF = <a class="el" href="classDigitalWriteTC.html">DigitalWriteTC</a>(<a class="el" href="main_8cpp.html#afdd77f1aa3023f9ba5f49bb1f6c68b51">ledPin</a>, LOW)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00026">26</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a02d77cec0d93aac53c0f808d50db8967"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classDigitalWriteTC.html">DigitalWriteTC</a> led13_ON = <a class="el" href="classDigitalWriteTC.html">DigitalWriteTC</a>(<a class="el" href="main_8cpp.html#afdd77f1aa3023f9ba5f49bb1f6c68b51">ledPin</a>, HIGH)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="main_8cpp_source.html#l00025">25</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
