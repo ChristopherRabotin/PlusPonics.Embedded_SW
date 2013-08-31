@@ -31,10 +31,7 @@ public:
 		NOT_ENABLED, /**< if attempting to start or stop when not enabled */
 		WAS_ENABLED, /**< if attempting to enable and was already enabled */
 		WAS_DISABLED, /**< if attempting to disable and was already disabled */
-		WAS_STOPPED, /**< if attempting to stop and was already stopped */
-		WAS_RUNNING, /**< if attempting to start and was already running */
 		WAS_NOT_PERSISTENT, /**< if attempting to clear the error and was not in persistent error mode */
-		READ_ONLY /**< if attempting to change the enable or disable state while the command is running */
 	};
 	/**
 	 * @brief This function will enable this TC.
@@ -45,14 +42,10 @@ public:
 	 */
 	void disable();
 	/**
-	 * @brief This function will start the execution of this TC. This function calls __start after shared features.
+	 * @brief This function will execute of this TC. A TC can only be executed (for start and stop actions, use procedures, embedded or not).
+	 * This function will call __exec after shared features.
 	 */
-	void start();
-	/**
-	 * @brief This function will stop the execution of this TC. This function calls __stop after shared features.
-	 * @note Some TCs are too quick to be stopped.
-	 */
-	void stop();
+	void exec();
 
 	/**
 	 * @brief This function sets this TC to persist error (or not).
@@ -72,13 +65,15 @@ public:
 	ERROR_STATE errno();
 	/**
 	 * @brief The setup function sets up everything for this TC to be operational. It is called from the constructor.
+	 * It must be implemented by the subclass.
 	 */
 	virtual void setup() = 0;
-	virtual void __start() = 0;
-	virtual void __stop() = 0;
+	/**
+	 * @brief This function will execute this TC<
+	 */
+	virtual void exec_impl_() = 0;
 private:
 	bool enabled;
-	bool running;
 	bool persistent_error;
 	int executions;
 	ERROR_STATE error;

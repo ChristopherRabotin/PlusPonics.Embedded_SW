@@ -27,7 +27,7 @@ public:
 	 * @brief This function sends information through the communication pipe.
 	 * @param payload this is string which represents the payload to be delivered.
 	 */
-	virtual void send(String payload) = 0; // Should make AbstractCommunication unable to be instantiated.
+	virtual void send(String payload) = 0;
 	/**
 	 * @brief This function reads data from the pipe and returns this as a string.
 	 * @return a string representing the data received from the pipe.

@@ -9,7 +9,6 @@
 
 TC::TC(int opcode) {
 	enabled = true;
-	running = false;
 	executions = 0;
 	persistent_error = false;
 	error = NO_ERROR;
@@ -19,50 +18,25 @@ TC::~TC() {
 }
 
 void TC::enable() {
-	if (!running) {
-		if (!enabled) {
-			enabled = true;
-		} else {
-			error = WAS_ENABLED;
-		}
+	if (!enabled) {
+		enabled = true;
 	} else {
-		error = READ_ONLY;
+		error = WAS_ENABLED;
 	}
 }
 
 void TC::disable() {
-	if (!running) {
-		if (enabled) {
-			enabled = false;
-		} else {
-			error = WAS_DISABLED;
-		}
+	if (enabled) {
+		enabled = false;
 	} else {
-		error = READ_ONLY;
+		error = WAS_DISABLED;
 	}
 }
 
-void TC::start() {
+void TC::exec() {
 	if (enabled) {
-		if (!running) {
-			running = true;
-			__stop();
-		} else {
-			error = WAS_RUNNING;
-		}
-	} else {
-		error = NOT_ENABLED;
-	}
-}
-
-void TC::stop() {
-	if (enabled) {
-		if (running) {
-			running = false;
-			__stop();
-		} else {
-			error = WAS_STOPPED;
-		}
+		this->executions++;
+		exec_impl_();
 	} else {
 		error = NOT_ENABLED;
 	}
