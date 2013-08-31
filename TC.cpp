@@ -8,56 +8,56 @@
 #include "TC.h"
 
 TC::TC() {
-	enabled = true;
-	executions = 0;
-	persistent_error = false;
-	error = NO_ERROR;
+	_enabled = true;
+	_executions = 0;
+	_persistent_error = false;
+	_error = NO_ERROR;
 }
 
 TC::~TC() {
 }
 
 void TC::enable() {
-	if (!enabled) {
-		enabled = true;
+	if (!_enabled) {
+		_enabled = true;
 	} else {
-		error = WAS_ENABLED;
+		_error = WAS_ENABLED;
 	}
 }
 
 void TC::disable() {
-	if (enabled) {
-		enabled = false;
+	if (_enabled) {
+		_enabled = false;
 	} else {
-		error = WAS_DISABLED;
+		_error = WAS_DISABLED;
 	}
 }
 
 void TC::exec() {
-	if (enabled) {
-		this->executions++;
+	if (_enabled) {
+		_executions++;
 		exec_impl_();
 	} else {
-		error = NOT_ENABLED;
+		_error = NOT_ENABLED;
 	}
 }
 
 void TC::persist_errors(bool persist) {
-	persistent_error = persist;
+	_persistent_error = persist;
 }
 
 void TC::clear_error() {
-	if (persistent_error) {
-		error = NO_ERROR;
+	if (_persistent_error) {
+		_error = NO_ERROR;
 	} else {
-		error = WAS_NOT_PERSISTENT;
+		_error = WAS_NOT_PERSISTENT;
 	}
 }
 
 TC::ERROR_STATE TC::errno() {
-	TC::ERROR_STATE rtn = error;
-	if (!persistent_error) {
-		error = NO_ERROR;
+	TC::ERROR_STATE rtn = _error;
+	if (!_persistent_error) {
+		_error = NO_ERROR;
 	}
 	return (rtn);
 }

@@ -56,6 +56,7 @@ public:
 	 * @brief This function will clear the current error. If called when persistent error are set to false, this will change the error state.
 	 */
 	void clear_error();
+
 	/**
 	 * @brief This function will return the current error of this TC.
 	 * @note Once this function is called, the error state is returned to NO_ERROR unless if this TC is configured as having persistent error.
@@ -68,14 +69,14 @@ public:
 	 */
 	virtual void init() = 0;
 	/**
-	 * @brief This function will execute this TC<
+	 * @brief This function will execute this TC.
 	 */
 	virtual void exec_impl_() = 0;
 private:
-	bool enabled;
-	bool persistent_error;
-	int executions;
-	ERROR_STATE error;
+	bool _enabled;
+	bool _persistent_error;
+	int _executions;
+	ERROR_STATE _error;
 };
 
 #endif /* TC_H_ */

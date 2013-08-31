@@ -9,17 +9,17 @@
 
 DigitalWriteTC::DigitalWriteTC(int outputPin, int value) :
 		TC() {
-	this->outputPin = outputPin;
-	this->outputValue = value;
+	_outputPin = outputPin;
+	_outputValue = value;
 }
 
 DigitalWriteTC::~DigitalWriteTC() {
 }
 
 void DigitalWriteTC::init() {
-	pinMode(this->outputPin, OUTPUT);
+	pinMode(_outputPin, OUTPUT);
 }
 
 void DigitalWriteTC::exec_impl_() {
-	digitalWrite(this->outputPin, this->outputValue);
+	digitalWrite(_outputPin, _outputValue);
 }

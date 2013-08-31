@@ -9,6 +9,7 @@ CPP_SRCS += \
 ../GlobalReceiver.cpp \
 ../SerialCom.cpp \
 ../TC.cpp \
+../TCProcessor.cpp \
 ../main.cpp 
 
 OBJS += \
@@ -17,6 +18,7 @@ OBJS += \
 ./GlobalReceiver.o \
 ./SerialCom.o \
 ./TC.o \
+./TCProcessor.o \
 ./main.o 
 
 CPP_DEPS += \
@@ -25,6 +27,7 @@ CPP_DEPS += \
 ./GlobalReceiver.d \
 ./SerialCom.d \
 ./TC.d \
+./TCProcessor.d \
 ./main.d 
 
 

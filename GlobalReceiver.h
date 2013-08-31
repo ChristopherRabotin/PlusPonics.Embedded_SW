@@ -37,7 +37,7 @@ public:
 	void setCom(AbstractCommunication &com);
 	virtual ~GlobalReceiver();
 private:
-	AbstractCommunication *com;
+	AbstractCommunication *_com;
 };
 
 #endif /* RECVPROCESSOR_H_ */

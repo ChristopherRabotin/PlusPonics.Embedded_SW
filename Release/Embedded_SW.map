@@ -1,5 +1,7 @@
 Archive member included because of file (symbol)
 
+/home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
+                              ./TCProcessor.o (malloc)
 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
                               ./SerialCom.o (Serial)
 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
@@ -14,8 +16,6 @@ Archive member included because of file (symbol)
                               /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Stream.o) (millis)
 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
                               ./DigitalWriteTC.o (pinMode)
-/home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
-                              /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(new.o) (malloc)
 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(realloc.o)
                               /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(WString.o) (realloc)
 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_mulsi3.o)
@@ -221,6 +221,7 @@ LOAD ./DigitalWriteTC.o
 LOAD ./GlobalReceiver.o
 LOAD ./SerialCom.o
 LOAD ./TC.o
+LOAD ./TCProcessor.o
 LOAD ./main.o
 LOAD /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a
 LOAD /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a
@@ -319,7 +320,7 @@ LOAD /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000     0x604a
+.text           0x0000000000000000     0x62aa
  *(.vectors)
  .vectors       0x0000000000000000       0xe4 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/crtm2560.o
                 0x0000000000000000                __vectors
@@ -517,323 +518,336 @@ LOAD /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.
                 0x00000000000010e4                TC::~TC()
                 0x000000000000115a                TC::persist_errors(bool)
                 0x0000000000001182                TC::~TC()
- .text          0x0000000000001194      0x17a ./main.o
-                0x0000000000001228                loop
-                0x0000000000001194                configure()
-                0x0000000000001196                operator new(unsigned int, void*)
-                0x0000000000001300                main
-                0x000000000000125a                setup
- .text          0x000000000000130e      0xc50 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
-                0x0000000000001bbc                HardwareSerial::peek()
-                0x0000000000001b9a                HardwareSerial::available()
-                0x000000000000138e                serialEvent1()
-                0x000000000000171a                __vector_55
-                0x0000000000001c6e                HardwareSerial::write(unsigned char)
-                0x000000000000140e                serialEvent2()
-                0x0000000000001820                HardwareSerial::HardwareSerial(ring_buffer*, ring_buffer*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
-                0x00000000000018a8                HardwareSerial::begin(unsigned long)
-                0x0000000000001310                __vector_25
-                0x0000000000001490                __vector_54
-                0x000000000000150e                serialEventRun()
-                0x0000000000001c4e                HardwareSerial::flush()
-                0x00000000000019b6                HardwareSerial::begin(unsigned long, unsigned char)
-                0x0000000000001ace                HardwareSerial::end()
-                0x000000000000130e                serialEvent()
-                0x000000000000169c                __vector_52
-                0x000000000000161e                __vector_37
-                0x0000000000001410                __vector_51
-                0x0000000000001390                __vector_36
-                0x0000000000001cee                HardwareSerial::operator bool()
-                0x00000000000015a0                __vector_26
-                0x0000000000001bfc                HardwareSerial::read()
-                0x0000000000001798                HardwareSerial::HardwareSerial(ring_buffer*, ring_buffer*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
-                0x000000000000148e                serialEvent3()
- .text          0x0000000000001f5e      0x748 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
-                0x000000000000267e                Print::println(String const&)
-                0x0000000000002252                Print::println(unsigned int, int)
-                0x00000000000020b6                Print::println(Printable const&)
-                0x000000000000201e                Print::println()
-                0x00000000000023ba                Print::println(int, int)
-                0x0000000000002122                Print::printNumber(unsigned long, unsigned char)
-                0x0000000000001f5e                Print::write(unsigned char const*, unsigned int)
-                0x00000000000025c6                Print::print(double, int)
-                0x000000000000205e                Print::println(__FlashStringHelper const*)
-                0x0000000000002086                Print::println(char)
-                0x00000000000020ea                Print::write(char const*)
-                0x00000000000023fe                Print::printFloat(double, unsigned char)
-                0x0000000000002008                Print::print(Printable const&)
-                0x0000000000002394                Print::print(int, int)
-                0x0000000000001fb2                Print::print(__FlashStringHelper const*)
-                0x000000000000228c                Print::print(unsigned char, int)
-                0x00000000000025f2                Print::println(char const*)
-                0x0000000000001ff8                Print::print(char)
-                0x00000000000022b0                Print::println(unsigned char, int)
-                0x0000000000002230                Print::print(unsigned int, int)
-                0x00000000000023f8                Print::print(char const*)
-                0x00000000000021ea                Print::print(unsigned long, int)
-                0x000000000000236c                Print::println(long, int)
-                0x00000000000025cc                Print::println(double, int)
-                0x00000000000022ec                Print::print(long, int)
-                0x0000000000002208                Print::println(unsigned long, int)
-                0x0000000000002618                Print::print(String const&)
- .text          0x00000000000026a6      0x554 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Stream.o)
-                0x0000000000002868                Stream::parseFloat()
-                0x000000000000270a                Stream::peekNextDigit()
-                0x00000000000029ac                Stream::readStringUntil(char)
-                0x0000000000002aee                Stream::findUntil(char*, unsigned int, char*, unsigned int)
-                0x00000000000026a6                Stream::setTimeout(unsigned long)
-                0x0000000000002ba8                Stream::findUntil(char*, char*)
-                0x0000000000002740                Stream::parseFloat(char)
-                0x0000000000002bda                Stream::find(char*)
-                0x000000000000294c                Stream::parseInt()
-                0x00000000000026b2                Stream::timedPeek()
-                0x0000000000002aa6                Stream::readBytes(char*, unsigned int)
-                0x0000000000002a40                Stream::readBytesUntil(char, char*, unsigned int)
-                0x0000000000002a06                Stream::readString()
-                0x0000000000002be4                Stream::find(char*, unsigned int)
-                0x0000000000002870                Stream::parseInt(char)
-                0x0000000000002954                Stream::timedRead()
- .text          0x0000000000002bfa     0x129e /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(WString.o)
-                0x0000000000003b8c                String::String(int, unsigned char)
-                0x0000000000002c1c                String::setCharAt(unsigned int, char)
-                0x0000000000002ec2                String::lastIndexOf(String const&) const
-                0x0000000000003198                String::startsWith(String const&, unsigned int) const
-                0x000000000000312a                String::operator>=(String const&) const
-                0x0000000000003e0e                String::substring(unsigned int) const
-                0x0000000000002cc2                String::trim()
-                0x0000000000003d80                String::substring(unsigned int, unsigned int) const
-                0x0000000000002c36                String::operator[](unsigned int)
-                0x0000000000003e54                String::String(String const&)
-                0x0000000000002ede                String::indexOf(String const&, unsigned int) const
-                0x0000000000003658                String::concat(unsigned char)
-                0x00000000000036b0                String::concat(char)
-                0x0000000000003c50                String::String(unsigned char, unsigned char)
-                0x0000000000002c60                String::operator[](unsigned int) const
-                0x0000000000003cb4                String::String(unsigned char, unsigned char)
-                0x0000000000003d4c                String::String(char)
-                0x00000000000036f8                String::concat(String const&)
-                0x0000000000003bee                String::String(int, unsigned char)
-                0x0000000000002bfa                String::charAt(unsigned int) const
-                0x0000000000003a00                String::String(long, unsigned char)
-                0x0000000000003204                String::changeBuffer(unsigned int)
-                0x00000000000037b4                operator+(StringSumHelper const&, unsigned char)
-                0x0000000000003442                String::reserve(unsigned int)
-                0x0000000000003b2a                String::String(unsigned int, unsigned char)
-                0x0000000000002fe0                String::getBytes(unsigned char*, unsigned int, unsigned int) const
-                0x00000000000031de                String::startsWith(String const&) const
-                0x0000000000002c82                String::replace(char, char)
-                0x0000000000003e80                String::~String()
-                0x0000000000003e6a                String::String(String const&)
-                0x0000000000003830                operator+(StringSumHelper const&, String const&)
-                0x000000000000385c                String::copy(char const*, unsigned int)
-                0x0000000000002fd6                String::indexOf(char) const
-                0x00000000000034d4                String::concat(unsigned long)
-                0x0000000000003e8c                String::~String()
-                0x000000000000399c                String::String(unsigned long, unsigned char)
-                0x0000000000003e26                String::operator=(String const&)
-                0x00000000000037f8                operator+(StringSumHelper const&, char const*)
-                0x000000000000372c                operator+(StringSumHelper const&, unsigned long)
-                0x000000000000303a                String::endsWith(String const&) const
-                0x00000000000036d8                String::concat(char const*)
-                0x0000000000003708                String::invalidate()
-                0x0000000000002e26                String::lastIndexOf(String const&, unsigned int) const
-                0x000000000000389e                String::String(char const*)
-                0x00000000000030c4                String::compareTo(String const&) const
-                0x0000000000003770                operator+(StringSumHelper const&, unsigned int)
-                0x000000000000307e                String::equals(char const*) const
-                0x0000000000002f24                String::lastIndexOf(char, unsigned int) const
-                0x000000000000347a                String::concat(char const*, unsigned int)
-                0x0000000000002ca0                String::toInt() const
-                0x0000000000002d92                String::toLowerCase()
-                0x0000000000002f1a                String::indexOf(String const&) const
-                0x000000000000316c                String::equals(String const&) const
-                0x000000000000315e                String::operator<(String const&) const
-                0x0000000000003906                String::operator=(char const*)
-                0x000000000000313a                String::operator<=(String const&) const
-                0x0000000000003538                String::concat(long)
-                0x00000000000038d2                String::String(char const*)
-                0x00000000000037d6                operator+(StringSumHelper const&, char)
-                0x0000000000002db6                String::equalsIgnoreCase(String const&) const
-                0x0000000000002f8e                String::lastIndexOf(char) const
-                0x0000000000003ac8                String::String(unsigned int, unsigned char)
-                0x000000000000359c                String::concat(unsigned int)
-                0x0000000000003938                String::String(unsigned long, unsigned char)
-                0x0000000000003792                operator+(StringSumHelper const&, int)
-                0x0000000000003d18                String::String(char)
-                0x0000000000002f9e                String::indexOf(char, unsigned int) const
-                0x000000000000374e                operator+(StringSumHelper const&, long)
-                0x0000000000003238                String::replace(String const&, String const&)
-                0x0000000000003a64                String::String(long, unsigned char)
-                0x0000000000002d6e                String::toUpperCase()
-                0x000000000000314c                String::operator>(String const&) const
-                0x00000000000035f6                String::concat(int)
- .text          0x0000000000003e98       0x38 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(new.o)
-                0x0000000000003ec4                operator new[](unsigned int)
-                0x0000000000003ebe                operator delete(void*)
-                0x0000000000003eb6                __cxa_pure_virtual
-                0x0000000000003eb8                operator delete[](void*)
-                0x0000000000003eac                __cxa_guard_release
-                0x0000000000003eb4                __cxa_guard_abort
-                0x0000000000003eca                operator new(unsigned int)
-                0x0000000000003e98                __cxa_guard_acquire
- .text          0x0000000000003ed0      0x282 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring.o)
-                0x0000000000003ed0                __vector_23
-                0x000000000000408e                init
-                0x0000000000003f7c                micros
-                0x0000000000003fc8                delay
-                0x0000000000003f60                millis
-                0x000000000000407a                delayMicroseconds
- .text          0x0000000000004152      0x22c /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
-                0x000000000000431e                digitalRead
-                0x00000000000042b8                digitalWrite
-                0x0000000000004152                pinMode
- .text          0x000000000000437e        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
- .text          0x000000000000437e        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(realloc.o)
- .text          0x000000000000437e        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_mulsi3.o)
- .text          0x000000000000437e        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_udivmodsi4.o)
- .text          0x000000000000437e        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_exit.o)
- .text          0x000000000000437e        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clear_bss.o)
- .text          0x000000000000437e        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_ctors.o)
- .text          0x000000000000437e        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_dtors.o)
- .text          0x000000000000437e       0x58 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_fixunssfsi.o)
-                0x000000000000437e                __fixunssfsi
- .text          0x00000000000043d6      0x354 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_addsub_sf.o)
-                0x000000000000466e                __subsf3
-                0x00000000000046d0                __addsf3
- .text          0x000000000000472a      0x1f4 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_mul_sf.o)
-                0x000000000000472a                __mulsf3
- .text          0x000000000000491e      0x158 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_div_sf.o)
-                0x000000000000491e                __divsf3
- .text          0x0000000000004a76       0x60 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_gt_sf.o)
-                0x0000000000004a76                __gtsf2
- .text          0x0000000000004ad6       0x60 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_ge_sf.o)
-                0x0000000000004ad6                __gesf2
- .text          0x0000000000004b36       0x60 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_lt_sf.o)
-                0x0000000000004b36                __ltsf2
- .text          0x0000000000004b96       0x60 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_le_sf.o)
-                0x0000000000004b96                __lesf2
- .text          0x0000000000004bf6       0x56 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_unord_sf.o)
-                0x0000000000004bf6                __unordsf2
- .text          0x0000000000004c4c       0xbc /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_si_to_sf.o)
-                0x0000000000004c4c                __floatsisf
- .text          0x0000000000004d08       0xa8 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_sf_to_si.o)
-                0x0000000000004d08                __fixsfsi
- .text          0x0000000000004db0        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_thenan_sf.o)
- .text          0x0000000000004db0       0xf2 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_usi_to_sf.o)
-                0x0000000000004db0                __floatunsisf
- .text          0x0000000000004ea2        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_prologue.o)
- .text          0x0000000000004ea2        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_epilogue.o)
- .text          0x0000000000004ea2        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_tablejump.o)
- .text          0x0000000000004ea2       0x9e /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clzsi2.o)
-                0x0000000000004ea2                __clzsi2
- .text          0x0000000000004f40      0x1aa /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_pack_sf.o)
-                0x0000000000004f40                __pack_f
- .text          0x00000000000050ea       0xf0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_unpack_sf.o)
-                0x00000000000050ea                __unpack_f
- .text          0x00000000000051da       0xb2 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_fpcmp_parts_sf.o)
-                0x00000000000051da                __fpcmp_parts_f
- .text          0x000000000000528c        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clz.o)
- .text          0x000000000000528c       0x4e /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(atol.o)
-                0x000000000000528c                atol
- .text          0x00000000000052da        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(isspace.o)
- .text          0x00000000000052da        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(tolower.o)
- .text          0x00000000000052da        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(toupper.o)
- .text          0x00000000000052da       0x12 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memcpy_P.o)
-                0x00000000000052da                memcpy_P
- .text          0x00000000000052ec       0x12 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memcpy.o)
-                0x00000000000052ec                memcpy
- .text          0x00000000000052fe       0x24 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memmove.o)
-                0x00000000000052fe                memmove
- .text          0x0000000000005322       0x16 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcat.o)
-                0x0000000000005322                strcat
- .text          0x0000000000005338       0x16 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strchr.o)
-                0x0000000000005338                strchr
- .text          0x000000000000534e       0x12 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcmp.o)
-                0x000000000000534e                strcmp
- .text          0x0000000000005360        0xe /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcpy.o)
-                0x0000000000005360                strcpy
- .text          0x000000000000536e       0x1c /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strncmp.o)
-                0x000000000000536e                strncmp
- .text          0x000000000000538a       0x1e /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strncpy.o)
-                0x000000000000538a                strncpy
- .text          0x00000000000053a8       0x16 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strrchr.o)
-                0x00000000000053a8                strrchr
- .text          0x00000000000053be       0x34 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strstr.o)
-                0x00000000000053be                strstr
- .text          0x00000000000053f2       0x42 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(itoa.o)
-                0x00000000000053f2                itoa
- .text          0x0000000000005434       0x68 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ltoa.o)
-                0x0000000000005434                ltoa
- .text          0x000000000000549c       0x2a /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(mulsi10.o)
-                0x000000000000549c                __mulsi_const_10
- .text          0x00000000000054c6       0x4a /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ultoa.o)
-                0x00000000000054c6                ultoa
- .text          0x0000000000005510       0x2c /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(utoa.o)
-                0x0000000000005510                utoa
- .text          0x000000000000553c       0x54 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(vsnprintf.o)
-                0x000000000000553c                vsnprintf
- .text          0x0000000000005590      0x3ba /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(vfprintf_std.o)
-                0x0000000000005590                vfprintf
- .text          0x000000000000594a        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(cty_isfalse.o)
- .text          0x000000000000594a       0x16 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strnlen_P.o)
-                0x000000000000594a                strnlen_P
- .text          0x0000000000005960       0x16 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strnlen.o)
-                0x0000000000005960                strnlen
- .text          0x0000000000005976       0x20 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strrev.o)
-                0x0000000000005976                strrev
- .text          0x0000000000005996       0x58 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(fputc.o)
-                0x0000000000005996                fputc
- .text          0x00000000000059ee       0xbc /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ultoa_invert.o)
-                0x00000000000059ee                __ultoa_invert
- .text          0x0000000000005aaa        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_udivmodhi4.o)
-                0x0000000000005aaa                . = ALIGN (0x2)
+ .text          0x0000000000001194      0x264 ./TCProcessor.o
+                0x000000000000119e                std::_Rb_tree<int, std::pair<int const, TC*>, std::_Select1st<std::pair<int const, TC*> >, std::less<int>, std::allocator<TC*> >::_M_erase(std::_Rb_tree_node<std::pair<int const, TC*> >*)
+                0x0000000000001364                std::map<int, TC*, std::less<int>, std::allocator<TC*> >::map()
+                0x000000000000119c                TCProcessor::define_()
+                0x00000000000011de                std::map<int, TC*, std::less<int>, std::allocator<TC*> >::~map()
+                0x0000000000001198                TCProcessor::init()
+                0x0000000000001194                operator new(unsigned int, void*)
+                0x00000000000013b8                TCProcessor::TCProcessor()
+                0x00000000000013d8                TCProcessor::TCProcessor()
+                0x0000000000001224                TCProcessor::~TCProcessor()
+                0x000000000000124c                TCProcessor::~TCProcessor()
+                0x000000000000119a                TCProcessor::processRecv(String)
+                0x0000000000001270                TCProcessor::perform(TCProcessor::TC_ACTION, int)
+                0x000000000000125e                TCProcessor::~TCProcessor()
+ .text          0x00000000000013f8      0x176 ./main.o
+                0x0000000000001488                loop
+                0x00000000000013f8                configure()
+                0x0000000000001560                main
+                0x00000000000014ba                setup
+ .text          0x000000000000156e        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
+ .text          0x000000000000156e      0xc50 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
+                0x0000000000001e1c                HardwareSerial::peek()
+                0x0000000000001dfa                HardwareSerial::available()
+                0x00000000000015ee                serialEvent1()
+                0x000000000000197a                __vector_55
+                0x0000000000001ece                HardwareSerial::write(unsigned char)
+                0x000000000000166e                serialEvent2()
+                0x0000000000001a80                HardwareSerial::HardwareSerial(ring_buffer*, ring_buffer*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
+                0x0000000000001b08                HardwareSerial::begin(unsigned long)
+                0x0000000000001570                __vector_25
+                0x00000000000016f0                __vector_54
+                0x000000000000176e                serialEventRun()
+                0x0000000000001eae                HardwareSerial::flush()
+                0x0000000000001c16                HardwareSerial::begin(unsigned long, unsigned char)
+                0x0000000000001d2e                HardwareSerial::end()
+                0x000000000000156e                serialEvent()
+                0x00000000000018fc                __vector_52
+                0x000000000000187e                __vector_37
+                0x0000000000001670                __vector_51
+                0x00000000000015f0                __vector_36
+                0x0000000000001f4e                HardwareSerial::operator bool()
+                0x0000000000001800                __vector_26
+                0x0000000000001e5c                HardwareSerial::read()
+                0x00000000000019f8                HardwareSerial::HardwareSerial(ring_buffer*, ring_buffer*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
+                0x00000000000016ee                serialEvent3()
+ .text          0x00000000000021be      0x748 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
+                0x00000000000028de                Print::println(String const&)
+                0x00000000000024b2                Print::println(unsigned int, int)
+                0x0000000000002316                Print::println(Printable const&)
+                0x000000000000227e                Print::println()
+                0x000000000000261a                Print::println(int, int)
+                0x0000000000002382                Print::printNumber(unsigned long, unsigned char)
+                0x00000000000021be                Print::write(unsigned char const*, unsigned int)
+                0x0000000000002826                Print::print(double, int)
+                0x00000000000022be                Print::println(__FlashStringHelper const*)
+                0x00000000000022e6                Print::println(char)
+                0x000000000000234a                Print::write(char const*)
+                0x000000000000265e                Print::printFloat(double, unsigned char)
+                0x0000000000002268                Print::print(Printable const&)
+                0x00000000000025f4                Print::print(int, int)
+                0x0000000000002212                Print::print(__FlashStringHelper const*)
+                0x00000000000024ec                Print::print(unsigned char, int)
+                0x0000000000002852                Print::println(char const*)
+                0x0000000000002258                Print::print(char)
+                0x0000000000002510                Print::println(unsigned char, int)
+                0x0000000000002490                Print::print(unsigned int, int)
+                0x0000000000002658                Print::print(char const*)
+                0x000000000000244a                Print::print(unsigned long, int)
+                0x00000000000025cc                Print::println(long, int)
+                0x000000000000282c                Print::println(double, int)
+                0x000000000000254c                Print::print(long, int)
+                0x0000000000002468                Print::println(unsigned long, int)
+                0x0000000000002878                Print::print(String const&)
+ .text          0x0000000000002906      0x554 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Stream.o)
+                0x0000000000002ac8                Stream::parseFloat()
+                0x000000000000296a                Stream::peekNextDigit()
+                0x0000000000002c0c                Stream::readStringUntil(char)
+                0x0000000000002d4e                Stream::findUntil(char*, unsigned int, char*, unsigned int)
+                0x0000000000002906                Stream::setTimeout(unsigned long)
+                0x0000000000002e08                Stream::findUntil(char*, char*)
+                0x00000000000029a0                Stream::parseFloat(char)
+                0x0000000000002e3a                Stream::find(char*)
+                0x0000000000002bac                Stream::parseInt()
+                0x0000000000002912                Stream::timedPeek()
+                0x0000000000002d06                Stream::readBytes(char*, unsigned int)
+                0x0000000000002ca0                Stream::readBytesUntil(char, char*, unsigned int)
+                0x0000000000002c66                Stream::readString()
+                0x0000000000002e44                Stream::find(char*, unsigned int)
+                0x0000000000002ad0                Stream::parseInt(char)
+                0x0000000000002bb4                Stream::timedRead()
+ .text          0x0000000000002e5a     0x129e /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(WString.o)
+                0x0000000000003dec                String::String(int, unsigned char)
+                0x0000000000002e7c                String::setCharAt(unsigned int, char)
+                0x0000000000003122                String::lastIndexOf(String const&) const
+                0x00000000000033f8                String::startsWith(String const&, unsigned int) const
+                0x000000000000338a                String::operator>=(String const&) const
+                0x000000000000406e                String::substring(unsigned int) const
+                0x0000000000002f22                String::trim()
+                0x0000000000003fe0                String::substring(unsigned int, unsigned int) const
+                0x0000000000002e96                String::operator[](unsigned int)
+                0x00000000000040b4                String::String(String const&)
+                0x000000000000313e                String::indexOf(String const&, unsigned int) const
+                0x00000000000038b8                String::concat(unsigned char)
+                0x0000000000003910                String::concat(char)
+                0x0000000000003eb0                String::String(unsigned char, unsigned char)
+                0x0000000000002ec0                String::operator[](unsigned int) const
+                0x0000000000003f14                String::String(unsigned char, unsigned char)
+                0x0000000000003fac                String::String(char)
+                0x0000000000003958                String::concat(String const&)
+                0x0000000000003e4e                String::String(int, unsigned char)
+                0x0000000000002e5a                String::charAt(unsigned int) const
+                0x0000000000003c60                String::String(long, unsigned char)
+                0x0000000000003464                String::changeBuffer(unsigned int)
+                0x0000000000003a14                operator+(StringSumHelper const&, unsigned char)
+                0x00000000000036a2                String::reserve(unsigned int)
+                0x0000000000003d8a                String::String(unsigned int, unsigned char)
+                0x0000000000003240                String::getBytes(unsigned char*, unsigned int, unsigned int) const
+                0x000000000000343e                String::startsWith(String const&) const
+                0x0000000000002ee2                String::replace(char, char)
+                0x00000000000040e0                String::~String()
+                0x00000000000040ca                String::String(String const&)
+                0x0000000000003a90                operator+(StringSumHelper const&, String const&)
+                0x0000000000003abc                String::copy(char const*, unsigned int)
+                0x0000000000003236                String::indexOf(char) const
+                0x0000000000003734                String::concat(unsigned long)
+                0x00000000000040ec                String::~String()
+                0x0000000000003bfc                String::String(unsigned long, unsigned char)
+                0x0000000000004086                String::operator=(String const&)
+                0x0000000000003a58                operator+(StringSumHelper const&, char const*)
+                0x000000000000398c                operator+(StringSumHelper const&, unsigned long)
+                0x000000000000329a                String::endsWith(String const&) const
+                0x0000000000003938                String::concat(char const*)
+                0x0000000000003968                String::invalidate()
+                0x0000000000003086                String::lastIndexOf(String const&, unsigned int) const
+                0x0000000000003afe                String::String(char const*)
+                0x0000000000003324                String::compareTo(String const&) const
+                0x00000000000039d0                operator+(StringSumHelper const&, unsigned int)
+                0x00000000000032de                String::equals(char const*) const
+                0x0000000000003184                String::lastIndexOf(char, unsigned int) const
+                0x00000000000036da                String::concat(char const*, unsigned int)
+                0x0000000000002f00                String::toInt() const
+                0x0000000000002ff2                String::toLowerCase()
+                0x000000000000317a                String::indexOf(String const&) const
+                0x00000000000033cc                String::equals(String const&) const
+                0x00000000000033be                String::operator<(String const&) const
+                0x0000000000003b66                String::operator=(char const*)
+                0x000000000000339a                String::operator<=(String const&) const
+                0x0000000000003798                String::concat(long)
+                0x0000000000003b32                String::String(char const*)
+                0x0000000000003a36                operator+(StringSumHelper const&, char)
+                0x0000000000003016                String::equalsIgnoreCase(String const&) const
+                0x00000000000031ee                String::lastIndexOf(char) const
+                0x0000000000003d28                String::String(unsigned int, unsigned char)
+                0x00000000000037fc                String::concat(unsigned int)
+                0x0000000000003b98                String::String(unsigned long, unsigned char)
+                0x00000000000039f2                operator+(StringSumHelper const&, int)
+                0x0000000000003f78                String::String(char)
+                0x00000000000031fe                String::indexOf(char, unsigned int) const
+                0x00000000000039ae                operator+(StringSumHelper const&, long)
+                0x0000000000003498                String::replace(String const&, String const&)
+                0x0000000000003cc4                String::String(long, unsigned char)
+                0x0000000000002fce                String::toUpperCase()
+                0x00000000000033ac                String::operator>(String const&) const
+                0x0000000000003856                String::concat(int)
+ .text          0x00000000000040f8       0x38 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(new.o)
+                0x0000000000004124                operator new[](unsigned int)
+                0x000000000000411e                operator delete(void*)
+                0x0000000000004116                __cxa_pure_virtual
+                0x0000000000004118                operator delete[](void*)
+                0x000000000000410c                __cxa_guard_release
+                0x0000000000004114                __cxa_guard_abort
+                0x000000000000412a                operator new(unsigned int)
+                0x00000000000040f8                __cxa_guard_acquire
+ .text          0x0000000000004130      0x282 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring.o)
+                0x0000000000004130                __vector_23
+                0x00000000000042ee                init
+                0x00000000000041dc                micros
+                0x0000000000004228                delay
+                0x00000000000041c0                millis
+                0x00000000000042da                delayMicroseconds
+ .text          0x00000000000043b2      0x22c /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
+                0x000000000000457e                digitalRead
+                0x0000000000004518                digitalWrite
+                0x00000000000043b2                pinMode
+ .text          0x00000000000045de        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(realloc.o)
+ .text          0x00000000000045de        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_mulsi3.o)
+ .text          0x00000000000045de        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_udivmodsi4.o)
+ .text          0x00000000000045de        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_exit.o)
+ .text          0x00000000000045de        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clear_bss.o)
+ .text          0x00000000000045de        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_ctors.o)
+ .text          0x00000000000045de        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_dtors.o)
+ .text          0x00000000000045de       0x58 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_fixunssfsi.o)
+                0x00000000000045de                __fixunssfsi
+ .text          0x0000000000004636      0x354 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_addsub_sf.o)
+                0x00000000000048ce                __subsf3
+                0x0000000000004930                __addsf3
+ .text          0x000000000000498a      0x1f4 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_mul_sf.o)
+                0x000000000000498a                __mulsf3
+ .text          0x0000000000004b7e      0x158 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_div_sf.o)
+                0x0000000000004b7e                __divsf3
+ .text          0x0000000000004cd6       0x60 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_gt_sf.o)
+                0x0000000000004cd6                __gtsf2
+ .text          0x0000000000004d36       0x60 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_ge_sf.o)
+                0x0000000000004d36                __gesf2
+ .text          0x0000000000004d96       0x60 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_lt_sf.o)
+                0x0000000000004d96                __ltsf2
+ .text          0x0000000000004df6       0x60 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_le_sf.o)
+                0x0000000000004df6                __lesf2
+ .text          0x0000000000004e56       0x56 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_unord_sf.o)
+                0x0000000000004e56                __unordsf2
+ .text          0x0000000000004eac       0xbc /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_si_to_sf.o)
+                0x0000000000004eac                __floatsisf
+ .text          0x0000000000004f68       0xa8 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_sf_to_si.o)
+                0x0000000000004f68                __fixsfsi
+ .text          0x0000000000005010        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_thenan_sf.o)
+ .text          0x0000000000005010       0xf2 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_usi_to_sf.o)
+                0x0000000000005010                __floatunsisf
+ .text          0x0000000000005102        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_prologue.o)
+ .text          0x0000000000005102        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_epilogue.o)
+ .text          0x0000000000005102        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_tablejump.o)
+ .text          0x0000000000005102       0x9e /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clzsi2.o)
+                0x0000000000005102                __clzsi2
+ .text          0x00000000000051a0      0x1aa /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_pack_sf.o)
+                0x00000000000051a0                __pack_f
+ .text          0x000000000000534a       0xf0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_unpack_sf.o)
+                0x000000000000534a                __unpack_f
+ .text          0x000000000000543a       0xb2 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_fpcmp_parts_sf.o)
+                0x000000000000543a                __fpcmp_parts_f
+ .text          0x00000000000054ec        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clz.o)
+ .text          0x00000000000054ec       0x4e /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(atol.o)
+                0x00000000000054ec                atol
+ .text          0x000000000000553a        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(isspace.o)
+ .text          0x000000000000553a        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(tolower.o)
+ .text          0x000000000000553a        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(toupper.o)
+ .text          0x000000000000553a       0x12 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memcpy_P.o)
+                0x000000000000553a                memcpy_P
+ .text          0x000000000000554c       0x12 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memcpy.o)
+                0x000000000000554c                memcpy
+ .text          0x000000000000555e       0x24 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memmove.o)
+                0x000000000000555e                memmove
+ .text          0x0000000000005582       0x16 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcat.o)
+                0x0000000000005582                strcat
+ .text          0x0000000000005598       0x16 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strchr.o)
+                0x0000000000005598                strchr
+ .text          0x00000000000055ae       0x12 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcmp.o)
+                0x00000000000055ae                strcmp
+ .text          0x00000000000055c0        0xe /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcpy.o)
+                0x00000000000055c0                strcpy
+ .text          0x00000000000055ce       0x1c /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strncmp.o)
+                0x00000000000055ce                strncmp
+ .text          0x00000000000055ea       0x1e /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strncpy.o)
+                0x00000000000055ea                strncpy
+ .text          0x0000000000005608       0x16 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strrchr.o)
+                0x0000000000005608                strrchr
+ .text          0x000000000000561e       0x34 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strstr.o)
+                0x000000000000561e                strstr
+ .text          0x0000000000005652       0x42 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(itoa.o)
+                0x0000000000005652                itoa
+ .text          0x0000000000005694       0x68 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ltoa.o)
+                0x0000000000005694                ltoa
+ .text          0x00000000000056fc       0x2a /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(mulsi10.o)
+                0x00000000000056fc                __mulsi_const_10
+ .text          0x0000000000005726       0x4a /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ultoa.o)
+                0x0000000000005726                ultoa
+ .text          0x0000000000005770       0x2c /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(utoa.o)
+                0x0000000000005770                utoa
+ .text          0x000000000000579c       0x54 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(vsnprintf.o)
+                0x000000000000579c                vsnprintf
+ .text          0x00000000000057f0      0x3ba /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(vfprintf_std.o)
+                0x00000000000057f0                vfprintf
+ .text          0x0000000000005baa        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(cty_isfalse.o)
+ .text          0x0000000000005baa       0x16 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strnlen_P.o)
+                0x0000000000005baa                strnlen_P
+ .text          0x0000000000005bc0       0x16 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strnlen.o)
+                0x0000000000005bc0                strnlen
+ .text          0x0000000000005bd6       0x20 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strrev.o)
+                0x0000000000005bd6                strrev
+ .text          0x0000000000005bf6       0x58 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(fputc.o)
+                0x0000000000005bf6                fputc
+ .text          0x0000000000005c4e       0xbc /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ultoa_invert.o)
+                0x0000000000005c4e                __ultoa_invert
+ .text          0x0000000000005d0a        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_udivmodhi4.o)
+                0x0000000000005d0a                . = ALIGN (0x2)
  *(.text.*)
  .text.avr-libc
-                0x0000000000005aaa      0x26a /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
-                0x0000000000005aaa                malloc
-                0x0000000000005be4                free
+                0x0000000000005d0a      0x26a /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
+                0x0000000000005d0a                malloc
+                0x0000000000005e44                free
  .text.avr-libc
-                0x0000000000005d14      0x1c2 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(realloc.o)
-                0x0000000000005d14                realloc
- .text.libgcc   0x0000000000005ed6       0x3e /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_mulsi3.o)
-                0x0000000000005ed6                __mulsi3
- .text.libgcc   0x0000000000005f14       0x44 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_udivmodsi4.o)
-                0x0000000000005f14                __udivmodsi4
- .text.libgcc   0x0000000000005f58        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_exit.o)
- .text.libgcc   0x0000000000005f58        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clear_bss.o)
- .text.libgcc   0x0000000000005f58        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_ctors.o)
- .text.libgcc   0x0000000000005f58        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_dtors.o)
- .text.libgcc   0x0000000000005f58       0x38 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_prologue.o)
-                0x0000000000005f58                __prologue_saves__
- .text.libgcc   0x0000000000005f90       0x36 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_epilogue.o)
-                0x0000000000005f90                __epilogue_restores__
- .text.libgcc   0x0000000000005fc6        0xc /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_tablejump.o)
-                0x0000000000005fca                __tablejump__
-                0x0000000000005fc6                __tablejump2__
- .text.ctype    0x0000000000005fd2       0x10 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(isspace.o)
-                0x0000000000005fd2                isspace
- .text.ctype    0x0000000000005fe2       0x10 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(tolower.o)
-                0x0000000000005fe2                tolower
- .text.ctype    0x0000000000005ff2       0x10 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(toupper.o)
-                0x0000000000005ff2                toupper
- .text.ctype    0x0000000000006002        0x6 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(cty_isfalse.o)
-                0x0000000000006006                __ctype_istrue
-                0x0000000000006002                __ctype_isfalse
- .text.libgcc   0x0000000000006008       0x28 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_udivmodhi4.o)
-                0x0000000000006008                __udivmodhi4
-                0x0000000000006030                . = ALIGN (0x2)
+                0x0000000000005f74      0x1c2 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(realloc.o)
+                0x0000000000005f74                realloc
+ .text.libgcc   0x0000000000006136       0x3e /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_mulsi3.o)
+                0x0000000000006136                __mulsi3
+ .text.libgcc   0x0000000000006174       0x44 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_udivmodsi4.o)
+                0x0000000000006174                __udivmodsi4
+ .text.libgcc   0x00000000000061b8        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_exit.o)
+ .text.libgcc   0x00000000000061b8        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000000061b8        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_ctors.o)
+ .text.libgcc   0x00000000000061b8        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_dtors.o)
+ .text.libgcc   0x00000000000061b8       0x38 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_prologue.o)
+                0x00000000000061b8                __prologue_saves__
+ .text.libgcc   0x00000000000061f0       0x36 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_epilogue.o)
+                0x00000000000061f0                __epilogue_restores__
+ .text.libgcc   0x0000000000006226        0xc /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_tablejump.o)
+                0x000000000000622a                __tablejump__
+                0x0000000000006226                __tablejump2__
+ .text.ctype    0x0000000000006232       0x10 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(isspace.o)
+                0x0000000000006232                isspace
+ .text.ctype    0x0000000000006242       0x10 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(tolower.o)
+                0x0000000000006242                tolower
+ .text.ctype    0x0000000000006252       0x10 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(toupper.o)
+                0x0000000000006252                toupper
+ .text.ctype    0x0000000000006262        0x6 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(cty_isfalse.o)
+                0x0000000000006266                __ctype_istrue
+                0x0000000000006262                __ctype_isfalse
+ .text.libgcc   0x0000000000006268       0x28 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_udivmodhi4.o)
+                0x0000000000006268                __udivmodhi4
+                0x0000000000006290                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000000000006030        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_exit.o)
-                0x0000000000006030                exit
-                0x0000000000006030                _exit
+ .fini9         0x0000000000006290        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_exit.o)
+                0x0000000000006290                exit
+                0x0000000000006290                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
  *(.fini7)
  *(.fini7)
  *(.fini6)
- .fini6         0x0000000000006030       0x16 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_dtors.o)
-                0x0000000000006030                __do_global_dtors
+ .fini6         0x0000000000006290       0x16 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_dtors.o)
+                0x0000000000006290                __do_global_dtors
  *(.fini6)
  *(.fini5)
  *(.fini5)
@@ -846,11 +860,11 @@ LOAD /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000000000006046        0x4 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_exit.o)
+ .fini0         0x00000000000062a6        0x4 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_exit.o)
  *(.fini0)
-                0x000000000000604a                _etext = .
+                0x00000000000062aa                _etext = .
 
-.data           0x0000000000800200      0x206 load address 0x000000000000604a
+.data           0x0000000000800200      0x20e load address 0x00000000000062aa
                 0x0000000000800200                PROVIDE (__data_start, .)
  *(.data)
  .data          0x0000000000800200        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/crtm2560.o
@@ -867,203 +881,207 @@ LOAD /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.
                 0x000000000080028e                vtable for SerialCom
  .data          0x000000000080029c        0xc ./TC.o
                 0x000000000080029c                vtable for TC
- .data          0x00000000008002a8       0x17 ./main.o
-                0x00000000008002bd                ledPin
- .data          0x00000000008002bf       0x20 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
-                0x00000000008002bf                vtable for HardwareSerial
-                0x00000000008002cf                vtable for Stream
- .data          0x00000000008002df       0x16 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
-                0x00000000008002ed                vtable for Print
- .data          0x00000000008002f5        0x1 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Stream.o)
- .data          0x00000000008002f6        0x1 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(WString.o)
- .data          0x00000000008002f7        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(new.o)
- .data          0x00000000008002f7        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring.o)
- .data          0x00000000008002f7        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
- .data          0x00000000008002f7        0x6 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
-                0x00000000008002f9                __malloc_heap_start
-                0x00000000008002fb                __malloc_heap_end
-                0x00000000008002f7                __malloc_margin
- .data          0x00000000008002fd        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(realloc.o)
- .data          0x00000000008002fd        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_mulsi3.o)
- .data          0x00000000008002fd        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_udivmodsi4.o)
- .data          0x00000000008002fd        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_exit.o)
- .data          0x00000000008002fd        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clear_bss.o)
- .data          0x00000000008002fd        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_ctors.o)
- .data          0x00000000008002fd        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_dtors.o)
- .data          0x00000000008002fd        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_fixunssfsi.o)
- .data          0x00000000008002fd        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_addsub_sf.o)
- .data          0x00000000008002fd        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_mul_sf.o)
- .data          0x00000000008002fd        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_div_sf.o)
- .data          0x00000000008002fd        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_gt_sf.o)
- .data          0x00000000008002fd        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_ge_sf.o)
- .data          0x00000000008002fd        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_lt_sf.o)
- .data          0x00000000008002fd        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_le_sf.o)
- .data          0x00000000008002fd        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_unord_sf.o)
- .data          0x00000000008002fd        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_si_to_sf.o)
- .data          0x00000000008002fd        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_sf_to_si.o)
- .data          0x00000000008002fd        0x8 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_thenan_sf.o)
-                0x00000000008002fd                __thenan_sf
- .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_usi_to_sf.o)
- .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_prologue.o)
- .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_epilogue.o)
- .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_tablejump.o)
- .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clzsi2.o)
- .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_pack_sf.o)
- .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_unpack_sf.o)
- .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_fpcmp_parts_sf.o)
- .data          0x0000000000800305      0x100 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clz.o)
-                0x0000000000800305                __clz_tab
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(atol.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(isspace.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(tolower.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(toupper.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memcpy_P.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memcpy.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memmove.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcat.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strchr.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcmp.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcpy.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strncmp.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strncpy.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strrchr.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strstr.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(itoa.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ltoa.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(mulsi10.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ultoa.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(utoa.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(vsnprintf.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(vfprintf_std.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(cty_isfalse.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strnlen_P.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strnlen.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strrev.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(fputc.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ultoa_invert.o)
- .data          0x0000000000800405        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_udivmodhi4.o)
+ .data          0x00000000008002a8        0x8 ./TCProcessor.o
+                0x00000000008002a8                vtable for TCProcessor
+ .data          0x00000000008002b0       0x17 ./main.o
+                0x00000000008002c5                ledPin
+ .data          0x00000000008002c7        0x6 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
+                0x00000000008002c9                __malloc_heap_start
+                0x00000000008002cb                __malloc_heap_end
+                0x00000000008002c7                __malloc_margin
+ .data          0x00000000008002cd       0x20 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
+                0x00000000008002cd                vtable for HardwareSerial
+                0x00000000008002dd                vtable for Stream
+ .data          0x00000000008002ed       0x16 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
+                0x00000000008002fb                vtable for Print
+ .data          0x0000000000800303        0x1 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Stream.o)
+ .data          0x0000000000800304        0x1 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(WString.o)
+ .data          0x0000000000800305        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(new.o)
+ .data          0x0000000000800305        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring.o)
+ .data          0x0000000000800305        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
+ .data          0x0000000000800305        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(realloc.o)
+ .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_mulsi3.o)
+ .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_udivmodsi4.o)
+ .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_exit.o)
+ .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clear_bss.o)
+ .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_ctors.o)
+ .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_dtors.o)
+ .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_fixunssfsi.o)
+ .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_addsub_sf.o)
+ .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_mul_sf.o)
+ .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_div_sf.o)
+ .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_gt_sf.o)
+ .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_ge_sf.o)
+ .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_lt_sf.o)
+ .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_le_sf.o)
+ .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_unord_sf.o)
+ .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_si_to_sf.o)
+ .data          0x0000000000800305        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_sf_to_si.o)
+ .data          0x0000000000800305        0x8 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_thenan_sf.o)
+                0x0000000000800305                __thenan_sf
+ .data          0x000000000080030d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_usi_to_sf.o)
+ .data          0x000000000080030d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_prologue.o)
+ .data          0x000000000080030d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_epilogue.o)
+ .data          0x000000000080030d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_tablejump.o)
+ .data          0x000000000080030d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clzsi2.o)
+ .data          0x000000000080030d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_pack_sf.o)
+ .data          0x000000000080030d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_unpack_sf.o)
+ .data          0x000000000080030d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_fpcmp_parts_sf.o)
+ .data          0x000000000080030d      0x100 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clz.o)
+                0x000000000080030d                __clz_tab
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(atol.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(isspace.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(tolower.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(toupper.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memcpy_P.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memcpy.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memmove.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcat.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strchr.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcmp.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcpy.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strncmp.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strncpy.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strrchr.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strstr.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(itoa.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ltoa.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(mulsi10.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ultoa.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(utoa.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(vsnprintf.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(vfprintf_std.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(cty_isfalse.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strnlen_P.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strnlen.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strrev.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(fputc.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ultoa_invert.o)
+ .data          0x000000000080040d        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_udivmodhi4.o)
  *(.data*)
  *(.rodata)
  *(.rodata*)
  *(.gnu.linkonce.d*)
-                0x0000000000800406                . = ALIGN (0x2)
- *fill*         0x0000000000800405        0x1 00
-                0x0000000000800406                _edata = .
-                0x0000000000800406                PROVIDE (__data_end, .)
+                0x000000000080040e                . = ALIGN (0x2)
+ *fill*         0x000000000080040d        0x1 00
+                0x000000000080040e                _edata = .
+                0x000000000080040e                PROVIDE (__data_end, .)
 
-.bss            0x0000000000800406      0x30f load address 0x0000000000006250
-                0x0000000000800406                PROVIDE (__bss_start, .)
+.bss            0x000000000080040e      0x311 load address 0x00000000000064b8
+                0x000000000080040e                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x0000000000800406        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/crtm2560.o
- .bss           0x0000000000800406        0x0 ./lib/SipHash/HexConversionUtils.o
- .bss           0x0000000000800406       0x2c ./lib/SipHash/SipHash_2_4.o
-                0x0000000000800406                sipHash
- .bss           0x0000000000800432        0x0 ./lib/SipHash/siphash_2_4_asm.o
- .bss           0x0000000000800432        0x7 ./AbstractCommunication.o
-                0x0000000000800432                AbstractCommunication::DEFAULT_LOCATION
- .bss           0x0000000000800439        0x0 ./DigitalWriteTC.o
- .bss           0x0000000000800439        0x9 ./GlobalReceiver.o
- .bss           0x0000000000800442        0x0 ./SerialCom.o
- .bss           0x0000000000800442        0x0 ./TC.o
- .bss           0x0000000000800442       0x1d ./main.o
-                0x0000000000800442                com
-                0x0000000000800449                led13_ON
-                0x0000000000800454                led13_OFF
-                0x0000000000800445                glrcv
- .bss           0x000000000080045f      0x2a8 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
-                0x00000000008006a1                Serial1
-                0x00000000008004e7                rx_buffer1
-                0x00000000008006e5                Serial3
-                0x000000000080045f                rx_buffer
-                0x00000000008004a3                tx_buffer
-                0x00000000008005b3                tx_buffer2
-                0x000000000080067f                Serial
-                0x000000000080063b                tx_buffer3
-                0x000000000080056f                rx_buffer2
-                0x000000000080052b                tx_buffer1
-                0x00000000008005f7                rx_buffer3
-                0x00000000008006c3                Serial2
- .bss           0x0000000000800707        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
- .bss           0x0000000000800707        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Stream.o)
- .bss           0x0000000000800707        0x1 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(WString.o)
- .bss           0x0000000000800708        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(new.o)
- .bss           0x0000000000800708        0x9 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring.o)
-                0x0000000000800708                timer0_overflow_count
-                0x000000000080070c                timer0_millis
- .bss           0x0000000000800711        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
- .bss           0x0000000000800711        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
- .bss           0x0000000000800711        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(realloc.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_mulsi3.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_udivmodsi4.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_exit.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clear_bss.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_ctors.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_dtors.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_fixunssfsi.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_addsub_sf.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_mul_sf.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_div_sf.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_gt_sf.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_ge_sf.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_lt_sf.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_le_sf.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_unord_sf.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_si_to_sf.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_sf_to_si.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_thenan_sf.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_usi_to_sf.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_prologue.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_epilogue.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_tablejump.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clzsi2.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_pack_sf.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_unpack_sf.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_fpcmp_parts_sf.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clz.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(atol.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(isspace.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(tolower.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(toupper.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memcpy_P.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memcpy.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memmove.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcat.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strchr.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcmp.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcpy.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strncmp.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strncpy.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strrchr.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strstr.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(itoa.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ltoa.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(mulsi10.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ultoa.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(utoa.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(vsnprintf.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(vfprintf_std.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(cty_isfalse.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strnlen_P.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strnlen.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strrev.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(fputc.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ultoa_invert.o)
- .bss           0x0000000000800711        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_udivmodhi4.o)
+ .bss           0x000000000080040e        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/crtm2560.o
+ .bss           0x000000000080040e        0x0 ./lib/SipHash/HexConversionUtils.o
+ .bss           0x000000000080040e       0x2c ./lib/SipHash/SipHash_2_4.o
+                0x000000000080040e                sipHash
+ .bss           0x000000000080043a        0x0 ./lib/SipHash/siphash_2_4_asm.o
+ .bss           0x000000000080043a        0x7 ./AbstractCommunication.o
+                0x000000000080043a                AbstractCommunication::DEFAULT_LOCATION
+ .bss           0x0000000000800441        0x0 ./DigitalWriteTC.o
+ .bss           0x0000000000800441        0x9 ./GlobalReceiver.o
+ .bss           0x000000000080044a        0x0 ./SerialCom.o
+ .bss           0x000000000080044a        0x0 ./TC.o
+ .bss           0x000000000080044a        0x2 ./TCProcessor.o
+                0x000000000080044a                std::__malloc_alloc_template<0>::__malloc_alloc_oom_handler
+ .bss           0x000000000080044c       0x1d ./main.o
+                0x000000000080044c                com
+                0x0000000000800453                led13_ON
+                0x000000000080045e                led13_OFF
+                0x000000000080044f                glrcv
+ .bss           0x0000000000800469        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
+ .bss           0x0000000000800469      0x2a8 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
+                0x00000000008006ab                Serial1
+                0x00000000008004f1                rx_buffer1
+                0x00000000008006ef                Serial3
+                0x0000000000800469                rx_buffer
+                0x00000000008004ad                tx_buffer
+                0x00000000008005bd                tx_buffer2
+                0x0000000000800689                Serial
+                0x0000000000800645                tx_buffer3
+                0x0000000000800579                rx_buffer2
+                0x0000000000800535                tx_buffer1
+                0x0000000000800601                rx_buffer3
+                0x00000000008006cd                Serial2
+ .bss           0x0000000000800711        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
+ .bss           0x0000000000800711        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Stream.o)
+ .bss           0x0000000000800711        0x1 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(WString.o)
+ .bss           0x0000000000800712        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(new.o)
+ .bss           0x0000000000800712        0x9 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring.o)
+                0x0000000000800712                timer0_overflow_count
+                0x0000000000800716                timer0_millis
+ .bss           0x000000000080071b        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(realloc.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_mulsi3.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_udivmodsi4.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_exit.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clear_bss.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_ctors.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_dtors.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_fixunssfsi.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_addsub_sf.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_mul_sf.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_div_sf.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_gt_sf.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_ge_sf.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_lt_sf.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_le_sf.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_unord_sf.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_si_to_sf.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_sf_to_si.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_thenan_sf.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_usi_to_sf.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_prologue.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_epilogue.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_tablejump.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clzsi2.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_pack_sf.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_unpack_sf.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_fpcmp_parts_sf.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_clz.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(atol.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(isspace.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(tolower.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(toupper.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memcpy_P.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memcpy.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memmove.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcat.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strchr.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcmp.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcpy.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strncmp.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strncpy.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strrchr.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strstr.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(itoa.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ltoa.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(mulsi10.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ultoa.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(utoa.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(vsnprintf.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(vfprintf_std.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(cty_isfalse.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strnlen_P.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strnlen.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strrev.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(fputc.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(ultoa_invert.o)
+ .bss           0x000000000080071b        0x0 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_udivmodhi4.o)
  *(.bss*)
  *(COMMON)
- COMMON         0x0000000000800711        0x4 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
-                0x0000000000800711                __brkval
-                0x0000000000800713                __flp
-                0x0000000000800715                PROVIDE (__bss_end, .)
-                0x000000000000604a                __data_load_start = LOADADDR (.data)
-                0x0000000000006250                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x000000000080071b        0x4 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
+                0x000000000080071b                __brkval
+                0x000000000080071d                __flp
+                0x000000000080071f                PROVIDE (__bss_end, .)
+                0x00000000000062aa                __data_load_start = LOADADDR (.data)
+                0x00000000000064b8                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0000000000800715        0x0
-                0x0000000000800715                PROVIDE (__noinit_start, .)
+.noinit         0x000000000080071f        0x0
+                0x000000000080071f                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x0000000000800715                PROVIDE (__noinit_end, .)
-                0x0000000000800715                _end = .
-                0x0000000000800715                PROVIDE (__heap_start, .)
+                0x000000000080071f                PROVIDE (__noinit_end, .)
+                0x000000000080071f                _end = .
+                0x000000000080071f                PROVIDE (__heap_start, .)
 
 .eeprom         0x0000000000810000        0x0
  *(.eeprom*)
@@ -1356,15 +1374,27 @@ TC::TC()                                          ./TC.o
 TC::TC()                                          ./TC.o
 TC::clear_error()                                 ./TC.o
 TC::disable()                                     ./TC.o
+                                                  ./TCProcessor.o
 TC::enable()                                      ./TC.o
+                                                  ./TCProcessor.o
 TC::errno()                                       ./TC.o
 TC::exec()                                        ./TC.o
                                                   ./main.o
+                                                  ./TCProcessor.o
 TC::persist_errors(bool)                          ./TC.o
 TC::~TC()                                         ./TC.o
 TC::~TC()                                         ./TC.o
                                                   ./DigitalWriteTC.o
 TC::~TC()                                         ./TC.o
+TCProcessor::TCProcessor()                        ./TCProcessor.o
+TCProcessor::TCProcessor()                        ./TCProcessor.o
+TCProcessor::define_()                            ./TCProcessor.o
+TCProcessor::init()                               ./TCProcessor.o
+TCProcessor::perform(TCProcessor::TC_ACTION, int) ./TCProcessor.o
+TCProcessor::processRecv(String)                  ./TCProcessor.o
+TCProcessor::~TCProcessor()                       ./TCProcessor.o
+TCProcessor::~TCProcessor()                       ./TCProcessor.o
+TCProcessor::~TCProcessor()                       ./TCProcessor.o
 __addsf3                                          /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_addsub_sf.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
 __bad_interrupt                                   /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/crtm2560.o
@@ -1418,7 +1448,6 @@ __do_clear_bss                                    /home/chris/Software/arduino-1
                                                   /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_addsub_sf.o)
                                                   /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_fixunssfsi.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(realloc.o)
-                                                  /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(new.o)
@@ -1426,7 +1455,9 @@ __do_clear_bss                                    /home/chris/Software/arduino-1
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Stream.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
+                                                  /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
                                                   ./main.o
+                                                  ./TCProcessor.o
                                                   ./TC.o
                                                   ./SerialCom.o
                                                   ./GlobalReceiver.o
@@ -1457,7 +1488,6 @@ __do_copy_data                                    /home/chris/Software/arduino-1
                                                   /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_addsub_sf.o)
                                                   /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_fixunssfsi.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(realloc.o)
-                                                  /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(new.o)
@@ -1465,7 +1495,9 @@ __do_copy_data                                    /home/chris/Software/arduino-1
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Stream.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
+                                                  /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
                                                   ./main.o
+                                                  ./TCProcessor.o
                                                   ./TC.o
                                                   ./SerialCom.o
                                                   ./GlobalReceiver.o
@@ -1679,6 +1711,7 @@ digital_pin_to_bit_mask_PGM                       /home/chris/Workspace/PlusPoni
 digital_pin_to_port_PGM                           /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
 digital_pin_to_timer_PGM                          /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
 exit                                              /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_exit.o)
+                                                  ./TCProcessor.o
                                                   /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/crtm2560.o
 fputc                                             /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(fputc.o)
                                                   /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(vfprintf_std.o)
@@ -1686,6 +1719,7 @@ free                                              /home/chris/Workspace/PlusPoni
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(realloc.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(new.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(WString.o)
+                                                  ./TCProcessor.o
 glrcv                                             ./main.o
 hexToAscii                                        ./lib/SipHash/HexConversionUtils.o
 init                                              /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring.o)
@@ -1705,6 +1739,7 @@ main                                              ./main.o
 malloc                                            /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(realloc.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(new.o)
+                                                  ./TCProcessor.o
 memcpy                                            /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memcpy.o)
                                                   /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(memmove.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(realloc.o)
@@ -1718,6 +1753,7 @@ millis                                            /home/chris/Workspace/PlusPoni
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Stream.o)
 mov64                                             ./lib/SipHash/siphash_2_4_asm.o
 operator delete(void*)                            /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(new.o)
+                                                  ./TCProcessor.o
                                                   ./TC.o
                                                   ./SerialCom.o
                                                   ./GlobalReceiver.o
@@ -1725,7 +1761,7 @@ operator delete(void*)                            /home/chris/Workspace/PlusPoni
                                                   ./AbstractCommunication.o
 operator delete[](void*)                          /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(new.o)
 operator new(unsigned int)                        /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(new.o)
-operator new(unsigned int, void*)                 ./main.o
+operator new(unsigned int, void*)                 ./TCProcessor.o
 operator new[](unsigned int)                      /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(new.o)
 operator+(StringSumHelper const&, String const&)  /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(WString.o)
                                                   ./AbstractCommunication.o
@@ -1770,6 +1806,10 @@ serialEvent3()                                    /home/chris/Workspace/PlusPoni
 serialEventRun()                                  /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
 setup                                             ./main.o
 sipHash                                           ./lib/SipHash/SipHash_2_4.o
+std::_Rb_tree<int, std::pair<int const, TC*>, std::_Select1st<std::pair<int const, TC*> >, std::less<int>, std::allocator<TC*> >::_M_erase(std::_Rb_tree_node<std::pair<int const, TC*> >*) ./TCProcessor.o
+std::__malloc_alloc_template<0>::__malloc_alloc_oom_handler ./TCProcessor.o
+std::map<int, TC*, std::less<int>, std::allocator<TC*> >::map() ./TCProcessor.o
+std::map<int, TC*, std::less<int>, std::allocator<TC*> >::~map() ./TCProcessor.o
 strcat                                            /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcat.o)
                                                   ./GlobalReceiver.o
 strchr                                            /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strchr.o)
@@ -1821,6 +1861,7 @@ vtable for Print                                  /home/chris/Workspace/PlusPoni
 vtable for SerialCom                              ./SerialCom.o
 vtable for Stream                                 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
 vtable for TC                                     ./TC.o
+vtable for TCProcessor                            ./TCProcessor.o
 xor64                                             ./lib/SipHash/siphash_2_4_asm.o
                                                   ./lib/SipHash/SipHash_2_4.o
 xor_ff                                            ./lib/SipHash/siphash_2_4_asm.o
