@@ -6,6 +6,7 @@
 CPP_SRCS += \
 ../AbstractCommunication.cpp \
 ../AbstractTC.cpp \
+../AbstractTM.cpp \
 ../GlobalReceiver.cpp \
 ../LogicTC.cpp \
 ../SerialCom.cpp \
@@ -15,6 +16,7 @@ CPP_SRCS += \
 OBJS += \
 ./AbstractCommunication.o \
 ./AbstractTC.o \
+./AbstractTM.o \
 ./GlobalReceiver.o \
 ./LogicTC.o \
 ./SerialCom.o \
@@ -24,6 +26,7 @@ OBJS += \
 CPP_DEPS += \
 ./AbstractCommunication.d \
 ./AbstractTC.d \
+./AbstractTM.d \
 ./GlobalReceiver.d \
 ./LogicTC.d \
 ./SerialCom.d \

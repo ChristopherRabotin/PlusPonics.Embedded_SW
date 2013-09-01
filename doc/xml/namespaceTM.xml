@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="namespaceTM" kind="namespace">
+    <compoundname>TM</compoundname>
+    <innerclass refid="classTM_1_1AbstractTM" prot="public">TM::AbstractTM</innerclass>
+    <briefdescription>
+<para>This namespace includes everything related to telemetry, up until it is to be reported. The reporting of the telemetry is handled by the <ref refid="namespaceProcessors" kindref="compound">Processors</ref> namespace. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.cpp" line="10"/>
+  </compounddef>
+</doxygen>

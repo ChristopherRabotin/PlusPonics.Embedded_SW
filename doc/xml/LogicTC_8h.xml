@@ -2,110 +2,111 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
   <compounddef id="LogicTC_8h" kind="file">
     <compoundname>LogicTC.h</compoundname>
-    <includes refid="TC_8h" local="yes">TC.h</includes>
+    <includes refid="AbstractTC_8h" local="yes">AbstractTC.h</includes>
     <includes local="no">Arduino.h</includes>
     <includedby refid="TCProcessor_8h" local="yes">TCProcessor.h</includedby>
     <includedby refid="LogicTC_8cpp" local="yes">LogicTC.cpp</includedby>
     <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
     <incdepgraph>
-      <node id="192">
+      <node id="219">
         <label>stdint.h</label>
       </node>
-      <node id="191">
-        <label>TC.h</label>
-        <link refid="TC_8h"/>
-        <childnode refid="192" relation="include">
-        </childnode>
-      </node>
-      <node id="193">
+      <node id="220">
         <label>Arduino.h</label>
       </node>
-      <node id="190">
+      <node id="218">
+        <label>AbstractTC.h</label>
+        <link refid="AbstractTC_8h"/>
+        <childnode refid="219" relation="include">
+        </childnode>
+      </node>
+      <node id="217">
         <label>LogicTC.h</label>
         <link refid="LogicTC.h"/>
-        <childnode refid="191" relation="include">
+        <childnode refid="218" relation="include">
         </childnode>
-        <childnode refid="193" relation="include">
+        <childnode refid="220" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="199">
+      <node id="226">
         <label>TCProcessor.cpp</label>
         <link refid="TCProcessor_8cpp"/>
       </node>
-      <node id="197">
+      <node id="224">
         <label>GlobalReceiver.cpp</label>
         <link refid="GlobalReceiver_8cpp"/>
       </node>
-      <node id="195">
+      <node id="222">
         <label>TCProcessor.h</label>
         <link refid="TCProcessor_8h"/>
-        <childnode refid="196" relation="include">
+        <childnode refid="223" relation="include">
         </childnode>
-        <childnode refid="198" relation="include">
+        <childnode refid="225" relation="include">
         </childnode>
-        <childnode refid="199" relation="include">
+        <childnode refid="226" relation="include">
         </childnode>
       </node>
-      <node id="200">
+      <node id="227">
         <label>LogicTC.cpp</label>
         <link refid="LogicTC_8cpp"/>
       </node>
-      <node id="196">
+      <node id="223">
         <label>GlobalReceiver.h</label>
         <link refid="GlobalReceiver_8h"/>
-        <childnode refid="197" relation="include">
+        <childnode refid="224" relation="include">
         </childnode>
-        <childnode refid="198" relation="include">
+        <childnode refid="225" relation="include">
         </childnode>
       </node>
-      <node id="198">
+      <node id="225">
         <label>main.cpp</label>
         <link refid="main_8cpp"/>
       </node>
-      <node id="194">
+      <node id="221">
         <label>LogicTC.h</label>
         <link refid="LogicTC.h"/>
-        <childnode refid="195" relation="include">
+        <childnode refid="222" relation="include">
         </childnode>
-        <childnode refid="200" relation="include">
+        <childnode refid="227" relation="include">
         </childnode>
-        <childnode refid="198" relation="include">
+        <childnode refid="225" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
-    <innerclass refid="classLogicTC" prot="public">LogicTC</innerclass>
+    <innerclass refid="classTC_1_1LogicTC" prot="public">TC::LogicTC</innerclass>
+    <innernamespace refid="namespaceTC">TC</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>DigitalWriteTC.h</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>LogicTC.h</highlight></codeline>
 <codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Aug<sp/>31,<sp/>2013</highlight></codeline>
 <codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>chris</highlight></codeline>
 <codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DIGITALWRITETC_H_</highlight></codeline>
-<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DIGITALWRITETC_H_</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LogicTC_H_</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LogicTC_H_</highlight></codeline>
 <codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="TC_8h" kindref="compound">TC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="AbstractTC_8h" kindref="compound">AbstractTC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19" refid="classLogicTC" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLogicTC" kindref="compound">LogicTC</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classTC" kindref="compound" tooltip="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">TC<sp/>{</highlight></codeline>
+<codeline lineno="19" refid="classTC_1_1LogicTC" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTC_1_1LogicTC" kindref="compound" tooltip="This class enables digital writing to a given output pin with the given output value.">LogicTC</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classTC_1_1AbstractTC" kindref="compound" tooltip="This class defines a telecommand. It is high level and must be overwritten by low level classes...">AbstractTC</ref><sp/>{</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLogicTC_1ab2ddb23a9a508fc45d021e3f7e1d0736" kindref="member" tooltip="Specify in the constructor both the output pin and the output value.">LogicTC</ref>(uint8_t<sp/>outputPin,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classLogicTC_1ab02d2ebc69f023331d35147f0465c4df" kindref="member">~LogicTC</ref>();</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLogicTC_1a99bf3c13fa50ffa8aa3cdfa397e8375a" kindref="member" tooltip="The init function sets up everything for this TC to be operational. It must be called from the setup ...">init</ref>();</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLogicTC_1ad90a1bc2c83593f296292bf9ccc37d79" kindref="member" tooltip="This function will execute this TC.">exec_impl_</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1_1LogicTC_1a71dce734cca42a961080bf4d55585197" kindref="member" tooltip="Specify in the constructor both the output pin and the output value.">LogicTC</ref>(uint8_t<sp/>outputPin,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classTC_1_1LogicTC_1a828832e629ee875ab502f37f67a86282" kindref="member">~LogicTC</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1_1LogicTC_1a634c0175676e6ea5d5052911953e9bf8" kindref="member" tooltip="The init function sets up everything for this TC to be operational. It must be called from the setup ...">init</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1_1LogicTC_1a2016a5584c2d2d160a4f14236b03a5ad" kindref="member" tooltip="This function will execute this TC.">exec_impl_</ref>();</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="32" refid="classLogicTC_1ad4ecb293e7e75bc77e49c491bacea532" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classLogicTC_1ad4ecb293e7e75bc77e49c491bacea532" kindref="member">_outputPin</ref>;</highlight></codeline>
-<codeline lineno="33" refid="classLogicTC_1a59bd4dc2ca0fa5afab56d8cac575a1e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classLogicTC_1a59bd4dc2ca0fa5afab56d8cac575a1e9" kindref="member">_outputValue</ref>;</highlight></codeline>
+<codeline lineno="32" refid="classTC_1_1LogicTC_1a728598e822ad66bc18ed72c3ca21becb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classTC_1_1LogicTC_1a728598e822ad66bc18ed72c3ca21becb" kindref="member">_outputPin</ref>;</highlight></codeline>
+<codeline lineno="33" refid="classTC_1_1LogicTC_1a42fb73ee06271a3b2da792c6f9a91797" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classTC_1_1LogicTC_1a42fb73ee06271a3b2da792c6f9a91797" kindref="member">_outputValue</ref>;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DIGITALWRITETC_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LogicTC_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/LogicTC.h"/>
   </compounddef>

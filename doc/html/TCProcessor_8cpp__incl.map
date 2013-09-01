@@ -1,5 +1,5 @@
 <map id="TCProcessor.cpp" name="TCProcessor.cpp">
-<area shape="rect" id="node3" href="$TCProcessor_8h.html" title="TCProcessor.h" alt="" coords="108,80,223,107"/>
-<area shape="rect" id="node5" href="$TC_8h.html" title="TC.h" alt="" coords="10,229,61,256"/>
-<area shape="rect" id="node9" href="$LogicTC_8h.html" title="LogicTC.h" alt="" coords="73,155,159,181"/>
+<area shape="rect" id="node3" href="$TCProcessor_8h.html" title="TCProcessor.h" alt="" coords="127,80,241,107"/>
+<area shape="rect" id="node5" href="$AbstractTC_8h.html" title="AbstractTC.h" alt="" coords="5,229,104,256"/>
+<area shape="rect" id="node9" href="$LogicTC_8h.html" title="LogicTC.h" alt="" coords="92,155,177,181"/>
 </map>

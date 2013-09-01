@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classProcessors_1_1TCProcessor" kind="class" prot="public">
+    <compoundname>Processors::TCProcessor</compoundname>
+    <includes refid="TCProcessor_8h" local="no">TCProcessor.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1" prot="public" static="no">
+        <name>TC_ACTION</name>
+        <enumvalue id="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a29c9fbbe7187c3765aaae054cc9f057a" prot="public">
+          <name>EXECUTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>this executes the given <ref refid="namespaceTC" kindref="compound">TC</ref> </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a5e98c261faced68f10c8f1f0b448b2e4" prot="public">
+          <name>ENABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>this enables the given <ref refid="namespaceTC" kindref="compound">TC</ref> </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a2bdc4e377bc077379bf01efbf9c521ce" prot="public">
+          <name>DISABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>this disables the given <ref refid="namespaceTC" kindref="compound">TC</ref> </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines different actions available for commands. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" line="36" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="enum" id="classProcessors_1_1TCProcessor_1a86331905151031bde80ab514155e8d1f" prot="public" static="no">
+        <name>ERROR_STATE</name>
+        <enumvalue id="classProcessors_1_1TCProcessor_1a86331905151031bde80ab514155e8d1fa0573c5ba28fe8be5e533c58cf6e1702c" prot="public">
+          <name>NO_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>nominal state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classProcessors_1_1TCProcessor_1a86331905151031bde80ab514155e8d1fa7abc31b33cab689c2aa93a08b8e71a8b" prot="public">
+          <name>INVALID_OPCODE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>if attempting to perform an action on an invalid OPCODE </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classProcessors_1_1TCProcessor_1a86331905151031bde80ab514155e8d1fa272427c4df7818e418d3bc83685b15f4" prot="public">
+          <name>INVALID_ACTION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>if attempting to perform an action which is not defined </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>defines all the error states the <ref refid="namespaceTC" kindref="compound">TC</ref> Processor can report. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" line="45" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" bodystart="45" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classProcessors_1_1TCProcessor_1acaa3f4d082a9ca8d53302acfc56affd2" prot="private" static="no" mutable="no">
+        <type>std::map&lt; uint8_t, <ref refid="classTC_1_1AbstractTC" kindref="compound">TC::AbstractTC</ref> * &gt;</type>
+        <definition>std::map&lt;uint8_t, TC::AbstractTC*&gt; Processors::TCProcessor::_opcode_TC_map</definition>
+        <argsstring></argsstring>
+        <name>_opcode_TC_map</name>
+        <briefdescription>
+<para>This is the correspondence list between OPCODE and <ref refid="namespaceTC" kindref="compound">TC</ref> object. Here will be fetched and added all the TCs. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Due to the definition of this map, there is a maximum of 256 TCs available. Setting this maximum allows faster <ref refid="namespaceTC" kindref="compound">TC</ref> fetching. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" line="87" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" bodystart="87" bodyend="-1"/>
+        <referencedby refid="classProcessors_1_1TCProcessor_1add0cb2a51c0d96eedafef8fe9935efd7" compoundref="TCProcessor_8cpp" startline="68" endline="71">definitions_</referencedby>
+        <referencedby refid="classProcessors_1_1TCProcessor_1abed11b68a69058b6b7f18ec394ca4542" compoundref="TCProcessor_8cpp" startline="46" endline="63">perform</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classProcessors_1_1TCProcessor_1a4c3aea7e4239a6d010670a9b40bc9830" prot="private" static="no" mutable="no">
+        <type><ref refid="classProcessors_1_1TCProcessor_1a86331905151031bde80ab514155e8d1f" kindref="member">ERROR_STATE</ref></type>
+        <definition>ERROR_STATE Processors::TCProcessor::_error</definition>
+        <argsstring></argsstring>
+        <name>_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" line="89" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="classProcessors_1_1TCProcessor_1abed11b68a69058b6b7f18ec394ca4542" compoundref="TCProcessor_8cpp" startline="46" endline="63">perform</referencedby>
+        <referencedby refid="classProcessors_1_1TCProcessor_1a0ac3bca062aa5da326df5ac1949324e0" compoundref="TCProcessor_8cpp" startline="18" endline="44">processRecv</referencedby>
+        <referencedby refid="classProcessors_1_1TCProcessor_1a3fd668e78f8fbfb46794ad15a9cc5b0f" compoundref="TCProcessor_8cpp" startline="10" endline="12">TCProcessor</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classProcessors_1_1TCProcessor_1a3fd668e78f8fbfb46794ad15a9cc5b0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Processors::TCProcessor::TCProcessor</definition>
+        <argsstring>()</argsstring>
+        <name>TCProcessor</name>
+        <briefdescription>
+<para>The constructor only initializes private attributes of this class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" line="26" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.cpp" bodystart="10" bodyend="12"/>
+        <references refid="classProcessors_1_1TCProcessor_1a4c3aea7e4239a6d010670a9b40bc9830" compoundref="TCProcessor_8h" startline="89">_error</references>
+        <references refid="classProcessors_1_1TCProcessor_1a86331905151031bde80ab514155e8d1fa0573c5ba28fe8be5e533c58cf6e1702c" compoundref="TCProcessor_8h" startline="46">NO_ERROR</references>
+      </memberdef>
+      <memberdef kind="function" id="classProcessors_1_1TCProcessor_1a217096fa67d5a2bfe94aa256086545ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Processors::TCProcessor::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+<para>The init function will call &apos;init&apos; on all the telecommands of this class. This function must be called from the setup function in the main. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" line="31" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.cpp" bodystart="14" bodyend="16"/>
+        <references refid="classProcessors_1_1TCProcessor_1add0cb2a51c0d96eedafef8fe9935efd7" compoundref="TCProcessor_8cpp" startline="68" endline="71">definitions_</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="27" endline="36">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classProcessors_1_1TCProcessor_1a0ac3bca062aa5da326df5ac1949324e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Processors::TCProcessor::processRecv</definition>
+        <argsstring>(String payload)</argsstring>
+        <name>processRecv</name>
+        <param>
+          <type>String</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+<para>This function processes the input string which contains the OPCODE to concerned along with the action to take. This function will set the internal error variable accordingly, if there is an error of course. This function calls the process function which manages command execution, enabling, disabling, etc. The payload must be formatted as follows (in chars): xxxy where <bold>x</bold> is the OPCODE on 3 chars and <bold>y</bold> is the action on 1 char. The action is one of the following: </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem>
+<para><bold>1</bold>: execute</para></listitem>
+<listitem>
+<para><bold>3</bold>: enable</para></listitem>
+<listitem>
+<para><bold>5</bold>: disable</para></listitem>
+</itemizedlist>
+For example, to EXECUTE OPCODE 15, this function must receive <computeroutput>0151</computeroutput>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input passed on by the <ref refid="classProcessors_1_1GlobalReceiver" kindref="compound">GlobalReceiver</ref> in order to process the desired command. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" line="63" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.cpp" bodystart="18" bodyend="44"/>
+        <references refid="classProcessors_1_1TCProcessor_1a4c3aea7e4239a6d010670a9b40bc9830" compoundref="TCProcessor_8h" startline="89">_error</references>
+        <references refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a2bdc4e377bc077379bf01efbf9c521ce" compoundref="TCProcessor_8h" startline="39">DISABLE</references>
+        <references refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a5e98c261faced68f10c8f1f0b448b2e4" compoundref="TCProcessor_8h" startline="38">ENABLE</references>
+        <references refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a29c9fbbe7187c3765aaae054cc9f057a" compoundref="TCProcessor_8h" startline="37">EXECUTE</references>
+        <references refid="classProcessors_1_1TCProcessor_1a86331905151031bde80ab514155e8d1fa272427c4df7818e418d3bc83685b15f4" compoundref="TCProcessor_8h" startline="48">INVALID_ACTION</references>
+        <references refid="classProcessors_1_1TCProcessor_1a86331905151031bde80ab514155e8d1fa7abc31b33cab689c2aa93a08b8e71a8b" compoundref="TCProcessor_8h" startline="47">INVALID_OPCODE</references>
+        <references refid="classProcessors_1_1TCProcessor_1abed11b68a69058b6b7f18ec394ca4542" compoundref="TCProcessor_8cpp" startline="46" endline="63">perform</references>
+        <referencedby refid="classProcessors_1_1GlobalReceiver_1a0f3f336ac7a9c7d2024490961694248c" compoundref="GlobalReceiver_8cpp" startline="27" endline="49">Processors::GlobalReceiver::process</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classProcessors_1_1TCProcessor_1abed11b68a69058b6b7f18ec394ca4542" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Processors::TCProcessor::perform</definition>
+        <argsstring>(TC_ACTION action, uint8_t opcode)</argsstring>
+        <name>perform</name>
+        <param>
+          <type><ref refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1" kindref="member">TC_ACTION</ref></type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>opcode</declname>
+        </param>
+        <briefdescription>
+<para>This function will perform the given action on the given opcode. The internal error variable will reflect whether the OPCODE is valid. Due to the limiting actions exposed by TC_ACTION, there is no need to check for the validity of the action. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" line="72" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.cpp" bodystart="46" bodyend="63"/>
+        <references refid="classProcessors_1_1TCProcessor_1a4c3aea7e4239a6d010670a9b40bc9830" compoundref="TCProcessor_8h" startline="89">_error</references>
+        <references refid="classProcessors_1_1TCProcessor_1acaa3f4d082a9ca8d53302acfc56affd2" compoundref="TCProcessor_8h" startline="87">_opcode_TC_map</references>
+        <references refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a2bdc4e377bc077379bf01efbf9c521ce" compoundref="TCProcessor_8h" startline="39">DISABLE</references>
+        <references refid="classTC_1_1AbstractTC_1a3c27a4cf59011e0c2ecd39898645f298" compoundref="AbstractTC_8cpp" startline="28" endline="34">TC::AbstractTC::disable</references>
+        <references refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a5e98c261faced68f10c8f1f0b448b2e4" compoundref="TCProcessor_8h" startline="38">ENABLE</references>
+        <references refid="classTC_1_1AbstractTC_1a7e1389c4cd810758e1e1ab8cc4451cf1" compoundref="AbstractTC_8cpp" startline="20" endline="26">TC::AbstractTC::enable</references>
+        <references refid="classTC_1_1AbstractTC_1a0c7c211d4ff52948d7d1d8803d7b93fb" compoundref="AbstractTC_8cpp" startline="36" endline="43">TC::AbstractTC::exec</references>
+        <references refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a29c9fbbe7187c3765aaae054cc9f057a" compoundref="TCProcessor_8h" startline="37">EXECUTE</references>
+        <references refid="classProcessors_1_1TCProcessor_1a86331905151031bde80ab514155e8d1fa7abc31b33cab689c2aa93a08b8e71a8b" compoundref="TCProcessor_8h" startline="47">INVALID_OPCODE</references>
+        <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="50" endline="61">main</referencedby>
+        <referencedby refid="classProcessors_1_1TCProcessor_1a0ac3bca062aa5da326df5ac1949324e0" compoundref="TCProcessor_8cpp" startline="18" endline="44">processRecv</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classProcessors_1_1TCProcessor_1ab32564eee3d2b134f07fea944989e2a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Processors::TCProcessor::~TCProcessor</definition>
+        <argsstring>()</argsstring>
+        <name>~TCProcessor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" line="74" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.cpp" bodystart="65" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classProcessors_1_1TCProcessor_1add0cb2a51c0d96eedafef8fe9935efd7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Processors::TCProcessor::definitions_</definition>
+        <argsstring>()</argsstring>
+        <name>definitions_</name>
+        <briefdescription>
+<para>The definitions_ function will define all the TCs available. It is called from the constructor and it populates the map. This is where the correspondence between the OPCODE and the given <ref refid="namespaceTC" kindref="compound">TC</ref> is done. Note that this also where the Start of Service tool output should be place (for <ref refid="namespaceTC" kindref="compound">TC</ref> generation). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" line="82" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.cpp" bodystart="68" bodyend="71"/>
+        <references refid="classProcessors_1_1TCProcessor_1acaa3f4d082a9ca8d53302acfc56affd2" compoundref="TCProcessor_8h" startline="87">_opcode_TC_map</references>
+        <referencedby refid="classProcessors_1_1TCProcessor_1a217096fa67d5a2bfe94aa256086545ea" compoundref="TCProcessor_8cpp" startline="14" endline="16">init</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class manages all the telecommands in a std::map . It is also called by <ref refid="classProcessors_1_1GlobalReceiver" kindref="compound">GlobalReceiver</ref> upon receiving commanding instruction. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" line="21" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" bodystart="21" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classProcessors_1_1TCProcessor_1a4c3aea7e4239a6d010670a9b40bc9830" prot="private" virt="non-virtual"><scope>Processors::TCProcessor</scope><name>_error</name></member>
+      <member refid="classProcessors_1_1TCProcessor_1acaa3f4d082a9ca8d53302acfc56affd2" prot="private" virt="non-virtual"><scope>Processors::TCProcessor</scope><name>_opcode_TC_map</name></member>
+      <member refid="classProcessors_1_1TCProcessor_1add0cb2a51c0d96eedafef8fe9935efd7" prot="private" virt="non-virtual"><scope>Processors::TCProcessor</scope><name>definitions_</name></member>
+      <member refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a2bdc4e377bc077379bf01efbf9c521ce" prot="public" virt="non-virtual"><scope>Processors::TCProcessor</scope><name>DISABLE</name></member>
+      <member refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a5e98c261faced68f10c8f1f0b448b2e4" prot="public" virt="non-virtual"><scope>Processors::TCProcessor</scope><name>ENABLE</name></member>
+      <member refid="classProcessors_1_1TCProcessor_1a86331905151031bde80ab514155e8d1f" prot="public" virt="non-virtual"><scope>Processors::TCProcessor</scope><name>ERROR_STATE</name></member>
+      <member refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a29c9fbbe7187c3765aaae054cc9f057a" prot="public" virt="non-virtual"><scope>Processors::TCProcessor</scope><name>EXECUTE</name></member>
+      <member refid="classProcessors_1_1TCProcessor_1a217096fa67d5a2bfe94aa256086545ea" prot="public" virt="non-virtual"><scope>Processors::TCProcessor</scope><name>init</name></member>
+      <member refid="classProcessors_1_1TCProcessor_1a86331905151031bde80ab514155e8d1fa272427c4df7818e418d3bc83685b15f4" prot="public" virt="non-virtual"><scope>Processors::TCProcessor</scope><name>INVALID_ACTION</name></member>
+      <member refid="classProcessors_1_1TCProcessor_1a86331905151031bde80ab514155e8d1fa7abc31b33cab689c2aa93a08b8e71a8b" prot="public" virt="non-virtual"><scope>Processors::TCProcessor</scope><name>INVALID_OPCODE</name></member>
+      <member refid="classProcessors_1_1TCProcessor_1a86331905151031bde80ab514155e8d1fa0573c5ba28fe8be5e533c58cf6e1702c" prot="public" virt="non-virtual"><scope>Processors::TCProcessor</scope><name>NO_ERROR</name></member>
+      <member refid="classProcessors_1_1TCProcessor_1abed11b68a69058b6b7f18ec394ca4542" prot="public" virt="non-virtual"><scope>Processors::TCProcessor</scope><name>perform</name></member>
+      <member refid="classProcessors_1_1TCProcessor_1a0ac3bca062aa5da326df5ac1949324e0" prot="public" virt="non-virtual"><scope>Processors::TCProcessor</scope><name>processRecv</name></member>
+      <member refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1" prot="public" virt="non-virtual"><scope>Processors::TCProcessor</scope><name>TC_ACTION</name></member>
+      <member refid="classProcessors_1_1TCProcessor_1a3fd668e78f8fbfb46794ad15a9cc5b0f" prot="public" virt="non-virtual"><scope>Processors::TCProcessor</scope><name>TCProcessor</name></member>
+      <member refid="classProcessors_1_1TCProcessor_1ab32564eee3d2b134f07fea944989e2a4" prot="public" virt="virtual"><scope>Processors::TCProcessor</scope><name>~TCProcessor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

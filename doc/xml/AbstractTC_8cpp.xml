@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="AbstractTC_8cpp" kind="file">
+    <compoundname>AbstractTC.cpp</compoundname>
+    <includes refid="AbstractTC_8h" local="yes">AbstractTC.h</includes>
+    <incdepgraph>
+      <node id="163">
+        <label>stdint.h</label>
+      </node>
+      <node id="161">
+        <label>AbstractTC.cpp</label>
+        <link refid="AbstractTC.cpp"/>
+        <childnode refid="162" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>AbstractTC.h</label>
+        <link refid="AbstractTC_8h"/>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceTC">TC</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>AbstractTC.cpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Aug<sp/>25,<sp/>2013</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>chris</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="AbstractTC_8h" kindref="compound">AbstractTC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespaceTC" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">TC<sp/>{</highlight></codeline>
+<codeline lineno="10" refid="classTC_1_1AbstractTC_1a73f7ff965d294fd99cbb399cf12dd966" refkind="member"><highlight class="normal"><ref refid="classTC_1_1AbstractTC_1a73f7ff965d294fd99cbb399cf12dd966" kindref="member" tooltip="This creates the TC object. The OPCODE of this TC is only defined in the main when the TC is instanti...">AbstractTC::AbstractTC</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1_1AbstractTC_1ac4c4c8788446f1b72dd077bad6f67c3b" kindref="member">_enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1_1AbstractTC_1a0d32316d388fab15604a83c91e632d4b" kindref="member">_executions</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1_1AbstractTC_1a248e6e66c56e03425b4ae8ebe1da77b5" kindref="member">_persistent_error</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1_1AbstractTC_1a6372651a6d657e79ca616a6f7d34171d" kindref="member">_error</ref><sp/>=<sp/><ref refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba34fa69a6a7288fb465c5d83a0c202684" kindref="member">NO_ERROR</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classTC_1_1AbstractTC_1add9c73d16e03f939439e9ed1e3175e25" refkind="member"><highlight class="normal"><ref refid="classTC_1_1AbstractTC_1add9c73d16e03f939439e9ed1e3175e25" kindref="member">AbstractTC::~AbstractTC</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classTC_1_1AbstractTC_1a7e1389c4cd810758e1e1ab8cc4451cf1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1_1AbstractTC_1a7e1389c4cd810758e1e1ab8cc4451cf1" kindref="member" tooltip="This function will enable this TC.">AbstractTC::enable</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classTC_1_1AbstractTC_1ac4c4c8788446f1b72dd077bad6f67c3b" kindref="member">_enabled</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1_1AbstractTC_1ac4c4c8788446f1b72dd077bad6f67c3b" kindref="member">_enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1_1AbstractTC_1a6372651a6d657e79ca616a6f7d34171d" kindref="member">_error</ref><sp/>=<sp/><ref refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba020b9bf0023068971fe0fb64180fe388" kindref="member">WAS_ENABLED</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classTC_1_1AbstractTC_1a3c27a4cf59011e0c2ecd39898645f298" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1_1AbstractTC_1a3c27a4cf59011e0c2ecd39898645f298" kindref="member" tooltip="This function will disable this TC. A disabled TC cannot be executed.">AbstractTC::disable</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classTC_1_1AbstractTC_1ac4c4c8788446f1b72dd077bad6f67c3b" kindref="member">_enabled</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1_1AbstractTC_1ac4c4c8788446f1b72dd077bad6f67c3b" kindref="member">_enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1_1AbstractTC_1a6372651a6d657e79ca616a6f7d34171d" kindref="member">_error</ref><sp/>=<sp/><ref refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dbad5ec078f5ab0c4bd9c7bd12371033c6e" kindref="member">WAS_DISABLED</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classTC_1_1AbstractTC_1a0c7c211d4ff52948d7d1d8803d7b93fb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1_1AbstractTC_1a0c7c211d4ff52948d7d1d8803d7b93fb" kindref="member" tooltip="This function will execute of this TC. A TC can only be executed (for start and stop actions...">AbstractTC::exec</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classTC_1_1AbstractTC_1ac4c4c8788446f1b72dd077bad6f67c3b" kindref="member">_enabled</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1_1AbstractTC_1a0d32316d388fab15604a83c91e632d4b" kindref="member">_executions</ref>++;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1_1AbstractTC_1afd7a067b52b173c366998116b2d75c4a" kindref="member" tooltip="This function will execute this TC.">exec_impl_</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1_1AbstractTC_1a6372651a6d657e79ca616a6f7d34171d" kindref="member">_error</ref><sp/>=<sp/><ref refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba824a239cfc949e9cbe6ba044df3c9285" kindref="member">NOT_ENABLED</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classTC_1_1AbstractTC_1afc59e110004a34bb1b6c03f3b5746c0f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1_1AbstractTC_1afc59e110004a34bb1b6c03f3b5746c0f" kindref="member" tooltip="This function sets this TC to persist error (or not).">AbstractTC::persist_errors</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>persist)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1_1AbstractTC_1a248e6e66c56e03425b4ae8ebe1da77b5" kindref="member">_persistent_error</ref><sp/>=<sp/>persist;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classTC_1_1AbstractTC_1a81d55bcafc8bdabbe9a7aa3cfc9895f3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1_1AbstractTC_1a81d55bcafc8bdabbe9a7aa3cfc9895f3" kindref="member" tooltip="This function will clear the current error. If called when persistent error are set to false...">AbstractTC::clear_error</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classTC_1_1AbstractTC_1a248e6e66c56e03425b4ae8ebe1da77b5" kindref="member">_persistent_error</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1_1AbstractTC_1a6372651a6d657e79ca616a6f7d34171d" kindref="member">_error</ref><sp/>=<sp/><ref refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba34fa69a6a7288fb465c5d83a0c202684" kindref="member">NO_ERROR</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1_1AbstractTC_1a6372651a6d657e79ca616a6f7d34171d" kindref="member">_error</ref><sp/>=<sp/><ref refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba22117202be6a265b56947fcfeec4648f" kindref="member">WAS_NOT_PERSISTENT</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classTC_1_1AbstractTC_1ad1fdfeaa6094b9c6154dae9133c87b5e" refkind="member"><highlight class="normal"><ref refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1db" kindref="member">AbstractTC::ERROR_STATE</ref><sp/><ref refid="classTC_1_1AbstractTC_1ad1fdfeaa6094b9c6154dae9133c87b5e" kindref="member" tooltip="This function will return the current error of this TC.">AbstractTC::errno</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1db" kindref="member">AbstractTC::ERROR_STATE</ref><sp/>rtn<sp/>=<sp/><ref refid="classTC_1_1AbstractTC_1a6372651a6d657e79ca616a6f7d34171d" kindref="member">_error</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classTC_1_1AbstractTC_1a248e6e66c56e03425b4ae8ebe1da77b5" kindref="member">_persistent_error</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1_1AbstractTC_1a6372651a6d657e79ca616a6f7d34171d" kindref="member">_error</ref><sp/>=<sp/><ref refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba34fa69a6a7288fb465c5d83a0c202684" kindref="member">NO_ERROR</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(rtn);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.cpp"/>
+  </compounddef>
+</doxygen>

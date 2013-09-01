@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classCommunicators_1_1AbstractCommunication" kind="class" prot="public" abstract="yes">
+    <compoundname>Communicators::AbstractCommunication</compoundname>
+    <derivedcompoundref refid="classCommunicators_1_1SerialCom" prot="public" virt="non-virtual">Communicators::SerialCom</derivedcompoundref>
+    <includes refid="AbstractCommunication_8h" local="no">AbstractCommunication.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCommunicators_1_1AbstractCommunication_1af2bddffaa4a8608d5c0877fabd1386ca" prot="public" static="no">
+        <name>DEBUG_LEVEL</name>
+        <enumvalue id="classCommunicators_1_1AbstractCommunication_1af2bddffaa4a8608d5c0877fabd1386caa6e07131243800472e5c622445fef050a" prot="public">
+          <name>INFO</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>this is the info level </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCommunicators_1_1AbstractCommunication_1af2bddffaa4a8608d5c0877fabd1386caabcdf281ea34ddbd98eec25cdf13179ba" prot="public">
+          <name>WARN</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>this is the warning level </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCommunicators_1_1AbstractCommunication_1af2bddffaa4a8608d5c0877fabd1386caa6eabebdc77318f03bd6d03b5e817af87" prot="public">
+          <name>ERROR</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>this is the error level </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines different levels of debugging. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="51" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" bodystart="51" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classCommunicators_1_1AbstractCommunication_1af1284eec5c271fe22869ef42e24b8249" prot="private" static="yes" mutable="no">
+        <type>const String</type>
+        <definition>const String Communicators::AbstractCommunication::DEFAULT_LOCATION</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_LOCATION</name>
+        <initializer>= &quot;None&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="84" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="classCommunicators_1_1AbstractCommunication_1a05fdbe9f96b776547fdb5e287ac2eeb8" compoundref="AbstractCommunication_8cpp" startline="31" endline="33">error</referencedby>
+        <referencedby refid="classCommunicators_1_1AbstractCommunication_1afe1798d4be09f1e7c3d5e4c0494dd397" compoundref="AbstractCommunication_8cpp" startline="23" endline="25">info</referencedby>
+        <referencedby refid="classCommunicators_1_1AbstractCommunication_1ab89975d66b259644680e19bcaea064c5" compoundref="AbstractCommunication_8cpp" startline="27" endline="29">warn</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCommunicators_1_1AbstractCommunication_1a1dc847584e054be2ffb4c3aa3c311a9d" prot="private" static="no" mutable="no">
+        <type><ref refid="classCommunicators_1_1AbstractCommunication_1af2bddffaa4a8608d5c0877fabd1386ca" kindref="member">DEBUG_LEVEL</ref></type>
+        <definition>DEBUG_LEVEL Communicators::AbstractCommunication::lvl</definition>
+        <argsstring></argsstring>
+        <name>lvl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="85" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" bodystart="85" bodyend="-1"/>
+        <referencedby refid="classCommunicators_1_1AbstractCommunication_1a38293a3348adc4abf4c1df9a536f737f" compoundref="AbstractCommunication_8cpp" startline="14" endline="16">AbstractCommunication</referencedby>
+        <referencedby refid="classCommunicators_1_1AbstractCommunication_1a5f34c4c31c937a4f64812b283d10681d" compoundref="AbstractCommunication_8cpp" startline="47" endline="51">error</referencedby>
+        <referencedby refid="classCommunicators_1_1AbstractCommunication_1aeecd688c0c7bed4e312142ee62c540a8" compoundref="AbstractCommunication_8cpp" startline="35" endline="39">info</referencedby>
+        <referencedby refid="classCommunicators_1_1AbstractCommunication_1a360781ab654fe0b0da323a9f53365643" compoundref="AbstractCommunication_8cpp" startline="63" endline="65">setLevel</referencedby>
+        <referencedby refid="classCommunicators_1_1AbstractCommunication_1a85761d93a5b07a66d40a71ecfb6868a8" compoundref="AbstractCommunication_8cpp" startline="41" endline="45">warn</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCommunicators_1_1AbstractCommunication_1a38293a3348adc4abf4c1df9a536f737f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Communicators::AbstractCommunication::AbstractCommunication</definition>
+        <argsstring>()</argsstring>
+        <name>AbstractCommunication</name>
+        <briefdescription>
+<para>The constructor should initialize the communication with the control system. This includes everything needed prior to starting to communicate with the control system. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="26" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="14" bodyend="16"/>
+        <references refid="classCommunicators_1_1AbstractCommunication_1af2bddffaa4a8608d5c0877fabd1386caa6eabebdc77318f03bd6d03b5e817af87" compoundref="AbstractCommunication_8h" startline="54">ERROR</references>
+        <references refid="classCommunicators_1_1AbstractCommunication_1a1dc847584e054be2ffb4c3aa3c311a9d" compoundref="AbstractCommunication_8h" startline="85">lvl</references>
+      </memberdef>
+      <memberdef kind="function" id="classCommunicators_1_1AbstractCommunication_1afa98bee659ecf160a3ee7689cbfa74a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Communicators::AbstractCommunication::~AbstractCommunication</definition>
+        <argsstring>()</argsstring>
+        <name>~AbstractCommunication</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="27" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="18" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classCommunicators_1_1AbstractCommunication_1aae6894aa8788393086c4c4d3d36f7f9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Communicators::AbstractCommunication::init</definition>
+        <argsstring>()=0</argsstring>
+        <name>init</name>
+        <reimplementedby refid="classCommunicators_1_1SerialCom_1a914de6786e449c3a83f7f5764036d285">init</reimplementedby>
+        <briefdescription>
+<para>This function initializes the communication. It will be called from the setup function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classCommunicators_1_1AbstractCommunication_1a239ab6ea3f08e4adab1b2fd7413d9318" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Communicators::AbstractCommunication::send</definition>
+        <argsstring>(String payload)=0</argsstring>
+        <name>send</name>
+        <reimplementedby refid="classCommunicators_1_1SerialCom_1a0b03dfcf023d751398ae5535e3221e15">send</reimplementedby>
+        <param>
+          <type>String</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+<para>This function sends information through the communication pipe. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>this is string which represents the payload to be delivered. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="36"/>
+        <referencedby refid="classCommunicators_1_1AbstractCommunication_1a5f34c4c31c937a4f64812b283d10681d" compoundref="AbstractCommunication_8cpp" startline="47" endline="51">error</referencedby>
+        <referencedby refid="classCommunicators_1_1AbstractCommunication_1aeecd688c0c7bed4e312142ee62c540a8" compoundref="AbstractCommunication_8cpp" startline="35" endline="39">info</referencedby>
+        <referencedby refid="classCommunicators_1_1AbstractCommunication_1a415f90f6a4e815649806aedbb6ff5e3f" compoundref="AbstractCommunication_8cpp" startline="53" endline="61">sendf</referencedby>
+        <referencedby refid="classCommunicators_1_1AbstractCommunication_1a85761d93a5b07a66d40a71ecfb6868a8" compoundref="AbstractCommunication_8cpp" startline="41" endline="45">warn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCommunicators_1_1AbstractCommunication_1a5707e7e996f07104e0717d6fc53d7f4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>String</type>
+        <definition>virtual String Communicators::AbstractCommunication::recv</definition>
+        <argsstring>()=0</argsstring>
+        <name>recv</name>
+        <reimplementedby refid="classCommunicators_1_1SerialCom_1ad5805bc80800d48b760c83fef0f2ab13">recv</reimplementedby>
+        <briefdescription>
+<para>This function reads data from the pipe and returns this as a string. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a string representing the data received from the pipe. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="41"/>
+        <referencedby refid="classProcessors_1_1GlobalReceiver_1a0f3f336ac7a9c7d2024490961694248c" compoundref="GlobalReceiver_8cpp" startline="27" endline="49">Processors::GlobalReceiver::process</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCommunicators_1_1AbstractCommunication_1a415f90f6a4e815649806aedbb6ff5e3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Communicators::AbstractCommunication::sendf</definition>
+        <argsstring>(String payload,...)</argsstring>
+        <name>sendf</name>
+        <param>
+          <type>String</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>This function sends a formatted string through the communication pipe. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>this is the string to be formatted with the additional arguments. Works just like printf. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="47" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="53" bodyend="61"/>
+        <references refid="classCommunicators_1_1AbstractCommunication_1a239ab6ea3f08e4adab1b2fd7413d9318">send</references>
+        <referencedby refid="classProcessors_1_1GlobalReceiver_1a0f3f336ac7a9c7d2024490961694248c" compoundref="GlobalReceiver_8cpp" startline="27" endline="49">Processors::GlobalReceiver::process</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCommunicators_1_1AbstractCommunication_1afe1798d4be09f1e7c3d5e4c0494dd397" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Communicators::AbstractCommunication::info</definition>
+        <argsstring>(String msg)</argsstring>
+        <name>info</name>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="57" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="23" bodyend="25"/>
+        <references refid="classCommunicators_1_1AbstractCommunication_1af1284eec5c271fe22869ef42e24b8249" compoundref="AbstractCommunication_8h" startline="84">DEFAULT_LOCATION</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="27" endline="36">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCommunicators_1_1AbstractCommunication_1ab89975d66b259644680e19bcaea064c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Communicators::AbstractCommunication::warn</definition>
+        <argsstring>(String msg)</argsstring>
+        <name>warn</name>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="58" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="27" bodyend="29"/>
+        <references refid="classCommunicators_1_1AbstractCommunication_1af1284eec5c271fe22869ef42e24b8249" compoundref="AbstractCommunication_8h" startline="84">DEFAULT_LOCATION</references>
+      </memberdef>
+      <memberdef kind="function" id="classCommunicators_1_1AbstractCommunication_1a05fdbe9f96b776547fdb5e287ac2eeb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Communicators::AbstractCommunication::error</definition>
+        <argsstring>(String msg)</argsstring>
+        <name>error</name>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="59" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="31" bodyend="33"/>
+        <references refid="classCommunicators_1_1AbstractCommunication_1af1284eec5c271fe22869ef42e24b8249" compoundref="AbstractCommunication_8h" startline="84">DEFAULT_LOCATION</references>
+      </memberdef>
+      <memberdef kind="function" id="classCommunicators_1_1AbstractCommunication_1aeecd688c0c7bed4e312142ee62c540a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Communicators::AbstractCommunication::info</definition>
+        <argsstring>(String msg, String location)</argsstring>
+        <name>info</name>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>location</declname>
+        </param>
+        <briefdescription>
+<para>This function sends an informational debug message. The location parameter is optional. <ref refid="classCommunicators_1_1AbstractCommunication_1afe1798d4be09f1e7c3d5e4c0494dd397" kindref="member">info(String msg)</ref>;. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message to be sent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>location</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>location where this message was emitted </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="66" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="35" bodyend="39"/>
+        <references refid="classCommunicators_1_1AbstractCommunication_1af2bddffaa4a8608d5c0877fabd1386caa6e07131243800472e5c622445fef050a" compoundref="AbstractCommunication_8h" startline="52">INFO</references>
+        <references refid="classCommunicators_1_1AbstractCommunication_1a1dc847584e054be2ffb4c3aa3c311a9d" compoundref="AbstractCommunication_8h" startline="85">lvl</references>
+        <references refid="classCommunicators_1_1AbstractCommunication_1a239ab6ea3f08e4adab1b2fd7413d9318">send</references>
+      </memberdef>
+      <memberdef kind="function" id="classCommunicators_1_1AbstractCommunication_1a85761d93a5b07a66d40a71ecfb6868a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Communicators::AbstractCommunication::warn</definition>
+        <argsstring>(String msg, String location)</argsstring>
+        <name>warn</name>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>location</declname>
+        </param>
+        <briefdescription>
+<para>This function sends a warning debug message. The location parameter is optional. <ref refid="classCommunicators_1_1AbstractCommunication_1ab89975d66b259644680e19bcaea064c5" kindref="member">warn(String msg)</ref>;. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message to be sent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>location</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>location where this message was emitted </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="73" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="41" bodyend="45"/>
+        <references refid="classCommunicators_1_1AbstractCommunication_1a1dc847584e054be2ffb4c3aa3c311a9d" compoundref="AbstractCommunication_8h" startline="85">lvl</references>
+        <references refid="classCommunicators_1_1AbstractCommunication_1a239ab6ea3f08e4adab1b2fd7413d9318">send</references>
+        <references refid="classCommunicators_1_1AbstractCommunication_1af2bddffaa4a8608d5c0877fabd1386caabcdf281ea34ddbd98eec25cdf13179ba" compoundref="AbstractCommunication_8h" startline="53">WARN</references>
+      </memberdef>
+      <memberdef kind="function" id="classCommunicators_1_1AbstractCommunication_1a5f34c4c31c937a4f64812b283d10681d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Communicators::AbstractCommunication::error</definition>
+        <argsstring>(String msg, String location)</argsstring>
+        <name>error</name>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>location</declname>
+        </param>
+        <briefdescription>
+<para>This function sends an error debug message. The location parameter is optional. <ref refid="classCommunicators_1_1AbstractCommunication_1a05fdbe9f96b776547fdb5e287ac2eeb8" kindref="member">error(String msg)</ref>;. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message to be sent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>location</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>location where this message was emitted </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="80" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="47" bodyend="51"/>
+        <references refid="classCommunicators_1_1AbstractCommunication_1af2bddffaa4a8608d5c0877fabd1386caa6eabebdc77318f03bd6d03b5e817af87" compoundref="AbstractCommunication_8h" startline="54">ERROR</references>
+        <references refid="classCommunicators_1_1AbstractCommunication_1a1dc847584e054be2ffb4c3aa3c311a9d" compoundref="AbstractCommunication_8h" startline="85">lvl</references>
+        <references refid="classCommunicators_1_1AbstractCommunication_1a239ab6ea3f08e4adab1b2fd7413d9318">send</references>
+      </memberdef>
+      <memberdef kind="function" id="classCommunicators_1_1AbstractCommunication_1a360781ab654fe0b0da323a9f53365643" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Communicators::AbstractCommunication::setLevel</definition>
+        <argsstring>(DEBUG_LEVEL lvl)</argsstring>
+        <name>setLevel</name>
+        <param>
+          <type><ref refid="classCommunicators_1_1AbstractCommunication_1af2bddffaa4a8608d5c0877fabd1386ca" kindref="member">DEBUG_LEVEL</ref></type>
+          <declname>lvl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="82" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" bodystart="63" bodyend="65"/>
+        <references refid="classCommunicators_1_1AbstractCommunication_1a1dc847584e054be2ffb4c3aa3c311a9d" compoundref="AbstractCommunication_8h" startline="85">lvl</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="27" endline="36">setup</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class defines how all communication should be done. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="22">
+        <label>Communicators::AbstractCommunication</label>
+        <link refid="classCommunicators_1_1AbstractCommunication"/>
+      </node>
+      <node id="23">
+        <label>Communicators::SerialCom</label>
+        <link refid="classCommunicators_1_1SerialCom"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" line="24" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.h" bodystart="24" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classCommunicators_1_1AbstractCommunication_1a38293a3348adc4abf4c1df9a536f737f" prot="public" virt="non-virtual"><scope>Communicators::AbstractCommunication</scope><name>AbstractCommunication</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1af2bddffaa4a8608d5c0877fabd1386ca" prot="public" virt="non-virtual"><scope>Communicators::AbstractCommunication</scope><name>DEBUG_LEVEL</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1af1284eec5c271fe22869ef42e24b8249" prot="private" virt="non-virtual"><scope>Communicators::AbstractCommunication</scope><name>DEFAULT_LOCATION</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1af2bddffaa4a8608d5c0877fabd1386caa6eabebdc77318f03bd6d03b5e817af87" prot="public" virt="non-virtual"><scope>Communicators::AbstractCommunication</scope><name>ERROR</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1a05fdbe9f96b776547fdb5e287ac2eeb8" prot="public" virt="non-virtual"><scope>Communicators::AbstractCommunication</scope><name>error</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1a5f34c4c31c937a4f64812b283d10681d" prot="public" virt="non-virtual"><scope>Communicators::AbstractCommunication</scope><name>error</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1af2bddffaa4a8608d5c0877fabd1386caa6e07131243800472e5c622445fef050a" prot="public" virt="non-virtual"><scope>Communicators::AbstractCommunication</scope><name>INFO</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1afe1798d4be09f1e7c3d5e4c0494dd397" prot="public" virt="non-virtual"><scope>Communicators::AbstractCommunication</scope><name>info</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1aeecd688c0c7bed4e312142ee62c540a8" prot="public" virt="non-virtual"><scope>Communicators::AbstractCommunication</scope><name>info</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1aae6894aa8788393086c4c4d3d36f7f9e" prot="public" virt="pure-virtual"><scope>Communicators::AbstractCommunication</scope><name>init</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1a1dc847584e054be2ffb4c3aa3c311a9d" prot="private" virt="non-virtual"><scope>Communicators::AbstractCommunication</scope><name>lvl</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1a5707e7e996f07104e0717d6fc53d7f4f" prot="public" virt="pure-virtual"><scope>Communicators::AbstractCommunication</scope><name>recv</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1a239ab6ea3f08e4adab1b2fd7413d9318" prot="public" virt="pure-virtual"><scope>Communicators::AbstractCommunication</scope><name>send</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1a415f90f6a4e815649806aedbb6ff5e3f" prot="public" virt="non-virtual"><scope>Communicators::AbstractCommunication</scope><name>sendf</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1a360781ab654fe0b0da323a9f53365643" prot="public" virt="non-virtual"><scope>Communicators::AbstractCommunication</scope><name>setLevel</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1af2bddffaa4a8608d5c0877fabd1386caabcdf281ea34ddbd98eec25cdf13179ba" prot="public" virt="non-virtual"><scope>Communicators::AbstractCommunication</scope><name>WARN</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1ab89975d66b259644680e19bcaea064c5" prot="public" virt="non-virtual"><scope>Communicators::AbstractCommunication</scope><name>warn</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1a85761d93a5b07a66d40a71ecfb6868a8" prot="public" virt="non-virtual"><scope>Communicators::AbstractCommunication</scope><name>warn</name></member>
+      <member refid="classCommunicators_1_1AbstractCommunication_1afa98bee659ecf160a3ee7689cbfa74a2" prot="public" virt="virtual"><scope>Communicators::AbstractCommunication</scope><name>~AbstractCommunication</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

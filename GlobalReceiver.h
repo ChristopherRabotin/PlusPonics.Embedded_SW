@@ -11,8 +11,17 @@
 #include "AbstractCommunication.h"
 #include "TCProcessor.h"
 
+/**
+ * @namespace Processors
+ * @brief This namespace handles the processing input/output to/from the pod.
+ * This includes commanding a pod, sending telemetry, debugging messages, procedure handling and meta functions.
+ */
 namespace Processors {
-
+/**
+ * @class GlobalReceiver
+ * @brief This class is the overall handler for receiving input over whichever means of Communicators::AbstractCommunication.
+ * @note Documentation of this class explains how to communicate with the pod!
+ */
 class GlobalReceiver {
 public:
 	GlobalReceiver();

@@ -1,9 +1,9 @@
 <map id="setup" name="setup">
-<area shape="rect" id="node3" href="$classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c" title="AbstractCommunication\l::info" alt="" coords="140,5,303,46"/>
-<area shape="rect" id="node5" href="$classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function." alt="" coords="166,71,277,97"/>
-<area shape="rect" id="node7" href="$classTCProcessor.html#a4a8c96ae1992c22a3f1b52802a356e72" title="The init function will call &#39;init&#39; on all the telecommands of this class. This function must be calle..." alt="" coords="157,121,285,148"/>
-<area shape="rect" id="node11" href="$classGlobalReceiver.html#adea5c467d1cd853a6ba6ef88d5611dcd" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="136,172,307,199"/>
-<area shape="rect" id="node13" href="$classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336" title="AbstractCommunication\l::setLevel" alt="" coords="140,223,303,265"/>
-<area shape="rect" id="node15" href="$classGlobalReceiver.html#a11733fe91fb1e7829efa9672f569cdb5" title="This function sets the TC processor. This is used when the empty constructor is used." alt="" coords="109,289,333,316"/>
-<area shape="rect" id="node9" href="$classTCProcessor.html#aea90af74c7ff4e3f904a9954bd8e5a7a" title="The definitions_ function will define all the TCs available. It is called from the constructor and it..." alt="" coords="381,121,560,148"/>
+<area shape="rect" id="node3" href="$classCommunicators_1_1AbstractCommunication.html#afe1798d4be09f1e7c3d5e4c0494dd397" title="Communicators::AbstractCommunication\l::info" alt="" coords="110,5,375,46"/>
+<area shape="rect" id="node5" href="$classCommunicators_1_1SerialCom.html#a914de6786e449c3a83f7f5764036d285" title="This function initializes the communication. It will be called from the setup function." alt="" coords="149,70,337,111"/>
+<area shape="rect" id="node7" href="$classProcessors_1_1TCProcessor.html#a217096fa67d5a2bfe94aa256086545ea" title="The init function will call &#39;init&#39; on all the telecommands of this class. This function must be calle..." alt="" coords="152,135,333,177"/>
+<area shape="rect" id="node11" href="$classProcessors_1_1GlobalReceiver.html#aed8991f2b69c3df04c1a1c0f15fb7b3c" title="This function sets the communication pointer. This is used when the empty constructor is used..." alt="" coords="146,201,339,242"/>
+<area shape="rect" id="node13" href="$classCommunicators_1_1AbstractCommunication.html#a360781ab654fe0b0da323a9f53365643" title="Communicators::AbstractCommunication\l::setLevel" alt="" coords="110,266,375,307"/>
+<area shape="rect" id="node15" href="$classProcessors_1_1GlobalReceiver.html#a41eab6e4412e6bfbab06100adf8d121c" title="This function sets the TC processor. This is used when the empty constructor is used." alt="" coords="146,331,339,373"/>
+<area shape="rect" id="node9" href="$classProcessors_1_1TCProcessor.html#add0cb2a51c0d96eedafef8fe9935efd7" title="The definitions_ function will define all the TCs available. It is called from the constructor and it..." alt="" coords="424,135,605,177"/>
 </map>

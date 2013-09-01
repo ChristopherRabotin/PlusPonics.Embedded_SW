@@ -1,18 +1,18 @@
 /*
- * DigitalWriteTC.h
+ * LogicTC.h
  *
  *  Created on: Aug 31, 2013
  *      Author: chris
  */
 
-#ifndef DIGITALWRITETC_H_
-#define DIGITALWRITETC_H_
+#ifndef LogicTC_H_
+#define LogicTC_H_
 
 #include "AbstractTC.h"
 #include <Arduino.h>
 namespace TC {
 /**
- * @class DigitalWriteTC
+ * @class LogicTC
  * @brief This class enables digital writing to a given output pin with the given output value.
  * @warning This class does not check whether the pin is used in another mode. It is very important to check for any conflict beforehand!
  */
@@ -33,4 +33,4 @@ private:
 	bool _outputValue;
 };
 }
-#endif /* DIGITALWRITETC_H_ */
+#endif /* LogicTC_H_ */

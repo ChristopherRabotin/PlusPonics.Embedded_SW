@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="namespaceCommunicators" kind="namespace">
+    <compoundname>Communicators</compoundname>
+    <innerclass refid="classCommunicators_1_1AbstractCommunication" prot="public">Communicators::AbstractCommunication</innerclass>
+    <innerclass refid="classCommunicators_1_1SerialCom" prot="public">Communicators::SerialCom</innerclass>
+    <briefdescription>
+<para>This namespace groups all the different kind of communicators available, along with their abstract definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractCommunication.cpp" line="9"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,4 @@
+<map id="Processors::GlobalReceiver" name="Processors::GlobalReceiver">
+<area shape="rect" id="node2" href="$classProcessors_1_1TCProcessor.html" title="This class manages all the telecommands in a std::map . It is also called by GlobalReceiver upon rece..." alt="" coords="5,5,187,32"/>
+<area shape="rect" id="node4" href="$classCommunicators_1_1AbstractCommunication.html" title="This class defines how all communication should be done." alt="" coords="211,5,476,32"/>
+</map>

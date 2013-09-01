@@ -10,116 +10,115 @@
     <includes local="no">pnew.cpp</includes>
     <includes refid="SerialCom_8h" local="yes">SerialCom.h</includes>
     <incdepgraph>
-      <node id="203">
+      <node id="230">
         <label>config/config.h</label>
       </node>
-      <node id="207">
+      <node id="234">
         <label>stdarg.h</label>
       </node>
-      <node id="208">
+      <node id="235">
         <label>WString.h</label>
       </node>
-      <node id="213">
+      <node id="240">
         <label>iterator</label>
       </node>
-      <node id="211">
+      <node id="238">
         <label>stdint.h</label>
       </node>
-      <node id="205">
+      <node id="232">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication_8h"/>
-        <childnode refid="206" relation="include">
+        <childnode refid="233" relation="include">
         </childnode>
-        <childnode refid="207" relation="include">
+        <childnode refid="234" relation="include">
         </childnode>
-        <childnode refid="208" relation="include">
+        <childnode refid="235" relation="include">
         </childnode>
       </node>
-      <node id="214">
+      <node id="241">
         <label>map</label>
       </node>
-      <node id="210">
-        <label>TC.h</label>
-        <link refid="TC_8h"/>
-        <childnode refid="211" relation="include">
-        </childnode>
-      </node>
-      <node id="217">
+      <node id="244">
         <label>HardwareSerial.h</label>
       </node>
-      <node id="209">
+      <node id="236">
         <label>TCProcessor.h</label>
         <link refid="TCProcessor_8h"/>
-        <childnode refid="210" relation="include">
+        <childnode refid="237" relation="include">
         </childnode>
-        <childnode refid="212" relation="include">
+        <childnode refid="239" relation="include">
         </childnode>
-        <childnode refid="213" relation="include">
+        <childnode refid="240" relation="include">
         </childnode>
-        <childnode refid="214" relation="include">
+        <childnode refid="241" relation="include">
         </childnode>
       </node>
-      <node id="202">
+      <node id="229">
         <label>Arduino.h</label>
       </node>
-      <node id="216">
+      <node id="243">
         <label>SerialCom.h</label>
         <link refid="SerialCom_8h"/>
-        <childnode refid="205" relation="include">
+        <childnode refid="232" relation="include">
         </childnode>
-        <childnode refid="202" relation="include">
+        <childnode refid="229" relation="include">
         </childnode>
-        <childnode refid="217" relation="include">
+        <childnode refid="244" relation="include">
         </childnode>
       </node>
-      <node id="204">
+      <node id="231">
         <label>GlobalReceiver.h</label>
         <link refid="GlobalReceiver_8h"/>
-        <childnode refid="205" relation="include">
+        <childnode refid="232" relation="include">
         </childnode>
-        <childnode refid="209" relation="include">
+        <childnode refid="236" relation="include">
         </childnode>
       </node>
-      <node id="201">
+      <node id="228">
         <label>main.cpp</label>
         <link refid="main.cpp"/>
-        <childnode refid="202" relation="include">
+        <childnode refid="229" relation="include">
         </childnode>
-        <childnode refid="203" relation="include">
+        <childnode refid="230" relation="include">
         </childnode>
-        <childnode refid="204" relation="include">
+        <childnode refid="231" relation="include">
         </childnode>
-        <childnode refid="212" relation="include">
+        <childnode refid="239" relation="include">
         </childnode>
-        <childnode refid="209" relation="include">
+        <childnode refid="236" relation="include">
         </childnode>
-        <childnode refid="215" relation="include">
+        <childnode refid="242" relation="include">
         </childnode>
-        <childnode refid="216" relation="include">
+        <childnode refid="243" relation="include">
         </childnode>
       </node>
-      <node id="206">
+      <node id="233">
         <label>stdio.h</label>
       </node>
-      <node id="215">
+      <node id="237">
+        <label>AbstractTC.h</label>
+        <link refid="AbstractTC_8h"/>
+        <childnode refid="238" relation="include">
+        </childnode>
+      </node>
+      <node id="242">
         <label>pnew.cpp</label>
       </node>
-      <node id="212">
+      <node id="239">
         <label>LogicTC.h</label>
         <link refid="LogicTC_8h"/>
-        <childnode refid="210" relation="include">
+        <childnode refid="237" relation="include">
         </childnode>
-        <childnode refid="202" relation="include">
+        <childnode refid="229" relation="include">
         </childnode>
       </node>
     </incdepgraph>
       <sectiondef kind="var">
-      <memberdef kind="variable" id="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" prot="public" static="no" mutable="no">
-        <type>int</type>
-        <definition>int ledPin</definition>
+      <memberdef kind="variable" id="main_8cpp_1af0d5dd593884b7553dd6cdd4deab5765" prot="public" static="no" mutable="no">
+        <type><ref refid="classCommunicators_1_1SerialCom" kindref="compound">Communicators::SerialCom</ref></type>
+        <definition>Communicators::SerialCom com</definition>
         <argsstring></argsstring>
-        <name>ledPin</name>
-        <initializer>= 13</initializer>
+        <name>com</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -128,22 +127,9 @@
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="20" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="20" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="main_8cpp_1ac32bb15f611faf91f75daaab60c1068c" prot="public" static="no" mutable="no">
-        <type><ref refid="classSerialCom" kindref="compound">SerialCom</ref></type>
-        <definition>SerialCom com</definition>
-        <argsstring></argsstring>
-        <name>com</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="22" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="22" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="main_8cpp_1a95de02de573cd863d1547c545dfeceae" prot="public" static="no" mutable="no">
-        <type><ref refid="classGlobalReceiver" kindref="compound">GlobalReceiver</ref></type>
-        <definition>GlobalReceiver glrcv</definition>
+      <memberdef kind="variable" id="main_8cpp_1afcc05c67354d89e62ca12e7708fd8d6b" prot="public" static="no" mutable="no">
+        <type><ref refid="classProcessors_1_1GlobalReceiver" kindref="compound">Processors::GlobalReceiver</ref></type>
+        <definition>Processors::GlobalReceiver glrcv</definition>
         <argsstring></argsstring>
         <name>glrcv</name>
         <briefdescription>
@@ -152,11 +138,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="23" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="23" bodyend="-1"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="21" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="21" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="main_8cpp_1a60ab7ee2619879f6886f309095dca225" prot="public" static="no" mutable="no">
-        <type><ref refid="classTCProcessor" kindref="compound">TCProcessor</ref></type>
-        <definition>TCProcessor tcProcessor</definition>
+      <memberdef kind="variable" id="main_8cpp_1a62b66e0c89c7061ce87f6b7d61d01117" prot="public" static="no" mutable="no">
+        <type><ref refid="classProcessors_1_1TCProcessor" kindref="compound">Processors::TCProcessor</ref></type>
+        <definition>Processors::TCProcessor tcProcessor</definition>
         <argsstring></argsstring>
         <name>tcProcessor</name>
         <briefdescription>
@@ -165,7 +151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="24" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="24" bodyend="-1"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="22" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="22" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -180,15 +166,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="29" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="29" bodyend="38"/>
-        <references refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4faf948f99c94172d72dff0a540a84704fb" compoundref="AbstractCommunication_8h" startline="46">AbstractCommunication::INFO</references>
-        <references refid="classAbstractCommunication_1aca99e8b6cfffce4207bb9ca09f90e15c" compoundref="AbstractCommunication_8cpp" startline="23" endline="25">AbstractCommunication::info</references>
-        <references refid="classSerialCom_1a53bb031287acb1973c1e1f76799c76b6" compoundref="SerialCom_8cpp" startline="17" endline="19">SerialCom::init</references>
-        <references refid="classTCProcessor_1a4a8c96ae1992c22a3f1b52802a356e72" compoundref="TCProcessor_8cpp" startline="14" endline="16">TCProcessor::init</references>
-        <references refid="classGlobalReceiver_1adea5c467d1cd853a6ba6ef88d5611dcd" compoundref="GlobalReceiver_8cpp" startline="51" endline="53">GlobalReceiver::setCom</references>
-        <references refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" compoundref="AbstractCommunication_8cpp" startline="63" endline="65">AbstractCommunication::setLevel</references>
-        <references refid="classGlobalReceiver_1a11733fe91fb1e7829efa9672f569cdb5" compoundref="GlobalReceiver_8cpp" startline="55" endline="57">GlobalReceiver::setTCProcessor</references>
-        <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="52" endline="63">main</referencedby>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="27" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="27" bodyend="36"/>
+        <references refid="classCommunicators_1_1AbstractCommunication_1af2bddffaa4a8608d5c0877fabd1386caa6e07131243800472e5c622445fef050a" compoundref="AbstractCommunication_8h" startline="52">Communicators::AbstractCommunication::INFO</references>
+        <references refid="classCommunicators_1_1AbstractCommunication_1afe1798d4be09f1e7c3d5e4c0494dd397" compoundref="AbstractCommunication_8cpp" startline="23" endline="25">Communicators::AbstractCommunication::info</references>
+        <references refid="classCommunicators_1_1SerialCom_1a914de6786e449c3a83f7f5764036d285" compoundref="SerialCom_8cpp" startline="17" endline="19">Communicators::SerialCom::init</references>
+        <references refid="classProcessors_1_1TCProcessor_1a217096fa67d5a2bfe94aa256086545ea" compoundref="TCProcessor_8cpp" startline="14" endline="16">Processors::TCProcessor::init</references>
+        <references refid="classProcessors_1_1GlobalReceiver_1aed8991f2b69c3df04c1a1c0f15fb7b3c" compoundref="GlobalReceiver_8cpp" startline="51" endline="53">Processors::GlobalReceiver::setCom</references>
+        <references refid="classCommunicators_1_1AbstractCommunication_1a360781ab654fe0b0da323a9f53365643" compoundref="AbstractCommunication_8cpp" startline="63" endline="65">Communicators::AbstractCommunication::setLevel</references>
+        <references refid="classProcessors_1_1GlobalReceiver_1a41eab6e4412e6bfbab06100adf8d121c" compoundref="GlobalReceiver_8cpp" startline="55" endline="57">Processors::GlobalReceiver::setTCProcessor</references>
+        <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="50" endline="61">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -201,9 +187,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="43" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="43" bodyend="46"/>
-        <references refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="27" endline="49">GlobalReceiver::process</references>
-        <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="52" endline="63">main</referencedby>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="41" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="41" bodyend="44"/>
+        <references refid="classProcessors_1_1GlobalReceiver_1a0f3f336ac7a9c7d2024490961694248c" compoundref="GlobalReceiver_8cpp" startline="27" endline="49">Processors::GlobalReceiver::process</references>
+        <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="50" endline="61">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -220,11 +206,11 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="52" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="52" bodyend="63"/>
-        <references refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3caef939d362d7f07ad29ea6a0c47b81e85" compoundref="TCProcessor_8h" startline="36">TCProcessor::EXECUTE</references>
-        <references refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="43" endline="46">loop</references>
-        <references refid="classTCProcessor_1a8d82f0ba03d36e1fe16504e2835ac4ed" compoundref="TCProcessor_8cpp" startline="46" endline="63">TCProcessor::perform</references>
-        <references refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="29" endline="38">setup</references>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="50" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="50" bodyend="61"/>
+        <references refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a29c9fbbe7187c3765aaae054cc9f057a" compoundref="TCProcessor_8h" startline="37">Processors::TCProcessor::EXECUTE</references>
+        <references refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="41" endline="44">loop</references>
+        <references refid="classProcessors_1_1TCProcessor_1abed11b68a69058b6b7f18ec394ca4542" compoundref="TCProcessor_8cpp" startline="46" endline="63">Processors::TCProcessor::perform</references>
+        <references refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="27" endline="36">setup</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -248,40 +234,38 @@
 <codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="SerialCom_8h" kindref="compound">SerialCom.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
 <codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20" refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kindref="member">ledPin</ref><sp/>=<sp/>13;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>LED<sp/>connected<sp/>to<sp/>digital<sp/>pin<sp/>13</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22" refid="main_8cpp_1ac32bb15f611faf91f75daaab60c1068c" refkind="member"><highlight class="normal"><ref refid="classSerialCom" kindref="compound" tooltip="This class defines serial communication with the control system.">SerialCom</ref><sp/><ref refid="main_8cpp_1ac32bb15f611faf91f75daaab60c1068c" kindref="member">com</ref>;</highlight></codeline>
-<codeline lineno="23" refid="main_8cpp_1a95de02de573cd863d1547c545dfeceae" refkind="member"><highlight class="normal"><ref refid="classGlobalReceiver" kindref="compound">GlobalReceiver</ref><sp/><ref refid="main_8cpp_1a95de02de573cd863d1547c545dfeceae" kindref="member">glrcv</ref>;</highlight></codeline>
-<codeline lineno="24" refid="main_8cpp_1a60ab7ee2619879f6886f309095dca225" refkind="member"><highlight class="normal"><ref refid="classTCProcessor" kindref="compound" tooltip="This class manages all the telecommands in a std::map . It is also called by GlobalReceiver upon rece...">TCProcessor</ref><sp/><ref refid="main_8cpp_1a60ab7ee2619879f6886f309095dca225" kindref="member">tcProcessor</ref>;</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29" refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kindref="member" tooltip="This function is only ran when the sketch is initialized.">setup</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="20" refid="main_8cpp_1af0d5dd593884b7553dd6cdd4deab5765" refkind="member"><highlight class="normal"><ref refid="classCommunicators_1_1SerialCom" kindref="compound" tooltip="This class defines serial communication with the control system.">Communicators::SerialCom</ref><sp/><ref refid="main_8cpp_1af0d5dd593884b7553dd6cdd4deab5765" kindref="member">com</ref>;</highlight></codeline>
+<codeline lineno="21" refid="main_8cpp_1afcc05c67354d89e62ca12e7708fd8d6b" refkind="member"><highlight class="normal"><ref refid="classProcessors_1_1GlobalReceiver" kindref="compound" tooltip="This class is the overall handler for receiving input over whichever means of Communicators::Abstract...">Processors::GlobalReceiver</ref><sp/><ref refid="main_8cpp_1afcc05c67354d89e62ca12e7708fd8d6b" kindref="member">glrcv</ref>;</highlight></codeline>
+<codeline lineno="22" refid="main_8cpp_1a62b66e0c89c7061ce87f6b7d61d01117" refkind="member"><highlight class="normal"><ref refid="classProcessors_1_1TCProcessor" kindref="compound" tooltip="This class manages all the telecommands in a std::map . It is also called by GlobalReceiver upon rece...">Processors::TCProcessor</ref><sp/><ref refid="main_8cpp_1a62b66e0c89c7061ce87f6b7d61d01117" kindref="member">tcProcessor</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kindref="member" tooltip="This function is only ran when the sketch is initialized.">setup</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>tcProcessor.<ref refid="classProcessors_1_1TCProcessor_1a217096fa67d5a2bfe94aa256086545ea" kindref="member" tooltip="The init function will call &amp;#39;init&amp;#39; on all the telecommands of this class. This function must be calle...">init</ref>();</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>tcProcessor.<ref refid="classTCProcessor_1a4a8c96ae1992c22a3f1b52802a356e72" kindref="member" tooltip="The init function will call &amp;#39;init&amp;#39; on all the telecommands of this class. This function must be calle...">init</ref>();</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>com.<ref refid="classSerialCom_1a53bb031287acb1973c1e1f76799c76b6" kindref="member" tooltip="This function initializes the communication. It will be called from the setup function.">init</ref>();</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>com.<ref refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" kindref="member">setLevel</ref>(<ref refid="classAbstractCommunication_1a4226603ef45c35ea969f888ff6cabe4faf948f99c94172d72dff0a540a84704fb" kindref="member">AbstractCommunication::INFO</ref>);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>com.<ref refid="classAbstractCommunication_1aca99e8b6cfffce4207bb9ca09f90e15c" kindref="member">info</ref>(</highlight><highlight class="stringliteral">&quot;Setting<sp/>up<sp/>led&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;setup&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>glrcv.<ref refid="classGlobalReceiver_1adea5c467d1cd853a6ba6ef88d5611dcd" kindref="member" tooltip="This function sets the communication pointer. This is used when the empty constructor is used...">setCom</ref>(com);</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>glrcv.<ref refid="classGlobalReceiver_1a11733fe91fb1e7829efa9672f569cdb5" kindref="member" tooltip="This function sets the TC processor. This is used when the empty constructor is used.">setTCProcessor</ref>(tcProcessor);</highlight></codeline>
-<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43" refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kindref="member" tooltip="loop() loops while Arduino is powered.">loop</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(2000);</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>glrcv.<ref refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" kindref="member" tooltip="This function fetches and processes the input. It calls com&amp;#39;s recv() to read the latest information...">process</ref>();</highlight></codeline>
-<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52" refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member" tooltip="where all the subsystems are started.">main</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>init();</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kindref="member" tooltip="This function is only ran when the sketch is initialized.">setup</ref>();</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Let&apos;s<sp/>turn<sp/>on<sp/>the<sp/>LED.<sp/>The<sp/>user<sp/>will<sp/>turn<sp/>it<sp/>off<sp/>from<sp/>Serial.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>tcProcessor.<ref refid="classTCProcessor_1a8d82f0ba03d36e1fe16504e2835ac4ed" kindref="member" tooltip="This function will perform the given action on the given opcode. The internal error variable will ref...">perform</ref>(<ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3caef939d362d7f07ad29ea6a0c47b81e85" kindref="member">TCProcessor::EXECUTE</ref>,<sp/>1);</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kindref="member" tooltip="loop() loops while Arduino is powered.">loop</ref>();</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>com.<ref refid="classCommunicators_1_1SerialCom_1a914de6786e449c3a83f7f5764036d285" kindref="member" tooltip="This function initializes the communication. It will be called from the setup function.">init</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>com.<ref refid="classCommunicators_1_1AbstractCommunication_1a360781ab654fe0b0da323a9f53365643" kindref="member">setLevel</ref>(<ref refid="classCommunicators_1_1AbstractCommunication_1af2bddffaa4a8608d5c0877fabd1386caa6e07131243800472e5c622445fef050a" kindref="member">Communicators::AbstractCommunication::INFO</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>com.<ref refid="classCommunicators_1_1AbstractCommunication_1afe1798d4be09f1e7c3d5e4c0494dd397" kindref="member">info</ref>(</highlight><highlight class="stringliteral">&quot;Setting<sp/>up<sp/>led&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;setup&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>glrcv.<ref refid="classProcessors_1_1GlobalReceiver_1aed8991f2b69c3df04c1a1c0f15fb7b3c" kindref="member" tooltip="This function sets the communication pointer. This is used when the empty constructor is used...">setCom</ref>(com);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>glrcv.<ref refid="classProcessors_1_1GlobalReceiver_1a41eab6e4412e6bfbab06100adf8d121c" kindref="member" tooltip="This function sets the TC processor. This is used when the empty constructor is used.">setTCProcessor</ref>(tcProcessor);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kindref="member" tooltip="loop() loops while Arduino is powered.">loop</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(2000);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>glrcv.<ref refid="classProcessors_1_1GlobalReceiver_1a0f3f336ac7a9c7d2024490961694248c" kindref="member" tooltip="This function fetches and processes the input. It calls com&amp;#39;s recv() to read the latest information...">process</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member" tooltip="where all the subsystems are started.">main</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>init();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kindref="member" tooltip="This function is only ran when the sketch is initialized.">setup</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Let&apos;s<sp/>turn<sp/>on<sp/>the<sp/>LED.<sp/>The<sp/>user<sp/>will<sp/>turn<sp/>it<sp/>off<sp/>from<sp/>Serial.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>tcProcessor.<ref refid="classProcessors_1_1TCProcessor_1abed11b68a69058b6b7f18ec394ca4542" kindref="member" tooltip="This function will perform the given action on the given opcode. The internal error variable will ref...">perform</ref>(<ref refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a29c9fbbe7187c3765aaae054cc9f057a" kindref="member">Processors::TCProcessor::EXECUTE</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kindref="member" tooltip="loop() loops while Arduino is powered.">loop</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp"/>
   </compounddef>

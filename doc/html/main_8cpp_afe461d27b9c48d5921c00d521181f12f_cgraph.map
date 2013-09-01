@@ -1,13 +1,13 @@
 <map id="loop" name="loop">
-<area shape="rect" id="node3" href="$classGlobalReceiver.html#a86c5c89fd69a213379582e1a81085d12" title="This function fetches and processes the input. It calls com&#39;s recv() to read the latest information..." alt="" coords="102,107,274,133"/>
-<area shape="rect" id="node5" href="$classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0" title="This function reads data from the pipe and returns this as a string." alt="" coords="337,5,500,46"/>
-<area shape="rect" id="node7" href="$classAbstractCommunication.html#ad77b74aa662946ae6c86cf2683703a04" title="This function sends a formatted string through the communication pipe." alt="" coords="337,70,500,111"/>
-<area shape="rect" id="node11" href="$classTCProcessor.html#a895b3f9a34b52534182785a00493fc63" title="This function processes the input string which contains the OPCODE to concerned along with the action..." alt="" coords="323,136,514,163"/>
-<area shape="rect" id="node23" href="$GlobalReceiver_8cpp.html#a98a09d6b95fb0fa32210f041f0af87d4" title="byte_to_binary" alt="" coords="365,187,473,213"/>
-<area shape="rect" id="node9" href="$classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe." alt="" coords="563,70,725,111"/>
-<area shape="rect" id="node13" href="$classTCProcessor.html#a8d82f0ba03d36e1fe16504e2835ac4ed" title="This function will perform the given action on the given opcode. The internal error variable will ref..." alt="" coords="565,136,723,163"/>
-<area shape="rect" id="node15" href="$classTC.html#a5431ac6442ffc4d740b1f146322a2a7c" title="This function will enable this TC." alt="" coords="776,85,867,112"/>
-<area shape="rect" id="node17" href="$classTC.html#ac5e09bff8556f6ac5ed5604b855d3338" title="This function will disable this TC. A disabled TC cannot be executed." alt="" coords="774,136,869,163"/>
-<area shape="rect" id="node19" href="$classTC.html#ad03c30fb218c9c3280056bfbb35d6ae0" title="This function will execute of this TC. A TC can only be executed (for start and stop actions..." alt="" coords="781,187,861,213"/>
-<area shape="rect" id="node21" href="$classTC.html#ad0a5dbe25b9dfd17bfadfef29e1e2822" title="This function will execute this TC." alt="" coords="918,187,1037,213"/>
+<area shape="rect" id="node3" href="$classProcessors_1_1GlobalReceiver.html#a0f3f336ac7a9c7d2024490961694248c" title="This function fetches and processes the input. It calls com&#39;s recv() to read the latest information..." alt="" coords="102,103,295,145"/>
+<area shape="rect" id="node5" href="$classCommunicators_1_1AbstractCommunication.html#a5707e7e996f07104e0717d6fc53d7f4f" title="This function reads data from the pipe and returns this as a string." alt="" coords="345,5,610,46"/>
+<area shape="rect" id="node7" href="$classCommunicators_1_1AbstractCommunication.html#a415f90f6a4e815649806aedbb6ff5e3f" title="This function sends a formatted string through the communication pipe." alt="" coords="345,70,610,111"/>
+<area shape="rect" id="node11" href="$classProcessors_1_1TCProcessor.html#a0ac3bca062aa5da326df5ac1949324e0" title="This function processes the input string which contains the OPCODE to concerned along with the action..." alt="" coords="387,135,568,177"/>
+<area shape="rect" id="node23" href="$namespaceProcessors.html#a44188b163f0de25011f4a51a920fbdf3" title="Processors::byte_to\l_binary" alt="" coords="406,201,549,242"/>
+<area shape="rect" id="node9" href="$classCommunicators_1_1AbstractCommunication.html#a239ab6ea3f08e4adab1b2fd7413d9318" title="This function sends information through the communication pipe." alt="" coords="659,70,925,111"/>
+<area shape="rect" id="node13" href="$classProcessors_1_1TCProcessor.html#abed11b68a69058b6b7f18ec394ca4542" title="This function will perform the given action on the given opcode. The internal error variable will ref..." alt="" coords="701,135,883,177"/>
+<area shape="rect" id="node15" href="$classTC_1_1AbstractTC.html#a7e1389c4cd810758e1e1ab8cc4451cf1" title="This function will enable this TC." alt="" coords="975,92,1142,119"/>
+<area shape="rect" id="node17" href="$classTC_1_1AbstractTC.html#a3c27a4cf59011e0c2ecd39898645f298" title="This function will disable this TC. A disabled TC cannot be executed." alt="" coords="973,143,1144,169"/>
+<area shape="rect" id="node19" href="$classTC_1_1AbstractTC.html#a0c7c211d4ff52948d7d1d8803d7b93fb" title="This function will execute of this TC. A TC can only be executed (for start and stop actions..." alt="" coords="981,193,1137,220"/>
+<area shape="rect" id="node21" href="$classTC_1_1AbstractTC.html#afd7a067b52b173c366998116b2d75c4a" title="This function will execute this TC." alt="" coords="1193,186,1349,227"/>
 </map>

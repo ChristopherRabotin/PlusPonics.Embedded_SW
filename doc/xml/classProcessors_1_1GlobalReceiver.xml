@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classProcessors_1_1GlobalReceiver" kind="class" prot="public">
+    <compoundname>Processors::GlobalReceiver</compoundname>
+    <includes refid="GlobalReceiver_8h" local="no">GlobalReceiver.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classProcessors_1_1GlobalReceiver_1acca0f803f6361a4c7532dde4c932a2f8" prot="private" static="no" mutable="no">
+        <type><ref refid="classCommunicators_1_1AbstractCommunication" kindref="compound">Communicators::AbstractCommunication</ref> *</type>
+        <definition>Communicators::AbstractCommunication* Processors::GlobalReceiver::_com</definition>
+        <argsstring></argsstring>
+        <name>_com</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="59" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classProcessors_1_1GlobalReceiver_1a274744234e4f57be3667afa6964e48ac" compoundref="GlobalReceiver_8cpp" startline="10" endline="13">GlobalReceiver</referencedby>
+        <referencedby refid="classProcessors_1_1GlobalReceiver_1a0f3f336ac7a9c7d2024490961694248c" compoundref="GlobalReceiver_8cpp" startline="27" endline="49">process</referencedby>
+        <referencedby refid="classProcessors_1_1GlobalReceiver_1aed8991f2b69c3df04c1a1c0f15fb7b3c" compoundref="GlobalReceiver_8cpp" startline="51" endline="53">setCom</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classProcessors_1_1GlobalReceiver_1a8b7dbbea33145aeffe43789852cb5517" prot="private" static="no" mutable="no">
+        <type><ref refid="classProcessors_1_1TCProcessor" kindref="compound">TCProcessor</ref> *</type>
+        <definition>TCProcessor* Processors::GlobalReceiver::_tcProcessor</definition>
+        <argsstring></argsstring>
+        <name>_tcProcessor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="60" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classProcessors_1_1GlobalReceiver_1a274744234e4f57be3667afa6964e48ac" compoundref="GlobalReceiver_8cpp" startline="10" endline="13">GlobalReceiver</referencedby>
+        <referencedby refid="classProcessors_1_1GlobalReceiver_1a0f3f336ac7a9c7d2024490961694248c" compoundref="GlobalReceiver_8cpp" startline="27" endline="49">process</referencedby>
+        <referencedby refid="classProcessors_1_1GlobalReceiver_1a41eab6e4412e6bfbab06100adf8d121c" compoundref="GlobalReceiver_8cpp" startline="55" endline="57">setTCProcessor</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classProcessors_1_1GlobalReceiver_1a274744234e4f57be3667afa6964e48ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Processors::GlobalReceiver::GlobalReceiver</definition>
+        <argsstring>()</argsstring>
+        <name>GlobalReceiver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="27" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp" bodystart="10" bodyend="13"/>
+        <references refid="classProcessors_1_1GlobalReceiver_1acca0f803f6361a4c7532dde4c932a2f8" compoundref="GlobalReceiver_8h" startline="59">_com</references>
+        <references refid="classProcessors_1_1GlobalReceiver_1a8b7dbbea33145aeffe43789852cb5517" compoundref="GlobalReceiver_8h" startline="60">_tcProcessor</references>
+      </memberdef>
+      <memberdef kind="function" id="classProcessors_1_1GlobalReceiver_1a0f3f336ac7a9c7d2024490961694248c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Processors::GlobalReceiver::process</definition>
+        <argsstring>()</argsstring>
+        <name>process</name>
+        <briefdescription>
+<para>This function fetches and processes the input. It calls com&apos;s recv() to read the latest information. </para>        </briefdescription>
+        <detaileddescription>
+<para><heading level="1">Communicating to the pod</heading>
+</para><para>This character (of the String) is the type of action requested. There are currently only four actions defines, but we use a full character in order to leave space for more actions later, but especially because of ease of testing. Only the first character is read in this function. All the rest are sent to the appropriate AbstractReceiverProcessor. <heading level="2">Defined actions</heading>
+</para><para><heading level="3">Command: &quot;1&quot;</heading>
+</para><para>This is how ask the pod to execute a given command.</para><para><heading level="3">Procedure: &quot;3&quot;</heading>
+</para><para>This is how to start an embedded procedure on the pod.</para><para><heading level="3">Telemetery information: &quot;5&quot;</heading>
+</para><para>This allows to request telemetry information of any given telemetry in the next telemetry frame.</para><para><heading level="3">Meta: &quot;7&quot;</heading>
+</para><para>This includes commands related to meta around the pod, not its operational commands.</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="44" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp" bodystart="27" bodyend="49"/>
+        <references refid="classProcessors_1_1GlobalReceiver_1acca0f803f6361a4c7532dde4c932a2f8" compoundref="GlobalReceiver_8h" startline="59">_com</references>
+        <references refid="classProcessors_1_1GlobalReceiver_1a8b7dbbea33145aeffe43789852cb5517" compoundref="GlobalReceiver_8h" startline="60">_tcProcessor</references>
+        <references refid="namespaceProcessors_1a44188b163f0de25011f4a51a920fbdf3" compoundref="GlobalReceiver_8cpp" startline="15" endline="25">Processors::byte_to_binary</references>
+        <references refid="classProcessors_1_1TCProcessor_1a0ac3bca062aa5da326df5ac1949324e0" compoundref="TCProcessor_8cpp" startline="18" endline="44">Processors::TCProcessor::processRecv</references>
+        <references refid="classCommunicators_1_1AbstractCommunication_1a5707e7e996f07104e0717d6fc53d7f4f">Communicators::AbstractCommunication::recv</references>
+        <references refid="classCommunicators_1_1AbstractCommunication_1a415f90f6a4e815649806aedbb6ff5e3f" compoundref="AbstractCommunication_8cpp" startline="53" endline="61">Communicators::AbstractCommunication::sendf</references>
+        <referencedby refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="41" endline="44">loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classProcessors_1_1GlobalReceiver_1aed8991f2b69c3df04c1a1c0f15fb7b3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Processors::GlobalReceiver::setCom</definition>
+        <argsstring>(Communicators::AbstractCommunication &amp;comInstance)</argsstring>
+        <name>setCom</name>
+        <param>
+          <type><ref refid="classCommunicators_1_1AbstractCommunication" kindref="compound">Communicators::AbstractCommunication</ref> &amp;</type>
+          <declname>comInstance</declname>
+        </param>
+        <briefdescription>
+<para>This function sets the communication pointer. This is used when the empty constructor is used. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>comInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>communication instance </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="50" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp" bodystart="51" bodyend="53"/>
+        <references refid="classProcessors_1_1GlobalReceiver_1acca0f803f6361a4c7532dde4c932a2f8" compoundref="GlobalReceiver_8h" startline="59">_com</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="27" endline="36">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classProcessors_1_1GlobalReceiver_1a41eab6e4412e6bfbab06100adf8d121c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Processors::GlobalReceiver::setTCProcessor</definition>
+        <argsstring>(TCProcessor &amp;tcProcInstance)</argsstring>
+        <name>setTCProcessor</name>
+        <param>
+          <type><ref refid="classProcessors_1_1TCProcessor" kindref="compound">TCProcessor</ref> &amp;</type>
+          <declname>tcProcInstance</declname>
+        </param>
+        <briefdescription>
+<para>This function sets the <ref refid="namespaceTC" kindref="compound">TC</ref> processor. This is used when the empty constructor is used. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tcProcInstance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classProcessors_1_1TCProcessor" kindref="compound">TCProcessor</ref> instance </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="56" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp" bodystart="55" bodyend="57"/>
+        <references refid="classProcessors_1_1GlobalReceiver_1a8b7dbbea33145aeffe43789852cb5517" compoundref="GlobalReceiver_8h" startline="60">_tcProcessor</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="27" endline="36">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classProcessors_1_1GlobalReceiver_1a3b2be5ca78b8d0b817223724ac1186fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Processors::GlobalReceiver::~GlobalReceiver</definition>
+        <argsstring>()</argsstring>
+        <name>~GlobalReceiver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="57" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.cpp" bodystart="59" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is the overall handler for receiving input over whichever means of <ref refid="classCommunicators_1_1AbstractCommunication" kindref="compound">Communicators::AbstractCommunication</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Documentation of this class explains how to communicate with the pod! </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="33">
+        <label>Communicators::AbstractCommunication</label>
+        <link refid="classCommunicators_1_1AbstractCommunication"/>
+      </node>
+      <node id="32">
+        <label>Processors::TCProcessor</label>
+        <link refid="classProcessors_1_1TCProcessor"/>
+      </node>
+      <node id="31">
+        <label>Processors::GlobalReceiver</label>
+        <link refid="classProcessors_1_1GlobalReceiver"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>_tcProcessor</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>_com</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" line="25" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/GlobalReceiver.h" bodystart="25" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classProcessors_1_1GlobalReceiver_1acca0f803f6361a4c7532dde4c932a2f8" prot="private" virt="non-virtual"><scope>Processors::GlobalReceiver</scope><name>_com</name></member>
+      <member refid="classProcessors_1_1GlobalReceiver_1a8b7dbbea33145aeffe43789852cb5517" prot="private" virt="non-virtual"><scope>Processors::GlobalReceiver</scope><name>_tcProcessor</name></member>
+      <member refid="classProcessors_1_1GlobalReceiver_1a274744234e4f57be3667afa6964e48ac" prot="public" virt="non-virtual"><scope>Processors::GlobalReceiver</scope><name>GlobalReceiver</name></member>
+      <member refid="classProcessors_1_1GlobalReceiver_1a0f3f336ac7a9c7d2024490961694248c" prot="public" virt="non-virtual"><scope>Processors::GlobalReceiver</scope><name>process</name></member>
+      <member refid="classProcessors_1_1GlobalReceiver_1aed8991f2b69c3df04c1a1c0f15fb7b3c" prot="public" virt="non-virtual"><scope>Processors::GlobalReceiver</scope><name>setCom</name></member>
+      <member refid="classProcessors_1_1GlobalReceiver_1a41eab6e4412e6bfbab06100adf8d121c" prot="public" virt="non-virtual"><scope>Processors::GlobalReceiver</scope><name>setTCProcessor</name></member>
+      <member refid="classProcessors_1_1GlobalReceiver_1a3b2be5ca78b8d0b817223724ac1186fd" prot="public" virt="virtual"><scope>Processors::GlobalReceiver</scope><name>~GlobalReceiver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

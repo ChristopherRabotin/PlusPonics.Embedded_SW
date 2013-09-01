@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classTM_1_1AbstractTM" kind="class" prot="public">
+    <compoundname>TM::AbstractTM</compoundname>
+    <includes refid="AbstractTM_8h" local="no">AbstractTM.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392e" prot="public" static="no">
+        <name>REPORTING_STATE</name>
+        <enumvalue id="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea247739bbcd5f7af25dab8dbdc9738e6d" prot="public">
+          <name>ALWAYS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>always report the value of the telemetry </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392eab1d1da372ff32c713b314f1f802e5688" prot="public">
+          <name>ON_CHANGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>only report if the value has changed </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea1f9912e7179fb31c29a753ecf1ec07e1" prot="public">
+          <name>ON_OOL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>only report if this telemetry is out of limits </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea009903b3a545f807efcd8cfa81a11530" prot="public">
+          <name>ON_REQUEST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>if attempting to disable and was already disabled </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>defines all the reporting states a <ref refid="namespaceTM" kindref="compound">TM</ref> can have. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h" line="29" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h" bodystart="29" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTM_1_1AbstractTM_1a792e97433ccdda0a206afa3f8df2ee76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TM::AbstractTM::AbstractTM</definition>
+        <argsstring>()</argsstring>
+        <name>AbstractTM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h" line="24" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.cpp" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classTM_1_1AbstractTM_1ac26c1424c587486239d0dd86478b684a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>TM::AbstractTM::~AbstractTM</definition>
+        <argsstring>()</argsstring>
+        <name>~AbstractTM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h" line="25" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class defines the high level requirements of a telemetry point. It must be overwritten by low level classes. A telemetry point has different reporting levels. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h" line="22" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h" bodystart="22" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classTM_1_1AbstractTM_1a792e97433ccdda0a206afa3f8df2ee76" prot="public" virt="non-virtual"><scope>TM::AbstractTM</scope><name>AbstractTM</name></member>
+      <member refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea247739bbcd5f7af25dab8dbdc9738e6d" prot="public" virt="non-virtual"><scope>TM::AbstractTM</scope><name>ALWAYS</name></member>
+      <member refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392eab1d1da372ff32c713b314f1f802e5688" prot="public" virt="non-virtual"><scope>TM::AbstractTM</scope><name>ON_CHANGE</name></member>
+      <member refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea1f9912e7179fb31c29a753ecf1ec07e1" prot="public" virt="non-virtual"><scope>TM::AbstractTM</scope><name>ON_OOL</name></member>
+      <member refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea009903b3a545f807efcd8cfa81a11530" prot="public" virt="non-virtual"><scope>TM::AbstractTM</scope><name>ON_REQUEST</name></member>
+      <member refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392e" prot="public" virt="non-virtual"><scope>TM::AbstractTM</scope><name>REPORTING_STATE</name></member>
+      <member refid="classTM_1_1AbstractTM_1ac26c1424c587486239d0dd86478b684a" prot="public" virt="virtual"><scope>TM::AbstractTM</scope><name>~AbstractTM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

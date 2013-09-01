@@ -1,0 +1,6 @@
+<map id="Processors::TCProcessor::perform" name="Processors::TCProcessor::perform">
+<area shape="rect" id="node3" href="$classTC_1_1AbstractTC.html#a3c27a4cf59011e0c2ecd39898645f298" title="This function will disable this TC. A disabled TC cannot be executed." alt="" coords="235,5,405,32"/>
+<area shape="rect" id="node5" href="$classTC_1_1AbstractTC.html#a7e1389c4cd810758e1e1ab8cc4451cf1" title="This function will enable this TC." alt="" coords="237,56,403,83"/>
+<area shape="rect" id="node7" href="$classTC_1_1AbstractTC.html#a0c7c211d4ff52948d7d1d8803d7b93fb" title="This function will execute of this TC. A TC can only be executed (for start and stop actions..." alt="" coords="242,107,398,133"/>
+<area shape="rect" id="node9" href="$classTC_1_1AbstractTC.html#afd7a067b52b173c366998116b2d75c4a" title="This function will execute this TC." alt="" coords="454,99,610,141"/>
+</map>

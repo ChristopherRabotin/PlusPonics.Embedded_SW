@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="namespaceTC" kind="namespace">
+    <compoundname>TC</compoundname>
+    <innerclass refid="classTC_1_1AbstractTC" prot="public">TC::AbstractTC</innerclass>
+    <innerclass refid="classTC_1_1LogicTC" prot="public">TC::LogicTC</innerclass>
+    <briefdescription>
+<para>The <ref refid="namespaceTC" kindref="compound">TC</ref> namespace groups all the different kind of telecommands available along with the abstract <ref refid="namespaceTC" kindref="compound">TC</ref> definition. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.cpp" line="9"/>
+  </compounddef>
+</doxygen>

@@ -4,51 +4,52 @@
     <compoundname>TCProcessor.cpp</compoundname>
     <includes refid="TCProcessor_8h" local="yes">TCProcessor.h</includes>
     <incdepgraph>
-      <node id="261">
+      <node id="273">
         <label>iterator</label>
       </node>
-      <node id="258">
+      <node id="270">
         <label>stdint.h</label>
       </node>
-      <node id="255">
+      <node id="267">
         <label>TCProcessor.cpp</label>
         <link refid="TCProcessor.cpp"/>
-        <childnode refid="256" relation="include">
+        <childnode refid="268" relation="include">
         </childnode>
       </node>
-      <node id="262">
+      <node id="274">
         <label>map</label>
       </node>
-      <node id="257">
-        <label>TC.h</label>
-        <link refid="TC_8h"/>
-        <childnode refid="258" relation="include">
-        </childnode>
-      </node>
-      <node id="256">
+      <node id="268">
         <label>TCProcessor.h</label>
         <link refid="TCProcessor_8h"/>
-        <childnode refid="257" relation="include">
+        <childnode refid="269" relation="include">
         </childnode>
-        <childnode refid="259" relation="include">
+        <childnode refid="271" relation="include">
         </childnode>
-        <childnode refid="261" relation="include">
+        <childnode refid="273" relation="include">
         </childnode>
-        <childnode refid="262" relation="include">
+        <childnode refid="274" relation="include">
         </childnode>
       </node>
-      <node id="260">
+      <node id="272">
         <label>Arduino.h</label>
       </node>
-      <node id="259">
+      <node id="269">
+        <label>AbstractTC.h</label>
+        <link refid="AbstractTC_8h"/>
+        <childnode refid="270" relation="include">
+        </childnode>
+      </node>
+      <node id="271">
         <label>LogicTC.h</label>
         <link refid="LogicTC_8h"/>
-        <childnode refid="257" relation="include">
+        <childnode refid="269" relation="include">
         </childnode>
-        <childnode refid="260" relation="include">
+        <childnode refid="272" relation="include">
         </childnode>
       </node>
     </incdepgraph>
+    <innernamespace refid="namespaceProcessors">Processors</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -62,69 +63,70 @@
 <codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="TCProcessor_8h" kindref="compound">TCProcessor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10" refid="classTCProcessor_1a163b5e6267b5c05111b4ad8eeafadda9" refkind="member"><highlight class="normal"><ref refid="classTCProcessor_1a163b5e6267b5c05111b4ad8eeafadda9" kindref="member" tooltip="The constructor only initializes private attributes of this class.">TCProcessor::TCProcessor</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a1b104ae051b1edc075cfde03a9d4672a" kindref="member">_error</ref><sp/>=<sp/><ref refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cba1dad294c03cf3ae5b03821e63b0585d9" kindref="member">NO_ERROR</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Processors<sp/>{</highlight></codeline>
+<codeline lineno="10" refid="classProcessors_1_1TCProcessor_1a3fd668e78f8fbfb46794ad15a9cc5b0f" refkind="member"><highlight class="normal"><ref refid="classProcessors_1_1TCProcessor_1a3fd668e78f8fbfb46794ad15a9cc5b0f" kindref="member" tooltip="The constructor only initializes private attributes of this class.">TCProcessor::TCProcessor</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProcessors_1_1TCProcessor_1a4c3aea7e4239a6d010670a9b40bc9830" kindref="member">_error</ref><sp/>=<sp/><ref refid="classProcessors_1_1TCProcessor_1a86331905151031bde80ab514155e8d1fa0573c5ba28fe8be5e533c58cf6e1702c" kindref="member">NO_ERROR</ref>;</highlight></codeline>
 <codeline lineno="12"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14" refid="classTCProcessor_1a4a8c96ae1992c22a3f1b52802a356e72" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTCProcessor_1a4a8c96ae1992c22a3f1b52802a356e72" kindref="member" tooltip="The init function will call &amp;#39;init&amp;#39; on all the telecommands of this class. This function must be calle...">TCProcessor::init</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1aea90af74c7ff4e3f904a9954bd8e5a7a" kindref="member" tooltip="The definitions_ function will define all the TCs available. It is called from the constructor and it...">definitions_</ref>();</highlight></codeline>
+<codeline lineno="14" refid="classProcessors_1_1TCProcessor_1a217096fa67d5a2bfe94aa256086545ea" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProcessors_1_1TCProcessor_1a217096fa67d5a2bfe94aa256086545ea" kindref="member" tooltip="The init function will call &amp;#39;init&amp;#39; on all the telecommands of this class. This function must be calle...">TCProcessor::init</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProcessors_1_1TCProcessor_1add0cb2a51c0d96eedafef8fe9935efd7" kindref="member" tooltip="The definitions_ function will define all the TCs available. It is called from the constructor and it...">definitions_</ref>();</highlight></codeline>
 <codeline lineno="16"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18" refid="classTCProcessor_1a895b3f9a34b52534182785a00493fc63" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTCProcessor_1a895b3f9a34b52534182785a00493fc63" kindref="member" tooltip="This function processes the input string which contains the OPCODE to concerned along with the action...">TCProcessor::processRecv</ref>(String<sp/>payload)<sp/>{</highlight></codeline>
+<codeline lineno="18" refid="classProcessors_1_1TCProcessor_1a0ac3bca062aa5da326df5ac1949324e0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProcessors_1_1TCProcessor_1a0ac3bca062aa5da326df5ac1949324e0" kindref="member" tooltip="This function processes the input string which contains the OPCODE to concerned along with the action...">TCProcessor::processRecv</ref>(String<sp/>payload)<sp/>{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sent_opcode<sp/>=<sp/>atoi(payload.substring(0,<sp/>2).c_str());</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Let&apos;s<sp/>check<sp/>that<sp/>we<sp/>can<sp/>cast<sp/>the<sp/>sent<sp/>opcode<sp/>into<sp/>a<sp/>unit8.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sent_opcode<sp/>&gt;<sp/>256)<sp/>{</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a1b104ae051b1edc075cfde03a9d4672a" kindref="member">_error</ref><sp/>=<sp/><ref refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf0fd08066fd3d62ffabcf24621b1480b" kindref="member">INVALID_OPCODE</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classProcessors_1_1TCProcessor_1a4c3aea7e4239a6d010670a9b40bc9830" kindref="member">_error</ref><sp/>=<sp/><ref refid="classProcessors_1_1TCProcessor_1a86331905151031bde80ab514155e8d1fa7abc31b33cab689c2aa93a08b8e71a8b" kindref="member">INVALID_OPCODE</ref>;</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>opcode<sp/>=<sp/>sent_opcode;</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Let&apos;s<sp/>now<sp/>parse<sp/>the<sp/>action.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>sent_action<sp/>=<sp/>atoi(payload.substring(2,<sp/>3).c_str());</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3c" kindref="member">TC_ACTION</ref><sp/>action;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1" kindref="member">TC_ACTION</ref><sp/>action;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(sent_action)<sp/>{</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>action<sp/>=<sp/><ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3caef939d362d7f07ad29ea6a0c47b81e85" kindref="member">EXECUTE</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>action<sp/>=<sp/><ref refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a29c9fbbe7187c3765aaae054cc9f057a" kindref="member">EXECUTE</ref>;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>action<sp/>=<sp/><ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3cadeb07d61a4230e0e1e88aaad4f33e759" kindref="member">ENABLE</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>action<sp/>=<sp/><ref refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a5e98c261faced68f10c8f1f0b448b2e4" kindref="member">ENABLE</ref>;</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>5:</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>action<sp/>=<sp/><ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3ca892aa983d0d505703d4c1fcad4586683" kindref="member">DISABLE</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>action<sp/>=<sp/><ref refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a2bdc4e377bc077379bf01efbf9c521ce" kindref="member">DISABLE</ref>;</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a1b104ae051b1edc075cfde03a9d4672a" kindref="member">_error</ref><sp/>=<sp/><ref refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf852ce6e9877744a1c1a998faa8581cc" kindref="member">INVALID_ACTION</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classProcessors_1_1TCProcessor_1a4c3aea7e4239a6d010670a9b40bc9830" kindref="member">_error</ref><sp/>=<sp/><ref refid="classProcessors_1_1TCProcessor_1a86331905151031bde80ab514155e8d1fa272427c4df7818e418d3bc83685b15f4" kindref="member">INVALID_ACTION</ref>;</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a8d82f0ba03d36e1fe16504e2835ac4ed" kindref="member" tooltip="This function will perform the given action on the given opcode. The internal error variable will ref...">perform</ref>(action,<sp/>opcode);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProcessors_1_1TCProcessor_1abed11b68a69058b6b7f18ec394ca4542" kindref="member" tooltip="This function will perform the given action on the given opcode. The internal error variable will ref...">perform</ref>(action,<sp/>opcode);</highlight></codeline>
 <codeline lineno="44"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46" refid="classTCProcessor_1a8d82f0ba03d36e1fe16504e2835ac4ed" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTCProcessor_1a8d82f0ba03d36e1fe16504e2835ac4ed" kindref="member" tooltip="This function will perform the given action on the given opcode. The internal error variable will ref...">TCProcessor::perform</ref>(<ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3c" kindref="member">TC_ACTION</ref><sp/>action,<sp/>uint8_t<sp/>opcode)<sp/>{</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classTCProcessor_1a51b3baa303bac37bdca2464b390f4a3f" kindref="member" tooltip="This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the ...">_opcode_TC_map</ref>.find(opcode)<sp/>==<sp/><ref refid="classTCProcessor_1a51b3baa303bac37bdca2464b390f4a3f" kindref="member" tooltip="This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the ...">_opcode_TC_map</ref>.end())<sp/>{</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a1b104ae051b1edc075cfde03a9d4672a" kindref="member">_error</ref><sp/>=<sp/><ref refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf0fd08066fd3d62ffabcf24621b1480b" kindref="member">INVALID_OPCODE</ref>;</highlight></codeline>
+<codeline lineno="46" refid="classProcessors_1_1TCProcessor_1abed11b68a69058b6b7f18ec394ca4542" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProcessors_1_1TCProcessor_1abed11b68a69058b6b7f18ec394ca4542" kindref="member" tooltip="This function will perform the given action on the given opcode. The internal error variable will ref...">TCProcessor::perform</ref>(<ref refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1" kindref="member">TC_ACTION</ref><sp/>action,<sp/>uint8_t<sp/>opcode)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classProcessors_1_1TCProcessor_1acaa3f4d082a9ca8d53302acfc56affd2" kindref="member" tooltip="This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the ...">_opcode_TC_map</ref>.find(opcode)<sp/>==<sp/><ref refid="classProcessors_1_1TCProcessor_1acaa3f4d082a9ca8d53302acfc56affd2" kindref="member" tooltip="This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the ...">_opcode_TC_map</ref>.end())<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classProcessors_1_1TCProcessor_1a4c3aea7e4239a6d010670a9b40bc9830" kindref="member">_error</ref><sp/>=<sp/><ref refid="classProcessors_1_1TCProcessor_1a86331905151031bde80ab514155e8d1fa7abc31b33cab689c2aa93a08b8e71a8b" kindref="member">INVALID_OPCODE</ref>;</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC" kindref="compound" tooltip="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</ref>*<sp/>tc<sp/>=<sp/><ref refid="classTCProcessor_1a51b3baa303bac37bdca2464b390f4a3f" kindref="member" tooltip="This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the ...">_opcode_TC_map</ref>.find(opcode)-&gt;second;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1_1AbstractTC" kindref="compound" tooltip="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC::AbstractTC</ref>*<sp/>tc<sp/>=<sp/><ref refid="classProcessors_1_1TCProcessor_1acaa3f4d082a9ca8d53302acfc56affd2" kindref="member" tooltip="This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the ...">_opcode_TC_map</ref>.find(opcode)-&gt;second;</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(action)<sp/>{</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3cadeb07d61a4230e0e1e88aaad4f33e759" kindref="member">ENABLE</ref>:</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tc-&gt;<ref refid="classTC_1a5431ac6442ffc4d740b1f146322a2a7c" kindref="member" tooltip="This function will enable this TC.">enable</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a5e98c261faced68f10c8f1f0b448b2e4" kindref="member">ENABLE</ref>:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tc-&gt;<ref refid="classTC_1_1AbstractTC_1a7e1389c4cd810758e1e1ab8cc4451cf1" kindref="member" tooltip="This function will enable this TC.">enable</ref>();</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3ca892aa983d0d505703d4c1fcad4586683" kindref="member">DISABLE</ref>:</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tc-&gt;<ref refid="classTC_1ac5e09bff8556f6ac5ed5604b855d3338" kindref="member" tooltip="This function will disable this TC. A disabled TC cannot be executed.">disable</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a2bdc4e377bc077379bf01efbf9c521ce" kindref="member">DISABLE</ref>:</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tc-&gt;<ref refid="classTC_1_1AbstractTC_1a3c27a4cf59011e0c2ecd39898645f298" kindref="member" tooltip="This function will disable this TC. A disabled TC cannot be executed.">disable</ref>();</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3caef939d362d7f07ad29ea6a0c47b81e85" kindref="member">EXECUTE</ref>:</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tc-&gt;<ref refid="classTC_1ad03c30fb218c9c3280056bfbb35d6ae0" kindref="member" tooltip="This function will execute of this TC. A TC can only be executed (for start and stop actions...">exec</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classProcessors_1_1TCProcessor_1a9bd0775fa1f81266de584fb6b8a2c1a1a29c9fbbe7187c3765aaae054cc9f057a" kindref="member">EXECUTE</ref>:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tc-&gt;<ref refid="classTC_1_1AbstractTC_1a0c7c211d4ff52948d7d1d8803d7b93fb" kindref="member" tooltip="This function will execute of this TC. A TC can only be executed (for start and stop actions...">exec</ref>();</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="63"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65" refid="classTCProcessor_1a725d44ebf98a78dbf5ebc549d678b3c8" refkind="member"><highlight class="normal"><ref refid="classTCProcessor_1a725d44ebf98a78dbf5ebc549d678b3c8" kindref="member">TCProcessor::~TCProcessor</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="65" refid="classProcessors_1_1TCProcessor_1ab32564eee3d2b134f07fea944989e2a4" refkind="member"><highlight class="normal"><ref refid="classProcessors_1_1TCProcessor_1ab32564eee3d2b134f07fea944989e2a4" kindref="member">TCProcessor::~TCProcessor</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="66"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68" refid="classTCProcessor_1aea90af74c7ff4e3f904a9954bd8e5a7a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTCProcessor_1aea90af74c7ff4e3f904a9954bd8e5a7a" kindref="member" tooltip="The definitions_ function will define all the TCs available. It is called from the constructor and it...">TCProcessor::definitions_</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a51b3baa303bac37bdca2464b390f4a3f" kindref="member" tooltip="This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the ...">_opcode_TC_map</ref>[1]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classLogicTC" kindref="compound">LogicTC</ref>(13,<sp/>0x1);</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a51b3baa303bac37bdca2464b390f4a3f" kindref="member" tooltip="This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the ...">_opcode_TC_map</ref>[2]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classLogicTC" kindref="compound">LogicTC</ref>(13,<sp/>0x0);</highlight></codeline>
+<codeline lineno="68" refid="classProcessors_1_1TCProcessor_1add0cb2a51c0d96eedafef8fe9935efd7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProcessors_1_1TCProcessor_1add0cb2a51c0d96eedafef8fe9935efd7" kindref="member" tooltip="The definitions_ function will define all the TCs available. It is called from the constructor and it...">TCProcessor::definitions_</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProcessors_1_1TCProcessor_1acaa3f4d082a9ca8d53302acfc56affd2" kindref="member" tooltip="This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the ...">_opcode_TC_map</ref>[1]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classTC_1_1LogicTC" kindref="compound" tooltip="This class enables digital writing to a given output pin with the given output value.">TC::LogicTC</ref>(13,<sp/>0x1);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProcessors_1_1TCProcessor_1acaa3f4d082a9ca8d53302acfc56affd2" kindref="member" tooltip="This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the ...">_opcode_TC_map</ref>[2]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classTC_1_1LogicTC" kindref="compound" tooltip="This class enables digital writing to a given output pin with the given output value.">TC::LogicTC</ref>(13,<sp/>0x0);</highlight></codeline>
 <codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.cpp"/>
   </compounddef>

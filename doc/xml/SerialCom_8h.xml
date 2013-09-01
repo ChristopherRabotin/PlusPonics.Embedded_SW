@@ -8,61 +8,62 @@
     <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
     <includedby refid="SerialCom_8cpp" local="yes">SerialCom.cpp</includedby>
     <incdepgraph>
-      <node id="233">
+      <node id="260">
         <label>stdarg.h</label>
       </node>
-      <node id="234">
+      <node id="261">
         <label>WString.h</label>
       </node>
-      <node id="231">
+      <node id="258">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication_8h"/>
-        <childnode refid="232" relation="include">
+        <childnode refid="259" relation="include">
         </childnode>
-        <childnode refid="233" relation="include">
+        <childnode refid="260" relation="include">
         </childnode>
-        <childnode refid="234" relation="include">
+        <childnode refid="261" relation="include">
         </childnode>
       </node>
-      <node id="236">
+      <node id="263">
         <label>HardwareSerial.h</label>
       </node>
-      <node id="235">
+      <node id="262">
         <label>Arduino.h</label>
       </node>
-      <node id="230">
+      <node id="257">
         <label>SerialCom.h</label>
         <link refid="SerialCom.h"/>
-        <childnode refid="231" relation="include">
+        <childnode refid="258" relation="include">
         </childnode>
-        <childnode refid="235" relation="include">
+        <childnode refid="262" relation="include">
         </childnode>
-        <childnode refid="236" relation="include">
+        <childnode refid="263" relation="include">
         </childnode>
       </node>
-      <node id="232">
+      <node id="259">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="239">
+      <node id="266">
         <label>SerialCom.cpp</label>
         <link refid="SerialCom_8cpp"/>
       </node>
-      <node id="237">
+      <node id="264">
         <label>SerialCom.h</label>
         <link refid="SerialCom.h"/>
-        <childnode refid="238" relation="include">
+        <childnode refid="265" relation="include">
         </childnode>
-        <childnode refid="239" relation="include">
+        <childnode refid="266" relation="include">
         </childnode>
       </node>
-      <node id="238">
+      <node id="265">
         <label>main.cpp</label>
         <link refid="main_8cpp"/>
       </node>
     </invincdepgraph>
-    <innerclass refid="classSerialCom" prot="public">SerialCom</innerclass>
+    <innerclass refid="classCommunicators_1_1SerialCom" prot="public">Communicators::SerialCom</innerclass>
+    <innernamespace refid="namespaceCommunicators">Communicators</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -81,17 +82,18 @@
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="AbstractCommunication_8h" kindref="compound">AbstractCommunication.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;HardwareSerial.h&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>TODO<sp/>Eventually<sp/>use<sp/>SoftSerial.h<sp/>since<sp/>it<sp/>uses<sp/>interrupts<sp/>to<sp/>read<sp/>incoming<sp/>messages.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;SoftwareSerial.h&gt;</highlight></codeline>
-<codeline lineno="19" refid="classSerialCom" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSerialCom" kindref="compound" tooltip="This class defines serial communication with the control system.">SerialCom</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classAbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>{</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSerialCom_1a4e0fd8ce8d81fc4f3c422d2f9d1aff68" kindref="member">SerialCom</ref>();</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classSerialCom_1a5582cf804e661a24cb32720b31a2f9fe" kindref="member">~SerialCom</ref>();</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSerialCom_1a53bb031287acb1973c1e1f76799c76b6" kindref="member" tooltip="This function initializes the communication. It will be called from the setup function.">init</ref>();</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" kindref="member" tooltip="This function sends information through the communication pipe.">send</ref>(String<sp/>payload);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" kindref="member" tooltip="This function reads the serial input and returns all the information it reads at the time of calling...">recv</ref>();</highlight></codeline>
-<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SERIALCOM_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;SoftwareSerial.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Communicators<sp/>{</highlight></codeline>
+<codeline lineno="20" refid="classCommunicators_1_1SerialCom" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCommunicators_1_1SerialCom" kindref="compound" tooltip="This class defines serial communication with the control system.">SerialCom</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classCommunicators_1_1AbstractCommunication" kindref="compound" tooltip="This class defines how all communication should be done.">AbstractCommunication</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCommunicators_1_1SerialCom_1ac8179e150751ed6229cf59d54c31f9b8" kindref="member">SerialCom</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classCommunicators_1_1SerialCom_1a0b829033ae0bd9f584ef8acae85ef1af" kindref="member">~SerialCom</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCommunicators_1_1SerialCom_1a914de6786e449c3a83f7f5764036d285" kindref="member" tooltip="This function initializes the communication. It will be called from the setup function.">init</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCommunicators_1_1SerialCom_1a0b03dfcf023d751398ae5535e3221e15" kindref="member" tooltip="This function sends information through the communication pipe.">send</ref>(String<sp/>payload);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classCommunicators_1_1SerialCom_1ad5805bc80800d48b760c83fef0f2ab13" kindref="member" tooltip="This function reads the serial input and returns all the information it reads at the time of calling...">recv</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SERIALCOM_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.h"/>
   </compounddef>

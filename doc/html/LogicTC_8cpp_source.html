@@ -35,6 +35,7 @@
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
     </ul>
@@ -73,23 +74,24 @@ $(document).ready(function(){initNavTree('LogicTC_8cpp_source.html','');});
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="LogicTC_8h.html">LogicTC.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="classLogicTC.html#ab2ddb23a9a508fc45d021e3f7e1d0736">   10</a></span>&#160;<a class="code" href="classLogicTC.html#ab2ddb23a9a508fc45d021e3f7e1d0736" title="Specify in the constructor both the output pin and the output value.">LogicTC::LogicTC</a>(uint8_t outputPin, <span class="keywordtype">bool</span> value) :</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</a>() {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classLogicTC.html#ad4ecb293e7e75bc77e49c491bacea532">_outputPin</a> = outputPin;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classLogicTC.html#a59bd4dc2ca0fa5afab56d8cac575a1e9">_outputValue</a> = value;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>TC {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="classTC_1_1LogicTC.html#a71dce734cca42a961080bf4d55585197">   10</a></span>&#160;<a class="code" href="classTC_1_1LogicTC.html#a71dce734cca42a961080bf4d55585197" title="Specify in the constructor both the output pin and the output value.">LogicTC::LogicTC</a>(uint8_t outputPin, <span class="keywordtype">bool</span> value) :</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="classTC_1_1AbstractTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes...">AbstractTC</a>() {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classTC_1_1LogicTC.html#a728598e822ad66bc18ed72c3ca21becb">_outputPin</a> = outputPin;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classTC_1_1LogicTC.html#a42fb73ee06271a3b2da792c6f9a91797">_outputValue</a> = value;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="classLogicTC.html#ab02d2ebc69f023331d35147f0465c4df">   16</a></span>&#160;<a class="code" href="classLogicTC.html#ab02d2ebc69f023331d35147f0465c4df">LogicTC::~LogicTC</a>() {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="classTC_1_1LogicTC.html#a828832e629ee875ab502f37f67a86282">   16</a></span>&#160;<a class="code" href="classTC_1_1LogicTC.html#a828832e629ee875ab502f37f67a86282">LogicTC::~LogicTC</a>() {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="classLogicTC.html#a99bf3c13fa50ffa8aa3cdfa397e8375a">   19</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classLogicTC.html#a99bf3c13fa50ffa8aa3cdfa397e8375a" title="The init function sets up everything for this TC to be operational. It must be called from the setup ...">LogicTC::init</a>() {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    pinMode(<a class="code" href="classLogicTC.html#ad4ecb293e7e75bc77e49c491bacea532">_outputPin</a>, OUTPUT);</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="classTC_1_1LogicTC.html#a634c0175676e6ea5d5052911953e9bf8">   19</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classTC_1_1LogicTC.html#a634c0175676e6ea5d5052911953e9bf8" title="The init function sets up everything for this TC to be operational. It must be called from the setup ...">LogicTC::init</a>() {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    pinMode(<a class="code" href="classTC_1_1LogicTC.html#a728598e822ad66bc18ed72c3ca21becb">_outputPin</a>, OUTPUT);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="classLogicTC.html#ad90a1bc2c83593f296292bf9ccc37d79">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classLogicTC.html#ad90a1bc2c83593f296292bf9ccc37d79" title="This function will execute this TC.">LogicTC::exec_impl_</a>() {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    digitalWrite(<a class="code" href="classLogicTC.html#ad4ecb293e7e75bc77e49c491bacea532">_outputPin</a>, <a class="code" href="classLogicTC.html#a59bd4dc2ca0fa5afab56d8cac575a1e9">_outputValue</a>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="classTC_1_1LogicTC.html#a2016a5584c2d2d160a4f14236b03a5ad">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classTC_1_1LogicTC.html#a2016a5584c2d2d160a4f14236b03a5ad" title="This function will execute this TC.">LogicTC::exec_impl_</a>() {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    digitalWrite(<a class="code" href="classTC_1_1LogicTC.html#a728598e822ad66bc18ed72c3ca21becb">_outputPin</a>, <a class="code" href="classTC_1_1LogicTC.html#a42fb73ee06271a3b2da792c6f9a91797">_outputValue</a>);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

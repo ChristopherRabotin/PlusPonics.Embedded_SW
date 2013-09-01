@@ -8,7 +8,10 @@
 #ifndef AbstractTC_H_
 #define AbstractTC_H_
 #include <stdint.h>
-
+/**
+ * @namespace TC
+ * @brief The TC namespace groups all the different kind of telecommands available along with the abstract TC definition.
+ */
 namespace TC {
 
 /**
@@ -71,11 +74,11 @@ public:
 	 * It must be implemented by the subclass.
 	 */
 	virtual void init() = 0;
+private:
 	/**
 	 * @brief This function will execute this TC.
 	 */
 	virtual void exec_impl_() = 0;
-private:
 	bool _enabled;
 	bool _persistent_error;
 	uint32_t _executions;

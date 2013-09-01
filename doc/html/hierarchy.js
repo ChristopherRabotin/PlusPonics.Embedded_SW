@@ -1,12 +1,12 @@
 var hierarchy =
 [
-    [ "AbstractCommunication", "classAbstractCommunication.html", [
-      [ "SerialCom", "classSerialCom.html", null ]
+    [ "Communicators::AbstractCommunication", "classCommunicators_1_1AbstractCommunication.html", [
+      [ "Communicators::SerialCom", "classCommunicators_1_1SerialCom.html", null ]
     ] ],
-    [ "DigitalWriteTC", "classDigitalWriteTC.html", null ],
-    [ "GlobalReceiver", "classGlobalReceiver.html", null ],
-    [ "TC", "classTC.html", [
-      [ "LogicTC", "classLogicTC.html", null ]
+    [ "TC::AbstractTC", "classTC_1_1AbstractTC.html", [
+      [ "TC::LogicTC", "classTC_1_1LogicTC.html", null ]
     ] ],
-    [ "TCProcessor", "classTCProcessor.html", null ]
+    [ "TM::AbstractTM", "classTM_1_1AbstractTM.html", null ],
+    [ "Processors::GlobalReceiver", "classProcessors_1_1GlobalReceiver.html", null ],
+    [ "Processors::TCProcessor", "classProcessors_1_1TCProcessor.html", null ]
 ];

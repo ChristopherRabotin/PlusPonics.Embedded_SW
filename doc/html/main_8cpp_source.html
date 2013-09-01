@@ -35,6 +35,7 @@
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
     </ul>
@@ -81,40 +82,38 @@ $(document).ready(function(){initNavTree('main_8cpp_source.html','');});
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="SerialCom_8h.html">SerialCom.h</a>&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="main_8cpp.html#afdd77f1aa3023f9ba5f49bb1f6c68b51">   20</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#afdd77f1aa3023f9ba5f49bb1f6c68b51">ledPin</a> = 13;    <span class="comment">// LED connected to digital pin 13</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="main_8cpp.html#ac32bb15f611faf91f75daaab60c1068c">   22</a></span>&#160;<a class="code" href="classSerialCom.html" title="This class defines serial communication with the control system.">SerialCom</a> <a class="code" href="main_8cpp.html#ac32bb15f611faf91f75daaab60c1068c">com</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="main_8cpp.html#a95de02de573cd863d1547c545dfeceae">   23</a></span>&#160;<a class="code" href="classGlobalReceiver.html">GlobalReceiver</a> <a class="code" href="main_8cpp.html#a95de02de573cd863d1547c545dfeceae">glrcv</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="main_8cpp.html#a60ab7ee2619879f6886f309095dca225">   24</a></span>&#160;<a class="code" href="classTCProcessor.html" title="This class manages all the telecommands in a std::map . It is also called by GlobalReceiver upon rece...">TCProcessor</a> <a class="code" href="main_8cpp.html#a60ab7ee2619879f6886f309095dca225">tcProcessor</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">   29</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="This function is only ran when the sketch is initialized.">setup</a>() {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="main_8cpp.html#af0d5dd593884b7553dd6cdd4deab5765">   20</a></span>&#160;<a class="code" href="classCommunicators_1_1SerialCom.html" title="This class defines serial communication with the control system.">Communicators::SerialCom</a> <a class="code" href="main_8cpp.html#af0d5dd593884b7553dd6cdd4deab5765">com</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="main_8cpp.html#afcc05c67354d89e62ca12e7708fd8d6b">   21</a></span>&#160;<a class="code" href="classProcessors_1_1GlobalReceiver.html" title="This class is the overall handler for receiving input over whichever means of Communicators::Abstract...">Processors::GlobalReceiver</a> <a class="code" href="main_8cpp.html#afcc05c67354d89e62ca12e7708fd8d6b">glrcv</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="main_8cpp.html#a62b66e0c89c7061ce87f6b7d61d01117">   22</a></span>&#160;<a class="code" href="classProcessors_1_1TCProcessor.html" title="This class manages all the telecommands in a std::map . It is also called by GlobalReceiver upon rece...">Processors::TCProcessor</a> <a class="code" href="main_8cpp.html#a62b66e0c89c7061ce87f6b7d61d01117">tcProcessor</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">   27</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="This function is only ran when the sketch is initialized.">setup</a>() {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    tcProcessor.<a class="code" href="classProcessors_1_1TCProcessor.html#a217096fa67d5a2bfe94aa256086545ea" title="The init function will call &#39;init&#39; on all the telecommands of this class. This function must be calle...">init</a>();</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    tcProcessor.<a class="code" href="classTCProcessor.html#a4a8c96ae1992c22a3f1b52802a356e72" title="The init function will call &#39;init&#39; on all the telecommands of this class. This function must be calle...">init</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    com.<a class="code" href="classSerialCom.html#a53bb031287acb1973c1e1f76799c76b6" title="This function initializes the communication. It will be called from the setup function.">init</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    com.<a class="code" href="classAbstractCommunication.html#a959a785338d76d315568c47dcc3a0336">setLevel</a>(<a class="code" href="classAbstractCommunication.html#a4226603ef45c35ea969f888ff6cabe4faf948f99c94172d72dff0a540a84704fb">AbstractCommunication::INFO</a>);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    com.<a class="code" href="classAbstractCommunication.html#aca99e8b6cfffce4207bb9ca09f90e15c">info</a>(<span class="stringliteral">&quot;Setting up led&quot;</span>, <span class="stringliteral">&quot;setup&quot;</span>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    glrcv.<a class="code" href="classGlobalReceiver.html#adea5c467d1cd853a6ba6ef88d5611dcd" title="This function sets the communication pointer. This is used when the empty constructor is used...">setCom</a>(com);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    glrcv.<a class="code" href="classGlobalReceiver.html#a11733fe91fb1e7829efa9672f569cdb5" title="This function sets the TC processor. This is used when the empty constructor is used.">setTCProcessor</a>(tcProcessor);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f">   43</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered.">loop</a>() {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    delay(2000);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    glrcv.<a class="code" href="classGlobalReceiver.html#a86c5c89fd69a213379582e1a81085d12" title="This function fetches and processes the input. It calls com&#39;s recv() to read the latest information...">process</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe">   52</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title="where all the subsystems are started.">main</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    init();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="This function is only ran when the sketch is initialized.">setup</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">/* Let&#39;s turn on the LED. The user will turn it off from Serial. */</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    tcProcessor.<a class="code" href="classTCProcessor.html#a8d82f0ba03d36e1fe16504e2835ac4ed" title="This function will perform the given action on the given opcode. The internal error variable will ref...">perform</a>(<a class="code" href="classTCProcessor.html#a7129c3bda29003b5020b432bdba6cb3caef939d362d7f07ad29ea6a0c47b81e85">TCProcessor::EXECUTE</a>, 1);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered.">loop</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    com.<a class="code" href="classCommunicators_1_1SerialCom.html#a914de6786e449c3a83f7f5764036d285" title="This function initializes the communication. It will be called from the setup function.">init</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    com.<a class="code" href="classCommunicators_1_1AbstractCommunication.html#a360781ab654fe0b0da323a9f53365643">setLevel</a>(<a class="code" href="classCommunicators_1_1AbstractCommunication.html#af2bddffaa4a8608d5c0877fabd1386caa6e07131243800472e5c622445fef050a">Communicators::AbstractCommunication::INFO</a>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    com.<a class="code" href="classCommunicators_1_1AbstractCommunication.html#afe1798d4be09f1e7c3d5e4c0494dd397">info</a>(<span class="stringliteral">&quot;Setting up led&quot;</span>, <span class="stringliteral">&quot;setup&quot;</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    glrcv.<a class="code" href="classProcessors_1_1GlobalReceiver.html#aed8991f2b69c3df04c1a1c0f15fb7b3c" title="This function sets the communication pointer. This is used when the empty constructor is used...">setCom</a>(com);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    glrcv.<a class="code" href="classProcessors_1_1GlobalReceiver.html#a41eab6e4412e6bfbab06100adf8d121c" title="This function sets the TC processor. This is used when the empty constructor is used.">setTCProcessor</a>(tcProcessor);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered.">loop</a>() {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    delay(2000);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    glrcv.<a class="code" href="classProcessors_1_1GlobalReceiver.html#a0f3f336ac7a9c7d2024490961694248c" title="This function fetches and processes the input. It calls com&#39;s recv() to read the latest information...">process</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe">   50</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title="where all the subsystems are started.">main</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    init();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="This function is only ran when the sketch is initialized.">setup</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">/* Let&#39;s turn on the LED. The user will turn it off from Serial. */</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    tcProcessor.<a class="code" href="classProcessors_1_1TCProcessor.html#abed11b68a69058b6b7f18ec394ca4542" title="This function will perform the given action on the given opcode. The internal error variable will ref...">perform</a>(<a class="code" href="classProcessors_1_1TCProcessor.html#a9bd0775fa1f81266de584fb6b8a2c1a1a29c9fbbe7187c3765aaae054cc9f057a">Processors::TCProcessor::EXECUTE</a>, 1);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered.">loop</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

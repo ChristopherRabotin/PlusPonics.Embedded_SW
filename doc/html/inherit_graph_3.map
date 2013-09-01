@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes..." alt="" coords="5,5,48,32"/>
-<area shape="rect" id="node3" href="$classLogicTC.html" title="LogicTC" alt="" coords="96,5,171,32"/>
+<area shape="rect" id="node1" href="$classTC_1_1AbstractTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes..." alt="" coords="6,5,125,32"/>
+<area shape="rect" id="node3" href="$classTC_1_1LogicTC.html" title="This class enables digital writing to a given output pin with the given output value." alt="" coords="174,5,277,32"/>
 </map>

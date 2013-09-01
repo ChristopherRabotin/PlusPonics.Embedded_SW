@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classTC_1_1AbstractTC" kind="class" prot="public" abstract="yes">
+    <compoundname>TC::AbstractTC</compoundname>
+    <derivedcompoundref refid="classTC_1_1LogicTC" prot="public" virt="non-virtual">TC::LogicTC</derivedcompoundref>
+    <includes refid="AbstractTC_8h" local="no">AbstractTC.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1db" prot="public" static="no">
+        <name>ERROR_STATE</name>
+        <enumvalue id="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba34fa69a6a7288fb465c5d83a0c202684" prot="public">
+          <name>NO_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>nominal state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba824a239cfc949e9cbe6ba044df3c9285" prot="public">
+          <name>NOT_ENABLED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>if attempting to start or stop when not enabled </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba020b9bf0023068971fe0fb64180fe388" prot="public">
+          <name>WAS_ENABLED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>if attempting to enable and was already enabled </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dbad5ec078f5ab0c4bd9c7bd12371033c6e" prot="public">
+          <name>WAS_DISABLED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>if attempting to disable and was already disabled </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba22117202be6a265b56947fcfeec4648f" prot="public">
+          <name>WAS_NOT_PERSISTENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>if attempting to clear the error and was not in persistent error mode </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>defines all the error states a <ref refid="namespaceTC" kindref="compound">TC</ref> can have. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="34" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" bodystart="34" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTC_1_1AbstractTC_1ac4c4c8788446f1b72dd077bad6f67c3b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TC::AbstractTC::_enabled</definition>
+        <argsstring></argsstring>
+        <name>_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="82" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classTC_1_1AbstractTC_1a73f7ff965d294fd99cbb399cf12dd966" compoundref="AbstractTC_8cpp" startline="10" endline="15">AbstractTC</referencedby>
+        <referencedby refid="classTC_1_1AbstractTC_1a3c27a4cf59011e0c2ecd39898645f298" compoundref="AbstractTC_8cpp" startline="28" endline="34">disable</referencedby>
+        <referencedby refid="classTC_1_1AbstractTC_1a7e1389c4cd810758e1e1ab8cc4451cf1" compoundref="AbstractTC_8cpp" startline="20" endline="26">enable</referencedby>
+        <referencedby refid="classTC_1_1AbstractTC_1a0c7c211d4ff52948d7d1d8803d7b93fb" compoundref="AbstractTC_8cpp" startline="36" endline="43">exec</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classTC_1_1AbstractTC_1a248e6e66c56e03425b4ae8ebe1da77b5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TC::AbstractTC::_persistent_error</definition>
+        <argsstring></argsstring>
+        <name>_persistent_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="83" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="classTC_1_1AbstractTC_1a73f7ff965d294fd99cbb399cf12dd966" compoundref="AbstractTC_8cpp" startline="10" endline="15">AbstractTC</referencedby>
+        <referencedby refid="classTC_1_1AbstractTC_1a81d55bcafc8bdabbe9a7aa3cfc9895f3" compoundref="AbstractTC_8cpp" startline="49" endline="55">clear_error</referencedby>
+        <referencedby refid="classTC_1_1AbstractTC_1ad1fdfeaa6094b9c6154dae9133c87b5e" compoundref="AbstractTC_8cpp" startline="57" endline="63">errno</referencedby>
+        <referencedby refid="classTC_1_1AbstractTC_1afc59e110004a34bb1b6c03f3b5746c0f" compoundref="AbstractTC_8cpp" startline="45" endline="47">persist_errors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classTC_1_1AbstractTC_1a0d32316d388fab15604a83c91e632d4b" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TC::AbstractTC::_executions</definition>
+        <argsstring></argsstring>
+        <name>_executions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="84" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="classTC_1_1AbstractTC_1a73f7ff965d294fd99cbb399cf12dd966" compoundref="AbstractTC_8cpp" startline="10" endline="15">AbstractTC</referencedby>
+        <referencedby refid="classTC_1_1AbstractTC_1a0c7c211d4ff52948d7d1d8803d7b93fb" compoundref="AbstractTC_8cpp" startline="36" endline="43">exec</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classTC_1_1AbstractTC_1a6372651a6d657e79ca616a6f7d34171d" prot="private" static="no" mutable="no">
+        <type><ref refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1db" kindref="member">ERROR_STATE</ref></type>
+        <definition>ERROR_STATE TC::AbstractTC::_error</definition>
+        <argsstring></argsstring>
+        <name>_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="85" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" bodystart="85" bodyend="-1"/>
+        <referencedby refid="classTC_1_1AbstractTC_1a73f7ff965d294fd99cbb399cf12dd966" compoundref="AbstractTC_8cpp" startline="10" endline="15">AbstractTC</referencedby>
+        <referencedby refid="classTC_1_1AbstractTC_1a81d55bcafc8bdabbe9a7aa3cfc9895f3" compoundref="AbstractTC_8cpp" startline="49" endline="55">clear_error</referencedby>
+        <referencedby refid="classTC_1_1AbstractTC_1a3c27a4cf59011e0c2ecd39898645f298" compoundref="AbstractTC_8cpp" startline="28" endline="34">disable</referencedby>
+        <referencedby refid="classTC_1_1AbstractTC_1a7e1389c4cd810758e1e1ab8cc4451cf1" compoundref="AbstractTC_8cpp" startline="20" endline="26">enable</referencedby>
+        <referencedby refid="classTC_1_1AbstractTC_1ad1fdfeaa6094b9c6154dae9133c87b5e" compoundref="AbstractTC_8cpp" startline="57" endline="63">errno</referencedby>
+        <referencedby refid="classTC_1_1AbstractTC_1a0c7c211d4ff52948d7d1d8803d7b93fb" compoundref="AbstractTC_8cpp" startline="36" endline="43">exec</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTC_1_1AbstractTC_1a73f7ff965d294fd99cbb399cf12dd966" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TC::AbstractTC::AbstractTC</definition>
+        <argsstring>()</argsstring>
+        <name>AbstractTC</name>
+        <briefdescription>
+<para>This creates the <ref refid="namespaceTC" kindref="compound">TC</ref> object. The OPCODE of this <ref refid="namespaceTC" kindref="compound">TC</ref> is only defined in the main when the <ref refid="namespaceTC" kindref="compound">TC</ref> is instantiated. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="29" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.cpp" bodystart="10" bodyend="15"/>
+        <references refid="classTC_1_1AbstractTC_1ac4c4c8788446f1b72dd077bad6f67c3b" compoundref="AbstractTC_8h" startline="82">_enabled</references>
+        <references refid="classTC_1_1AbstractTC_1a6372651a6d657e79ca616a6f7d34171d" compoundref="AbstractTC_8h" startline="85">_error</references>
+        <references refid="classTC_1_1AbstractTC_1a0d32316d388fab15604a83c91e632d4b" compoundref="AbstractTC_8h" startline="84">_executions</references>
+        <references refid="classTC_1_1AbstractTC_1a248e6e66c56e03425b4ae8ebe1da77b5" compoundref="AbstractTC_8h" startline="83">_persistent_error</references>
+        <references refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba34fa69a6a7288fb465c5d83a0c202684" compoundref="AbstractTC_8h" startline="35">NO_ERROR</references>
+      </memberdef>
+      <memberdef kind="function" id="classTC_1_1AbstractTC_1add9c73d16e03f939439e9ed1e3175e25" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>TC::AbstractTC::~AbstractTC</definition>
+        <argsstring>()</argsstring>
+        <name>~AbstractTC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="30" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.cpp" bodystart="17" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classTC_1_1AbstractTC_1a7e1389c4cd810758e1e1ab8cc4451cf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TC::AbstractTC::enable</definition>
+        <argsstring>()</argsstring>
+        <name>enable</name>
+        <briefdescription>
+<para>This function will enable this <ref refid="namespaceTC" kindref="compound">TC</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="44" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.cpp" bodystart="20" bodyend="26"/>
+        <references refid="classTC_1_1AbstractTC_1ac4c4c8788446f1b72dd077bad6f67c3b" compoundref="AbstractTC_8h" startline="82">_enabled</references>
+        <references refid="classTC_1_1AbstractTC_1a6372651a6d657e79ca616a6f7d34171d" compoundref="AbstractTC_8h" startline="85">_error</references>
+        <references refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba020b9bf0023068971fe0fb64180fe388" compoundref="AbstractTC_8h" startline="37">WAS_ENABLED</references>
+        <referencedby refid="classProcessors_1_1TCProcessor_1abed11b68a69058b6b7f18ec394ca4542" compoundref="TCProcessor_8cpp" startline="46" endline="63">Processors::TCProcessor::perform</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTC_1_1AbstractTC_1a3c27a4cf59011e0c2ecd39898645f298" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TC::AbstractTC::disable</definition>
+        <argsstring>()</argsstring>
+        <name>disable</name>
+        <briefdescription>
+<para>This function will disable this <ref refid="namespaceTC" kindref="compound">TC</ref>. A disabled <ref refid="namespaceTC" kindref="compound">TC</ref> cannot be executed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="48" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.cpp" bodystart="28" bodyend="34"/>
+        <references refid="classTC_1_1AbstractTC_1ac4c4c8788446f1b72dd077bad6f67c3b" compoundref="AbstractTC_8h" startline="82">_enabled</references>
+        <references refid="classTC_1_1AbstractTC_1a6372651a6d657e79ca616a6f7d34171d" compoundref="AbstractTC_8h" startline="85">_error</references>
+        <references refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dbad5ec078f5ab0c4bd9c7bd12371033c6e" compoundref="AbstractTC_8h" startline="38">WAS_DISABLED</references>
+        <referencedby refid="classProcessors_1_1TCProcessor_1abed11b68a69058b6b7f18ec394ca4542" compoundref="TCProcessor_8cpp" startline="46" endline="63">Processors::TCProcessor::perform</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTC_1_1AbstractTC_1a0c7c211d4ff52948d7d1d8803d7b93fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TC::AbstractTC::exec</definition>
+        <argsstring>()</argsstring>
+        <name>exec</name>
+        <briefdescription>
+<para>This function will execute of this <ref refid="namespaceTC" kindref="compound">TC</ref>. A <ref refid="namespaceTC" kindref="compound">TC</ref> can only be executed (for start and stop actions, use procedures, embedded or not). This function will call __exec after shared features. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="53" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.cpp" bodystart="36" bodyend="43"/>
+        <references refid="classTC_1_1AbstractTC_1ac4c4c8788446f1b72dd077bad6f67c3b" compoundref="AbstractTC_8h" startline="82">_enabled</references>
+        <references refid="classTC_1_1AbstractTC_1a6372651a6d657e79ca616a6f7d34171d" compoundref="AbstractTC_8h" startline="85">_error</references>
+        <references refid="classTC_1_1AbstractTC_1a0d32316d388fab15604a83c91e632d4b" compoundref="AbstractTC_8h" startline="84">_executions</references>
+        <references refid="classTC_1_1AbstractTC_1afd7a067b52b173c366998116b2d75c4a">exec_impl_</references>
+        <references refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba824a239cfc949e9cbe6ba044df3c9285" compoundref="AbstractTC_8h" startline="36">NOT_ENABLED</references>
+        <referencedby refid="classProcessors_1_1TCProcessor_1abed11b68a69058b6b7f18ec394ca4542" compoundref="TCProcessor_8cpp" startline="46" endline="63">Processors::TCProcessor::perform</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTC_1_1AbstractTC_1afc59e110004a34bb1b6c03f3b5746c0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TC::AbstractTC::persist_errors</definition>
+        <argsstring>(bool persist)</argsstring>
+        <name>persist_errors</name>
+        <param>
+          <type>bool</type>
+          <declname>persist</declname>
+        </param>
+        <briefdescription>
+<para>This function sets this <ref refid="namespaceTC" kindref="compound">TC</ref> to persist error (or not). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>persist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set to true to make errors persistent. A persistent error will not reset the error state of this <ref refid="namespaceTC" kindref="compound">TC</ref> until commanded to do so. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="59" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.cpp" bodystart="45" bodyend="47"/>
+        <references refid="classTC_1_1AbstractTC_1a248e6e66c56e03425b4ae8ebe1da77b5" compoundref="AbstractTC_8h" startline="83">_persistent_error</references>
+      </memberdef>
+      <memberdef kind="function" id="classTC_1_1AbstractTC_1a81d55bcafc8bdabbe9a7aa3cfc9895f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TC::AbstractTC::clear_error</definition>
+        <argsstring>()</argsstring>
+        <name>clear_error</name>
+        <briefdescription>
+<para>This function will clear the current error. If called when persistent error are set to false, this will change the error state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="64" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.cpp" bodystart="49" bodyend="55"/>
+        <references refid="classTC_1_1AbstractTC_1a6372651a6d657e79ca616a6f7d34171d" compoundref="AbstractTC_8h" startline="85">_error</references>
+        <references refid="classTC_1_1AbstractTC_1a248e6e66c56e03425b4ae8ebe1da77b5" compoundref="AbstractTC_8h" startline="83">_persistent_error</references>
+        <references refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba34fa69a6a7288fb465c5d83a0c202684" compoundref="AbstractTC_8h" startline="35">NO_ERROR</references>
+        <references refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba22117202be6a265b56947fcfeec4648f" compoundref="AbstractTC_8h" startline="39">WAS_NOT_PERSISTENT</references>
+      </memberdef>
+      <memberdef kind="function" id="classTC_1_1AbstractTC_1ad1fdfeaa6094b9c6154dae9133c87b5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1db" kindref="member">ERROR_STATE</ref></type>
+        <definition>AbstractTC::ERROR_STATE TC::AbstractTC::errno</definition>
+        <argsstring>()</argsstring>
+        <name>errno</name>
+        <briefdescription>
+<para>This function will return the current error of this <ref refid="namespaceTC" kindref="compound">TC</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Once this function is called, the error state is returned to NO_ERROR unless if this <ref refid="namespaceTC" kindref="compound">TC</ref> is configured as having persistent error. </para></simplesect>
+<simplesect kind="return"><para>The current error state. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="71" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.cpp" bodystart="57" bodyend="63"/>
+        <references refid="classTC_1_1AbstractTC_1a6372651a6d657e79ca616a6f7d34171d" compoundref="AbstractTC_8h" startline="85">_error</references>
+        <references refid="classTC_1_1AbstractTC_1a248e6e66c56e03425b4ae8ebe1da77b5" compoundref="AbstractTC_8h" startline="83">_persistent_error</references>
+        <references refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba34fa69a6a7288fb465c5d83a0c202684" compoundref="AbstractTC_8h" startline="35">NO_ERROR</references>
+      </memberdef>
+      <memberdef kind="function" id="classTC_1_1AbstractTC_1ac40b14c410a308e6a1db04abc8bd839d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void TC::AbstractTC::init</definition>
+        <argsstring>()=0</argsstring>
+        <name>init</name>
+        <reimplementedby refid="classTC_1_1LogicTC_1a634c0175676e6ea5d5052911953e9bf8">init</reimplementedby>
+        <briefdescription>
+<para>The init function sets up everything for this <ref refid="namespaceTC" kindref="compound">TC</ref> to be operational. It must be called from the setup function in the main. It must be implemented by the subclass. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classTC_1_1AbstractTC_1afd7a067b52b173c366998116b2d75c4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void TC::AbstractTC::exec_impl_</definition>
+        <argsstring>()=0</argsstring>
+        <name>exec_impl_</name>
+        <reimplementedby refid="classTC_1_1LogicTC_1a2016a5584c2d2d160a4f14236b03a5ad">exec_impl_</reimplementedby>
+        <briefdescription>
+<para>This function will execute this <ref refid="namespaceTC" kindref="compound">TC</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="80"/>
+        <referencedby refid="classTC_1_1AbstractTC_1a0c7c211d4ff52948d7d1d8803d7b93fb" compoundref="AbstractTC_8cpp" startline="36" endline="43">exec</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class defines a telecommand. It is high level and must be overwritten by low level classes. In this class, high level functions are defined as non virtual. Lower level actions must be redefined in subclasses. This allows consistency between each telecommand class. A telecommand can be enabled or disable with the appropriate functions. Note that there is no toggle function. This is to prevent double messages to be sent and enable then disable a command for example. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="25">
+        <label>TC::AbstractTC</label>
+        <link refid="classTC_1_1AbstractTC"/>
+      </node>
+      <node id="26">
+        <label>TC::LogicTC</label>
+        <link refid="classTC_1_1LogicTC"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="24" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" bodystart="24" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classTC_1_1AbstractTC_1ac4c4c8788446f1b72dd077bad6f67c3b" prot="private" virt="non-virtual"><scope>TC::AbstractTC</scope><name>_enabled</name></member>
+      <member refid="classTC_1_1AbstractTC_1a6372651a6d657e79ca616a6f7d34171d" prot="private" virt="non-virtual"><scope>TC::AbstractTC</scope><name>_error</name></member>
+      <member refid="classTC_1_1AbstractTC_1a0d32316d388fab15604a83c91e632d4b" prot="private" virt="non-virtual"><scope>TC::AbstractTC</scope><name>_executions</name></member>
+      <member refid="classTC_1_1AbstractTC_1a248e6e66c56e03425b4ae8ebe1da77b5" prot="private" virt="non-virtual"><scope>TC::AbstractTC</scope><name>_persistent_error</name></member>
+      <member refid="classTC_1_1AbstractTC_1a73f7ff965d294fd99cbb399cf12dd966" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>AbstractTC</name></member>
+      <member refid="classTC_1_1AbstractTC_1a81d55bcafc8bdabbe9a7aa3cfc9895f3" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>clear_error</name></member>
+      <member refid="classTC_1_1AbstractTC_1a3c27a4cf59011e0c2ecd39898645f298" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>disable</name></member>
+      <member refid="classTC_1_1AbstractTC_1a7e1389c4cd810758e1e1ab8cc4451cf1" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>enable</name></member>
+      <member refid="classTC_1_1AbstractTC_1ad1fdfeaa6094b9c6154dae9133c87b5e" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>errno</name></member>
+      <member refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1db" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>ERROR_STATE</name></member>
+      <member refid="classTC_1_1AbstractTC_1a0c7c211d4ff52948d7d1d8803d7b93fb" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>exec</name></member>
+      <member refid="classTC_1_1AbstractTC_1afd7a067b52b173c366998116b2d75c4a" prot="public" virt="pure-virtual"><scope>TC::AbstractTC</scope><name>exec_impl_</name></member>
+      <member refid="classTC_1_1AbstractTC_1ac40b14c410a308e6a1db04abc8bd839d" prot="public" virt="pure-virtual"><scope>TC::AbstractTC</scope><name>init</name></member>
+      <member refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba34fa69a6a7288fb465c5d83a0c202684" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>NO_ERROR</name></member>
+      <member refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba824a239cfc949e9cbe6ba044df3c9285" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>NOT_ENABLED</name></member>
+      <member refid="classTC_1_1AbstractTC_1afc59e110004a34bb1b6c03f3b5746c0f" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>persist_errors</name></member>
+      <member refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dbad5ec078f5ab0c4bd9c7bd12371033c6e" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>WAS_DISABLED</name></member>
+      <member refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba020b9bf0023068971fe0fb64180fe388" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>WAS_ENABLED</name></member>
+      <member refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba22117202be6a265b56947fcfeec4648f" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>WAS_NOT_PERSISTENT</name></member>
+      <member refid="classTC_1_1AbstractTC_1add9c73d16e03f939439e9ed1e3175e25" prot="public" virt="virtual"><scope>TC::AbstractTC</scope><name>~AbstractTC</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

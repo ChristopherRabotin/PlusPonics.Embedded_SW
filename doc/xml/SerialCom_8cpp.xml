@@ -4,48 +4,49 @@
     <compoundname>SerialCom.cpp</compoundname>
     <includes refid="SerialCom_8h" local="yes">SerialCom.h</includes>
     <incdepgraph>
-      <node id="225">
+      <node id="252">
         <label>stdarg.h</label>
       </node>
-      <node id="226">
+      <node id="253">
         <label>WString.h</label>
       </node>
-      <node id="223">
+      <node id="250">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication_8h"/>
-        <childnode refid="224" relation="include">
+        <childnode refid="251" relation="include">
         </childnode>
-        <childnode refid="225" relation="include">
+        <childnode refid="252" relation="include">
         </childnode>
-        <childnode refid="226" relation="include">
+        <childnode refid="253" relation="include">
         </childnode>
       </node>
-      <node id="228">
+      <node id="255">
         <label>HardwareSerial.h</label>
       </node>
-      <node id="227">
+      <node id="254">
         <label>Arduino.h</label>
       </node>
-      <node id="221">
+      <node id="248">
         <label>SerialCom.cpp</label>
         <link refid="SerialCom.cpp"/>
-        <childnode refid="222" relation="include">
+        <childnode refid="249" relation="include">
         </childnode>
       </node>
-      <node id="222">
+      <node id="249">
         <label>SerialCom.h</label>
         <link refid="SerialCom_8h"/>
-        <childnode refid="223" relation="include">
+        <childnode refid="250" relation="include">
         </childnode>
-        <childnode refid="227" relation="include">
+        <childnode refid="254" relation="include">
         </childnode>
-        <childnode refid="228" relation="include">
+        <childnode refid="255" relation="include">
         </childnode>
       </node>
-      <node id="224">
+      <node id="251">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
+    <innernamespace refid="namespaceCommunicators">Communicators</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -59,29 +60,30 @@
 <codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="SerialCom_8h" kindref="compound">SerialCom.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10" refid="classSerialCom_1a4e0fd8ce8d81fc4f3c422d2f9d1aff68" refkind="member"><highlight class="normal"><ref refid="classSerialCom_1a4e0fd8ce8d81fc4f3c422d2f9d1aff68" kindref="member">SerialCom::SerialCom</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Communicators<sp/>{</highlight></codeline>
+<codeline lineno="10" refid="classCommunicators_1_1SerialCom_1ac8179e150751ed6229cf59d54c31f9b8" refkind="member"><highlight class="normal"><ref refid="classCommunicators_1_1SerialCom_1ac8179e150751ed6229cf59d54c31f9b8" kindref="member">SerialCom::SerialCom</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14" refid="classSerialCom_1a5582cf804e661a24cb32720b31a2f9fe" refkind="member"><highlight class="normal"><ref refid="classSerialCom_1a5582cf804e661a24cb32720b31a2f9fe" kindref="member">SerialCom::~SerialCom</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="14" refid="classCommunicators_1_1SerialCom_1a0b829033ae0bd9f584ef8acae85ef1af" refkind="member"><highlight class="normal"><ref refid="classCommunicators_1_1SerialCom_1a0b829033ae0bd9f584ef8acae85ef1af" kindref="member">SerialCom::~SerialCom</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="15"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17" refid="classSerialCom_1a53bb031287acb1973c1e1f76799c76b6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSerialCom_1a53bb031287acb1973c1e1f76799c76b6" kindref="member" tooltip="This function initializes the communication. It will be called from the setup function.">SerialCom::init</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="17" refid="classCommunicators_1_1SerialCom_1a914de6786e449c3a83f7f5764036d285" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCommunicators_1_1SerialCom_1a914de6786e449c3a83f7f5764036d285" kindref="member" tooltip="This function initializes the communication. It will be called from the setup function.">SerialCom::init</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.begin(9600);</highlight></codeline>
 <codeline lineno="19"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21" refid="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSerialCom_1a77c7bd4a1c21e91c00a9d52c4aaad394" kindref="member" tooltip="This function sends information through the communication pipe.">SerialCom::send</ref>(String<sp/>payload)<sp/>{</highlight></codeline>
+<codeline lineno="21" refid="classCommunicators_1_1SerialCom_1a0b03dfcf023d751398ae5535e3221e15" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCommunicators_1_1SerialCom_1a0b03dfcf023d751398ae5535e3221e15" kindref="member" tooltip="This function sends information through the communication pipe.">SerialCom::send</ref>(String<sp/>payload)<sp/>{</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(payload);</highlight></codeline>
 <codeline lineno="23"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29" refid="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" refkind="member"><highlight class="normal">String<sp/><ref refid="classSerialCom_1a74aa77aadfdc14a95cfbf261e5acc690" kindref="member" tooltip="This function reads the serial input and returns all the information it reads at the time of calling...">SerialCom::recv</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="29" refid="classCommunicators_1_1SerialCom_1ad5805bc80800d48b760c83fef0f2ab13" refkind="member"><highlight class="normal">String<sp/><ref refid="classCommunicators_1_1SerialCom_1ad5805bc80800d48b760c83fef0f2ab13" kindref="member" tooltip="This function reads the serial input and returns all the information it reads at the time of calling...">SerialCom::recv</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>rtn<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Serial.available())<sp/>{</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rtn<sp/>=<sp/>Serial.readString();</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(rtn);</highlight></codeline>
 <codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/SerialCom.cpp"/>
   </compounddef>

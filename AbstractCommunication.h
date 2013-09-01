@@ -11,7 +11,10 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <WString.h>
-
+/**
+ * @namespace Communicators
+ * @brief This namespace groups all the different kind of communicators available, along with their abstract definition.
+ */
 namespace Communicators {
 
 /**

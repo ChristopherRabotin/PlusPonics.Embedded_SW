@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="AbstractTM_8h" kind="file">
+    <compoundname>AbstractTM.h</compoundname>
+    <includedby refid="AbstractTM_8cpp" local="yes">AbstractTM.cpp</includedby>
+    <invincdepgraph>
+      <node id="181">
+        <label>AbstractTM.cpp</label>
+        <link refid="AbstractTM_8cpp"/>
+      </node>
+      <node id="180">
+        <label>AbstractTM.h</label>
+        <link refid="AbstractTM.h"/>
+        <childnode refid="181" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classTM_1_1AbstractTM" prot="public">TM::AbstractTM</innerclass>
+    <innernamespace refid="namespaceTM">TM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>AbstractTM.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Sep<sp/>1,<sp/>2013</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>chris</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ABSTRACTTM_H_</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ABSTRACTTM_H_</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="15"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">TM<sp/>{</highlight></codeline>
+<codeline lineno="22" refid="classTM_1_1AbstractTM" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTM_1_1AbstractTM" kindref="compound" tooltip="This class defines the high level requirements of a telemetry point. It must be overwritten by low le...">AbstractTM</ref><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTM_1_1AbstractTM_1a792e97433ccdda0a206afa3f8df2ee76" kindref="member">AbstractTM</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classTM_1_1AbstractTM_1ac26c1424c587486239d0dd86478b684a" kindref="member">~AbstractTM</ref>();</highlight></codeline>
+<codeline lineno="29" refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392e" kindref="member">REPORTING_STATE</ref><sp/>{</highlight></codeline>
+<codeline lineno="30" refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea247739bbcd5f7af25dab8dbdc9738e6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea247739bbcd5f7af25dab8dbdc9738e6d" kindref="member">ALWAYS</ref>,<sp/></highlight></codeline>
+<codeline lineno="31" refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392eab1d1da372ff32c713b314f1f802e5688" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392eab1d1da372ff32c713b314f1f802e5688" kindref="member">ON_CHANGE</ref>,<sp/></highlight></codeline>
+<codeline lineno="32" refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea1f9912e7179fb31c29a753ecf1ec07e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea1f9912e7179fb31c29a753ecf1ec07e1" kindref="member">ON_OOL</ref>,<sp/></highlight></codeline>
+<codeline lineno="33" refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea009903b3a545f807efcd8cfa81a11530" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea009903b3a545f807efcd8cfa81a11530" kindref="member">ON_REQUEST</ref><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>TM<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ABSTRACTTM_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h"/>
+  </compounddef>
+</doxygen>

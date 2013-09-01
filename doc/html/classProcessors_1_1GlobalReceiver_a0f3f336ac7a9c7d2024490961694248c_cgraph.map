@@ -1,0 +1,12 @@
+<map id="Processors::GlobalReceiver::process" name="Processors::GlobalReceiver::process">
+<area shape="rect" id="node3" href="$namespaceProcessors.html#a44188b163f0de25011f4a51a920fbdf3" title="Processors::byte_to\l_binary" alt="" coords="310,5,453,46"/>
+<area shape="rect" id="node5" href="$classProcessors_1_1TCProcessor.html#a0ac3bca062aa5da326df5ac1949324e0" title="This function processes the input string which contains the OPCODE to concerned along with the action..." alt="" coords="291,70,472,111"/>
+<area shape="rect" id="node17" href="$classCommunicators_1_1AbstractCommunication.html#a5707e7e996f07104e0717d6fc53d7f4f" title="This function reads data from the pipe and returns this as a string." alt="" coords="249,135,514,177"/>
+<area shape="rect" id="node19" href="$classCommunicators_1_1AbstractCommunication.html#a415f90f6a4e815649806aedbb6ff5e3f" title="This function sends a formatted string through the communication pipe." alt="" coords="249,201,514,242"/>
+<area shape="rect" id="node7" href="$classProcessors_1_1TCProcessor.html#abed11b68a69058b6b7f18ec394ca4542" title="This function will perform the given action on the given opcode. The internal error variable will ref..." alt="" coords="605,70,787,111"/>
+<area shape="rect" id="node9" href="$classTC_1_1AbstractTC.html#a7e1389c4cd810758e1e1ab8cc4451cf1" title="This function will enable this TC." alt="" coords="879,27,1046,53"/>
+<area shape="rect" id="node11" href="$classTC_1_1AbstractTC.html#a3c27a4cf59011e0c2ecd39898645f298" title="This function will disable this TC. A disabled TC cannot be executed." alt="" coords="877,77,1048,104"/>
+<area shape="rect" id="node13" href="$classTC_1_1AbstractTC.html#a0c7c211d4ff52948d7d1d8803d7b93fb" title="This function will execute of this TC. A TC can only be executed (for start and stop actions..." alt="" coords="885,128,1041,155"/>
+<area shape="rect" id="node15" href="$classTC_1_1AbstractTC.html#afd7a067b52b173c366998116b2d75c4a" title="This function will execute this TC." alt="" coords="1097,121,1253,162"/>
+<area shape="rect" id="node21" href="$classCommunicators_1_1AbstractCommunication.html#a239ab6ea3f08e4adab1b2fd7413d9318" title="This function sends information through the communication pipe." alt="" coords="563,201,829,242"/>
+</map>
