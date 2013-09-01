@@ -10,101 +10,106 @@
     <includes local="no">pnew.cpp</includes>
     <includes refid="SerialCom_8h" local="yes">SerialCom.h</includes>
     <incdepgraph>
-      <node id="190">
+      <node id="203">
         <label>config/config.h</label>
       </node>
-      <node id="194">
+      <node id="207">
         <label>stdarg.h</label>
       </node>
-      <node id="195">
+      <node id="208">
         <label>WString.h</label>
       </node>
-      <node id="199">
+      <node id="213">
         <label>iterator</label>
       </node>
-      <node id="192">
+      <node id="211">
+        <label>stdint.h</label>
+      </node>
+      <node id="205">
         <label>AbstractCommunication.h</label>
         <link refid="AbstractCommunication_8h"/>
-        <childnode refid="193" relation="include">
+        <childnode refid="206" relation="include">
         </childnode>
-        <childnode refid="194" relation="include">
+        <childnode refid="207" relation="include">
         </childnode>
-        <childnode refid="195" relation="include">
+        <childnode refid="208" relation="include">
         </childnode>
       </node>
-      <node id="200">
+      <node id="214">
         <label>map</label>
       </node>
-      <node id="197">
+      <node id="210">
         <label>TC.h</label>
         <link refid="TC_8h"/>
+        <childnode refid="211" relation="include">
+        </childnode>
       </node>
-      <node id="203">
+      <node id="217">
         <label>HardwareSerial.h</label>
       </node>
-      <node id="196">
+      <node id="209">
         <label>TCProcessor.h</label>
         <link refid="TCProcessor_8h"/>
-        <childnode refid="197" relation="include">
+        <childnode refid="210" relation="include">
         </childnode>
-        <childnode refid="198" relation="include">
+        <childnode refid="212" relation="include">
         </childnode>
-        <childnode refid="199" relation="include">
+        <childnode refid="213" relation="include">
         </childnode>
-        <childnode refid="200" relation="include">
+        <childnode refid="214" relation="include">
         </childnode>
-      </node>
-      <node id="189">
-        <label>Arduino.h</label>
       </node>
       <node id="202">
+        <label>Arduino.h</label>
+      </node>
+      <node id="216">
         <label>SerialCom.h</label>
         <link refid="SerialCom_8h"/>
-        <childnode refid="192" relation="include">
-        </childnode>
-        <childnode refid="189" relation="include">
-        </childnode>
-        <childnode refid="203" relation="include">
-        </childnode>
-      </node>
-      <node id="191">
-        <label>GlobalReceiver.h</label>
-        <link refid="GlobalReceiver_8h"/>
-        <childnode refid="192" relation="include">
-        </childnode>
-        <childnode refid="196" relation="include">
-        </childnode>
-      </node>
-      <node id="188">
-        <label>main.cpp</label>
-        <link refid="main.cpp"/>
-        <childnode refid="189" relation="include">
-        </childnode>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="191" relation="include">
-        </childnode>
-        <childnode refid="198" relation="include">
-        </childnode>
-        <childnode refid="196" relation="include">
-        </childnode>
-        <childnode refid="201" relation="include">
+        <childnode refid="205" relation="include">
         </childnode>
         <childnode refid="202" relation="include">
         </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
       </node>
-      <node id="193">
-        <label>stdio.h</label>
+      <node id="204">
+        <label>GlobalReceiver.h</label>
+        <link refid="GlobalReceiver_8h"/>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
       </node>
       <node id="201">
+        <label>main.cpp</label>
+        <link refid="main.cpp"/>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+      </node>
+      <node id="206">
+        <label>stdio.h</label>
+      </node>
+      <node id="215">
         <label>pnew.cpp</label>
       </node>
-      <node id="198">
+      <node id="212">
         <label>LogicTC.h</label>
         <link refid="LogicTC_8h"/>
-        <childnode refid="197" relation="include">
+        <childnode refid="210" relation="include">
         </childnode>
-        <childnode refid="189" relation="include">
+        <childnode refid="202" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -218,7 +223,7 @@
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" line="52" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/main.cpp" bodystart="52" bodyend="63"/>
         <references refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3caef939d362d7f07ad29ea6a0c47b81e85" compoundref="TCProcessor_8h" startline="36">TCProcessor::EXECUTE</references>
         <references refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="main_8cpp" startline="43" endline="46">loop</references>
-        <references refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" compoundref="TCProcessor_8cpp" startline="46" endline="63">TCProcessor::perform</references>
+        <references refid="classTCProcessor_1a8d82f0ba03d36e1fe16504e2835ac4ed" compoundref="TCProcessor_8cpp" startline="46" endline="63">TCProcessor::perform</references>
         <references refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="29" endline="38">setup</references>
       </memberdef>
       </sectiondef>
@@ -271,7 +276,7 @@
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kindref="member" tooltip="This function is only ran when the sketch is initialized.">setup</ref>();</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Let&apos;s<sp/>turn<sp/>on<sp/>the<sp/>LED.<sp/>The<sp/>user<sp/>will<sp/>turn<sp/>it<sp/>off<sp/>from<sp/>Serial.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>tcProcessor.<ref refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" kindref="member" tooltip="This function will perform the given action on the given opcode. The internal error variable will ref...">perform</ref>(<ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3caef939d362d7f07ad29ea6a0c47b81e85" kindref="member">TCProcessor::EXECUTE</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>tcProcessor.<ref refid="classTCProcessor_1a8d82f0ba03d36e1fe16504e2835ac4ed" kindref="member" tooltip="This function will perform the given action on the given opcode. The internal error variable will ref...">perform</ref>(<ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3caef939d362d7f07ad29ea6a0c47b81e85" kindref="member">TCProcessor::EXECUTE</ref>,<sp/>1);</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kindref="member" tooltip="loop() loops while Arduino is powered.">loop</ref>();</highlight></codeline>

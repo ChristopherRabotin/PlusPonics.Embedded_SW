@@ -7,81 +7,86 @@
     <includedby refid="GlobalReceiver_8cpp" local="yes">GlobalReceiver.cpp</includedby>
     <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
     <incdepgraph>
-      <node id="162">
+      <node id="172">
         <label>stdarg.h</label>
       </node>
-      <node id="163">
+      <node id="173">
         <label>WString.h</label>
       </node>
-      <node id="168">
+      <node id="179">
         <label>iterator</label>
       </node>
-      <node id="160">
-        <label>AbstractCommunication.h</label>
-        <link refid="AbstractCommunication_8h"/>
-        <childnode refid="161" relation="include">
-        </childnode>
-        <childnode refid="162" relation="include">
-        </childnode>
-        <childnode refid="163" relation="include">
-        </childnode>
-      </node>
-      <node id="169">
-        <label>map</label>
-      </node>
-      <node id="165">
-        <label>TC.h</label>
-        <link refid="TC_8h"/>
-      </node>
-      <node id="164">
-        <label>TCProcessor.h</label>
-        <link refid="TCProcessor_8h"/>
-        <childnode refid="165" relation="include">
-        </childnode>
-        <childnode refid="166" relation="include">
-        </childnode>
-        <childnode refid="168" relation="include">
-        </childnode>
-        <childnode refid="169" relation="include">
-        </childnode>
-      </node>
-      <node id="167">
-        <label>Arduino.h</label>
-      </node>
-      <node id="159">
-        <label>GlobalReceiver.h</label>
-        <link refid="GlobalReceiver.h"/>
-        <childnode refid="160" relation="include">
-        </childnode>
-        <childnode refid="164" relation="include">
-        </childnode>
-      </node>
-      <node id="161">
-        <label>stdio.h</label>
-      </node>
-      <node id="166">
-        <label>LogicTC.h</label>
-        <link refid="LogicTC_8h"/>
-        <childnode refid="165" relation="include">
-        </childnode>
-        <childnode refid="167" relation="include">
-        </childnode>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="171">
-        <label>GlobalReceiver.cpp</label>
-        <link refid="GlobalReceiver_8cpp"/>
+      <node id="176">
+        <label>stdint.h</label>
       </node>
       <node id="170">
-        <label>GlobalReceiver.h</label>
-        <link refid="GlobalReceiver.h"/>
+        <label>AbstractCommunication.h</label>
+        <link refid="AbstractCommunication_8h"/>
         <childnode refid="171" relation="include">
         </childnode>
         <childnode refid="172" relation="include">
         </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
       </node>
-      <node id="172">
+      <node id="180">
+        <label>map</label>
+      </node>
+      <node id="175">
+        <label>TC.h</label>
+        <link refid="TC_8h"/>
+        <childnode refid="176" relation="include">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>TCProcessor.h</label>
+        <link refid="TCProcessor_8h"/>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+      <node id="178">
+        <label>Arduino.h</label>
+      </node>
+      <node id="169">
+        <label>GlobalReceiver.h</label>
+        <link refid="GlobalReceiver.h"/>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>stdio.h</label>
+      </node>
+      <node id="177">
+        <label>LogicTC.h</label>
+        <link refid="LogicTC_8h"/>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="182">
+        <label>GlobalReceiver.cpp</label>
+        <link refid="GlobalReceiver_8cpp"/>
+      </node>
+      <node id="181">
+        <label>GlobalReceiver.h</label>
+        <link refid="GlobalReceiver.h"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+      </node>
+      <node id="183">
         <label>main.cpp</label>
         <link refid="main_8cpp"/>
       </node>

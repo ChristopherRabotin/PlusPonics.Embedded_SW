@@ -55,7 +55,7 @@ void AbstractCommunication::sendf(String payload, ...) {
 	char tmp[256];
 	va_list args;
 	va_start(args, payload);
-	vsnprintf(tmp, 128, payload.c_str(), args);
+	vsnprintf(tmp, 256, payload.c_str(), args);
 	va_end(args);
 	send(tmp);
 }

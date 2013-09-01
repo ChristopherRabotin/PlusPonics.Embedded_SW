@@ -5,9 +5,9 @@
     <basecompoundref refid="classTC" prot="public" virt="non-virtual">TC</basecompoundref>
     <includes refid="LogicTC_8h" local="no">LogicTC.h</includes>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classLogicTC_1abaa94c7a2404177540e82828d0f97e0f" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int LogicTC::_outputPin</definition>
+      <memberdef kind="variable" id="classLogicTC_1ad4ecb293e7e75bc77e49c491bacea532" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LogicTC::_outputPin</definition>
         <argsstring></argsstring>
         <name>_outputPin</name>
         <briefdescription>
@@ -19,11 +19,11 @@
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/LogicTC.h" line="32" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/LogicTC.h" bodystart="32" bodyend="-1"/>
         <referencedby refid="classLogicTC_1ad90a1bc2c83593f296292bf9ccc37d79" compoundref="LogicTC_8cpp" startline="23" endline="25">exec_impl_</referencedby>
         <referencedby refid="classLogicTC_1a99bf3c13fa50ffa8aa3cdfa397e8375a" compoundref="LogicTC_8cpp" startline="19" endline="21">init</referencedby>
-        <referencedby refid="classLogicTC_1abdfdce8a4efb906bd22369f6488e0246" compoundref="LogicTC_8cpp" startline="10" endline="14">LogicTC</referencedby>
+        <referencedby refid="classLogicTC_1ab2ddb23a9a508fc45d021e3f7e1d0736" compoundref="LogicTC_8cpp" startline="10" endline="14">LogicTC</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="classLogicTC_1aeda7adda2325751889ffce342bab987d" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int LogicTC::_outputValue</definition>
+      <memberdef kind="variable" id="classLogicTC_1a59bd4dc2ca0fa5afab56d8cac575a1e9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool LogicTC::_outputValue</definition>
         <argsstring></argsstring>
         <name>_outputValue</name>
         <briefdescription>
@@ -34,21 +34,21 @@
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/LogicTC.h" line="33" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/LogicTC.h" bodystart="33" bodyend="-1"/>
         <referencedby refid="classLogicTC_1ad90a1bc2c83593f296292bf9ccc37d79" compoundref="LogicTC_8cpp" startline="23" endline="25">exec_impl_</referencedby>
-        <referencedby refid="classLogicTC_1abdfdce8a4efb906bd22369f6488e0246" compoundref="LogicTC_8cpp" startline="10" endline="14">LogicTC</referencedby>
+        <referencedby refid="classLogicTC_1ab2ddb23a9a508fc45d021e3f7e1d0736" compoundref="LogicTC_8cpp" startline="10" endline="14">LogicTC</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classLogicTC_1abdfdce8a4efb906bd22369f6488e0246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classLogicTC_1ab2ddb23a9a508fc45d021e3f7e1d0736" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>LogicTC::LogicTC</definition>
-        <argsstring>(int outputPin, int value)</argsstring>
+        <argsstring>(uint8_t outputPin, bool value)</argsstring>
         <name>LogicTC</name>
         <param>
-          <type>int</type>
+          <type>uint8_t</type>
           <declname>outputPin</declname>
         </param>
         <param>
-          <type>int</type>
+          <type>bool</type>
           <declname>value</declname>
         </param>
         <briefdescription>
@@ -74,8 +74,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/LogicTC.h" line="27" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/LogicTC.cpp" bodystart="10" bodyend="14"/>
-        <references refid="classLogicTC_1abaa94c7a2404177540e82828d0f97e0f" compoundref="LogicTC_8h" startline="32">_outputPin</references>
-        <references refid="classLogicTC_1aeda7adda2325751889ffce342bab987d" compoundref="LogicTC_8h" startline="33">_outputValue</references>
+        <references refid="classLogicTC_1ad4ecb293e7e75bc77e49c491bacea532" compoundref="LogicTC_8h" startline="32">_outputPin</references>
+        <references refid="classLogicTC_1a59bd4dc2ca0fa5afab56d8cac575a1e9" compoundref="LogicTC_8h" startline="33">_outputValue</references>
       </memberdef>
       <memberdef kind="function" id="classLogicTC_1ab02d2ebc69f023331d35147f0465c4df" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -103,7 +103,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/LogicTC.h" line="29" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/LogicTC.cpp" bodystart="19" bodyend="21"/>
-        <references refid="classLogicTC_1abaa94c7a2404177540e82828d0f97e0f" compoundref="LogicTC_8h" startline="32">_outputPin</references>
+        <references refid="classLogicTC_1ad4ecb293e7e75bc77e49c491bacea532" compoundref="LogicTC_8h" startline="32">_outputPin</references>
       </memberdef>
       <memberdef kind="function" id="classLogicTC_1ad90a1bc2c83593f296292bf9ccc37d79" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -118,8 +118,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/LogicTC.h" line="30" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/LogicTC.cpp" bodystart="23" bodyend="25"/>
-        <references refid="classLogicTC_1abaa94c7a2404177540e82828d0f97e0f" compoundref="LogicTC_8h" startline="32">_outputPin</references>
-        <references refid="classLogicTC_1aeda7adda2325751889ffce342bab987d" compoundref="LogicTC_8h" startline="33">_outputValue</references>
+        <references refid="classLogicTC_1ad4ecb293e7e75bc77e49c491bacea532" compoundref="LogicTC_8h" startline="32">_outputPin</references>
+        <references refid="classLogicTC_1a59bd4dc2ca0fa5afab56d8cac575a1e9" compoundref="LogicTC_8h" startline="33">_outputValue</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -152,8 +152,8 @@
     </collaborationgraph>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/LogicTC.h" line="19" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/LogicTC.h" bodystart="19" bodyend="34"/>
     <listofallmembers>
-      <member refid="classLogicTC_1abaa94c7a2404177540e82828d0f97e0f" prot="private" virt="non-virtual"><scope>LogicTC</scope><name>_outputPin</name></member>
-      <member refid="classLogicTC_1aeda7adda2325751889ffce342bab987d" prot="private" virt="non-virtual"><scope>LogicTC</scope><name>_outputValue</name></member>
+      <member refid="classLogicTC_1ad4ecb293e7e75bc77e49c491bacea532" prot="private" virt="non-virtual"><scope>LogicTC</scope><name>_outputPin</name></member>
+      <member refid="classLogicTC_1a59bd4dc2ca0fa5afab56d8cac575a1e9" prot="private" virt="non-virtual"><scope>LogicTC</scope><name>_outputValue</name></member>
       <member refid="classTC_1af0f45dd4d8f5a240c48a48abf5618c44" prot="public" virt="non-virtual"><scope>LogicTC</scope><name>clear_error</name></member>
       <member refid="classTC_1ac5e09bff8556f6ac5ed5604b855d3338" prot="public" virt="non-virtual"><scope>LogicTC</scope><name>disable</name></member>
       <member refid="classTC_1a5431ac6442ffc4d740b1f146322a2a7c" prot="public" virt="non-virtual"><scope>LogicTC</scope><name>enable</name></member>
@@ -162,7 +162,7 @@
       <member refid="classTC_1ad03c30fb218c9c3280056bfbb35d6ae0" prot="public" virt="non-virtual"><scope>LogicTC</scope><name>exec</name></member>
       <member refid="classLogicTC_1ad90a1bc2c83593f296292bf9ccc37d79" prot="public" virt="virtual"><scope>LogicTC</scope><name>exec_impl_</name></member>
       <member refid="classLogicTC_1a99bf3c13fa50ffa8aa3cdfa397e8375a" prot="public" virt="virtual"><scope>LogicTC</scope><name>init</name></member>
-      <member refid="classLogicTC_1abdfdce8a4efb906bd22369f6488e0246" prot="public" virt="non-virtual"><scope>LogicTC</scope><name>LogicTC</name></member>
+      <member refid="classLogicTC_1ab2ddb23a9a508fc45d021e3f7e1d0736" prot="public" virt="non-virtual"><scope>LogicTC</scope><name>LogicTC</name></member>
       <member refid="classTC_1a76dd65525231537b15914ebbaff85f4ca6202ac5b4809e29c1899965dcd1738c8" prot="public" virt="non-virtual"><scope>LogicTC</scope><name>NO_ERROR</name></member>
       <member refid="classTC_1a76dd65525231537b15914ebbaff85f4caed07796a6a975c1968f32ef3dd983f17" prot="public" virt="non-virtual"><scope>LogicTC</scope><name>NOT_ENABLED</name></member>
       <member refid="classTC_1ad0701c92be6d3797420ce2e1990a9bf8" prot="public" virt="non-virtual"><scope>LogicTC</scope><name>persist_errors</name></member>

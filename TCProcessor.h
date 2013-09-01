@@ -68,7 +68,7 @@ public:
 	 * @param opcode
 	 * @param action
 	 */
-	void perform(TC_ACTION action, int opcode);
+	void perform(TC_ACTION action, uint8_t opcode);
 
 	virtual ~TCProcessor();
 private:

@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('AbstractCommunication_8cpp_source.html
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">char</span> tmp[256];</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    va_list args;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    va_start(args, payload);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    vsnprintf(tmp, 128, payload.c_str(), args);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    vsnprintf(tmp, 256, payload.c_str(), args);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    va_end(args);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classAbstractCommunication.html#aa60da75c79691dd2c93473bc6be6506d" title="This function sends information through the communication pipe.">send</a>(tmp);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>

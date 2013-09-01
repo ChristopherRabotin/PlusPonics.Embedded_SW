@@ -4,15 +4,20 @@
     <compoundname>TC.cpp</compoundname>
     <includes refid="TC_8h" local="yes">TC.h</includes>
     <incdepgraph>
-      <node id="226">
+      <node id="242">
+        <label>stdint.h</label>
+      </node>
+      <node id="240">
         <label>TC.cpp</label>
         <link refid="TC.cpp"/>
-        <childnode refid="227" relation="include">
+        <childnode refid="241" relation="include">
         </childnode>
       </node>
-      <node id="227">
+      <node id="241">
         <label>TC.h</label>
         <link refid="TC_8h"/>
+        <childnode refid="242" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <briefdescription>
@@ -31,7 +36,7 @@
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10" refid="classTC_1a0389d8330f8df757e32727091f32933b" refkind="member"><highlight class="normal"><ref refid="classTC_1a0389d8330f8df757e32727091f32933b" kindref="member" tooltip="This creates the TC object. The OPCODE of this TC is only defined in the main when the TC is instanti...">TC::TC</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1a7515ceb3f9bbfa16049c1a4aac7dbe97" kindref="member">_enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1ac02e6d68296265146dcbe5a409262b06" kindref="member">_executions</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1a83395d1500d7412811328886ea349fb9" kindref="member">_executions</ref><sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1aacf48d34b2ec6f2165d8cecdddcbd33b" kindref="member">_persistent_error</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTC_1a7c9e127ab52d41d3fa353ca946a92318" kindref="member">_error</ref><sp/>=<sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4ca6202ac5b4809e29c1899965dcd1738c8" kindref="member">NO_ERROR</ref>;</highlight></codeline>
 <codeline lineno="15"><highlight class="normal">}</highlight></codeline>
@@ -57,7 +62,7 @@
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36" refid="classTC_1ad03c30fb218c9c3280056bfbb35d6ae0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTC_1ad03c30fb218c9c3280056bfbb35d6ae0" kindref="member" tooltip="This function will execute of this TC. A TC can only be executed (for start and stop actions...">TC::exec</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classTC_1a7515ceb3f9bbfa16049c1a4aac7dbe97" kindref="member">_enabled</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1ac02e6d68296265146dcbe5a409262b06" kindref="member">_executions</ref>++;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1a83395d1500d7412811328886ea349fb9" kindref="member">_executions</ref>++;</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1ad0a5dbe25b9dfd17bfadfef29e1e2822" kindref="member" tooltip="This function will execute this TC.">exec_impl_</ref>();</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC_1a7c9e127ab52d41d3fa353ca946a92318" kindref="member">_error</ref><sp/>=<sp/><ref refid="classTC_1a76dd65525231537b15914ebbaff85f4caed07796a6a975c1968f32ef3dd983f17" kindref="member">NOT_ENABLED</ref>;</highlight></codeline>

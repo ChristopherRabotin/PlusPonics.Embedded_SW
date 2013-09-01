@@ -8,65 +8,70 @@
     <includedby refid="LogicTC_8cpp" local="yes">LogicTC.cpp</includedby>
     <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
     <incdepgraph>
-      <node id="179">
+      <node id="192">
+        <label>stdint.h</label>
+      </node>
+      <node id="191">
         <label>TC.h</label>
         <link refid="TC_8h"/>
+        <childnode refid="192" relation="include">
+        </childnode>
       </node>
-      <node id="180">
+      <node id="193">
         <label>Arduino.h</label>
       </node>
-      <node id="178">
+      <node id="190">
         <label>LogicTC.h</label>
         <link refid="LogicTC.h"/>
-        <childnode refid="179" relation="include">
+        <childnode refid="191" relation="include">
         </childnode>
-        <childnode refid="180" relation="include">
+        <childnode refid="193" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="186">
+      <node id="199">
         <label>TCProcessor.cpp</label>
         <link refid="TCProcessor_8cpp"/>
       </node>
-      <node id="184">
+      <node id="197">
         <label>GlobalReceiver.cpp</label>
         <link refid="GlobalReceiver_8cpp"/>
       </node>
-      <node id="182">
+      <node id="195">
         <label>TCProcessor.h</label>
         <link refid="TCProcessor_8h"/>
-        <childnode refid="183" relation="include">
+        <childnode refid="196" relation="include">
         </childnode>
-        <childnode refid="185" relation="include">
+        <childnode refid="198" relation="include">
         </childnode>
-        <childnode refid="186" relation="include">
+        <childnode refid="199" relation="include">
         </childnode>
       </node>
-      <node id="187">
+      <node id="200">
         <label>LogicTC.cpp</label>
         <link refid="LogicTC_8cpp"/>
       </node>
-      <node id="183">
+      <node id="196">
         <label>GlobalReceiver.h</label>
         <link refid="GlobalReceiver_8h"/>
-        <childnode refid="184" relation="include">
+        <childnode refid="197" relation="include">
         </childnode>
-        <childnode refid="185" relation="include">
+        <childnode refid="198" relation="include">
         </childnode>
       </node>
-      <node id="185">
+      <node id="198">
         <label>main.cpp</label>
         <link refid="main_8cpp"/>
       </node>
-      <node id="181">
+      <node id="194">
         <label>LogicTC.h</label>
         <link refid="LogicTC.h"/>
-        <childnode refid="182" relation="include">
+        <childnode refid="195" relation="include">
         </childnode>
-        <childnode refid="187" relation="include">
+        <childnode refid="200" relation="include">
         </childnode>
-        <childnode refid="185" relation="include">
+        <childnode refid="198" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -91,13 +96,13 @@
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19" refid="classLogicTC" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLogicTC" kindref="compound">LogicTC</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classTC" kindref="compound" tooltip="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</ref><sp/>{</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLogicTC_1abdfdce8a4efb906bd22369f6488e0246" kindref="member" tooltip="Specify in the constructor both the output pin and the output value.">LogicTC</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>outputPin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLogicTC_1ab2ddb23a9a508fc45d021e3f7e1d0736" kindref="member" tooltip="Specify in the constructor both the output pin and the output value.">LogicTC</ref>(uint8_t<sp/>outputPin,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classLogicTC_1ab02d2ebc69f023331d35147f0465c4df" kindref="member">~LogicTC</ref>();</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLogicTC_1a99bf3c13fa50ffa8aa3cdfa397e8375a" kindref="member" tooltip="The init function sets up everything for this TC to be operational. It must be called from the setup ...">init</ref>();</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLogicTC_1ad90a1bc2c83593f296292bf9ccc37d79" kindref="member" tooltip="This function will execute this TC.">exec_impl_</ref>();</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="32" refid="classLogicTC_1abaa94c7a2404177540e82828d0f97e0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLogicTC_1abaa94c7a2404177540e82828d0f97e0f" kindref="member">_outputPin</ref>;</highlight></codeline>
-<codeline lineno="33" refid="classLogicTC_1aeda7adda2325751889ffce342bab987d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLogicTC_1aeda7adda2325751889ffce342bab987d" kindref="member">_outputValue</ref>;</highlight></codeline>
+<codeline lineno="32" refid="classLogicTC_1ad4ecb293e7e75bc77e49c491bacea532" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classLogicTC_1ad4ecb293e7e75bc77e49c491bacea532" kindref="member">_outputPin</ref>;</highlight></codeline>
+<codeline lineno="33" refid="classLogicTC_1a59bd4dc2ca0fa5afab56d8cac575a1e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classLogicTC_1a59bd4dc2ca0fa5afab56d8cac575a1e9" kindref="member">_outputValue</ref>;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DIGITALWRITETC_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>

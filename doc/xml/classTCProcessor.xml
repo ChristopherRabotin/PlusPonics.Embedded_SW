@@ -82,7 +82,7 @@
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" line="86" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" bodystart="86" bodyend="-1"/>
         <referencedby refid="classTCProcessor_1aea90af74c7ff4e3f904a9954bd8e5a7a" compoundref="TCProcessor_8cpp" startline="68" endline="71">definitions_</referencedby>
-        <referencedby refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" compoundref="TCProcessor_8cpp" startline="46" endline="63">perform</referencedby>
+        <referencedby refid="classTCProcessor_1a8d82f0ba03d36e1fe16504e2835ac4ed" compoundref="TCProcessor_8cpp" startline="46" endline="63">perform</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classTCProcessor_1a1b104ae051b1edc075cfde03a9d4672a" prot="private" static="no" mutable="no">
         <type><ref refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cb" kindref="member">ERROR_STATE</ref></type>
@@ -96,7 +96,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" line="88" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.h" bodystart="88" bodyend="-1"/>
-        <referencedby refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" compoundref="TCProcessor_8cpp" startline="46" endline="63">perform</referencedby>
+        <referencedby refid="classTCProcessor_1a8d82f0ba03d36e1fe16504e2835ac4ed" compoundref="TCProcessor_8cpp" startline="46" endline="63">perform</referencedby>
         <referencedby refid="classTCProcessor_1a895b3f9a34b52534182785a00493fc63" compoundref="TCProcessor_8cpp" startline="18" endline="44">processRecv</referencedby>
         <referencedby refid="classTCProcessor_1a163b5e6267b5c05111b4ad8eeafadda9" compoundref="TCProcessor_8cpp" startline="10" endline="12">TCProcessor</referencedby>
       </memberdef>
@@ -170,20 +170,20 @@ For example, to EXECUTE OPCODE 15, this function must receive <computeroutput>01
         <references refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3caef939d362d7f07ad29ea6a0c47b81e85" compoundref="TCProcessor_8h" startline="36">EXECUTE</references>
         <references refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf852ce6e9877744a1c1a998faa8581cc" compoundref="TCProcessor_8h" startline="47">INVALID_ACTION</references>
         <references refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf0fd08066fd3d62ffabcf24621b1480b" compoundref="TCProcessor_8h" startline="46">INVALID_OPCODE</references>
-        <references refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" compoundref="TCProcessor_8cpp" startline="46" endline="63">perform</references>
+        <references refid="classTCProcessor_1a8d82f0ba03d36e1fe16504e2835ac4ed" compoundref="TCProcessor_8cpp" startline="46" endline="63">perform</references>
         <referencedby refid="classGlobalReceiver_1a86c5c89fd69a213379582e1a81085d12" compoundref="GlobalReceiver_8cpp" startline="27" endline="49">GlobalReceiver::process</referencedby>
       </memberdef>
-      <memberdef kind="function" id="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classTCProcessor_1a8d82f0ba03d36e1fe16504e2835ac4ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void TCProcessor::perform</definition>
-        <argsstring>(TC_ACTION action, int opcode)</argsstring>
+        <argsstring>(TC_ACTION action, uint8_t opcode)</argsstring>
         <name>perform</name>
         <param>
           <type><ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3c" kindref="member">TC_ACTION</ref></type>
           <declname>action</declname>
         </param>
         <param>
-          <type>int</type>
+          <type>uint8_t</type>
           <declname>opcode</declname>
         </param>
         <briefdescription>
@@ -268,7 +268,7 @@ For example, to EXECUTE OPCODE 15, this function must receive <computeroutput>01
       <member refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf852ce6e9877744a1c1a998faa8581cc" prot="public" virt="non-virtual"><scope>TCProcessor</scope><name>INVALID_ACTION</name></member>
       <member refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf0fd08066fd3d62ffabcf24621b1480b" prot="public" virt="non-virtual"><scope>TCProcessor</scope><name>INVALID_OPCODE</name></member>
       <member refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cba1dad294c03cf3ae5b03821e63b0585d9" prot="public" virt="non-virtual"><scope>TCProcessor</scope><name>NO_ERROR</name></member>
-      <member refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" prot="public" virt="non-virtual"><scope>TCProcessor</scope><name>perform</name></member>
+      <member refid="classTCProcessor_1a8d82f0ba03d36e1fe16504e2835ac4ed" prot="public" virt="non-virtual"><scope>TCProcessor</scope><name>perform</name></member>
       <member refid="classTCProcessor_1a895b3f9a34b52534182785a00493fc63" prot="public" virt="non-virtual"><scope>TCProcessor</scope><name>processRecv</name></member>
       <member refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3c" prot="public" virt="non-virtual"><scope>TCProcessor</scope><name>TC_ACTION</name></member>
       <member refid="classTCProcessor_1a163b5e6267b5c05111b4ad8eeafadda9" prot="public" virt="non-virtual"><scope>TCProcessor</scope><name>TCProcessor</name></member>

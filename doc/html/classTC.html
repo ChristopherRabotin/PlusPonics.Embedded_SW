@@ -136,15 +136,15 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a7515ceb3f9bbfa16049c1a4aac7dbe97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacf48d34b2ec6f2165d8cecdddcbd33b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTC.html#aacf48d34b2ec6f2165d8cecdddcbd33b">_persistent_error</a></td></tr>
 <tr class="separator:aacf48d34b2ec6f2165d8cecdddcbd33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac02e6d68296265146dcbe5a409262b06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTC.html#ac02e6d68296265146dcbe5a409262b06">_executions</a></td></tr>
-<tr class="separator:ac02e6d68296265146dcbe5a409262b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83395d1500d7412811328886ea349fb9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTC.html#a83395d1500d7412811328886ea349fb9">_executions</a></td></tr>
+<tr class="separator:a83395d1500d7412811328886ea349fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c9e127ab52d41d3fa353ca946a92318"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTC.html#a76dd65525231537b15914ebbaff85f4c">ERROR_STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTC.html#a7c9e127ab52d41d3fa353ca946a92318">_error</a></td></tr>
 <tr class="separator:a7c9e127ab52d41d3fa353ca946a92318"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class defines a telecommand. It is high level and must be overwritten by low level classes. In this class, high level functions are defined as non virtual. Lower level actions must be redefined in subclasses. This allows consistency between each telecommand class. A telecommand can be enabled or disable with the appropriate functions. Note that there is no toggle function. This is to prevent double messages to be sent and enable then disable a command for example. </p>
 
-<p>Definition at line <a class="el" href="TC_8h_source.html#l00018">18</a> of file <a class="el" href="TC_8h_source.html">TC.h</a>.</p>
+<p>Definition at line <a class="el" href="TC_8h_source.html#l00019">19</a> of file <a class="el" href="TC_8h_source.html">TC.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a76dd65525231537b15914ebbaff85f4c"></a>
 <div class="memitem">
@@ -176,7 +176,7 @@ Private Attributes</h2></td></tr>
 </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="TC_8h_source.html#l00028">28</a> of file <a class="el" href="TC_8h_source.html">TC.h</a>.</p>
+<p>Definition at line <a class="el" href="TC_8h_source.html#l00029">29</a> of file <a class="el" href="TC_8h_source.html">TC.h</a>.</p>
 
 </div>
 </div>
@@ -198,7 +198,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="TC_8cpp_source.html#l00010">10</a> of file <a class="el" href="TC_8cpp_source.html">TC.cpp</a>.</p>
 
-<p>References <a class="el" href="TC_8h_source.html#l00076">_enabled</a>, <a class="el" href="TC_8h_source.html#l00079">_error</a>, <a class="el" href="TC_8h_source.html#l00078">_executions</a>, <a class="el" href="TC_8h_source.html#l00077">_persistent_error</a>, and <a class="el" href="TC_8h_source.html#l00029">NO_ERROR</a>.</p>
+<p>References <a class="el" href="TC_8h_source.html#l00077">_enabled</a>, <a class="el" href="TC_8h_source.html#l00080">_error</a>, <a class="el" href="TC_8h_source.html#l00079">_executions</a>, <a class="el" href="TC_8h_source.html#l00078">_persistent_error</a>, and <a class="el" href="TC_8h_source.html#l00030">NO_ERROR</a>.</p>
 
 </div>
 </div>
@@ -245,7 +245,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="TC_8cpp_source.html#l00049">49</a> of file <a class="el" href="TC_8cpp_source.html">TC.cpp</a>.</p>
 
-<p>References <a class="el" href="TC_8h_source.html#l00079">_error</a>, <a class="el" href="TC_8h_source.html#l00077">_persistent_error</a>, <a class="el" href="TC_8h_source.html#l00029">NO_ERROR</a>, and <a class="el" href="TC_8h_source.html#l00033">WAS_NOT_PERSISTENT</a>.</p>
+<p>References <a class="el" href="TC_8h_source.html#l00080">_error</a>, <a class="el" href="TC_8h_source.html#l00078">_persistent_error</a>, <a class="el" href="TC_8h_source.html#l00030">NO_ERROR</a>, and <a class="el" href="TC_8h_source.html#l00034">WAS_NOT_PERSISTENT</a>.</p>
 
 </div>
 </div>
@@ -266,7 +266,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="TC_8cpp_source.html#l00028">28</a> of file <a class="el" href="TC_8cpp_source.html">TC.cpp</a>.</p>
 
-<p>References <a class="el" href="TC_8h_source.html#l00076">_enabled</a>, <a class="el" href="TC_8h_source.html#l00079">_error</a>, and <a class="el" href="TC_8h_source.html#l00032">WAS_DISABLED</a>.</p>
+<p>References <a class="el" href="TC_8h_source.html#l00077">_enabled</a>, <a class="el" href="TC_8h_source.html#l00080">_error</a>, and <a class="el" href="TC_8h_source.html#l00033">WAS_DISABLED</a>.</p>
 
 <p>Referenced by <a class="el" href="TCProcessor_8cpp_source.html#l00046">TCProcessor::perform()</a>.</p>
 
@@ -289,7 +289,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="TC_8cpp_source.html#l00020">20</a> of file <a class="el" href="TC_8cpp_source.html">TC.cpp</a>.</p>
 
-<p>References <a class="el" href="TC_8h_source.html#l00076">_enabled</a>, <a class="el" href="TC_8h_source.html#l00079">_error</a>, and <a class="el" href="TC_8h_source.html#l00031">WAS_ENABLED</a>.</p>
+<p>References <a class="el" href="TC_8h_source.html#l00077">_enabled</a>, <a class="el" href="TC_8h_source.html#l00080">_error</a>, and <a class="el" href="TC_8h_source.html#l00032">WAS_ENABLED</a>.</p>
 
 <p>Referenced by <a class="el" href="TCProcessor_8cpp_source.html#l00046">TCProcessor::perform()</a>.</p>
 
@@ -314,7 +314,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="TC_8cpp_source.html#l00057">57</a> of file <a class="el" href="TC_8cpp_source.html">TC.cpp</a>.</p>
 
-<p>References <a class="el" href="TC_8h_source.html#l00079">_error</a>, <a class="el" href="TC_8h_source.html#l00077">_persistent_error</a>, and <a class="el" href="TC_8h_source.html#l00029">NO_ERROR</a>.</p>
+<p>References <a class="el" href="TC_8h_source.html#l00080">_error</a>, <a class="el" href="TC_8h_source.html#l00078">_persistent_error</a>, and <a class="el" href="TC_8h_source.html#l00030">NO_ERROR</a>.</p>
 
 </div>
 </div>
@@ -335,7 +335,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="TC_8cpp_source.html#l00036">36</a> of file <a class="el" href="TC_8cpp_source.html">TC.cpp</a>.</p>
 
-<p>References <a class="el" href="TC_8h_source.html#l00076">_enabled</a>, <a class="el" href="TC_8h_source.html#l00079">_error</a>, <a class="el" href="TC_8h_source.html#l00078">_executions</a>, <a class="el" href="classTC.html#ad0a5dbe25b9dfd17bfadfef29e1e2822">exec_impl_()</a>, and <a class="el" href="TC_8h_source.html#l00030">NOT_ENABLED</a>.</p>
+<p>References <a class="el" href="TC_8h_source.html#l00077">_enabled</a>, <a class="el" href="TC_8h_source.html#l00080">_error</a>, <a class="el" href="TC_8h_source.html#l00079">_executions</a>, <a class="el" href="classTC.html#ad0a5dbe25b9dfd17bfadfef29e1e2822">exec_impl_()</a>, and <a class="el" href="TC_8h_source.html#l00031">NOT_ENABLED</a>.</p>
 
 <p>Referenced by <a class="el" href="TCProcessor_8cpp_source.html#l00046">TCProcessor::perform()</a>.</p>
 
@@ -430,7 +430,7 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="TC_8cpp_source.html#l00045">45</a> of file <a class="el" href="TC_8cpp_source.html">TC.cpp</a>.</p>
 
-<p>References <a class="el" href="TC_8h_source.html#l00077">_persistent_error</a>.</p>
+<p>References <a class="el" href="TC_8h_source.html#l00078">_persistent_error</a>.</p>
 
 </div>
 </div>
@@ -453,7 +453,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TC_8h_source.html#l00076">76</a> of file <a class="el" href="TC_8h_source.html">TC.h</a>.</p>
+<p>Definition at line <a class="el" href="TC_8h_source.html#l00077">77</a> of file <a class="el" href="TC_8h_source.html">TC.h</a>.</p>
 
 <p>Referenced by <a class="el" href="TC_8cpp_source.html#l00028">disable()</a>, <a class="el" href="TC_8cpp_source.html#l00020">enable()</a>, <a class="el" href="TC_8cpp_source.html#l00036">exec()</a>, and <a class="el" href="TC_8cpp_source.html#l00010">TC()</a>.</p>
 
@@ -477,13 +477,13 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TC_8h_source.html#l00079">79</a> of file <a class="el" href="TC_8h_source.html">TC.h</a>.</p>
+<p>Definition at line <a class="el" href="TC_8h_source.html#l00080">80</a> of file <a class="el" href="TC_8h_source.html">TC.h</a>.</p>
 
 <p>Referenced by <a class="el" href="TC_8cpp_source.html#l00049">clear_error()</a>, <a class="el" href="TC_8cpp_source.html#l00028">disable()</a>, <a class="el" href="TC_8cpp_source.html#l00020">enable()</a>, <a class="el" href="TC_8cpp_source.html#l00057">errno()</a>, <a class="el" href="TC_8cpp_source.html#l00036">exec()</a>, and <a class="el" href="TC_8cpp_source.html#l00010">TC()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac02e6d68296265146dcbe5a409262b06"></a>
+<a class="anchor" id="a83395d1500d7412811328886ea349fb9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -491,7 +491,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int TC::_executions</td>
+          <td class="memname">uint32_t TC::_executions</td>
         </tr>
       </table>
   </td>
@@ -501,7 +501,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TC_8h_source.html#l00078">78</a> of file <a class="el" href="TC_8h_source.html">TC.h</a>.</p>
+<p>Definition at line <a class="el" href="TC_8h_source.html#l00079">79</a> of file <a class="el" href="TC_8h_source.html">TC.h</a>.</p>
 
 <p>Referenced by <a class="el" href="TC_8cpp_source.html#l00036">exec()</a>, and <a class="el" href="TC_8cpp_source.html#l00010">TC()</a>.</p>
 
@@ -525,7 +525,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TC_8h_source.html#l00077">77</a> of file <a class="el" href="TC_8h_source.html">TC.h</a>.</p>
+<p>Definition at line <a class="el" href="TC_8h_source.html#l00078">78</a> of file <a class="el" href="TC_8h_source.html">TC.h</a>.</p>
 
 <p>Referenced by <a class="el" href="TC_8cpp_source.html#l00049">clear_error()</a>, <a class="el" href="TC_8cpp_source.html#l00057">errno()</a>, <a class="el" href="TC_8cpp_source.html#l00045">persist_errors()</a>, and <a class="el" href="TC_8cpp_source.html#l00010">TC()</a>.</p>
 

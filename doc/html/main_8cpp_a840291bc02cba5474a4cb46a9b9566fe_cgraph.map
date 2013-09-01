@@ -1,6 +1,6 @@
 <map id="main" name="main">
 <area shape="rect" id="node3" href="$main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop() loops while Arduino is powered." alt="" coords="108,161,156,188"/>
-<area shape="rect" id="node15" href="$classTCProcessor.html#a2592bd41ffd44e77c367f401f838b788" title="This function will perform the given action on the given opcode. The internal error variable will ref..." alt="" coords="723,187,880,213"/>
+<area shape="rect" id="node15" href="$classTCProcessor.html#a8d82f0ba03d36e1fe16504e2835ac4ed" title="This function will perform the given action on the given opcode. The internal error variable will ref..." alt="" coords="723,187,880,213"/>
 <area shape="rect" id="node28" href="$main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="This function is only ran when the sketch is initialized." alt="" coords="105,397,159,424"/>
 <area shape="rect" id="node5" href="$classGlobalReceiver.html#a86c5c89fd69a213379582e1a81085d12" title="This function fetches and processes the input. It calls com&#39;s recv() to read the latest information..." alt="" coords="234,136,406,163"/>
 <area shape="rect" id="node7" href="$classAbstractCommunication.html#acc2db09ee34d303eb88d2641395953e0" title="This function reads data from the pipe and returns this as a string." alt="" coords="495,5,657,46"/>

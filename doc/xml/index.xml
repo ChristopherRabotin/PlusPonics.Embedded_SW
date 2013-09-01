@@ -33,9 +33,9 @@
     <member refid="classGlobalReceiver_1ace0d4a5976198ff64c4515459b1fa289" kind="function"><name>~GlobalReceiver</name></member>
   </compound>
   <compound refid="classLogicTC" kind="class"><name>LogicTC</name>
-    <member refid="classLogicTC_1abaa94c7a2404177540e82828d0f97e0f" kind="variable"><name>_outputPin</name></member>
-    <member refid="classLogicTC_1aeda7adda2325751889ffce342bab987d" kind="variable"><name>_outputValue</name></member>
-    <member refid="classLogicTC_1abdfdce8a4efb906bd22369f6488e0246" kind="function"><name>LogicTC</name></member>
+    <member refid="classLogicTC_1ad4ecb293e7e75bc77e49c491bacea532" kind="variable"><name>_outputPin</name></member>
+    <member refid="classLogicTC_1a59bd4dc2ca0fa5afab56d8cac575a1e9" kind="variable"><name>_outputValue</name></member>
+    <member refid="classLogicTC_1ab2ddb23a9a508fc45d021e3f7e1d0736" kind="function"><name>LogicTC</name></member>
     <member refid="classLogicTC_1ab02d2ebc69f023331d35147f0465c4df" kind="function"><name>~LogicTC</name></member>
     <member refid="classLogicTC_1a99bf3c13fa50ffa8aa3cdfa397e8375a" kind="function"><name>init</name></member>
     <member refid="classLogicTC_1ad90a1bc2c83593f296292bf9ccc37d79" kind="function"><name>exec_impl_</name></member>
@@ -56,7 +56,7 @@
     <member refid="classTC_1a76dd65525231537b15914ebbaff85f4cada3574e279e2614f25115c053a9241d1" kind="enumvalue"><name>WAS_NOT_PERSISTENT</name></member>
     <member refid="classTC_1a7515ceb3f9bbfa16049c1a4aac7dbe97" kind="variable"><name>_enabled</name></member>
     <member refid="classTC_1aacf48d34b2ec6f2165d8cecdddcbd33b" kind="variable"><name>_persistent_error</name></member>
-    <member refid="classTC_1ac02e6d68296265146dcbe5a409262b06" kind="variable"><name>_executions</name></member>
+    <member refid="classTC_1a83395d1500d7412811328886ea349fb9" kind="variable"><name>_executions</name></member>
     <member refid="classTC_1a7c9e127ab52d41d3fa353ca946a92318" kind="variable"><name>_error</name></member>
     <member refid="classTC_1a0389d8330f8df757e32727091f32933b" kind="function"><name>TC</name></member>
     <member refid="classTC_1ac636fa90542dba00f6120f5e5ed31d2f" kind="function"><name>~TC</name></member>
@@ -83,7 +83,7 @@
     <member refid="classTCProcessor_1a163b5e6267b5c05111b4ad8eeafadda9" kind="function"><name>TCProcessor</name></member>
     <member refid="classTCProcessor_1a4a8c96ae1992c22a3f1b52802a356e72" kind="function"><name>init</name></member>
     <member refid="classTCProcessor_1a895b3f9a34b52534182785a00493fc63" kind="function"><name>processRecv</name></member>
-    <member refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" kind="function"><name>perform</name></member>
+    <member refid="classTCProcessor_1a8d82f0ba03d36e1fe16504e2835ac4ed" kind="function"><name>perform</name></member>
     <member refid="classTCProcessor_1a725d44ebf98a78dbf5ebc549d678b3c8" kind="function"><name>~TCProcessor</name></member>
     <member refid="classTCProcessor_1aea90af74c7ff4e3f904a9954bd8e5a7a" kind="function"><name>definitions_</name></member>
   </compound>

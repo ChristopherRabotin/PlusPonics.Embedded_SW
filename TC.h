@@ -7,6 +7,7 @@
 
 #ifndef TC_H_
 #define TC_H_
+#include <stdint.h>
 
 /**
  * @brief This class defines a telecommand. It is high level and must be overwritten by low level classes.
@@ -75,7 +76,7 @@ public:
 private:
 	bool _enabled;
 	bool _persistent_error;
-	int _executions;
+	uint32_t _executions;
 	ERROR_STATE _error;
 };
 

@@ -24,13 +24,13 @@ public:
 	 * @param outputPin pin to be used as the output of this TC.
 	 * @param value value which is to be sent on the given output pin.
 	 */
-	LogicTC(int outputPin, int value);
+	LogicTC(uint8_t outputPin, bool value);
 	virtual ~LogicTC();
 	virtual void init();
 	virtual void exec_impl_();
 private:
-	int _outputPin;
-	int _outputValue;
+	uint8_t _outputPin;
+	bool _outputValue;
 };
 
 #endif /* DIGITALWRITETC_H_ */

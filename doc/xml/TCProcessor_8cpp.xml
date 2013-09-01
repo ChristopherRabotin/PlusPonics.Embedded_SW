@@ -4,43 +4,48 @@
     <compoundname>TCProcessor.cpp</compoundname>
     <includes refid="TCProcessor_8h" local="yes">TCProcessor.h</includes>
     <incdepgraph>
-      <node id="244">
+      <node id="261">
         <label>iterator</label>
       </node>
-      <node id="239">
+      <node id="258">
+        <label>stdint.h</label>
+      </node>
+      <node id="255">
         <label>TCProcessor.cpp</label>
         <link refid="TCProcessor.cpp"/>
-        <childnode refid="240" relation="include">
+        <childnode refid="256" relation="include">
         </childnode>
       </node>
-      <node id="245">
+      <node id="262">
         <label>map</label>
       </node>
-      <node id="241">
+      <node id="257">
         <label>TC.h</label>
         <link refid="TC_8h"/>
+        <childnode refid="258" relation="include">
+        </childnode>
       </node>
-      <node id="240">
+      <node id="256">
         <label>TCProcessor.h</label>
         <link refid="TCProcessor_8h"/>
-        <childnode refid="241" relation="include">
+        <childnode refid="257" relation="include">
         </childnode>
-        <childnode refid="242" relation="include">
+        <childnode refid="259" relation="include">
         </childnode>
-        <childnode refid="244" relation="include">
+        <childnode refid="261" relation="include">
         </childnode>
-        <childnode refid="245" relation="include">
+        <childnode refid="262" relation="include">
         </childnode>
       </node>
-      <node id="243">
+      <node id="260">
         <label>Arduino.h</label>
       </node>
-      <node id="242">
+      <node id="259">
         <label>LogicTC.h</label>
         <link refid="LogicTC_8h"/>
-        <childnode refid="241" relation="include">
+        <childnode refid="257" relation="include">
         </childnode>
-        <childnode refid="243" relation="include">
+        <childnode refid="260" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -91,10 +96,10 @@
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a1b104ae051b1edc075cfde03a9d4672a" kindref="member">_error</ref><sp/>=<sp/><ref refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf852ce6e9877744a1c1a998faa8581cc" kindref="member">INVALID_ACTION</ref>;</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" kindref="member" tooltip="This function will perform the given action on the given opcode. The internal error variable will ref...">perform</ref>(action,<sp/>opcode);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a8d82f0ba03d36e1fe16504e2835ac4ed" kindref="member" tooltip="This function will perform the given action on the given opcode. The internal error variable will ref...">perform</ref>(action,<sp/>opcode);</highlight></codeline>
 <codeline lineno="44"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46" refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTCProcessor_1a2592bd41ffd44e77c367f401f838b788" kindref="member" tooltip="This function will perform the given action on the given opcode. The internal error variable will ref...">TCProcessor::perform</ref>(<ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3c" kindref="member">TC_ACTION</ref><sp/>action,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opcode)<sp/>{</highlight></codeline>
+<codeline lineno="46" refid="classTCProcessor_1a8d82f0ba03d36e1fe16504e2835ac4ed" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTCProcessor_1a8d82f0ba03d36e1fe16504e2835ac4ed" kindref="member" tooltip="This function will perform the given action on the given opcode. The internal error variable will ref...">TCProcessor::perform</ref>(<ref refid="classTCProcessor_1a7129c3bda29003b5020b432bdba6cb3c" kindref="member">TC_ACTION</ref><sp/>action,<sp/>uint8_t<sp/>opcode)<sp/>{</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classTCProcessor_1a51b3baa303bac37bdca2464b390f4a3f" kindref="member" tooltip="This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the ...">_opcode_TC_map</ref>.find(opcode)<sp/>==<sp/><ref refid="classTCProcessor_1a51b3baa303bac37bdca2464b390f4a3f" kindref="member" tooltip="This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the ...">_opcode_TC_map</ref>.end())<sp/>{</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a1b104ae051b1edc075cfde03a9d4672a" kindref="member">_error</ref><sp/>=<sp/><ref refid="classTCProcessor_1ad52a3ca216493b975eec62c8441107cbaf0fd08066fd3d62ffabcf24621b1480b" kindref="member">INVALID_OPCODE</ref>;</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>

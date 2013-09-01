@@ -43,7 +43,7 @@ void TCProcessor::processRecv(String payload) {
 	perform(action, opcode);
 }
 
-void TCProcessor::perform(TC_ACTION action, int opcode) {
+void TCProcessor::perform(TC_ACTION action, uint8_t opcode) {
 	if (_opcode_TC_map.find(opcode) == _opcode_TC_map.end()) {
 		_error = INVALID_OPCODE;
 		return;
