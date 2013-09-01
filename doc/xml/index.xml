@@ -49,8 +49,11 @@
     <member refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392eab1d1da372ff32c713b314f1f802e5688" kind="enumvalue"><name>ON_CHANGE</name></member>
     <member refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea1f9912e7179fb31c29a753ecf1ec07e1" kind="enumvalue"><name>ON_OOL</name></member>
     <member refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea009903b3a545f807efcd8cfa81a11530" kind="enumvalue"><name>ON_REQUEST</name></member>
+    <member refid="classTM_1_1AbstractTM_1acc221953edc4458a89e09a99195f66ec" kind="variable"><name>_reporting_state</name></member>
     <member refid="classTM_1_1AbstractTM_1a792e97433ccdda0a206afa3f8df2ee76" kind="function"><name>AbstractTM</name></member>
     <member refid="classTM_1_1AbstractTM_1ac26c1424c587486239d0dd86478b684a" kind="function"><name>~AbstractTM</name></member>
+    <member refid="classTM_1_1AbstractTM_1a3099d931f5182eddb8e0712d5096c7e5" kind="function"><name>check_limits</name></member>
+    <member refid="classTM_1_1AbstractTM_1a2eaee38e34fe4078667624dcaf3d4823" kind="function"><name>set_reporting_state</name></member>
   </compound>
   <compound refid="classProcessors_1_1GlobalReceiver" kind="class"><name>Processors::GlobalReceiver</name>
     <member refid="classProcessors_1_1GlobalReceiver_1acca0f803f6361a4c7532dde4c932a2f8" kind="variable"><name>_com</name></member>
@@ -60,6 +63,20 @@
     <member refid="classProcessors_1_1GlobalReceiver_1aed8991f2b69c3df04c1a1c0f15fb7b3c" kind="function"><name>setCom</name></member>
     <member refid="classProcessors_1_1GlobalReceiver_1a41eab6e4412e6bfbab06100adf8d121c" kind="function"><name>setTCProcessor</name></member>
     <member refid="classProcessors_1_1GlobalReceiver_1a3b2be5ca78b8d0b817223724ac1186fd" kind="function"><name>~GlobalReceiver</name></member>
+  </compound>
+  <compound refid="classTM_1_1Limit" kind="class"><name>TM::Limit</name>
+    <member refid="classTM_1_1Limit_1aac04737f68ccf3884b4c2a773fb39d4d" kind="enum"><name>LIMIT_TYPE</name></member>
+    <member refid="classTM_1_1Limit_1aac04737f68ccf3884b4c2a773fb39d4da8bc898774ed16cfb5842ff2b0a46dbb8" kind="enumvalue"><name>NONE</name></member>
+    <member refid="classTM_1_1Limit_1aac04737f68ccf3884b4c2a773fb39d4dad69f854f6a695a64100da5c64b2da1f5" kind="enumvalue"><name>HIGH</name></member>
+    <member refid="classTM_1_1Limit_1aac04737f68ccf3884b4c2a773fb39d4da75d73bc4c0cad1343a514f0b34702323" kind="enumvalue"><name>LOW</name></member>
+    <member refid="classTM_1_1Limit_1a9da17b7873c9f7219f7192d443e983dd" kind="variable"><name>_type</name></member>
+    <member refid="classTM_1_1Limit_1ab2c1b9a164ef1e767f8222b0d3cb30dc" kind="variable"><name>_opcode</name></member>
+    <member refid="classTM_1_1Limit_1ae6fbd6e7551c3a9e4a0e883d4cd5c4e8" kind="variable"><name>_limit</name></member>
+    <member refid="classTM_1_1Limit_1ab357caca9f01cf82f551b80987ce2a96" kind="function"><name>Limit</name></member>
+    <member refid="classTM_1_1Limit_1a482964c90dd50067d080e88ad0b7126d" kind="function"><name>~Limit</name></member>
+    <member refid="classTM_1_1Limit_1aa4dc6a0e5d0aaa4104eaef4082ef086e" kind="function"><name>set_opcode</name></member>
+    <member refid="classTM_1_1Limit_1aa459ceba6f3ca0a00ba795c7f903a951" kind="function"><name>set_limit</name></member>
+    <member refid="classTM_1_1Limit_1a4e2e9352a5735e47766cd58b86fff15e" kind="function"><name>check_limit</name></member>
   </compound>
   <compound refid="classTC_1_1LogicTC" kind="class"><name>TC::LogicTC</name>
     <member refid="classTC_1_1LogicTC_1a728598e822ad66bc18ed72c3ca21becb" kind="variable"><name>_outputPin</name></member>
@@ -118,6 +135,10 @@
   <compound refid="GlobalReceiver_8cpp" kind="file"><name>GlobalReceiver.cpp</name>
   </compound>
   <compound refid="GlobalReceiver_8h" kind="file"><name>GlobalReceiver.h</name>
+  </compound>
+  <compound refid="Limit_8cpp" kind="file"><name>Limit.cpp</name>
+  </compound>
+  <compound refid="Limit_8h" kind="file"><name>Limit.h</name>
   </compound>
   <compound refid="LogicTC_8cpp" kind="file"><name>LogicTC.cpp</name>
   </compound>

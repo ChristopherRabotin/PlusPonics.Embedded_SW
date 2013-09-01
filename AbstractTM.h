@@ -32,12 +32,22 @@ public:
 		ON_OOL, /**< only report if this telemetry is out of limits */
 		ON_REQUEST /**< if attempting to disable and was already disabled */
 	};
+
+	/**
+	 * @brief This function will check the limits of this given telemetry point.
+	 * It will only check the limits of the limits which are set. In other words, if the red limit is not set, then it will not check
+	 * the limits for this.
+	 */
+	void check_limits();
+
+	/**
+	 * @brief This function changes the reporting state of this telemetry point.
+	 * @note The only way to know the reporting status of a telemetry point is to request telemetry meta information.
+	 * @param new_state new reporting state of this TM.
+	 */
+	void set_reporting_state(REPORTING_STATE new_state);
 private:
 	REPORTING_STATE _reporting_state;
-	bool _ool_red_high_set;
-	bool _ool_yellow_high_set;
-	bool _ool_yellow_low_set;
-	bool _ool_red_low_set;
 };
 
 } /* namespace TM */

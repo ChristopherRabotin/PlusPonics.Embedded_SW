@@ -153,21 +153,21 @@
 <para><simplesect kind="note"><para>Documentation of this class explains how to communicate with the pod! </para></simplesect>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="33">
+      <node id="35">
         <label>Communicators::AbstractCommunication</label>
         <link refid="classCommunicators_1_1AbstractCommunication"/>
       </node>
-      <node id="32">
+      <node id="34">
         <label>Processors::TCProcessor</label>
         <link refid="classProcessors_1_1TCProcessor"/>
       </node>
-      <node id="31">
+      <node id="33">
         <label>Processors::GlobalReceiver</label>
         <link refid="classProcessors_1_1GlobalReceiver"/>
-        <childnode refid="32" relation="usage">
+        <childnode refid="34" relation="usage">
           <edgelabel>_tcProcessor</edgelabel>
         </childnode>
-        <childnode refid="33" relation="usage">
+        <childnode refid="35" relation="usage">
           <edgelabel>_com</edgelabel>
         </childnode>
       </node>

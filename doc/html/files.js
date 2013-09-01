@@ -16,6 +16,10 @@ var files =
     [ "GlobalReceiver.h", "GlobalReceiver_8h.html", [
       [ "GlobalReceiver", "classProcessors_1_1GlobalReceiver.html", "classProcessors_1_1GlobalReceiver" ]
     ] ],
+    [ "Limit.cpp", "Limit_8cpp.html", null ],
+    [ "Limit.h", "Limit_8h.html", [
+      [ "Limit", "classTM_1_1Limit.html", "classTM_1_1Limit" ]
+    ] ],
     [ "LogicTC.cpp", "LogicTC_8cpp.html", null ],
     [ "LogicTC.h", "LogicTC_8h.html", [
       [ "LogicTC", "classTC_1_1LogicTC.html", "classTC_1_1LogicTC" ]

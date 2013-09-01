@@ -395,14 +395,14 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="22">
+      <node id="24">
         <label>Communicators::AbstractCommunication</label>
         <link refid="classCommunicators_1_1AbstractCommunication"/>
       </node>
-      <node id="23">
+      <node id="25">
         <label>Communicators::SerialCom</label>
         <link refid="classCommunicators_1_1SerialCom"/>
-        <childnode refid="22" relation="public-inheritance">
+        <childnode refid="24" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

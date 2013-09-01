@@ -67,6 +67,7 @@ $(document).ready(function(){initNavTree('classTM_1_1AbstractTM.html','');});
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classTM_1_1AbstractTM-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">TM::AbstractTM Class Reference</div>  </div>
@@ -93,6 +94,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a792e97433ccdda0a206afa3f8df2ee76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac26c1424c587486239d0dd86478b684a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTM_1_1AbstractTM.html#ac26c1424c587486239d0dd86478b684a">~AbstractTM</a> ()</td></tr>
 <tr class="separator:ac26c1424c587486239d0dd86478b684a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3099d931f5182eddb8e0712d5096c7e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTM_1_1AbstractTM.html#a3099d931f5182eddb8e0712d5096c7e5">check_limits</a> ()</td></tr>
+<tr class="memdesc:a3099d931f5182eddb8e0712d5096c7e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will check the limits of this given telemetry point. It will only check the limits of the limits which are set. In other words, if the red limit is not set, then it will not check the limits for this.  <a href="#a3099d931f5182eddb8e0712d5096c7e5"></a><br/></td></tr>
+<tr class="separator:a3099d931f5182eddb8e0712d5096c7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eaee38e34fe4078667624dcaf3d4823"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTM_1_1AbstractTM.html#a2eaee38e34fe4078667624dcaf3d4823">set_reporting_state</a> (<a class="el" href="classTM_1_1AbstractTM.html#a2af88018bb79bb99543667c31f70392e">REPORTING_STATE</a> new_state)</td></tr>
+<tr class="memdesc:a2eaee38e34fe4078667624dcaf3d4823"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function changes the reporting state of this telemetry point.  <a href="#a2eaee38e34fe4078667624dcaf3d4823"></a><br/></td></tr>
+<tr class="separator:a2eaee38e34fe4078667624dcaf3d4823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:acc221953edc4458a89e09a99195f66ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTM_1_1AbstractTM.html#a2af88018bb79bb99543667c31f70392e">REPORTING_STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTM_1_1AbstractTM.html#acc221953edc4458a89e09a99195f66ec">_reporting_state</a></td></tr>
+<tr class="separator:acc221953edc4458a89e09a99195f66ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class defines the high level requirements of a telemetry point. It must be overwritten by low level classes. A telemetry point has different reporting levels. </p>
@@ -170,6 +182,72 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="AbstractTM_8cpp_source.html#l00017">17</a> of file <a class="el" href="AbstractTM_8cpp_source.html">AbstractTM.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a3099d931f5182eddb8e0712d5096c7e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TM::AbstractTM::check_limits </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function will check the limits of this given telemetry point. It will only check the limits of the limits which are set. In other words, if the red limit is not set, then it will not check the limits for this. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2eaee38e34fe4078667624dcaf3d4823"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TM::AbstractTM::set_reporting_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTM_1_1AbstractTM.html#a2af88018bb79bb99543667c31f70392e">REPORTING_STATE</a>&#160;</td>
+          <td class="paramname"><em>new_state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function changes the reporting state of this telemetry point. </p>
+<dl class="section note"><dt>Note</dt><dd>The only way to know the reporting status of a telemetry point is to request telemetry meta information. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_state</td><td>new reporting state of this <a class="el" href="namespaceTM.html" title="This namespace includes everything related to telemetry, up until it is to be reported. The reporting of the telemetry is handled by the Processors namespace.">TM</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="acc221953edc4458a89e09a99195f66ec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTM_1_1AbstractTM.html#a2af88018bb79bb99543667c31f70392e">REPORTING_STATE</a> TM::AbstractTM::_reporting_state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="AbstractTM_8h_source.html#l00050">50</a> of file <a class="el" href="AbstractTM_8h_source.html">AbstractTM.h</a>.</p>
 
 </div>
 </div>

@@ -43,6 +43,21 @@
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h" line="29" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h" bodystart="29" bodyend="34"/>
       </memberdef>
       </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTM_1_1AbstractTM_1acc221953edc4458a89e09a99195f66ec" prot="private" static="no" mutable="no">
+        <type><ref refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392e" kindref="member">REPORTING_STATE</ref></type>
+        <definition>REPORTING_STATE TM::AbstractTM::_reporting_state</definition>
+        <argsstring></argsstring>
+        <name>_reporting_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h" line="50" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classTM_1_1AbstractTM_1a792e97433ccdda0a206afa3f8df2ee76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -70,19 +85,61 @@
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h" line="25" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.cpp" bodystart="17" bodyend="19"/>
       </memberdef>
+      <memberdef kind="function" id="classTM_1_1AbstractTM_1a3099d931f5182eddb8e0712d5096c7e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TM::AbstractTM::check_limits</definition>
+        <argsstring>()</argsstring>
+        <name>check_limits</name>
+        <briefdescription>
+<para>This function will check the limits of this given telemetry point. It will only check the limits of the limits which are set. In other words, if the red limit is not set, then it will not check the limits for this. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classTM_1_1AbstractTM_1a2eaee38e34fe4078667624dcaf3d4823" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TM::AbstractTM::set_reporting_state</definition>
+        <argsstring>(REPORTING_STATE new_state)</argsstring>
+        <name>set_reporting_state</name>
+        <param>
+          <type><ref refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392e" kindref="member">REPORTING_STATE</ref></type>
+          <declname>new_state</declname>
+        </param>
+        <briefdescription>
+<para>This function changes the reporting state of this telemetry point. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The only way to know the reporting status of a telemetry point is to request telemetry meta information. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>new_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new reporting state of this <ref refid="namespaceTM" kindref="compound">TM</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h" line="48"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>This class defines the high level requirements of a telemetry point. It must be overwritten by low level classes. A telemetry point has different reporting levels. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h" line="22" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h" bodystart="22" bodyend="35"/>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h" line="22" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h" bodystart="22" bodyend="51"/>
     <listofallmembers>
+      <member refid="classTM_1_1AbstractTM_1acc221953edc4458a89e09a99195f66ec" prot="private" virt="non-virtual"><scope>TM::AbstractTM</scope><name>_reporting_state</name></member>
       <member refid="classTM_1_1AbstractTM_1a792e97433ccdda0a206afa3f8df2ee76" prot="public" virt="non-virtual"><scope>TM::AbstractTM</scope><name>AbstractTM</name></member>
       <member refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea247739bbcd5f7af25dab8dbdc9738e6d" prot="public" virt="non-virtual"><scope>TM::AbstractTM</scope><name>ALWAYS</name></member>
+      <member refid="classTM_1_1AbstractTM_1a3099d931f5182eddb8e0712d5096c7e5" prot="public" virt="non-virtual"><scope>TM::AbstractTM</scope><name>check_limits</name></member>
       <member refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392eab1d1da372ff32c713b314f1f802e5688" prot="public" virt="non-virtual"><scope>TM::AbstractTM</scope><name>ON_CHANGE</name></member>
       <member refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea1f9912e7179fb31c29a753ecf1ec07e1" prot="public" virt="non-virtual"><scope>TM::AbstractTM</scope><name>ON_OOL</name></member>
       <member refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea009903b3a545f807efcd8cfa81a11530" prot="public" virt="non-virtual"><scope>TM::AbstractTM</scope><name>ON_REQUEST</name></member>
       <member refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392e" prot="public" virt="non-virtual"><scope>TM::AbstractTM</scope><name>REPORTING_STATE</name></member>
+      <member refid="classTM_1_1AbstractTM_1a2eaee38e34fe4078667624dcaf3d4823" prot="public" virt="non-virtual"><scope>TM::AbstractTM</scope><name>set_reporting_state</name></member>
       <member refid="classTM_1_1AbstractTM_1ac26c1424c587486239d0dd86478b684a" prot="public" virt="virtual"><scope>TM::AbstractTM</scope><name>~AbstractTM</name></member>
     </listofallmembers>
   </compounddef>

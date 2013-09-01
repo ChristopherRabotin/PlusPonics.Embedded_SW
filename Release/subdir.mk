@@ -8,6 +8,7 @@ CPP_SRCS += \
 ../AbstractTC.cpp \
 ../AbstractTM.cpp \
 ../GlobalReceiver.cpp \
+../Limit.cpp \
 ../LogicTC.cpp \
 ../SerialCom.cpp \
 ../TCProcessor.cpp \
@@ -18,6 +19,7 @@ OBJS += \
 ./AbstractTC.o \
 ./AbstractTM.o \
 ./GlobalReceiver.o \
+./Limit.o \
 ./LogicTC.o \
 ./SerialCom.o \
 ./TCProcessor.o \
@@ -28,6 +30,7 @@ CPP_DEPS += \
 ./AbstractTC.d \
 ./AbstractTM.d \
 ./GlobalReceiver.d \
+./Limit.d \
 ./LogicTC.d \
 ./SerialCom.d \
 ./TCProcessor.d \

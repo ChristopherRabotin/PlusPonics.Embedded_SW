@@ -3,6 +3,7 @@
   <compounddef id="namespaceTM" kind="namespace">
     <compoundname>TM</compoundname>
     <innerclass refid="classTM_1_1AbstractTM" prot="public">TM::AbstractTM</innerclass>
+    <innerclass refid="classTM_1_1Limit" prot="public">TM::Limit</innerclass>
     <briefdescription>
 <para>This namespace includes everything related to telemetry, up until it is to be reported. The reporting of the telemetry is handled by the <ref refid="namespaceProcessors" kindref="compound">Processors</ref> namespace. </para>    </briefdescription>
     <detaileddescription>

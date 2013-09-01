@@ -7,5 +7,8 @@ var classTM_1_1AbstractTM =
       [ "ON_REQUEST", "classTM_1_1AbstractTM.html#a2af88018bb79bb99543667c31f70392ea009903b3a545f807efcd8cfa81a11530", null ]
     ] ],
     [ "AbstractTM", "classTM_1_1AbstractTM.html#a792e97433ccdda0a206afa3f8df2ee76", null ],
-    [ "~AbstractTM", "classTM_1_1AbstractTM.html#ac26c1424c587486239d0dd86478b684a", null ]
+    [ "~AbstractTM", "classTM_1_1AbstractTM.html#ac26c1424c587486239d0dd86478b684a", null ],
+    [ "check_limits", "classTM_1_1AbstractTM.html#a3099d931f5182eddb8e0712d5096c7e5", null ],
+    [ "set_reporting_state", "classTM_1_1AbstractTM.html#a2eaee38e34fe4078667624dcaf3d4823", null ],
+    [ "_reporting_state", "classTM_1_1AbstractTM.html#acc221953edc4458a89e09a99195f66ec", null ]
 ];

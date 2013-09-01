@@ -281,7 +281,9 @@
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="76"/>
       </memberdef>
-      <memberdef kind="function" id="classTC_1_1AbstractTC_1afd7a067b52b173c366998116b2d75c4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classTC_1_1AbstractTC_1afd7a067b52b173c366998116b2d75c4a" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
         <definition>virtual void TC::AbstractTC::exec_impl_</definition>
         <argsstring>()=0</argsstring>
@@ -293,7 +295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="80"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTC.h" line="81"/>
         <referencedby refid="classTC_1_1AbstractTC_1a0c7c211d4ff52948d7d1d8803d7b93fb" compoundref="AbstractTC_8cpp" startline="36" endline="43">exec</referencedby>
       </memberdef>
       </sectiondef>
@@ -302,14 +304,14 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="25">
+      <node id="27">
         <label>TC::AbstractTC</label>
         <link refid="classTC_1_1AbstractTC"/>
       </node>
-      <node id="26">
+      <node id="28">
         <label>TC::LogicTC</label>
         <link refid="classTC_1_1LogicTC"/>
-        <childnode refid="25" relation="public-inheritance">
+        <childnode refid="27" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
@@ -326,7 +328,7 @@
       <member refid="classTC_1_1AbstractTC_1ad1fdfeaa6094b9c6154dae9133c87b5e" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>errno</name></member>
       <member refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1db" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>ERROR_STATE</name></member>
       <member refid="classTC_1_1AbstractTC_1a0c7c211d4ff52948d7d1d8803d7b93fb" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>exec</name></member>
-      <member refid="classTC_1_1AbstractTC_1afd7a067b52b173c366998116b2d75c4a" prot="public" virt="pure-virtual"><scope>TC::AbstractTC</scope><name>exec_impl_</name></member>
+      <member refid="classTC_1_1AbstractTC_1afd7a067b52b173c366998116b2d75c4a" prot="private" virt="pure-virtual"><scope>TC::AbstractTC</scope><name>exec_impl_</name></member>
       <member refid="classTC_1_1AbstractTC_1ac40b14c410a308e6a1db04abc8bd839d" prot="public" virt="pure-virtual"><scope>TC::AbstractTC</scope><name>init</name></member>
       <member refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba34fa69a6a7288fb465c5d83a0c202684" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>NO_ERROR</name></member>
       <member refid="classTC_1_1AbstractTC_1ae9ffbc921155bbdb7640d753242ce1dba824a239cfc949e9cbe6ba044df3c9285" prot="public" virt="non-virtual"><scope>TC::AbstractTC</scope><name>NOT_ENABLED</name></member>

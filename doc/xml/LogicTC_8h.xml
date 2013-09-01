@@ -8,70 +8,70 @@
     <includedby refid="LogicTC_8cpp" local="yes">LogicTC.cpp</includedby>
     <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
     <incdepgraph>
-      <node id="219">
+      <node id="235">
         <label>stdint.h</label>
       </node>
-      <node id="220">
+      <node id="236">
         <label>Arduino.h</label>
       </node>
-      <node id="218">
+      <node id="234">
         <label>AbstractTC.h</label>
         <link refid="AbstractTC_8h"/>
-        <childnode refid="219" relation="include">
+        <childnode refid="235" relation="include">
         </childnode>
       </node>
-      <node id="217">
+      <node id="233">
         <label>LogicTC.h</label>
         <link refid="LogicTC.h"/>
-        <childnode refid="218" relation="include">
+        <childnode refid="234" relation="include">
         </childnode>
-        <childnode refid="220" relation="include">
+        <childnode refid="236" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="226">
+      <node id="242">
         <label>TCProcessor.cpp</label>
         <link refid="TCProcessor_8cpp"/>
       </node>
-      <node id="224">
+      <node id="240">
         <label>GlobalReceiver.cpp</label>
         <link refid="GlobalReceiver_8cpp"/>
       </node>
-      <node id="222">
+      <node id="238">
         <label>TCProcessor.h</label>
         <link refid="TCProcessor_8h"/>
-        <childnode refid="223" relation="include">
+        <childnode refid="239" relation="include">
         </childnode>
-        <childnode refid="225" relation="include">
+        <childnode refid="241" relation="include">
         </childnode>
-        <childnode refid="226" relation="include">
+        <childnode refid="242" relation="include">
         </childnode>
       </node>
-      <node id="227">
+      <node id="243">
         <label>LogicTC.cpp</label>
         <link refid="LogicTC_8cpp"/>
       </node>
-      <node id="223">
+      <node id="239">
         <label>GlobalReceiver.h</label>
         <link refid="GlobalReceiver_8h"/>
-        <childnode refid="224" relation="include">
+        <childnode refid="240" relation="include">
         </childnode>
-        <childnode refid="225" relation="include">
+        <childnode refid="241" relation="include">
         </childnode>
       </node>
-      <node id="225">
+      <node id="241">
         <label>main.cpp</label>
         <link refid="main_8cpp"/>
       </node>
-      <node id="221">
+      <node id="237">
         <label>LogicTC.h</label>
         <link refid="LogicTC.h"/>
-        <childnode refid="222" relation="include">
+        <childnode refid="238" relation="include">
         </childnode>
-        <childnode refid="227" relation="include">
+        <childnode refid="243" relation="include">
         </childnode>
-        <childnode refid="225" relation="include">
+        <childnode refid="241" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

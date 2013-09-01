@@ -8,5 +8,6 @@ var hierarchy =
     ] ],
     [ "TM::AbstractTM", "classTM_1_1AbstractTM.html", null ],
     [ "Processors::GlobalReceiver", "classProcessors_1_1GlobalReceiver.html", null ],
+    [ "TM::Limit", "classTM_1_1Limit.html", null ],
     [ "Processors::TCProcessor", "classProcessors_1_1TCProcessor.html", null ]
 ];

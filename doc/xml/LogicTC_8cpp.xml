@@ -4,30 +4,30 @@
     <compoundname>LogicTC.cpp</compoundname>
     <includes refid="LogicTC_8h" local="yes">LogicTC.h</includes>
     <incdepgraph>
-      <node id="214">
+      <node id="230">
         <label>stdint.h</label>
       </node>
-      <node id="215">
+      <node id="231">
         <label>Arduino.h</label>
       </node>
-      <node id="211">
+      <node id="227">
         <label>LogicTC.cpp</label>
         <link refid="LogicTC.cpp"/>
-        <childnode refid="212" relation="include">
+        <childnode refid="228" relation="include">
         </childnode>
       </node>
-      <node id="213">
+      <node id="229">
         <label>AbstractTC.h</label>
         <link refid="AbstractTC_8h"/>
-        <childnode refid="214" relation="include">
+        <childnode refid="230" relation="include">
         </childnode>
       </node>
-      <node id="212">
+      <node id="228">
         <label>LogicTC.h</label>
         <link refid="LogicTC_8h"/>
-        <childnode refid="213" relation="include">
+        <childnode refid="229" relation="include">
         </childnode>
-        <childnode refid="215" relation="include">
+        <childnode refid="231" relation="include">
         </childnode>
       </node>
     </incdepgraph>

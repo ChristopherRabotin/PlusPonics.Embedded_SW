@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="Limit_8h" kind="file">
+    <compoundname>Limit.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="Limit_8cpp" local="yes">Limit.cpp</includedby>
+    <incdepgraph>
+      <node id="224">
+        <label>stdint.h</label>
+      </node>
+      <node id="223">
+        <label>Limit.h</label>
+        <link refid="Limit.h"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="226">
+        <label>Limit.cpp</label>
+        <link refid="Limit_8cpp"/>
+      </node>
+      <node id="225">
+        <label>Limit.h</label>
+        <link refid="Limit.h"/>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classTM_1_1Limit" prot="public">TM::Limit</innerclass>
+    <innernamespace refid="namespaceTM">TM</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Limit.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Sep<sp/>1,<sp/>2013</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>chris</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LIMIT_H_</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LIMIT_H_</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">TM<sp/>{</highlight></codeline>
+<codeline lineno="19" refid="classTM_1_1Limit" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTM_1_1Limit" kindref="compound" tooltip="This class defines how a limit is to operate. This is used by any telemetry point which defines limit...">Limit</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTM_1_1Limit_1ab357caca9f01cf82f551b80987ce2a96" kindref="member">Limit</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classTM_1_1Limit_1a482964c90dd50067d080e88ad0b7126d" kindref="member">~Limit</ref>();</highlight></codeline>
+<codeline lineno="26" refid="classTM_1_1Limit_1aac04737f68ccf3884b4c2a773fb39d4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classTM_1_1Limit_1aac04737f68ccf3884b4c2a773fb39d4d" kindref="member">LIMIT_TYPE</ref><sp/>{</highlight></codeline>
+<codeline lineno="27" refid="classTM_1_1Limit_1aac04737f68ccf3884b4c2a773fb39d4da8bc898774ed16cfb5842ff2b0a46dbb8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTM_1_1Limit_1aac04737f68ccf3884b4c2a773fb39d4da8bc898774ed16cfb5842ff2b0a46dbb8" kindref="member">NONE</ref>,<sp/></highlight></codeline>
+<codeline lineno="28" refid="classTM_1_1Limit_1aac04737f68ccf3884b4c2a773fb39d4dad69f854f6a695a64100da5c64b2da1f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTM_1_1Limit_1aac04737f68ccf3884b4c2a773fb39d4dad69f854f6a695a64100da5c64b2da1f5" kindref="member">HIGH</ref>,<sp/></highlight></codeline>
+<codeline lineno="29" refid="classTM_1_1Limit_1aac04737f68ccf3884b4c2a773fb39d4da75d73bc4c0cad1343a514f0b34702323" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTM_1_1Limit_1aac04737f68ccf3884b4c2a773fb39d4da75d73bc4c0cad1343a514f0b34702323" kindref="member">LOW</ref><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTM_1_1Limit_1aa4dc6a0e5d0aaa4104eaef4082ef086e" kindref="member" tooltip="This function will set the opcode to execute if there is an out of limit. This function should only b...">set_opcode</ref>(uint8_t<sp/>opc);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTM_1_1Limit_1aa459ceba6f3ca0a00ba795c7f903a951" kindref="member" tooltip="This function sets the limit of the instance. This function should only be called once...">set_limit</ref>(int32_t<sp/>lim);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classTM_1_1Limit_1a4e2e9352a5735e47766cd58b86fff15e" kindref="member" tooltip="This function will check if the current value provided is within the limits.">check_limit</ref>(int32_t<sp/>value);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52" refid="classTM_1_1Limit_1a9da17b7873c9f7219f7192d443e983dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTM_1_1Limit_1aac04737f68ccf3884b4c2a773fb39d4d" kindref="member">LIMIT_TYPE</ref><sp/><ref refid="classTM_1_1Limit_1a9da17b7873c9f7219f7192d443e983dd" kindref="member">_type</ref>;</highlight></codeline>
+<codeline lineno="53" refid="classTM_1_1Limit_1ab2c1b9a164ef1e767f8222b0d3cb30dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classTM_1_1Limit_1ab2c1b9a164ef1e767f8222b0d3cb30dc" kindref="member">_opcode</ref>;</highlight></codeline>
+<codeline lineno="54" refid="classTM_1_1Limit_1ae6fbd6e7551c3a9e4a0e883d4cd5c4e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classTM_1_1Limit_1ae6fbd6e7551c3a9e4a0e883d4cd5c4e8" kindref="member">_limit</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>TM<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIMIT_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Limit.h"/>
+  </compounddef>
+</doxygen>

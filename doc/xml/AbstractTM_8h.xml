@@ -4,14 +4,14 @@
     <compoundname>AbstractTM.h</compoundname>
     <includedby refid="AbstractTM_8cpp" local="yes">AbstractTM.cpp</includedby>
     <invincdepgraph>
-      <node id="181">
+      <node id="189">
         <label>AbstractTM.cpp</label>
         <link refid="AbstractTM_8cpp"/>
       </node>
-      <node id="180">
+      <node id="188">
         <label>AbstractTM.h</label>
         <link refid="AbstractTM.h"/>
-        <childnode refid="181" relation="include">
+        <childnode refid="189" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -43,10 +43,16 @@
 <codeline lineno="32" refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea1f9912e7179fb31c29a753ecf1ec07e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea1f9912e7179fb31c29a753ecf1ec07e1" kindref="member">ON_OOL</ref>,<sp/></highlight></codeline>
 <codeline lineno="33" refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea009903b3a545f807efcd8cfa81a11530" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392ea009903b3a545f807efcd8cfa81a11530" kindref="member">ON_REQUEST</ref><sp/></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>TM<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ABSTRACTTM_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTM_1_1AbstractTM_1a3099d931f5182eddb8e0712d5096c7e5" kindref="member" tooltip="This function will check the limits of this given telemetry point. It will only check the limits of t...">check_limits</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTM_1_1AbstractTM_1a2eaee38e34fe4078667624dcaf3d4823" kindref="member" tooltip="This function changes the reporting state of this telemetry point.">set_reporting_state</ref>(<ref refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392e" kindref="member">REPORTING_STATE</ref><sp/>new_state);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50" refid="classTM_1_1AbstractTM_1acc221953edc4458a89e09a99195f66ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTM_1_1AbstractTM_1a2af88018bb79bb99543667c31f70392e" kindref="member">REPORTING_STATE</ref><sp/><ref refid="classTM_1_1AbstractTM_1acc221953edc4458a89e09a99195f66ec" kindref="member">_reporting_state</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>namespace<sp/>TM<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ABSTRACTTM_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/AbstractTM.h"/>
   </compounddef>
