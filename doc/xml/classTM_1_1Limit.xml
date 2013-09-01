@@ -49,7 +49,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Limit.h" line="52" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Limit.h" bodystart="52" bodyend="-1"/>
-        <referencedby refid="classTM_1_1Limit_1a4e2e9352a5735e47766cd58b86fff15e" compoundref="Limit_8cpp" startline="30" endline="39">check_limit</referencedby>
+        <referencedby refid="classTM_1_1Limit_1a4e2e9352a5735e47766cd58b86fff15e" compoundref="Limit_8cpp" startline="30" endline="40">check_limit</referencedby>
         <referencedby refid="classTM_1_1Limit_1ab357caca9f01cf82f551b80987ce2a96" compoundref="Limit_8cpp" startline="12" endline="17">Limit</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classTM_1_1Limit_1ab2c1b9a164ef1e767f8222b0d3cb30dc" prot="private" static="no" mutable="no">
@@ -64,7 +64,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Limit.h" line="53" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Limit.h" bodystart="53" bodyend="-1"/>
-        <referencedby refid="classTM_1_1Limit_1a4e2e9352a5735e47766cd58b86fff15e" compoundref="Limit_8cpp" startline="30" endline="39">check_limit</referencedby>
+        <referencedby refid="classTM_1_1Limit_1a4e2e9352a5735e47766cd58b86fff15e" compoundref="Limit_8cpp" startline="30" endline="40">check_limit</referencedby>
         <referencedby refid="classTM_1_1Limit_1ab357caca9f01cf82f551b80987ce2a96" compoundref="Limit_8cpp" startline="12" endline="17">Limit</referencedby>
         <referencedby refid="classTM_1_1Limit_1aa4dc6a0e5d0aaa4104eaef4082ef086e" compoundref="Limit_8cpp" startline="22" endline="24">set_opcode</referencedby>
       </memberdef>
@@ -80,7 +80,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Limit.h" line="54" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Limit.h" bodystart="54" bodyend="-1"/>
-        <referencedby refid="classTM_1_1Limit_1a4e2e9352a5735e47766cd58b86fff15e" compoundref="Limit_8cpp" startline="30" endline="39">check_limit</referencedby>
+        <referencedby refid="classTM_1_1Limit_1a4e2e9352a5735e47766cd58b86fff15e" compoundref="Limit_8cpp" startline="30" endline="40">check_limit</referencedby>
         <referencedby refid="classTM_1_1Limit_1ab357caca9f01cf82f551b80987ce2a96" compoundref="Limit_8cpp" startline="12" endline="17">Limit</referencedby>
         <referencedby refid="classTM_1_1Limit_1aa459ceba6f3ca0a00ba795c7f903a951" compoundref="Limit_8cpp" startline="26" endline="28">set_limit</referencedby>
       </memberdef>
@@ -192,7 +192,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Limit.h" line="50" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Limit.cpp" bodystart="30" bodyend="39"/>
+        <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Limit.h" line="50" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/Limit.cpp" bodystart="30" bodyend="40"/>
         <references refid="classTM_1_1Limit_1ae6fbd6e7551c3a9e4a0e883d4cd5c4e8" compoundref="Limit_8h" startline="54">_limit</references>
         <references refid="classTM_1_1Limit_1ab2c1b9a164ef1e767f8222b0d3cb30dc" compoundref="Limit_8h" startline="53">_opcode</references>
         <references refid="classTM_1_1Limit_1a9da17b7873c9f7219f7192d443e983dd" compoundref="Limit_8h" startline="52">_type</references>

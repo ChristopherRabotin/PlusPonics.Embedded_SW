@@ -29,12 +29,13 @@ void Limit::set_limit(int32_t lim) {
 
 uint8_t Limit::check_limit(int32_t value) {
 	switch (_type) {
-	case NONE:
-		return (0);
 	case HIGH:
 		return ((value < _limit) ? 0 : _opcode);
 	case LOW:
 		return ((value > _limit) ? 0 : _opcode);
+	case NONE:
+	default:
+		return (0);
 	}
 }
 
