@@ -48,7 +48,7 @@ void GlobalReceiver::process() {
 	}
 }
 
-void GlobalReceiver::setCom(AbstractCommunication &comInstance) {
+void GlobalReceiver::setCom(Communicators::AbstractCommunication &comInstance) {
 	_com = &comInstance;
 }
 

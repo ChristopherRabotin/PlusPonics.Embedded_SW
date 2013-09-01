@@ -17,9 +17,7 @@
 #include "SerialCom.h"
 #endif
 
-int ledPin = 13;    // LED connected to digital pin 13
-
-SerialCom com;
+Communicators::SerialCom com;
 GlobalReceiver glrcv;
 TCProcessor tcProcessor;
 
@@ -31,7 +29,7 @@ void setup() {
 	tcProcessor.init();
 
 	com.init();
-	com.setLevel(AbstractCommunication::INFO);
+	com.setLevel(Communicators::AbstractCommunication::INFO);
 	com.info("Setting up led", "setup");
 	glrcv.setCom(com);
 	glrcv.setTCProcessor(tcProcessor);

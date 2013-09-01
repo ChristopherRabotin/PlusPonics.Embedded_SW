@@ -6,7 +6,7 @@
  */
 
 #include "SerialCom.h"
-
+namespace Communicators {
 SerialCom::SerialCom() {
 
 }
@@ -32,4 +32,5 @@ String SerialCom::recv() {
 		rtn = Serial.readString();
 	}
 	return (rtn);
+}
 }

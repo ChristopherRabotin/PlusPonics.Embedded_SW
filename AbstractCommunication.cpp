@@ -6,7 +6,7 @@
  */
 
 #include "AbstractCommunication.h"
-
+namespace Communicators {
 /**
  *\brief The constructor should initialize the communication with the control system.
  * This includes everything needed prior to starting to communicate with the control system.
@@ -62,4 +62,5 @@ void AbstractCommunication::sendf(String payload, ...) {
 
 void AbstractCommunication::setLevel(DEBUG_LEVEL lvl) {
 	this->lvl = lvl;
+}
 }

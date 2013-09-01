@@ -11,6 +11,9 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <WString.h>
+
+namespace Communicators {
+
 /**
  * @class AbstractCommunication
  * @brief This class defines how all communication should be done.
@@ -78,5 +81,5 @@ private:
 	static const String DEFAULT_LOCATION;
 	DEBUG_LEVEL lvl;
 };
-
+}
 #endif /* ABSTRACTCOMMUNICATION_H_ */

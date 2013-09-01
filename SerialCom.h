@@ -12,6 +12,7 @@
 #include <Arduino.h>
 #include <HardwareSerial.h> // TODO Eventually use SoftSerial.h since it uses interrupts to read incoming messages.
 // #include <SoftwareSerial.h>
+namespace Communicators {
 /**
  * @class SerialCom
  * @brief This class defines serial communication with the control system.
@@ -24,5 +25,5 @@ public:
 	virtual void send(String payload);
 	virtual String recv();
 };
-
+}
 #endif /* SERIALCOM_H_ */
