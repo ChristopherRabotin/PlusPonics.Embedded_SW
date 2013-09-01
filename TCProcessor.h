@@ -13,6 +13,7 @@
 /* The following includes enable STL for Arduino. */
 #include <iterator>
 #include <map>
+namespace Processors {
 /**
  * @class TCProcessor
  * @brief This class manages all the telecommands in a std::map . It is also called by GlobalReceiver upon receiving commanding instruction.
@@ -88,5 +89,5 @@ private:
 	ERROR_STATE _error;
 
 };
-
+}
 #endif /* TCPROCESSOR_H_ */

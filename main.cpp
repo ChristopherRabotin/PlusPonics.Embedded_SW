@@ -18,8 +18,8 @@
 #endif
 
 Communicators::SerialCom com;
-GlobalReceiver glrcv;
-TCProcessor tcProcessor;
+Processors::GlobalReceiver glrcv;
+Processors::TCProcessor tcProcessor;
 
 /**
  * @brief This function is only ran when the sketch is initialized.
@@ -53,7 +53,7 @@ int main(void) {
 	setup();
 
 	/* Let's turn on the LED. The user will turn it off from Serial. */
-	tcProcessor.perform(TCProcessor::EXECUTE, 1);
+	tcProcessor.perform(Processors::TCProcessor::EXECUTE, 1);
 
 	while (true) {
 		loop();

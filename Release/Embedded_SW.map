@@ -489,15 +489,15 @@ LOAD /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.
                 0x0000000000000a0e                Communicators::AbstractCommunication::warn(String, String)
                 0x00000000000007b0                Communicators::AbstractCommunication::AbstractCommunication()
  .text          0x0000000000000c7c      0x2da ./GlobalReceiver.o
-                0x0000000000000cac                GlobalReceiver::setTCProcessor(TCProcessor&)
-                0x0000000000000cc0                GlobalReceiver::~GlobalReceiver()
-                0x0000000000000c7c                GlobalReceiver::GlobalReceiver()
-                0x0000000000000ca4                GlobalReceiver::setCom(Communicators::AbstractCommunication&)
-                0x0000000000000cde                byte_to_binary(int)
-                0x0000000000000d36                GlobalReceiver::process()
-                0x0000000000000ccc                GlobalReceiver::~GlobalReceiver()
-                0x0000000000000cb4                GlobalReceiver::~GlobalReceiver()
-                0x0000000000000c90                GlobalReceiver::GlobalReceiver()
+                0x0000000000000cb4                Processors::GlobalReceiver::~GlobalReceiver()
+                0x0000000000000cde                Processors::byte_to_binary(int)
+                0x0000000000000d36                Processors::GlobalReceiver::process()
+                0x0000000000000c90                Processors::GlobalReceiver::GlobalReceiver()
+                0x0000000000000ccc                Processors::GlobalReceiver::~GlobalReceiver()
+                0x0000000000000c7c                Processors::GlobalReceiver::GlobalReceiver()
+                0x0000000000000cc0                Processors::GlobalReceiver::~GlobalReceiver()
+                0x0000000000000cac                Processors::GlobalReceiver::setTCProcessor(Processors::TCProcessor&)
+                0x0000000000000ca4                Processors::GlobalReceiver::setCom(Communicators::AbstractCommunication&)
  .text          0x0000000000000f56       0xb2 ./LogicTC.o
                 0x0000000000000f80                LogicTC::~LogicTC()
                 0x0000000000000f92                LogicTC::~LogicTC()
@@ -528,22 +528,22 @@ LOAD /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.
                 0x00000000000011c2                TC::persist_errors(bool)
                 0x00000000000011ea                TC::~TC()
  .text          0x00000000000011fc      0xac0 ./TCProcessor.o
+                0x0000000000001222                Processors::TCProcessor::TCProcessor()
+                0x0000000000001b0e                Processors::TCProcessor::perform(Processors::TCProcessor::TC_ACTION, unsigned char)
+                0x0000000000001afc                Processors::TCProcessor::~TCProcessor()
                 0x00000000000018f0                std::map<unsigned char, TC*, std::less<unsigned char>, std::allocator<TC*> >::operator[](unsigned char const&)
-                0x00000000000019a6                TCProcessor::definitions_()
-                0x0000000000001a36                TCProcessor::init()
-                0x0000000000001b0e                TCProcessor::perform(TCProcessor::TC_ACTION, unsigned char)
+                0x00000000000019a6                Processors::TCProcessor::definitions_()
                 0x0000000000001770                std::_Rb_tree<unsigned char, std::pair<unsigned char const, TC*>, std::_Select1st<std::pair<unsigned char const, TC*> >, std::less<unsigned char>, std::allocator<TC*> >::insert_unique(std::_Rb_tree_iterator<std::pair<unsigned char const, TC*>, std::pair<unsigned char const, TC*>&, std::pair<unsigned char const, TC*>*>, std::pair<unsigned char const, TC*> const&)
-                0x0000000000001222                TCProcessor::TCProcessor()
-                0x0000000000001280                TCProcessor::TCProcessor()
-                0x0000000000001ac2                TCProcessor::~TCProcessor()
-                0x0000000000001aea                TCProcessor::~TCProcessor()
+                0x0000000000001ac2                Processors::TCProcessor::~TCProcessor()
+                0x0000000000001be8                Processors::TCProcessor::processRecv(String)
+                0x0000000000001a36                Processors::TCProcessor::init()
                 0x0000000000001628                std::_Rb_tree<unsigned char, std::pair<unsigned char const, TC*>, std::_Select1st<std::pair<unsigned char const, TC*> >, std::less<unsigned char>, std::allocator<TC*> >::insert_unique(std::pair<unsigned char const, TC*> const&)
-                0x0000000000001be8                TCProcessor::processRecv(String)
                 0x0000000000001a7c                std::map<unsigned char, TC*, std::less<unsigned char>, std::allocator<TC*> >::~map()
                 0x0000000000001a3c                std::_Rb_tree<unsigned char, std::pair<unsigned char const, TC*>, std::_Select1st<std::pair<unsigned char const, TC*> >, std::less<unsigned char>, std::allocator<TC*> >::_M_erase(std::_Rb_tree_node<std::pair<unsigned char const, TC*> >*)
                 0x00000000000012de                std::_Rb_tree<unsigned char, std::pair<unsigned char const, TC*>, std::_Select1st<std::pair<unsigned char const, TC*> >, std::less<unsigned char>, std::allocator<TC*> >::_M_insert(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::pair<unsigned char const, TC*> const&)
-                0x0000000000001afc                TCProcessor::~TCProcessor()
                 0x00000000000011fc                std::_Rb_tree_alloc_base<std::pair<unsigned char const, TC*>, std::allocator<TC*>, true>::_M_get_node()
+                0x0000000000001aea                Processors::TCProcessor::~TCProcessor()
+                0x0000000000001280                Processors::TCProcessor::TCProcessor()
  .text          0x0000000000001cbc      0x152 ./main.o
                 0x0000000000001d28                loop
                 0x0000000000001cbc                configure()
@@ -891,7 +891,7 @@ LOAD /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.
  .data          0x0000000000800200       0x2e ./AbstractCommunication.o
                 0x0000000000800220                vtable for Communicators::AbstractCommunication
  .data          0x000000000080022e       0x53 ./GlobalReceiver.o
-                0x0000000000800279                vtable for GlobalReceiver
+                0x0000000000800279                vtable for Processors::GlobalReceiver
  .data          0x0000000000800281        0xc ./LogicTC.o
                 0x0000000000800281                vtable for LogicTC
  .data          0x000000000080028d        0xf ./SerialCom.o
@@ -899,7 +899,7 @@ LOAD /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.
  .data          0x000000000080029c        0xc ./TC.o
                 0x000000000080029c                vtable for TC
  .data          0x00000000008002a8        0x8 ./TCProcessor.o
-                0x00000000008002a8                vtable for TCProcessor
+                0x00000000008002a8                vtable for Processors::TCProcessor
  .data          0x00000000008002b0       0x15 ./main.o
  .data          0x00000000008002c5        0x6 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(malloc.o)
                 0x00000000008002c7                __malloc_heap_start
@@ -1214,19 +1214,6 @@ Communicators::SerialCom::~SerialCom()            ./SerialCom.o
 Communicators::SerialCom::~SerialCom()            ./SerialCom.o
                                                   ./main.o
 Communicators::SerialCom::~SerialCom()            ./SerialCom.o
-GlobalReceiver::GlobalReceiver()                  ./GlobalReceiver.o
-GlobalReceiver::GlobalReceiver()                  ./GlobalReceiver.o
-                                                  ./main.o
-GlobalReceiver::process()                         ./GlobalReceiver.o
-                                                  ./main.o
-GlobalReceiver::setCom(Communicators::AbstractCommunication&) ./GlobalReceiver.o
-                                                  ./main.o
-GlobalReceiver::setTCProcessor(TCProcessor&)      ./GlobalReceiver.o
-                                                  ./main.o
-GlobalReceiver::~GlobalReceiver()                 ./GlobalReceiver.o
-                                                  ./main.o
-GlobalReceiver::~GlobalReceiver()                 ./GlobalReceiver.o
-GlobalReceiver::~GlobalReceiver()                 ./GlobalReceiver.o
 HardwareSerial::HardwareSerial(ring_buffer*, ring_buffer*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
 HardwareSerial::HardwareSerial(ring_buffer*, ring_buffer*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
 HardwareSerial::available()                       /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
@@ -1277,6 +1264,34 @@ Print::println(unsigned long, int)                /home/chris/Workspace/PlusPoni
 Print::write(char const*)                         /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
 Print::write(unsigned char const*, unsigned int)  /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
+Processors::GlobalReceiver::GlobalReceiver()      ./GlobalReceiver.o
+                                                  ./main.o
+Processors::GlobalReceiver::GlobalReceiver()      ./GlobalReceiver.o
+Processors::GlobalReceiver::process()             ./GlobalReceiver.o
+                                                  ./main.o
+Processors::GlobalReceiver::setCom(Communicators::AbstractCommunication&) ./GlobalReceiver.o
+                                                  ./main.o
+Processors::GlobalReceiver::setTCProcessor(Processors::TCProcessor&) ./GlobalReceiver.o
+                                                  ./main.o
+Processors::GlobalReceiver::~GlobalReceiver()     ./GlobalReceiver.o
+Processors::GlobalReceiver::~GlobalReceiver()     ./GlobalReceiver.o
+Processors::GlobalReceiver::~GlobalReceiver()     ./GlobalReceiver.o
+                                                  ./main.o
+Processors::TCProcessor::TCProcessor()            ./TCProcessor.o
+                                                  ./main.o
+Processors::TCProcessor::TCProcessor()            ./TCProcessor.o
+Processors::TCProcessor::definitions_()           ./TCProcessor.o
+Processors::TCProcessor::init()                   ./TCProcessor.o
+                                                  ./main.o
+Processors::TCProcessor::perform(Processors::TCProcessor::TC_ACTION, unsigned char) ./TCProcessor.o
+                                                  ./main.o
+Processors::TCProcessor::processRecv(String)      ./TCProcessor.o
+                                                  ./GlobalReceiver.o
+Processors::TCProcessor::~TCProcessor()           ./TCProcessor.o
+Processors::TCProcessor::~TCProcessor()           ./TCProcessor.o
+Processors::TCProcessor::~TCProcessor()           ./TCProcessor.o
+                                                  ./main.o
+Processors::byte_to_binary(int)                   ./GlobalReceiver.o
 Serial                                            /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
                                                   ./SerialCom.o
 Serial1                                           /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
@@ -1407,20 +1422,6 @@ TC::~TC()                                         ./TC.o
 TC::~TC()                                         ./TC.o
                                                   ./LogicTC.o
 TC::~TC()                                         ./TC.o
-TCProcessor::TCProcessor()                        ./TCProcessor.o
-                                                  ./main.o
-TCProcessor::TCProcessor()                        ./TCProcessor.o
-TCProcessor::definitions_()                       ./TCProcessor.o
-TCProcessor::init()                               ./TCProcessor.o
-                                                  ./main.o
-TCProcessor::perform(TCProcessor::TC_ACTION, unsigned char) ./TCProcessor.o
-                                                  ./main.o
-TCProcessor::processRecv(String)                  ./TCProcessor.o
-                                                  ./GlobalReceiver.o
-TCProcessor::~TCProcessor()                       ./TCProcessor.o
-TCProcessor::~TCProcessor()                       ./TCProcessor.o
-                                                  ./main.o
-TCProcessor::~TCProcessor()                       ./TCProcessor.o
 __addsf3                                          /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_addsub_sf.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
 __bad_interrupt                                   /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/crtm2560.o
@@ -1728,7 +1729,6 @@ atoi                                              /home/chris/Software/arduino-1
                                                   ./TCProcessor.o
 atol                                              /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(atol.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(WString.o)
-byte_to_binary(int)                               ./GlobalReceiver.o
 com                                               ./main.o
 configure()                                       ./main.o
 delay                                             /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring.o)
@@ -1889,13 +1889,13 @@ vsnprintf                                         /home/chris/Software/arduino-1
                                                   ./AbstractCommunication.o
 vtable for Communicators::AbstractCommunication   ./AbstractCommunication.o
 vtable for Communicators::SerialCom               ./SerialCom.o
-vtable for GlobalReceiver                         ./GlobalReceiver.o
 vtable for HardwareSerial                         /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
 vtable for LogicTC                                ./LogicTC.o
 vtable for Print                                  /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
+vtable for Processors::GlobalReceiver             ./GlobalReceiver.o
+vtable for Processors::TCProcessor                ./TCProcessor.o
 vtable for Stream                                 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
 vtable for TC                                     ./TC.o
-vtable for TCProcessor                            ./TCProcessor.o
 xor64                                             ./lib/SipHash/siphash_2_4_asm.o
                                                   ./lib/SipHash/SipHash_2_4.o
 xor_ff                                            ./lib/SipHash/siphash_2_4_asm.o

@@ -6,7 +6,7 @@
  */
 
 #include "GlobalReceiver.h"
-
+namespace Processors {
 GlobalReceiver::GlobalReceiver() {
 	_com = NULL;
 	_tcProcessor = NULL;
@@ -59,4 +59,4 @@ void GlobalReceiver::setTCProcessor(TCProcessor& tcProcInstance) {
 GlobalReceiver::~GlobalReceiver() {
 
 }
-
+}

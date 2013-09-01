@@ -11,6 +11,8 @@
 #include "AbstractCommunication.h"
 #include "TCProcessor.h"
 
+namespace Processors {
+
 class GlobalReceiver {
 public:
 	GlobalReceiver();
@@ -48,5 +50,5 @@ private:
 	Communicators::AbstractCommunication *_com;
 	TCProcessor *_tcProcessor;
 };
-
+}
 #endif /* RECVPROCESSOR_H_ */
