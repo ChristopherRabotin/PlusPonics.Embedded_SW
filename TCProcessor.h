@@ -9,7 +9,7 @@
 #define TCPROCESSOR_H_
 
 #include "TC.h"
-#include "DigitalWriteTC.h"
+#include "LogicTC.h"
 /* The following includes enable STL for Arduino. */
 #include <iterator>
 #include <map>

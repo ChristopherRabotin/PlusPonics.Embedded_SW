@@ -5,7 +5,7 @@
     <includes local="no">Arduino.h</includes>
     <includes local="yes">config/config.h</includes>
     <includes refid="GlobalReceiver_8h" local="yes">GlobalReceiver.h</includes>
-    <includes refid="DigitalWriteTC_8h" local="yes">DigitalWriteTC.h</includes>
+    <includes refid="LogicTC_8h" local="yes">LogicTC.h</includes>
     <includes refid="TCProcessor_8h" local="yes">TCProcessor.h</includes>
     <includes local="no">pnew.cpp</includes>
     <includes refid="SerialCom_8h" local="yes">SerialCom.h</includes>
@@ -18,14 +18,6 @@
       </node>
       <node id="195">
         <label>WString.h</label>
-      </node>
-      <node id="198">
-        <label>DigitalWriteTC.h</label>
-        <link refid="DigitalWriteTC_8h"/>
-        <childnode refid="197" relation="include">
-        </childnode>
-        <childnode refid="189" relation="include">
-        </childnode>
       </node>
       <node id="199">
         <label>iterator</label>
@@ -106,6 +98,14 @@
       </node>
       <node id="201">
         <label>pnew.cpp</label>
+      </node>
+      <node id="198">
+        <label>LogicTC.h</label>
+        <link refid="LogicTC_8h"/>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
       <sectiondef kind="var">
@@ -230,7 +230,7 @@
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;config/config.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="GlobalReceiver_8h" kindref="compound">GlobalReceiver.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DigitalWriteTC_8h" kindref="compound">DigitalWriteTC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="LogicTC_8h" kindref="compound">LogicTC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="TCProcessor_8h" kindref="compound">TCProcessor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pnew.cpp&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>pnew<sp/>must<sp/>be<sp/>used<sp/>the<sp/>very<sp/>last<sp/>include.</highlight></codeline>

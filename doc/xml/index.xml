@@ -22,12 +22,6 @@
     <member refid="classAbstractCommunication_1a959a785338d76d315568c47dcc3a0336" kind="function"><name>setLevel</name></member>
   </compound>
   <compound refid="classDigitalWriteTC" kind="class"><name>DigitalWriteTC</name>
-    <member refid="classDigitalWriteTC_1a2a3a499b821733cf424995c45434b016" kind="variable"><name>_outputPin</name></member>
-    <member refid="classDigitalWriteTC_1a782251af3d2552f366def4a10d2742f9" kind="variable"><name>_outputValue</name></member>
-    <member refid="classDigitalWriteTC_1ab072fa122e0c0177a47fb85392f55e71" kind="function"><name>DigitalWriteTC</name></member>
-    <member refid="classDigitalWriteTC_1aebed23b0d444bb9c8906fa68e0424e15" kind="function"><name>~DigitalWriteTC</name></member>
-    <member refid="classDigitalWriteTC_1ae597ff8f497123a942d558a7d993f60f" kind="function"><name>init</name></member>
-    <member refid="classDigitalWriteTC_1a8dbc7cfc11760e634fc4bbc1f0c91dc9" kind="function"><name>exec_impl_</name></member>
   </compound>
   <compound refid="classGlobalReceiver" kind="class"><name>GlobalReceiver</name>
     <member refid="classGlobalReceiver_1acc45445a154d791f586c6cedee2df9a2" kind="variable"><name>_com</name></member>
@@ -37,6 +31,14 @@
     <member refid="classGlobalReceiver_1adea5c467d1cd853a6ba6ef88d5611dcd" kind="function"><name>setCom</name></member>
     <member refid="classGlobalReceiver_1a11733fe91fb1e7829efa9672f569cdb5" kind="function"><name>setTCProcessor</name></member>
     <member refid="classGlobalReceiver_1ace0d4a5976198ff64c4515459b1fa289" kind="function"><name>~GlobalReceiver</name></member>
+  </compound>
+  <compound refid="classLogicTC" kind="class"><name>LogicTC</name>
+    <member refid="classLogicTC_1abaa94c7a2404177540e82828d0f97e0f" kind="variable"><name>_outputPin</name></member>
+    <member refid="classLogicTC_1aeda7adda2325751889ffce342bab987d" kind="variable"><name>_outputValue</name></member>
+    <member refid="classLogicTC_1abdfdce8a4efb906bd22369f6488e0246" kind="function"><name>LogicTC</name></member>
+    <member refid="classLogicTC_1ab02d2ebc69f023331d35147f0465c4df" kind="function"><name>~LogicTC</name></member>
+    <member refid="classLogicTC_1a99bf3c13fa50ffa8aa3cdfa397e8375a" kind="function"><name>init</name></member>
+    <member refid="classLogicTC_1ad90a1bc2c83593f296292bf9ccc37d79" kind="function"><name>exec_impl_</name></member>
   </compound>
   <compound refid="classSerialCom" kind="class"><name>SerialCom</name>
     <member refid="classSerialCom_1a4e0fd8ce8d81fc4f3c422d2f9d1aff68" kind="function"><name>SerialCom</name></member>
@@ -89,14 +91,14 @@
   </compound>
   <compound refid="AbstractCommunication_8h" kind="file"><name>AbstractCommunication.h</name>
   </compound>
-  <compound refid="DigitalWriteTC_8cpp" kind="file"><name>DigitalWriteTC.cpp</name>
-  </compound>
-  <compound refid="DigitalWriteTC_8h" kind="file"><name>DigitalWriteTC.h</name>
-  </compound>
   <compound refid="GlobalReceiver_8cpp" kind="file"><name>GlobalReceiver.cpp</name>
     <member refid="GlobalReceiver_8cpp_1a98a09d6b95fb0fa32210f041f0af87d4" kind="function"><name>byte_to_binary</name></member>
   </compound>
   <compound refid="GlobalReceiver_8h" kind="file"><name>GlobalReceiver.h</name>
+  </compound>
+  <compound refid="LogicTC_8cpp" kind="file"><name>LogicTC.cpp</name>
+  </compound>
+  <compound refid="LogicTC_8h" kind="file"><name>LogicTC.h</name>
   </compound>
   <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
     <member refid="main_8cpp_1afdd77f1aa3023f9ba5f49bb1f6c68b51" kind="variable"><name>ledPin</name></member>

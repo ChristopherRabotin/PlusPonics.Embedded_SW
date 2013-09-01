@@ -93,7 +93,7 @@
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>com</parametername>
+<parametername>comInstance</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>communication instance </para></parameterdescription>
@@ -120,7 +120,7 @@
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>com</parametername>
+<parametername>tcProcInstance</parametername>
 </parameternamelist>
 <parameterdescription>
 <para><ref refid="classTCProcessor" kindref="compound">TCProcessor</ref> instance </para></parameterdescription>

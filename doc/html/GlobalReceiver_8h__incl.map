@@ -1,6 +1,6 @@
 <map id="GlobalReceiver.h" name="GlobalReceiver.h">
-<area shape="rect" id="node3" href="$AbstractCommunication_8h.html" title="AbstractCommunication.h" alt="" coords="89,80,263,107"/>
-<area shape="rect" id="node11" href="$TCProcessor_8h.html" title="TCProcessor.h" alt="" coords="344,80,459,107"/>
-<area shape="rect" id="node13" href="$TC_8h.html" title="TC.h" alt="" coords="281,229,332,256"/>
-<area shape="rect" id="node15" href="$DigitalWriteTC_8h.html" title="DigitalWriteTC.h" alt="" coords="341,155,461,181"/>
+<area shape="rect" id="node3" href="$AbstractCommunication_8h.html" title="AbstractCommunication.h" alt="" coords="84,80,257,107"/>
+<area shape="rect" id="node11" href="$TCProcessor_8h.html" title="TCProcessor.h" alt="" coords="325,80,440,107"/>
+<area shape="rect" id="node13" href="$TC_8h.html" title="TC.h" alt="" coords="277,229,328,256"/>
+<area shape="rect" id="node15" href="$LogicTC_8h.html" title="LogicTC.h" alt="" coords="340,155,425,181"/>
 </map>

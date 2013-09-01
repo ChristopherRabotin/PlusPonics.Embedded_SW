@@ -3,21 +3,13 @@
   <compounddef id="TCProcessor_8h" kind="file">
     <compoundname>TCProcessor.h</compoundname>
     <includes refid="TC_8h" local="yes">TC.h</includes>
-    <includes refid="DigitalWriteTC_8h" local="yes">DigitalWriteTC.h</includes>
+    <includes refid="LogicTC_8h" local="yes">LogicTC.h</includes>
     <includes local="no">iterator</includes>
     <includes local="no">map</includes>
     <includedby refid="GlobalReceiver_8h" local="yes">GlobalReceiver.h</includedby>
     <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
     <includedby refid="TCProcessor_8cpp" local="yes">TCProcessor.cpp</includedby>
     <incdepgraph>
-      <node id="249">
-        <label>DigitalWriteTC.h</label>
-        <link refid="DigitalWriteTC_8h"/>
-        <childnode refid="248" relation="include">
-        </childnode>
-        <childnode refid="250" relation="include">
-        </childnode>
-      </node>
       <node id="251">
         <label>iterator</label>
       </node>
@@ -42,6 +34,14 @@
       </node>
       <node id="250">
         <label>Arduino.h</label>
+      </node>
+      <node id="249">
+        <label>LogicTC.h</label>
+        <link refid="LogicTC_8h"/>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
@@ -93,7 +93,7 @@
 <codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TCPROCESSOR_H_</highlight></codeline>
 <codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="TC_8h" kindref="compound">TC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DigitalWriteTC_8h" kindref="compound">DigitalWriteTC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="LogicTC_8h" kindref="compound">LogicTC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>following<sp/>includes<sp/>enable<sp/>STL<sp/>for<sp/>Arduino.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iterator&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight></codeline>

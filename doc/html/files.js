@@ -4,13 +4,13 @@ var files =
     [ "AbstractCommunication.h", "AbstractCommunication_8h.html", [
       [ "AbstractCommunication", "classAbstractCommunication.html", "classAbstractCommunication" ]
     ] ],
-    [ "DigitalWriteTC.cpp", "DigitalWriteTC_8cpp.html", null ],
-    [ "DigitalWriteTC.h", "DigitalWriteTC_8h.html", [
-      [ "DigitalWriteTC", "classDigitalWriteTC.html", "classDigitalWriteTC" ]
-    ] ],
     [ "GlobalReceiver.cpp", "GlobalReceiver_8cpp.html", "GlobalReceiver_8cpp" ],
     [ "GlobalReceiver.h", "GlobalReceiver_8h.html", [
       [ "GlobalReceiver", "classGlobalReceiver.html", "classGlobalReceiver" ]
+    ] ],
+    [ "LogicTC.cpp", "LogicTC_8cpp.html", null ],
+    [ "LogicTC.h", "LogicTC_8h.html", [
+      [ "LogicTC", "classLogicTC.html", "classLogicTC" ]
     ] ],
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
     [ "SerialCom.cpp", "SerialCom_8cpp.html", null ],

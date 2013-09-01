@@ -15,7 +15,7 @@ Archive member included because of file (symbol)
 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring.o)
                               /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Stream.o) (millis)
 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
-                              ./DigitalWriteTC.o (pinMode)
+                              ./LogicTC.o (pinMode)
 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(realloc.o)
                               /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(WString.o) (realloc)
 /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_mulsi3.o)
@@ -225,8 +225,8 @@ LOAD ./lib/SipHash/HexConversionUtils.o
 LOAD ./lib/SipHash/SipHash_2_4.o
 LOAD ./lib/SipHash/siphash_2_4_asm.o
 LOAD ./AbstractCommunication.o
-LOAD ./DigitalWriteTC.o
 LOAD ./GlobalReceiver.o
+LOAD ./LogicTC.o
 LOAD ./SerialCom.o
 LOAD ./TC.o
 LOAD ./TCProcessor.o
@@ -488,24 +488,24 @@ LOAD /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.
                 0x00000000000008e0                AbstractCommunication::error(String, String)
                 0x00000000000007b0                AbstractCommunication::AbstractCommunication()
                 0x000000000000099a                AbstractCommunication::error(String)
- .text          0x0000000000000c7c       0xca ./DigitalWriteTC.o
-                0x0000000000000cb8                DigitalWriteTC::~DigitalWriteTC()
-                0x0000000000000ca6                DigitalWriteTC::~DigitalWriteTC()
-                0x0000000000000c94                DigitalWriteTC::~DigitalWriteTC()
-                0x0000000000000cda                DigitalWriteTC::DigitalWriteTC(int, int)
-                0x0000000000000d10                DigitalWriteTC::DigitalWriteTC(int, int)
-                0x0000000000000c7c                DigitalWriteTC::exec_impl_()
-                0x0000000000000c88                DigitalWriteTC::init()
- .text          0x0000000000000d46      0x2da ./GlobalReceiver.o
-                0x0000000000000d76                GlobalReceiver::setTCProcessor(TCProcessor&)
-                0x0000000000000d8a                GlobalReceiver::~GlobalReceiver()
-                0x0000000000000d6e                GlobalReceiver::setCom(AbstractCommunication&)
-                0x0000000000000d46                GlobalReceiver::GlobalReceiver()
-                0x0000000000000da8                byte_to_binary(int)
-                0x0000000000000e00                GlobalReceiver::process()
-                0x0000000000000d96                GlobalReceiver::~GlobalReceiver()
-                0x0000000000000d7e                GlobalReceiver::~GlobalReceiver()
-                0x0000000000000d5a                GlobalReceiver::GlobalReceiver()
+ .text          0x0000000000000c7c      0x2da ./GlobalReceiver.o
+                0x0000000000000cac                GlobalReceiver::setTCProcessor(TCProcessor&)
+                0x0000000000000cc0                GlobalReceiver::~GlobalReceiver()
+                0x0000000000000ca4                GlobalReceiver::setCom(AbstractCommunication&)
+                0x0000000000000c7c                GlobalReceiver::GlobalReceiver()
+                0x0000000000000cde                byte_to_binary(int)
+                0x0000000000000d36                GlobalReceiver::process()
+                0x0000000000000ccc                GlobalReceiver::~GlobalReceiver()
+                0x0000000000000cb4                GlobalReceiver::~GlobalReceiver()
+                0x0000000000000c90                GlobalReceiver::GlobalReceiver()
+ .text          0x0000000000000f56       0xca ./LogicTC.o
+                0x0000000000000f80                LogicTC::~LogicTC()
+                0x0000000000000f92                LogicTC::~LogicTC()
+                0x0000000000000fea                LogicTC::LogicTC(int, int)
+                0x0000000000000f56                LogicTC::exec_impl_()
+                0x0000000000000f62                LogicTC::init()
+                0x0000000000000f6e                LogicTC::~LogicTC()
+                0x0000000000000fb4                LogicTC::LogicTC(int, int)
  .text          0x0000000000001020      0x108 ./SerialCom.o
                 0x000000000000109c                SerialCom::init()
                 0x00000000000010ae                SerialCom::~SerialCom()
@@ -890,10 +890,10 @@ LOAD /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.
  .data          0x0000000000800200        0x0 ./lib/SipHash/siphash_2_4_asm.o
  .data          0x0000000000800200       0x2e ./AbstractCommunication.o
                 0x0000000000800220                vtable for AbstractCommunication
- .data          0x000000000080022e        0xc ./DigitalWriteTC.o
-                0x000000000080022e                vtable for DigitalWriteTC
- .data          0x000000000080023a       0x53 ./GlobalReceiver.o
-                0x0000000000800285                vtable for GlobalReceiver
+ .data          0x000000000080022e       0x53 ./GlobalReceiver.o
+                0x0000000000800279                vtable for GlobalReceiver
+ .data          0x0000000000800281        0xc ./LogicTC.o
+                0x0000000000800281                vtable for LogicTC
  .data          0x000000000080028d        0xf ./SerialCom.o
                 0x000000000080028e                vtable for SerialCom
  .data          0x000000000080029c        0xc ./TC.o
@@ -996,8 +996,8 @@ LOAD /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.
  .bss           0x000000000080043a        0x0 ./lib/SipHash/siphash_2_4_asm.o
  .bss           0x000000000080043a        0x7 ./AbstractCommunication.o
                 0x000000000080043a                AbstractCommunication::DEFAULT_LOCATION
- .bss           0x0000000000800441        0x0 ./DigitalWriteTC.o
  .bss           0x0000000000800441        0x9 ./GlobalReceiver.o
+ .bss           0x000000000080044a        0x0 ./LogicTC.o
  .bss           0x000000000080044a        0x0 ./SerialCom.o
  .bss           0x000000000080044a        0x0 ./TC.o
  .bss           0x000000000080044a        0x2 ./TCProcessor.o
@@ -1204,14 +1204,6 @@ AbstractCommunication::~AbstractCommunication()   ./AbstractCommunication.o
 AbstractCommunication::~AbstractCommunication()   ./AbstractCommunication.o
                                                   ./SerialCom.o
 AbstractCommunication::~AbstractCommunication()   ./AbstractCommunication.o
-DigitalWriteTC::DigitalWriteTC(int, int)          ./DigitalWriteTC.o
-                                                  ./TCProcessor.o
-DigitalWriteTC::DigitalWriteTC(int, int)          ./DigitalWriteTC.o
-DigitalWriteTC::exec_impl_()                      ./DigitalWriteTC.o
-DigitalWriteTC::init()                            ./DigitalWriteTC.o
-DigitalWriteTC::~DigitalWriteTC()                 ./DigitalWriteTC.o
-DigitalWriteTC::~DigitalWriteTC()                 ./DigitalWriteTC.o
-DigitalWriteTC::~DigitalWriteTC()                 ./DigitalWriteTC.o
 GlobalReceiver::GlobalReceiver()                  ./GlobalReceiver.o
 GlobalReceiver::GlobalReceiver()                  ./GlobalReceiver.o
                                                   ./main.o
@@ -1238,6 +1230,14 @@ HardwareSerial::operator bool()                   /home/chris/Workspace/PlusPoni
 HardwareSerial::peek()                            /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
 HardwareSerial::read()                            /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
 HardwareSerial::write(unsigned char)              /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
+LogicTC::LogicTC(int, int)                        ./LogicTC.o
+LogicTC::LogicTC(int, int)                        ./LogicTC.o
+                                                  ./TCProcessor.o
+LogicTC::exec_impl_()                             ./LogicTC.o
+LogicTC::init()                                   ./LogicTC.o
+LogicTC::~LogicTC()                               ./LogicTC.o
+LogicTC::~LogicTC()                               ./LogicTC.o
+LogicTC::~LogicTC()                               ./LogicTC.o
 Print::print(Printable const&)                    /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
 Print::print(String const&)                       /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
 Print::print(__FlashStringHelper const*)          /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
@@ -1393,7 +1393,7 @@ String::~String()                                 /home/chris/Workspace/PlusPoni
 String::~String()                                 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(WString.o)
                                                   ./AbstractCommunication.o
 TC::TC()                                          ./TC.o
-                                                  ./DigitalWriteTC.o
+                                                  ./LogicTC.o
 TC::TC()                                          ./TC.o
 TC::clear_error()                                 ./TC.o
 TC::disable()                                     ./TC.o
@@ -1406,7 +1406,7 @@ TC::exec()                                        ./TC.o
 TC::persist_errors(bool)                          ./TC.o
 TC::~TC()                                         ./TC.o
 TC::~TC()                                         ./TC.o
-                                                  ./DigitalWriteTC.o
+                                                  ./LogicTC.o
 TC::~TC()                                         ./TC.o
 TCProcessor::TCProcessor()                        ./TCProcessor.o
                                                   ./main.o
@@ -1487,8 +1487,8 @@ __do_clear_bss                                    /home/chris/Software/arduino-1
                                                   ./TCProcessor.o
                                                   ./TC.o
                                                   ./SerialCom.o
+                                                  ./LogicTC.o
                                                   ./GlobalReceiver.o
-                                                  ./DigitalWriteTC.o
                                                   ./AbstractCommunication.o
                                                   ./lib/SipHash/SipHash_2_4.o
                                                   ./lib/SipHash/HexConversionUtils.o
@@ -1527,8 +1527,8 @@ __do_copy_data                                    /home/chris/Software/arduino-1
                                                   ./TCProcessor.o
                                                   ./TC.o
                                                   ./SerialCom.o
+                                                  ./LogicTC.o
                                                   ./GlobalReceiver.o
-                                                  ./DigitalWriteTC.o
                                                   ./AbstractCommunication.o
                                                   ./lib/SipHash/SipHash_2_4.o
                                                   ./lib/SipHash/HexConversionUtils.o
@@ -1737,7 +1737,7 @@ delay                                             /home/chris/Workspace/PlusPoni
 delayMicroseconds                                 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring.o)
 digitalRead                                       /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
 digitalWrite                                      /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
-                                                  ./DigitalWriteTC.o
+                                                  ./LogicTC.o
 digital_pin_to_bit_mask_PGM                       /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
 digital_pin_to_port_PGM                           /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
 digital_pin_to_timer_PGM                          /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
@@ -1785,8 +1785,8 @@ operator delete(void*)                            /home/chris/Workspace/PlusPoni
                                                   ./TCProcessor.o
                                                   ./TC.o
                                                   ./SerialCom.o
+                                                  ./LogicTC.o
                                                   ./GlobalReceiver.o
-                                                  ./DigitalWriteTC.o
                                                   ./AbstractCommunication.o
 operator delete[](void*)                          /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(new.o)
 operator new(unsigned int)                        /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(new.o)
@@ -1805,7 +1805,7 @@ operator+(StringSumHelper const&, unsigned char)  /home/chris/Workspace/PlusPoni
 operator+(StringSumHelper const&, unsigned int)   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(WString.o)
 operator+(StringSumHelper const&, unsigned long)  /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(WString.o)
 pinMode                                           /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
-                                                  ./DigitalWriteTC.o
+                                                  ./LogicTC.o
 port_to_input_PGM                                 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
 port_to_mode_PGM                                  /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
 port_to_output_PGM                                /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(wiring_digital.o)
@@ -1890,9 +1890,9 @@ vfprintf                                          /home/chris/Software/arduino-1
 vsnprintf                                         /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(vsnprintf.o)
                                                   ./AbstractCommunication.o
 vtable for AbstractCommunication                  ./AbstractCommunication.o
-vtable for DigitalWriteTC                         ./DigitalWriteTC.o
 vtable for GlobalReceiver                         ./GlobalReceiver.o
 vtable for HardwareSerial                         /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
+vtable for LogicTC                                ./LogicTC.o
 vtable for Print                                  /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
 vtable for SerialCom                              ./SerialCom.o
 vtable for Stream                                 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)

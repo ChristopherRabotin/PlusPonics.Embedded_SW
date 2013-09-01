@@ -1,5 +1,5 @@
 TCProcessor.d TCProcessor.o: ../TCProcessor.cpp ../TCProcessor.h ../TC.h \
-  ../DigitalWriteTC.h \
+  ../LogicTC.h \
   /home/chris/Software/arduino-1.0.5/hardware/arduino/cores/arduino/Arduino.h \
   /home/chris/Software/arduino-1.0.5/hardware/arduino/cores/arduino/binary.h \
   /home/chris/Software/arduino-1.0.5/hardware/arduino/cores/arduino/WCharacter.h \
@@ -15,7 +15,7 @@ TCProcessor.d TCProcessor.o: ../TCProcessor.cpp ../TCProcessor.h ../TC.h \
 
 ../TC.h:
 
-../DigitalWriteTC.h:
+../LogicTC.h:
 
 /home/chris/Software/arduino-1.0.5/hardware/arduino/cores/arduino/Arduino.h:
 

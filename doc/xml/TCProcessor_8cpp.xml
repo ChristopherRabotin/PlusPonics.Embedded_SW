@@ -4,14 +4,6 @@
     <compoundname>TCProcessor.cpp</compoundname>
     <includes refid="TCProcessor_8h" local="yes">TCProcessor.h</includes>
     <incdepgraph>
-      <node id="242">
-        <label>DigitalWriteTC.h</label>
-        <link refid="DigitalWriteTC_8h"/>
-        <childnode refid="241" relation="include">
-        </childnode>
-        <childnode refid="243" relation="include">
-        </childnode>
-      </node>
       <node id="244">
         <label>iterator</label>
       </node>
@@ -42,6 +34,14 @@
       </node>
       <node id="243">
         <label>Arduino.h</label>
+      </node>
+      <node id="242">
+        <label>LogicTC.h</label>
+        <link refid="LogicTC_8h"/>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="243" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <briefdescription>
@@ -117,8 +117,8 @@
 <codeline lineno="66"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
 <codeline lineno="68" refid="classTCProcessor_1aea90af74c7ff4e3f904a9954bd8e5a7a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTCProcessor_1aea90af74c7ff4e3f904a9954bd8e5a7a" kindref="member" tooltip="The definitions_ function will define all the TCs available. It is called from the constructor and it...">TCProcessor::definitions_</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a51b3baa303bac37bdca2464b390f4a3f" kindref="member" tooltip="This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the ...">_opcode_TC_map</ref>[1]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classDigitalWriteTC" kindref="compound" tooltip="This class enables digital writing to a given output pin with the given output value.">DigitalWriteTC</ref>(13,<sp/>0x1);</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a51b3baa303bac37bdca2464b390f4a3f" kindref="member" tooltip="This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the ...">_opcode_TC_map</ref>[2]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classDigitalWriteTC" kindref="compound" tooltip="This class enables digital writing to a given output pin with the given output value.">DigitalWriteTC</ref>(13,<sp/>0x0);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a51b3baa303bac37bdca2464b390f4a3f" kindref="member" tooltip="This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the ...">_opcode_TC_map</ref>[1]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classLogicTC" kindref="compound">LogicTC</ref>(13,<sp/>0x1);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTCProcessor_1a51b3baa303bac37bdca2464b390f4a3f" kindref="member" tooltip="This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the ...">_opcode_TC_map</ref>[2]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classLogicTC" kindref="compound">LogicTC</ref>(13,<sp/>0x0);</highlight></codeline>
 <codeline lineno="71"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TCProcessor.cpp"/>

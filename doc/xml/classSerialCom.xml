@@ -93,25 +93,25 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="31">
+      <node id="35">
         <label>SerialCom</label>
         <link refid="classSerialCom"/>
-        <childnode refid="32" relation="public-inheritance">
+        <childnode refid="36" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="32">
+      <node id="36">
         <label>AbstractCommunication</label>
         <link refid="classAbstractCommunication"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="33">
+      <node id="37">
         <label>SerialCom</label>
         <link refid="classSerialCom"/>
-        <childnode refid="34" relation="public-inheritance">
+        <childnode refid="38" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="34">
+      <node id="38">
         <label>AbstractCommunication</label>
         <link refid="classAbstractCommunication"/>
       </node>

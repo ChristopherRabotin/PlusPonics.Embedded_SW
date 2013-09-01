@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="LogicTC_8cpp" kind="file">
+    <compoundname>LogicTC.cpp</compoundname>
+    <includes refid="LogicTC_8h" local="yes">LogicTC.h</includes>
+    <incdepgraph>
+      <node id="175">
+        <label>TC.h</label>
+        <link refid="TC_8h"/>
+      </node>
+      <node id="176">
+        <label>Arduino.h</label>
+      </node>
+      <node id="173">
+        <label>LogicTC.cpp</label>
+        <link refid="LogicTC.cpp"/>
+        <childnode refid="174" relation="include">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>LogicTC.h</label>
+        <link refid="LogicTC_8h"/>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>LogicTC.cpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Aug<sp/>31,<sp/>2013</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>chris</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="LogicTC_8h" kindref="compound">LogicTC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classLogicTC_1abdfdce8a4efb906bd22369f6488e0246" refkind="member"><highlight class="normal"><ref refid="classLogicTC_1abdfdce8a4efb906bd22369f6488e0246" kindref="member" tooltip="Specify in the constructor both the output pin and the output value.">LogicTC::LogicTC</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>outputPin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value)<sp/>:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTC" kindref="compound" tooltip="This class defines a telecommand. It is high level and must be overwritten by low level classes...">TC</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLogicTC_1abaa94c7a2404177540e82828d0f97e0f" kindref="member">_outputPin</ref><sp/>=<sp/>outputPin;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLogicTC_1aeda7adda2325751889ffce342bab987d" kindref="member">_outputValue</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classLogicTC_1ab02d2ebc69f023331d35147f0465c4df" refkind="member"><highlight class="normal"><ref refid="classLogicTC_1ab02d2ebc69f023331d35147f0465c4df" kindref="member">LogicTC::~LogicTC</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classLogicTC_1a99bf3c13fa50ffa8aa3cdfa397e8375a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLogicTC_1a99bf3c13fa50ffa8aa3cdfa397e8375a" kindref="member" tooltip="The init function sets up everything for this TC to be operational. It must be called from the setup ...">LogicTC::init</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(<ref refid="classLogicTC_1abaa94c7a2404177540e82828d0f97e0f" kindref="member">_outputPin</ref>,<sp/>OUTPUT);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classLogicTC_1ad90a1bc2c83593f296292bf9ccc37d79" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLogicTC_1ad90a1bc2c83593f296292bf9ccc37d79" kindref="member" tooltip="This function will execute this TC.">LogicTC::exec_impl_</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(<ref refid="classLogicTC_1abaa94c7a2404177540e82828d0f97e0f" kindref="member">_outputPin</ref>,<sp/><ref refid="classLogicTC_1aeda7adda2325751889ffce342bab987d" kindref="member">_outputValue</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/LogicTC.cpp"/>
+  </compounddef>
+</doxygen>

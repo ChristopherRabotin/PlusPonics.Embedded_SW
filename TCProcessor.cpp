@@ -66,6 +66,6 @@ TCProcessor::~TCProcessor() {
 }
 
 void TCProcessor::definitions_() {
-	_opcode_TC_map[1] = new DigitalWriteTC(13, 0x1);
-	_opcode_TC_map[2] = new DigitalWriteTC(13, 0x0);
+	_opcode_TC_map[1] = new LogicTC(13, 0x1);
+	_opcode_TC_map[2] = new LogicTC(13, 0x0);
 }

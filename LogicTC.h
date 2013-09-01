@@ -16,7 +16,7 @@
  * @brief This class enables digital writing to a given output pin with the given output value.
  * @warning This class does not check whether the pin is used in another mode. It is very important to check for any conflict beforehand!
  */
-class DigitalWriteTC: public TC {
+class LogicTC: public TC {
 public:
 	/**
 	 * @brief Specify in the constructor both the output pin and the output value.
@@ -24,8 +24,8 @@ public:
 	 * @param outputPin pin to be used as the output of this TC.
 	 * @param value value which is to be sent on the given output pin.
 	 */
-	DigitalWriteTC(int outputPin, int value);
-	virtual ~DigitalWriteTC();
+	LogicTC(int outputPin, int value);
+	virtual ~LogicTC();
 	virtual void init();
 	virtual void exec_impl_();
 private:

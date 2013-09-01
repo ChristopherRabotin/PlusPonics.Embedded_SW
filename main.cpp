@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include "config/config.h"
 #include "GlobalReceiver.h"
-#include "DigitalWriteTC.h"
+#include "LogicTC.h"
 #include "TCProcessor.h"
 
 #include <pnew.cpp> // pnew must be used the very last include.

@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
   <compounddef id="classTC" kind="class" prot="public" abstract="yes">
     <compoundname>TC</compoundname>
-    <derivedcompoundref refid="classDigitalWriteTC" prot="public" virt="non-virtual">DigitalWriteTC</derivedcompoundref>
+    <derivedcompoundref refid="classLogicTC" prot="public" virt="non-virtual">LogicTC</derivedcompoundref>
     <includes refid="TC_8h" local="no">TC.h</includes>
       <sectiondef kind="public-type">
       <memberdef kind="enum" id="classTC_1a76dd65525231537b15914ebbaff85f4c" prot="public" static="no">
@@ -272,7 +272,7 @@
         <definition>virtual void TC::init</definition>
         <argsstring>()=0</argsstring>
         <name>init</name>
-        <reimplementedby refid="classDigitalWriteTC_1ae597ff8f497123a942d558a7d993f60f">init</reimplementedby>
+        <reimplementedby refid="classLogicTC_1a99bf3c13fa50ffa8aa3cdfa397e8375a">init</reimplementedby>
         <briefdescription>
 <para>The init function sets up everything for this <ref refid="classTC" kindref="compound">TC</ref> to be operational. It must be called from the setup function in the main. It must be implemented by the subclass. </para>        </briefdescription>
         <detaileddescription>
@@ -286,7 +286,7 @@
         <definition>virtual void TC::exec_impl_</definition>
         <argsstring>()=0</argsstring>
         <name>exec_impl_</name>
-        <reimplementedby refid="classDigitalWriteTC_1a8dbc7cfc11760e634fc4bbc1f0c91dc9">exec_impl_</reimplementedby>
+        <reimplementedby refid="classLogicTC_1ad90a1bc2c83593f296292bf9ccc37d79">exec_impl_</reimplementedby>
         <briefdescription>
 <para>This function will execute this <ref refid="classTC" kindref="compound">TC</ref>. </para>        </briefdescription>
         <detaileddescription>
@@ -302,15 +302,15 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="35">
+      <node id="40">
+        <label>LogicTC</label>
+        <link refid="classLogicTC"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
         <label>TC</label>
         <link refid="classTC"/>
-      </node>
-      <node id="36">
-        <label>DigitalWriteTC</label>
-        <link refid="classDigitalWriteTC"/>
-        <childnode refid="35" relation="public-inheritance">
-        </childnode>
       </node>
     </inheritancegraph>
     <location file="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" line="18" bodyfile="/home/chris/Workspace/PlusPonics/code/Embedded_SW/TC.h" bodystart="18" bodyend="80"/>

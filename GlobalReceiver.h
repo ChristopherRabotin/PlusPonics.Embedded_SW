@@ -34,13 +34,13 @@ public:
 
 	/**
 	 * @brief This function sets the communication pointer. This is used when the empty constructor is used.
-	 * @param com communication instance
+	 * @param comInstance communication instance
 	 */
 	void setCom(AbstractCommunication &comInstance);
 
 	/**
 	 * @brief This function sets the TC processor. This is used when the empty constructor is used.
-	 * @param com TCProcessor instance
+	 * @param tcProcInstance TCProcessor instance
 	 */
 	void setTCProcessor(TCProcessor &tcProcInstance);
 	virtual ~GlobalReceiver();

@@ -395,13 +395,13 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="21">
+      <node id="23">
         <label>SerialCom</label>
         <link refid="classSerialCom"/>
-        <childnode refid="20" relation="public-inheritance">
+        <childnode refid="22" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="20">
+      <node id="22">
         <label>AbstractCommunication</label>
         <link refid="classAbstractCommunication"/>
       </node>

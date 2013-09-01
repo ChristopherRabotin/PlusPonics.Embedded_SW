@@ -74,15 +74,19 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 <map name="AbstractCommunication" id="AbstractCommunication">
 <area shape="rect" id="node1" href="classAbstractCommunication.html" title="This class defines how all communication should be done." alt="" coords="5,5,168,32"/><area shape="rect" id="node3" href="classSerialCom.html" title="This class defines serial communication with the control system." alt="" coords="217,5,303,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_1.png" border="0" alt="" usemap="#GlobalReceiver"/>
+<tr><td><img src="inherit_graph_1.png" border="0" alt="" usemap="#DigitalWriteTC"/>
+<map name="DigitalWriteTC" id="DigitalWriteTC">
+<area shape="rect" id="node1" href="classDigitalWriteTC.html" title="This class enables digital writing to a given output pin with the given output value." alt="" coords="6,5,117,32"/></map>
+</td></tr>
+<tr><td><img src="inherit_graph_2.png" border="0" alt="" usemap="#GlobalReceiver"/>
 <map name="GlobalReceiver" id="GlobalReceiver">
 <area shape="rect" id="node1" href="classGlobalReceiver.html" title="GlobalReceiver" alt="" coords="6,5,122,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_2.png" border="0" alt="" usemap="#TC"/>
+<tr><td><img src="inherit_graph_3.png" border="0" alt="" usemap="#TC"/>
 <map name="TC" id="TC">
-<area shape="rect" id="node1" href="classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes..." alt="" coords="5,5,48,32"/><area shape="rect" id="node3" href="classDigitalWriteTC.html" title="This class enables digital writing to a given output pin with the given output value." alt="" coords="97,5,207,32"/></map>
+<area shape="rect" id="node1" href="classTC.html" title="This class defines a telecommand. It is high level and must be overwritten by low level classes..." alt="" coords="5,5,48,32"/><area shape="rect" id="node3" href="classLogicTC.html" title="LogicTC" alt="" coords="96,5,171,32"/></map>
 </td></tr>
-<tr><td><img src="inherit_graph_3.png" border="0" alt="" usemap="#TCProcessor"/>
+<tr><td><img src="inherit_graph_4.png" border="0" alt="" usemap="#TCProcessor"/>
 <map name="TCProcessor" id="TCProcessor">
 <area shape="rect" id="node1" href="classTCProcessor.html" title="This class manages all the telecommands in a std::map . It is also called by GlobalReceiver upon rece..." alt="" coords="5,5,109,32"/></map>
 </td></tr>
