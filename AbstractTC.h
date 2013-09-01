@@ -9,6 +9,8 @@
 #define AbstractTC_H_
 #include <stdint.h>
 
+namespace TC {
+
 /**
  * @brief This class defines a telecommand. It is high level and must be overwritten by low level classes.
  * In this class, high level functions are defined as non virtual. Lower level actions must be redefined
@@ -79,5 +81,6 @@ private:
 	uint32_t _executions;
 	ERROR_STATE _error;
 };
+}
 
 #endif /* AbstractTC_H_ */

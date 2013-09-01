@@ -48,7 +48,7 @@ void TCProcessor::perform(TC_ACTION action, uint8_t opcode) {
 		_error = INVALID_OPCODE;
 		return;
 	}
-	AbstractTC* tc = _opcode_TC_map.find(opcode)->second;
+	TC::AbstractTC* tc = _opcode_TC_map.find(opcode)->second;
 	switch (action) {
 	case ENABLE:
 		tc->enable();
@@ -66,7 +66,7 @@ TCProcessor::~TCProcessor() {
 }
 
 void TCProcessor::definitions_() {
-	_opcode_TC_map[1] = new LogicTC(13, 0x1);
-	_opcode_TC_map[2] = new LogicTC(13, 0x0);
+	_opcode_TC_map[1] = new TC::LogicTC(13, 0x1);
+	_opcode_TC_map[2] = new TC::LogicTC(13, 0x0);
 }
 }

@@ -6,7 +6,7 @@
  */
 
 #include "LogicTC.h"
-
+namespace TC {
 LogicTC::LogicTC(uint8_t outputPin, bool value) :
 		AbstractTC() {
 	_outputPin = outputPin;
@@ -22,4 +22,5 @@ void LogicTC::init() {
 
 void LogicTC::exec_impl_() {
 	digitalWrite(_outputPin, _outputValue);
+}
 }

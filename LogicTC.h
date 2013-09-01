@@ -10,7 +10,7 @@
 
 #include "AbstractTC.h"
 #include <Arduino.h>
-
+namespace TC {
 /**
  * @class DigitalWriteTC
  * @brief This class enables digital writing to a given output pin with the given output value.
@@ -32,5 +32,5 @@ private:
 	uint8_t _outputPin;
 	bool _outputValue;
 };
-
+}
 #endif /* DIGITALWRITETC_H_ */

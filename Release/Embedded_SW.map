@@ -489,17 +489,17 @@ LOAD /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.
                 0x0000000000000a0e                Communicators::AbstractCommunication::warn(String, String)
                 0x00000000000007b0                Communicators::AbstractCommunication::AbstractCommunication()
  .text          0x0000000000000c7c       0xec ./AbstractTC.o
-                0x0000000000000c98                AbstractTC::AbstractTC()
-                0x0000000000000cf2                AbstractTC::exec()
-                0x0000000000000d46                AbstractTC::errno()
-                0x0000000000000d56                AbstractTC::~AbstractTC()
-                0x0000000000000d2e                AbstractTC::persist_errors(bool)
-                0x0000000000000c7c                AbstractTC::AbstractTC()
-                0x0000000000000cb4                AbstractTC::~AbstractTC()
-                0x0000000000000ce0                AbstractTC::disable()
-                0x0000000000000ccc                AbstractTC::enable()
-                0x0000000000000d34                AbstractTC::clear_error()
-                0x0000000000000cc0                AbstractTC::~AbstractTC()
+                0x0000000000000d56                TC::AbstractTC::~AbstractTC()
+                0x0000000000000ce0                TC::AbstractTC::disable()
+                0x0000000000000cf2                TC::AbstractTC::exec()
+                0x0000000000000d34                TC::AbstractTC::clear_error()
+                0x0000000000000cc0                TC::AbstractTC::~AbstractTC()
+                0x0000000000000ccc                TC::AbstractTC::enable()
+                0x0000000000000d2e                TC::AbstractTC::persist_errors(bool)
+                0x0000000000000cb4                TC::AbstractTC::~AbstractTC()
+                0x0000000000000c98                TC::AbstractTC::AbstractTC()
+                0x0000000000000c7c                TC::AbstractTC::AbstractTC()
+                0x0000000000000d46                TC::AbstractTC::errno()
  .text          0x0000000000000d68      0x2da ./GlobalReceiver.o
                 0x0000000000000da0                Processors::GlobalReceiver::~GlobalReceiver()
                 0x0000000000000dca                Processors::byte_to_binary(int)
@@ -511,13 +511,13 @@ LOAD /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.
                 0x0000000000000d98                Processors::GlobalReceiver::setTCProcessor(Processors::TCProcessor&)
                 0x0000000000000d90                Processors::GlobalReceiver::setCom(Communicators::AbstractCommunication&)
  .text          0x0000000000001042       0xb2 ./LogicTC.o
-                0x000000000000106c                LogicTC::~LogicTC()
-                0x000000000000107e                LogicTC::~LogicTC()
-                0x00000000000010ca                LogicTC::LogicTC(unsigned char, bool)
-                0x0000000000001042                LogicTC::exec_impl_()
-                0x000000000000104e                LogicTC::init()
-                0x000000000000105a                LogicTC::~LogicTC()
-                0x00000000000010a0                LogicTC::LogicTC(unsigned char, bool)
+                0x00000000000010ca                TC::LogicTC::LogicTC(unsigned char, bool)
+                0x0000000000001042                TC::LogicTC::exec_impl_()
+                0x00000000000010a0                TC::LogicTC::LogicTC(unsigned char, bool)
+                0x000000000000106c                TC::LogicTC::~LogicTC()
+                0x000000000000105a                TC::LogicTC::~LogicTC()
+                0x000000000000104e                TC::LogicTC::init()
+                0x000000000000107e                TC::LogicTC::~LogicTC()
  .text          0x00000000000010f4      0x108 ./SerialCom.o
                 0x0000000000001194                Communicators::SerialCom::~SerialCom()
                 0x00000000000010f4                Communicators::SerialCom::recv()
@@ -528,21 +528,21 @@ LOAD /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.
                 0x0000000000001170                Communicators::SerialCom::init()
                 0x00000000000011a6                Communicators::SerialCom::~SerialCom()
  .text          0x00000000000011fc      0xac0 ./TCProcessor.o
-                0x00000000000018f0                std::map<unsigned char, AbstractTC*, std::less<unsigned char>, std::allocator<AbstractTC*> >::operator[](unsigned char const&)
-                0x00000000000012de                std::_Rb_tree<unsigned char, std::pair<unsigned char const, AbstractTC*>, std::_Select1st<std::pair<unsigned char const, AbstractTC*> >, std::less<unsigned char>, std::allocator<AbstractTC*> >::_M_insert(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::pair<unsigned char const, AbstractTC*> const&)
+                0x0000000000001a3c                std::_Rb_tree<unsigned char, std::pair<unsigned char const, TC::AbstractTC*>, std::_Select1st<std::pair<unsigned char const, TC::AbstractTC*> >, std::less<unsigned char>, std::allocator<TC::AbstractTC*> >::_M_erase(std::_Rb_tree_node<std::pair<unsigned char const, TC::AbstractTC*> >*)
+                0x0000000000001a7c                std::map<unsigned char, TC::AbstractTC*, std::less<unsigned char>, std::allocator<TC::AbstractTC*> >::~map()
+                0x0000000000001628                std::_Rb_tree<unsigned char, std::pair<unsigned char const, TC::AbstractTC*>, std::_Select1st<std::pair<unsigned char const, TC::AbstractTC*> >, std::less<unsigned char>, std::allocator<TC::AbstractTC*> >::insert_unique(std::pair<unsigned char const, TC::AbstractTC*> const&)
                 0x0000000000001222                Processors::TCProcessor::TCProcessor()
+                0x00000000000012de                std::_Rb_tree<unsigned char, std::pair<unsigned char const, TC::AbstractTC*>, std::_Select1st<std::pair<unsigned char const, TC::AbstractTC*> >, std::less<unsigned char>, std::allocator<TC::AbstractTC*> >::_M_insert(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::pair<unsigned char const, TC::AbstractTC*> const&)
                 0x0000000000001b0e                Processors::TCProcessor::perform(Processors::TCProcessor::TC_ACTION, unsigned char)
                 0x0000000000001afc                Processors::TCProcessor::~TCProcessor()
                 0x00000000000019a6                Processors::TCProcessor::definitions_()
-                0x0000000000001770                std::_Rb_tree<unsigned char, std::pair<unsigned char const, AbstractTC*>, std::_Select1st<std::pair<unsigned char const, AbstractTC*> >, std::less<unsigned char>, std::allocator<AbstractTC*> >::insert_unique(std::_Rb_tree_iterator<std::pair<unsigned char const, AbstractTC*>, std::pair<unsigned char const, AbstractTC*>&, std::pair<unsigned char const, AbstractTC*>*>, std::pair<unsigned char const, AbstractTC*> const&)
                 0x0000000000001ac2                Processors::TCProcessor::~TCProcessor()
                 0x0000000000001be8                Processors::TCProcessor::processRecv(String)
-                0x0000000000001a3c                std::_Rb_tree<unsigned char, std::pair<unsigned char const, AbstractTC*>, std::_Select1st<std::pair<unsigned char const, AbstractTC*> >, std::less<unsigned char>, std::allocator<AbstractTC*> >::_M_erase(std::_Rb_tree_node<std::pair<unsigned char const, AbstractTC*> >*)
-                0x0000000000001a7c                std::map<unsigned char, AbstractTC*, std::less<unsigned char>, std::allocator<AbstractTC*> >::~map()
-                0x0000000000001628                std::_Rb_tree<unsigned char, std::pair<unsigned char const, AbstractTC*>, std::_Select1st<std::pair<unsigned char const, AbstractTC*> >, std::less<unsigned char>, std::allocator<AbstractTC*> >::insert_unique(std::pair<unsigned char const, AbstractTC*> const&)
+                0x0000000000001770                std::_Rb_tree<unsigned char, std::pair<unsigned char const, TC::AbstractTC*>, std::_Select1st<std::pair<unsigned char const, TC::AbstractTC*> >, std::less<unsigned char>, std::allocator<TC::AbstractTC*> >::insert_unique(std::_Rb_tree_iterator<std::pair<unsigned char const, TC::AbstractTC*>, std::pair<unsigned char const, TC::AbstractTC*>&, std::pair<unsigned char const, TC::AbstractTC*>*>, std::pair<unsigned char const, TC::AbstractTC*> const&)
+                0x00000000000011fc                std::_Rb_tree_alloc_base<std::pair<unsigned char const, TC::AbstractTC*>, std::allocator<TC::AbstractTC*>, true>::_M_get_node()
                 0x0000000000001a36                Processors::TCProcessor::init()
+                0x00000000000018f0                std::map<unsigned char, TC::AbstractTC*, std::less<unsigned char>, std::allocator<TC::AbstractTC*> >::operator[](unsigned char const&)
                 0x0000000000001aea                Processors::TCProcessor::~TCProcessor()
-                0x00000000000011fc                std::_Rb_tree_alloc_base<std::pair<unsigned char const, AbstractTC*>, std::allocator<AbstractTC*>, true>::_M_get_node()
                 0x0000000000001280                Processors::TCProcessor::TCProcessor()
  .text          0x0000000000001cbc      0x152 ./main.o
                 0x0000000000001d28                loop
@@ -891,11 +891,11 @@ LOAD /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.
  .data          0x0000000000800200       0x2e ./AbstractCommunication.o
                 0x0000000000800220                vtable for Communicators::AbstractCommunication
  .data          0x000000000080022e        0xc ./AbstractTC.o
-                0x000000000080022e                vtable for AbstractTC
+                0x000000000080022e                vtable for TC::AbstractTC
  .data          0x000000000080023a       0x53 ./GlobalReceiver.o
                 0x0000000000800285                vtable for Processors::GlobalReceiver
  .data          0x000000000080028d        0xc ./LogicTC.o
-                0x000000000080028d                vtable for LogicTC
+                0x000000000080028d                vtable for TC::LogicTC
  .data          0x0000000000800299        0xf ./SerialCom.o
                 0x000000000080029a                vtable for Communicators::SerialCom
  .data          0x00000000008002a8        0x8 ./TCProcessor.o
@@ -1184,22 +1184,6 @@ LOAD linker stubs
 Cross Reference Table
 
 Symbol                                            File
-AbstractTC::AbstractTC()                          ./AbstractTC.o
-AbstractTC::AbstractTC()                          ./AbstractTC.o
-                                                  ./LogicTC.o
-AbstractTC::clear_error()                         ./AbstractTC.o
-AbstractTC::disable()                             ./AbstractTC.o
-                                                  ./TCProcessor.o
-AbstractTC::enable()                              ./AbstractTC.o
-                                                  ./TCProcessor.o
-AbstractTC::errno()                               ./AbstractTC.o
-AbstractTC::exec()                                ./AbstractTC.o
-                                                  ./TCProcessor.o
-AbstractTC::persist_errors(bool)                  ./AbstractTC.o
-AbstractTC::~AbstractTC()                         ./AbstractTC.o
-AbstractTC::~AbstractTC()                         ./AbstractTC.o
-                                                  ./LogicTC.o
-AbstractTC::~AbstractTC()                         ./AbstractTC.o
 Communicators::AbstractCommunication::AbstractCommunication() ./AbstractCommunication.o
 Communicators::AbstractCommunication::AbstractCommunication() ./AbstractCommunication.o
                                                   ./SerialCom.o
@@ -1243,14 +1227,6 @@ HardwareSerial::operator bool()                   /home/chris/Workspace/PlusPoni
 HardwareSerial::peek()                            /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
 HardwareSerial::read()                            /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
 HardwareSerial::write(unsigned char)              /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
-LogicTC::LogicTC(unsigned char, bool)             ./LogicTC.o
-LogicTC::LogicTC(unsigned char, bool)             ./LogicTC.o
-                                                  ./TCProcessor.o
-LogicTC::exec_impl_()                             ./LogicTC.o
-LogicTC::init()                                   ./LogicTC.o
-LogicTC::~LogicTC()                               ./LogicTC.o
-LogicTC::~LogicTC()                               ./LogicTC.o
-LogicTC::~LogicTC()                               ./LogicTC.o
 Print::print(Printable const&)                    /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
 Print::print(String const&)                       /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
 Print::print(__FlashStringHelper const*)          /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
@@ -1422,6 +1398,30 @@ String::~String()                                 /home/chris/Workspace/PlusPoni
                                                   ./AbstractCommunication.o
 String::~String()                                 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(WString.o)
                                                   ./AbstractCommunication.o
+TC::AbstractTC::AbstractTC()                      ./AbstractTC.o
+TC::AbstractTC::AbstractTC()                      ./AbstractTC.o
+                                                  ./LogicTC.o
+TC::AbstractTC::clear_error()                     ./AbstractTC.o
+TC::AbstractTC::disable()                         ./AbstractTC.o
+                                                  ./TCProcessor.o
+TC::AbstractTC::enable()                          ./AbstractTC.o
+                                                  ./TCProcessor.o
+TC::AbstractTC::errno()                           ./AbstractTC.o
+TC::AbstractTC::exec()                            ./AbstractTC.o
+                                                  ./TCProcessor.o
+TC::AbstractTC::persist_errors(bool)              ./AbstractTC.o
+TC::AbstractTC::~AbstractTC()                     ./AbstractTC.o
+TC::AbstractTC::~AbstractTC()                     ./AbstractTC.o
+TC::AbstractTC::~AbstractTC()                     ./AbstractTC.o
+                                                  ./LogicTC.o
+TC::LogicTC::LogicTC(unsigned char, bool)         ./LogicTC.o
+TC::LogicTC::LogicTC(unsigned char, bool)         ./LogicTC.o
+                                                  ./TCProcessor.o
+TC::LogicTC::exec_impl_()                         ./LogicTC.o
+TC::LogicTC::init()                               ./LogicTC.o
+TC::LogicTC::~LogicTC()                           ./LogicTC.o
+TC::LogicTC::~LogicTC()                           ./LogicTC.o
+TC::LogicTC::~LogicTC()                           ./LogicTC.o
 __addsf3                                          /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr6/libgcc.a(_addsub_sf.o)
                                                   /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
 __bad_interrupt                                   /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/crtm2560.o
@@ -1835,14 +1835,14 @@ serialEvent3()                                    /home/chris/Workspace/PlusPoni
 serialEventRun()                                  /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
 setup                                             ./main.o
 sipHash                                           ./lib/SipHash/SipHash_2_4.o
-std::_Rb_tree<unsigned char, std::pair<unsigned char const, AbstractTC*>, std::_Select1st<std::pair<unsigned char const, AbstractTC*> >, std::less<unsigned char>, std::allocator<AbstractTC*> >::_M_erase(std::_Rb_tree_node<std::pair<unsigned char const, AbstractTC*> >*) ./TCProcessor.o
-std::_Rb_tree<unsigned char, std::pair<unsigned char const, AbstractTC*>, std::_Select1st<std::pair<unsigned char const, AbstractTC*> >, std::less<unsigned char>, std::allocator<AbstractTC*> >::_M_insert(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::pair<unsigned char const, AbstractTC*> const&) ./TCProcessor.o
-std::_Rb_tree<unsigned char, std::pair<unsigned char const, AbstractTC*>, std::_Select1st<std::pair<unsigned char const, AbstractTC*> >, std::less<unsigned char>, std::allocator<AbstractTC*> >::insert_unique(std::_Rb_tree_iterator<std::pair<unsigned char const, AbstractTC*>, std::pair<unsigned char const, AbstractTC*>&, std::pair<unsigned char const, AbstractTC*>*>, std::pair<unsigned char const, AbstractTC*> const&) ./TCProcessor.o
-std::_Rb_tree<unsigned char, std::pair<unsigned char const, AbstractTC*>, std::_Select1st<std::pair<unsigned char const, AbstractTC*> >, std::less<unsigned char>, std::allocator<AbstractTC*> >::insert_unique(std::pair<unsigned char const, AbstractTC*> const&) ./TCProcessor.o
-std::_Rb_tree_alloc_base<std::pair<unsigned char const, AbstractTC*>, std::allocator<AbstractTC*>, true>::_M_get_node() ./TCProcessor.o
+std::_Rb_tree<unsigned char, std::pair<unsigned char const, TC::AbstractTC*>, std::_Select1st<std::pair<unsigned char const, TC::AbstractTC*> >, std::less<unsigned char>, std::allocator<TC::AbstractTC*> >::_M_erase(std::_Rb_tree_node<std::pair<unsigned char const, TC::AbstractTC*> >*) ./TCProcessor.o
+std::_Rb_tree<unsigned char, std::pair<unsigned char const, TC::AbstractTC*>, std::_Select1st<std::pair<unsigned char const, TC::AbstractTC*> >, std::less<unsigned char>, std::allocator<TC::AbstractTC*> >::_M_insert(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::pair<unsigned char const, TC::AbstractTC*> const&) ./TCProcessor.o
+std::_Rb_tree<unsigned char, std::pair<unsigned char const, TC::AbstractTC*>, std::_Select1st<std::pair<unsigned char const, TC::AbstractTC*> >, std::less<unsigned char>, std::allocator<TC::AbstractTC*> >::insert_unique(std::_Rb_tree_iterator<std::pair<unsigned char const, TC::AbstractTC*>, std::pair<unsigned char const, TC::AbstractTC*>&, std::pair<unsigned char const, TC::AbstractTC*>*>, std::pair<unsigned char const, TC::AbstractTC*> const&) ./TCProcessor.o
+std::_Rb_tree<unsigned char, std::pair<unsigned char const, TC::AbstractTC*>, std::_Select1st<std::pair<unsigned char const, TC::AbstractTC*> >, std::less<unsigned char>, std::allocator<TC::AbstractTC*> >::insert_unique(std::pair<unsigned char const, TC::AbstractTC*> const&) ./TCProcessor.o
+std::_Rb_tree_alloc_base<std::pair<unsigned char const, TC::AbstractTC*>, std::allocator<TC::AbstractTC*>, true>::_M_get_node() ./TCProcessor.o
 std::__malloc_alloc_template<0>::__malloc_alloc_oom_handler ./TCProcessor.o
-std::map<unsigned char, AbstractTC*, std::less<unsigned char>, std::allocator<AbstractTC*> >::operator[](unsigned char const&) ./TCProcessor.o
-std::map<unsigned char, AbstractTC*, std::less<unsigned char>, std::allocator<AbstractTC*> >::~map() ./TCProcessor.o
+std::map<unsigned char, TC::AbstractTC*, std::less<unsigned char>, std::allocator<TC::AbstractTC*> >::operator[](unsigned char const&) ./TCProcessor.o
+std::map<unsigned char, TC::AbstractTC*, std::less<unsigned char>, std::allocator<TC::AbstractTC*> >::~map() ./TCProcessor.o
 strcat                                            /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strcat.o)
                                                   ./GlobalReceiver.o
 strchr                                            /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(strchr.o)
@@ -1887,15 +1887,15 @@ vfprintf                                          /home/chris/Software/arduino-1
                                                   /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(vsnprintf.o)
 vsnprintf                                         /home/chris/Software/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../avr/lib/avr6/libc.a(vsnprintf.o)
                                                   ./AbstractCommunication.o
-vtable for AbstractTC                             ./AbstractTC.o
 vtable for Communicators::AbstractCommunication   ./AbstractCommunication.o
 vtable for Communicators::SerialCom               ./SerialCom.o
 vtable for HardwareSerial                         /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
-vtable for LogicTC                                ./LogicTC.o
 vtable for Print                                  /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(Print.o)
 vtable for Processors::GlobalReceiver             ./GlobalReceiver.o
 vtable for Processors::TCProcessor                ./TCProcessor.o
 vtable for Stream                                 /home/chris/Workspace/PlusPonics/code/ArduinoCore/Release/libArduinoCore.a(HardwareSerial.o)
+vtable for TC::AbstractTC                         ./AbstractTC.o
+vtable for TC::LogicTC                            ./LogicTC.o
 xor64                                             ./lib/SipHash/siphash_2_4_asm.o
                                                   ./lib/SipHash/SipHash_2_4.o
 xor_ff                                            ./lib/SipHash/siphash_2_4_asm.o

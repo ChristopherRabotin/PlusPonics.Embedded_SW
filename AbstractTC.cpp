@@ -6,7 +6,7 @@
  */
 
 #include "AbstractTC.h"
-
+namespace TC {
 AbstractTC::AbstractTC() {
 	_enabled = true;
 	_executions = 0;
@@ -60,4 +60,5 @@ AbstractTC::ERROR_STATE AbstractTC::errno() {
 		_error = NO_ERROR;
 	}
 	return (rtn);
+}
 }
