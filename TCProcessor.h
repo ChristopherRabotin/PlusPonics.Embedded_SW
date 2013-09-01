@@ -8,7 +8,7 @@
 #ifndef TCPROCESSOR_H_
 #define TCPROCESSOR_H_
 
-#include "TC.h"
+#include "AbstractTC.h"
 #include "LogicTC.h"
 /* The following includes enable STL for Arduino. */
 #include <iterator>
@@ -84,7 +84,7 @@ private:
 	 * @brief This is the correspondence list between OPCODE and TC object. Here will be fetched and added all the TCs.
 	 * @note Due to the definition of this map, there is a maximum of 256 TCs available. Setting this maximum allows faster TC fetching.
 	 */
-	std::map<uint8_t, TC*> _opcode_TC_map;
+	std::map<uint8_t, AbstractTC*> _opcode_TC_map;
 
 	ERROR_STATE _error;
 

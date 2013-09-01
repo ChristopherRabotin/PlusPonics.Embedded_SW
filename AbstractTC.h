@@ -1,12 +1,12 @@
 /*
- * TC.h
+ * AbstractTC.h
  *
  *  Created on: Aug 25, 2013
  *      Author: chris
  */
 
-#ifndef TC_H_
-#define TC_H_
+#ifndef AbstractTC_H_
+#define AbstractTC_H_
 #include <stdint.h>
 
 /**
@@ -16,13 +16,13 @@
  * A telecommand can be enabled or disable with the appropriate functions. Note that there is no toggle
  * function. This is to prevent double messages to be sent and enable then disable a command for example.
  */
-class TC {
+class AbstractTC {
 public:
 	/**
 	 * @brief This creates the TC object. The OPCODE of this TC is only defined in the main when the TC is instantiated.
 	 */
-	TC();
-	virtual ~TC();
+	AbstractTC();
+	virtual ~AbstractTC();
 	/**
 	 * @enum ERROR_STATE defines all the error states a TC can have.
 	 */
@@ -80,4 +80,4 @@ private:
 	ERROR_STATE _error;
 };
 
-#endif /* TC_H_ */
+#endif /* AbstractTC_H_ */

@@ -8,7 +8,7 @@
 #ifndef DIGITALWRITETC_H_
 #define DIGITALWRITETC_H_
 
-#include "TC.h"
+#include "AbstractTC.h"
 #include <Arduino.h>
 
 /**
@@ -16,7 +16,7 @@
  * @brief This class enables digital writing to a given output pin with the given output value.
  * @warning This class does not check whether the pin is used in another mode. It is very important to check for any conflict beforehand!
  */
-class LogicTC: public TC {
+class LogicTC: public AbstractTC {
 public:
 	/**
 	 * @brief Specify in the constructor both the output pin and the output value.

@@ -8,7 +8,7 @@
 #include "LogicTC.h"
 
 LogicTC::LogicTC(uint8_t outputPin, bool value) :
-		TC() {
+		AbstractTC() {
 	_outputPin = outputPin;
 	_outputValue = value;
 }

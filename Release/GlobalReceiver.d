@@ -1,7 +1,7 @@
 GlobalReceiver.d GlobalReceiver.o: ../GlobalReceiver.cpp \
   ../GlobalReceiver.h ../AbstractCommunication.h \
   /home/chris/Software/arduino-1.0.5/hardware/arduino/cores/arduino/WString.h \
-  ../TCProcessor.h ../TC.h ../LogicTC.h \
+  ../TCProcessor.h ../AbstractTC.h ../LogicTC.h \
   /home/chris/Software/arduino-1.0.5/hardware/arduino/cores/arduino/Arduino.h \
   /home/chris/Software/arduino-1.0.5/hardware/arduino/cores/arduino/binary.h \
   /home/chris/Software/arduino-1.0.5/hardware/arduino/cores/arduino/WCharacter.h \
@@ -21,7 +21,7 @@ GlobalReceiver.d GlobalReceiver.o: ../GlobalReceiver.cpp \
 
 ../TCProcessor.h:
 
-../TC.h:
+../AbstractTC.h:
 
 ../LogicTC.h:
 

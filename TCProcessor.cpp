@@ -48,7 +48,7 @@ void TCProcessor::perform(TC_ACTION action, uint8_t opcode) {
 		_error = INVALID_OPCODE;
 		return;
 	}
-	TC* tc = _opcode_TC_map.find(opcode)->second;
+	AbstractTC* tc = _opcode_TC_map.find(opcode)->second;
 	switch (action) {
 	case ENABLE:
 		tc->enable();
